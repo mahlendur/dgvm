@@ -1,0 +1,38 @@
+person: SLD_703_Orf, 5
+
+info: Exit
+
+info: youSmith
+>Bist du der Schmied?
+<Sieht so aus. Oder meinst du nicht?
+>Doch, irgendwie schon.
+<Na also. Was soll dann die blöde Frage?
+
+info: youTrade
+conddia: youSmith
+>Verkaufst du auch Waffen?
+<Die Frage ist schon intelligenter.
+<Ja, tue ich. Aber nur an Söldner.
+<Also, werde Mitglied bei uns und dann kommen wir ins Geschäft!
+
+info: yourHint
+conddia: youSmith
+condcode: MIS_newInfos == LOG_RUNNING
+>Hast du einen Hinweis auf euren Informanten?
+<Jareck schickt dich, hm?
+>Genau. Kannst du mir etwas sagen?
+<Hmm, wie drücke ich das aus?
+<Ahja, hör zu: Der Informant hat viele Waffen in der Hand, benutzt seine aber nur sehr selten.
+!var int s; s = SB_New();
+!hintcounter += 1;
+!SB("Hinweise: ");
+!SBi(hintCounter);
+!SB("/4");
+!AI_PrintS(self, SB_ToString());
+!SB_Destroy();
+$LOGMISS newInfos, Orf gab mir den Hinweis, dass der Informant viele Waffen in der Hand habe, seine eigene aber nur selten benutze.
+>Was zum...
+<Tja, niemand hat gesagt, dass deine Prüfung einfach wird.
+<Jareck sagte schon, er wolle mal wieder jemanden mit Grips haben.
+<Mal schauen, ob du ins Profil passt.
+<Also, mach dich auf den Weg und hol uns die Infos!

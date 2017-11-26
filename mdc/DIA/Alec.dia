@@ -1,0 +1,163 @@
+person: BAU_970_Alec, 6
+
+!var int knowsNewsChapter1;
+!var int knowsNewsChapter2;
+!var int knowsNewsChapter3;
+
+!var int meatCounter;
+!var int meatMax; 
+
+info: Exit
+
+info: welcomeTavern
+flags: important
+<Willkommen in der Taverne 'Zum alten Scavenger'!
+<Möchtest du etwas trinken? Oder ein Bett?
+<Sag einfach Bescheid, wenn du etwas brauchst!
+
+info: wannaDrink
+num: 998
+flags: permanent, trade
+conddia: welcomeTavern
+!B_GiveTradeInv(self);
+>Gib mir was zu Trinken!
+<Gerne!
+
+info: whatsHere
+conddia: welcomeTavern
+>Wo bin ich hier?
+<Du bist hier im Herzen der Insel. Von meiner Taverne aus kommst du überall hin, wo du hin willst.
+<Ich nehme an, du bist gerade aus der Stadt gekommen. Dann ist es von hier nicht mehr weit, um zum Kloster oder zu den Bauernhöfen zu gelangen.
+
+info: whosHere
+conddia: welcomeTavern
+>Welche Menschen trifft man hier?
+<Alle möglichen! Meine Taverne ist so etwas wie die neutrale Zone auf der Insel.
+<Meistens findest du hier einige Bauern, die ihren kleinen Lohn versaufen. Aber auch die Söldner lassen gerne ihr Gold hier.
+<Ab und an kommt auch einer der Magier bei mir vorbei, meistens wenn er auf dem Weg in die Stadt ist, oder von dort kommt.
+<Sollte die Stadtwache gerade irgendwo hin unterwegs sein, trinken auch sie gerne mal ein Bier bei mir.
+<Nur Piraten oder Schwarzmagier habe ich hier noch nicht gesehen.
+
+info: getNews
+conddia: welcomeTavern
+>Du bekommst doch sicher viel mit, oder?
+<Natürlich! (lacht) Die meisten Menschen werden redselig, wenn sie erst einmal getrunken haben.
+<Da hört man vieles, leider auch Dinge, die man eigentlich gar nicht hören möchte... (schmunzelt)
+
+info: someNews
+conddia: getNews
+flags: permanent
+num: 990
+>Hast du irgendwelche Neuigkeiten?
+<Hmm, lass mal sehen...
+$IF knowsNewsChapter1 == FALSE
+<Die Bauern und die Söldner verschanzen sich immer mehr, genau wie die Magier im Kloster.
+<Dazu rüstet die Stadtwache noch auf.
+<Gut, wer will es ihnen verdenken? Immerhin ist die Bedrohung durch die Piraten und die Schwarzmagier real.
+<Ansonsten...
+!knowsNewsChapter1 = TRUE;
+$ELSEIF kapitel == 2 && knowsNewsChapter2 == FALSE
+<Es wird hier langsam brenzlig. Mir fehlen immer mehr Gäste und ich meine gehört zu haben, dass die Söldner ein Lager in der Nähe der Stadt einrichten.
+<Angeblich nehmen auch die Angriffe der Schwarzmagier auf das Kloster immer mehr zu.
+<Ansonsten...
+!knowsNewsChapter2 = TRUE;
+$ELSEIF kapitel == 3 && knowsNewsChapter3 == FALSE
+<Die neue Bedrohung durch die Geister und Untoten rückt immer näher.
+<Waren es bisher vereinzelte Wesen, tauchen sie jetzt immer häufiger und in größeren Gruppen auf.
+<Zumindest hier kommen die Dämonenjäger der Söldner kaum noch hinterher.
+<Ansonsten...
+!knowsNewsChapter3 = TRUE;
+$ENDIF
+<...soweit nichts Neues.
+
+info: needSomething
+conddia: welcomeTavern
+>Brauchst du noch irgendwas?
+<Hmm, kommt ganz darauf an.
+<Kannst du jagen?
+!meatMax = 50;
+%
+
+opt: letsTry
+>Ich könnte es auf einen Versuch ankommen lassen.
+<Sicher? Du klingst nicht wirklich begeistert.
+<Aber gut, wenn du willst: Mir fressen die Bauern und Söldner und all die Anderen hier regelmäßig die Haare vom Kopf.
+<Ich brauche Fleisch. Ziemlich dringend und ziemlich viel. Wenn du mir, sagen wir, etwa fünfzig Keulen besorgst, kann ich die Meute wieder verköstigen.
+>50 Stück Fleisch! Wo soll ich die denn hernehmen?
+<Siehst du, deswegen fragte ich, ob du jagen kannst. Hier rennt genug Viehzeug rum, die groß und saftig genug sind.
+<Ich brauche das Fleisch aber roh! Sonst kann ich meine Spezialmarinade nicht verwenden.
+>(seufzt) In Ordnung. Ich werde sehen, was ich tun kann.
+$STARTMIS tavernMeat
+$LOGMISS tavernMeat, Alec, Wirt in der Taverne 'Zum alten Scavenger' braucht Fleisch. Viel davon und auch noch roh. Ich soll ihm fünfzig Stück bringen, damit er seine Gäste bedienen kann. Na dann, auf zur Jagd!
+%%
+
+opt: ofCourse
+>Natürlich kann ich jagen!
+<Wirklich? Das ist sehr gut. Folgendes Problem: 
+<Mir fressen die Bauern und Söldner und all die Anderen hier regelmäßig die Haare vom Kopf.
+<Ich brauche Fleisch. Ziemlich dringend und ziemlich viel. Wenn du mir, sagen wir, etwa fünfzig Keulen besorgst, kann ich die Meute wieder verköstigen.
+>50 Stück Fleisch? Kein Problem!
+<(lacht) Dachte ich mir. Bring mir einfach, soviel wie du bekommst. Es muss nicht alles auf einmal sein!
+<Ich brauche das Fleisch aber roh! Sonst kann ich meine Spezialmarinade nicht verwenden.
+>Bin gleich wieder da!
+$STARTMIS tavernMeat
+$LOGMISS tavernMeat, Alec, Wirt in der Taverne 'Zum alten Scavenger' braucht Fleisch. Viel davon und auch noch roh. Ich soll ihm fünfzig Stück bringen, damit er seine Gäste bedienen kann. Na dann, auf zur Jagd!
+%%
+
+opt: betterNot
+>Lass mal lieber!
+<Schade. Dann habe ich leider nichts für dich zu tun.
+%%
+
+info: gotSomeMeat
+condcode: MIS_tavernMeat == LOG_RUNNING
+conditem: ItFoMuttonRaw, 1
+flags: permanent
+>Ich habe Fleisch für dich!
+<Wirklich? Sehr gut, dann kann ich schon wieder einige Keulen marinieren.
+<Gib her!
+!var int meatCnt; meatCnt = Npc_HasItems(hero, ItFoMuttonRaw);
+$IF meatCounter + meatCnt > meatMax
+!meatCnt = (meatCnt + meatCounter) - 50;
+$ENDIF
+>>ItFoMuttonRaw, meatCnt
+!meatCounter += meatCnt;
+$IF meatCounter <= 49
+<Aber ich brauche noch mehr!
+!var string conStr; conStr = ConcatStrings("Es fehlen noch ", IntToString(meatMax - meatCounter));
+!conStr = ConcatStrings(conStr, " Keulen rohes Fleisch!");
+!AI_PrintS(self, conStr);
+$ELSE
+<Gut, das dürften dann alle gewesen sein!
+<Vielen Dank für deine Mühe. Hier, ich gebe dir etwas Gold.
+<<ItMi_Gold, 200
+<Außerdem... Lass mich überlegen. Klar, du bekommst hier auch immer ein warmes Zimmer.
+<Natürlich kostenlos!
+<Wie gesagt, Danke für alles!
+$LOGMISS tavernMeat, Alec hat sein Fleisch bekommen. Im Gegenzug hat er mir angeboten, immer ein warmes Zimmer in seiner Taverne zu bekommen. Kostenlos, versteht sich.
+$EXP 300
+$MISSUCC tavernMeat
+$ENDIF
+
+info: getSupplies
+condcode: MIS_getGoodsPirates == LOG_RUNNING
+desc: Lieferst du auch Vorräte?
+>Sag mal... Lieferst du auch Vorräte?
+<Kommt drauf an. Was brauchst du denn?
+>Wasser und Bier. Zur Not auch Wein.
+<Jo, das sollte möglich sein.
+<Sonst noch was?
+>Fleisch. Wir brauchen Fleisch.
+<Das könnte schwieriger werden... Wieviel brauchst du denn?
+>Ich brauche die Vorräte für zwanzig Leute. Am besten regelmäßig, so einmal die Woche.
+<Zwanzig Leute? Bist du wahnsinnig? Wo soll ich denn soviel Fleisch herbekommen?
+>Ähm..
+<Siehst du. Das Wasser und Wein kann ich dir liefern. Bier müsstest du mal in der Stadt nachfragen. Die können da Freibier verteilen, irgendwoher müssen die das ja bekommen.
+<Und das Fleisch... Sieh dich mal auf der Insel um. Es gibt einige Jägergruppen hier. Ein paar arbeiten für mich, aber vielleicht hat ja jemand Vorräte übrig.
+<Wenn das für dich in Ordnung ist... Muss ich nur noch wissen, wo ich alles hinliefern soll.
+>Im Tal, zwischen der Stadt und dem Leuchtturm gibt es eine Höhle.
+>Dort kannst du es hinliefern und wir holen es dann ab.
+<In Ordnung. Ich hoffe für dich, dass ich dann in der Höhle jede Woche einen Goldbeutel mit mindestens 150 Goldstücken finde.
+>Das sollte sich einrichten lassen.
+<Perfekt. Also: Auf gute Zusammenarbeit!
+$LOGMISS getGoodsPirates, Alec liefert jede Woche zumindest das Wasser und den Wein. Er sagte mir, Bier könnte ich vielleicht in der Stadt bekommen und für Fleisch sollte ich bei den Jägern nachfragen. Für seine Lieferung will er jede Woche 150 Goldstücke sehen.

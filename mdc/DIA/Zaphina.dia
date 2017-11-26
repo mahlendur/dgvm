@@ -1,0 +1,55 @@
+person: BAU_241_Zaphina, 17
+
+info: Exit
+
+info: whatYouDoing
+condcode: (Wld_IsTime(04,00,06,30) || Wld_IsTime(19,00,22,30))
+>Was machst du hier?
+<Wonach siehts denn aus?
+<Ich trainiere meinen Schwertarm!
+<Vielleicht komme ich irgendwann aus diesem Loch hier raus und kann richtig kämpfen...
+$END
+
+info: notNow
+condcode: Wld_IsTime(06,30,19,00)
+condcode: Npc_IsInState(self, ZS_TALK)
+condcode: Npc_GetTrueGuild(self) == GIL_BAU
+flags: important, permanent
+<Nicht jetzt! Siehst du nicht, dass ich arbeiten muss?
+$END
+
+info: mustRest
+condcode: Wld_IsTime(22,30,04,00)
+condcode: Npc_IsInState(self, ZS_TALK)
+condcode: Npc_GetTrueGuild(self) == GIL_BAU
+flags: important, permanent
+<Ich muss mich ausruhen... Das war ein anstrengender Tag.
+$END
+
+info: wannaJoinPirates
+condcode: MIS_newPirates == LOG_RUNNING
+>Suchst du immer noch eine Möglichkeit zu kämpfen?
+<Willst du mich verarschen?
+<Natürlich suche ich danach. Solange es mich hier rausbringt...
+>Wie stehst du zu nicht ganz legalen Geschäften...?
+<Wie, nicht ganz legal?
+
+info: joinPirates
+conddia: wannaJoinPirates
+desc: Ich hätte einen neuen Job für dich. (Für die Piraten anwerben)
+>Ich hätte einen neuen Job für dich.
+<Jetzt rück schon raus!
+>Du hast doch bestimmt davon gehört, dass Piraten auf der Insel sind.
+<Sicher. Es war ja schwer das nicht mitzubekommen.
+>Weißt du, wir suchen neue Leute, die kämpfen können.
+<Ich bei den Piraten? Und du meinst, ich werde nicht nur zum Kochen degradiert?
+>Wenn Henry das versucht, mach ihm klar, dass du mehr kannst.
+>Und zur Not... Sag ihm, dass ICH ihm das klar mache.
+<Also schön.. Ich bei den Piraten.
+<Hätte ich nie gedacht. Aber alle mal besser als dieser dämliche Bauernhof hier.
+<Also, wo soll ich hin?
+>Geh zum Leuchtturm in der Nähe der Stadt. Gilbert steht wahrscheinlich am Tor.
+>Sag ihm, ich hätte dich geschickt. Dann wird er dir alles erklären und dich reinlassen.
+$LOGMISS newPirates, Ich habe Zaphina auf einem der Bauernhöfe getroffen. Sie wird sich uns anschließen.
+$EXP 350
+

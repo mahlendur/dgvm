@@ -1,0 +1,68 @@
+person: KDF_1402_Sellan, 8
+
+info: Exit
+
+info: welcomeToMonastery
+flags: important
+<Willkommen, Reisender!
+<Sei herzlich begrüßt im Kloster der Eismagier.
+<Mein Name ist Sellan.
+<Wie kann ich dir helfen?
+
+info: goIn
+>Ich würde gerne ins Kloster!
+<Und was möchtest du tun, sobald du im Kloster bist?
+%
+opt: wannaJoin
+>Ich will dem Orden beitreten!
+<Tut mir leid, leider kann ich dich nicht einlassen.
+<Ich benötige die Zustimmung eines Magiers, um dir den Zutritt zu gewähren.
+%%
+opt: wannaPray
+>Ich will beten!
+<Dafür findest du auf der ganzen Insel verteilt Schreine.
+<Hier im Kloster widmen sich die Magier ihren Studien.
+<Ich kann dich nicht im Kloster beten lassen, solange du dem Orden nicht angehörst.
+%%
+opt: wannaTalk
+>Ich möchte mit den Magiern sprechen.
+<Die Magier im Kloster sind sehr beschäftigt. Ich glaube nicht, dass sie Zeit haben, sich mit dir zu unterhalten.
+<Geh in die Stadt und suche nach einem Magier. Er wird dir mehr über das Kloster erzählen können.
+%%
+
+info: gotLetter
+conddia: goIn
+condcode: (Npc_HasItems(hero, ItWr_MariusMessage) >= 1) || (Npc_HasItems(hero, ItWr_MariusMessage_Sealed) >= 1)
+>Ich habe hier einen Brief vom Magier Marius.
+<So, du hast also mit einem Magier gesprochen?
+<Zeig her den Brief!
+$IF Npc_HasItems(hero, ItWr_MariusMessage) >= 1
+>>ItWr_MariusMessage, 1
+<Aber... Der Brief ist ja geöffnet!
+>Ich war neugierig...
+<Lass das nicht die anderen Magier hören.
+<Wenn ein Magier einen Brief versiegelt, so soll er nur von demjenigen geöffnet werden, für den der Brief bestimmt ist.
+<Ich werde ein Auge zudrücken und dich nicht verpfeifen.
+!AI_UseItem(self, ItWr_MariusMessage);
+$ELSE
+>>ItWr_MariusMessage_Sealed, 1
+<Oh, ein Siegelbrief. Es kommt selten vor, dass ein Magier versiegelte Briefe von einem Fremden überbringen lässt.
+<Mal sehen, was er schreibt...
+!B_UseFakeScroll();
+$ENDIF
+<In Ordnung. Marius schreibt, ich soll dich ins Kloster einlassen.
+<Er sagt, er spüre eine große Macht in dir.
+<Desweiteren soll ich dich zum hohen Rat schicken.
+<Hier, nimm den Schlüssel zum Kloster. Damit kannst du die Türe aufschließen.
+<<ItKe_Innos_MIS, 1
+<Geh am Besten direkt zum Hohen Rat. Du findest ihn in der Kirche. Begegne ihnen mit Respekt und überbringe den Brief.
+$LOGMISS newLife, Sellan, der Novize vor dem Kloster der Eismagier hat mir den Zutritt zu den heiligen Mauern gewährt. Ich soll zum Hohen Rat gehen und ihnen den Brief von Marius übergeben.
+<<ItWr_MariusMessage, 1
+<Geh mit Adanos Segen!
+$END
+
+
+
+
+
+

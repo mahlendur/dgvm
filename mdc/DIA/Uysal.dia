@@ -1,0 +1,97 @@
+person: KDF_1404_Uysal, 1
+
+info: Exit
+
+info: greetingsMage
+>Ich grüße euch, hoher Magier!
+<Sei gegrüßt. Du musst der neue Anwärter sein.
+
+info: testMe
+conddia: greetingsMage
+conddia: KDF_1403_Rayan, gotLetter
+>Stellt mich auf die Probe!
+<Schickt Rayan dich?
+>Ja, er sagt, Ihr sollt mich prüfen.
+<In Ordnung. Deine Prüfung ist bereits vorbereitet.
+>So schnell?
+<Sie ist schon länger vorbereitet.
+<Wie du vielleicht weißt, haben wir einige Probleme mit einer anderen Magiergruppierung auf der Insel.
+<Die Schwarzmagier machen uns immer wieder das Leben schwer. Zwar greifen sie nicht direkt an, doch sorgen sie immer wieder dafür, dass unser Ordensleben gestört wird.
+<Meistens sind es Kleinigkeiten. Schafe die krank werden, oder Vorräte die vermodern. Ab und an wurde unser Trinkwasser ungenießbar. Das haben wir alles in den Griff bekommen.
+<Jetzt sind aber weitere Probleme aufgetaucht. Eine kleine Gruppe Schwarzmagier hat es geschafft, eine Gruppe Untote in unserem Keller zu beschwören.
+<Da wir den Teil des Kellers derzeit nicht benötigen, haben wir die Türe verschlossen. Interessanterweise lassen sich die Untoten dadurch aufhalten.
+<Aber sie sind immer noch im Keller und ich muss zugeben, ich habe kein gutes Gefühl dabei.
+<Daher stelle ich dir nun deine Prüfung:
+<Geh hin und vernichte die Kreaturen der Dunkelheit!
+<Du bekommst von mir den Schlüssel, sowie einige Spruchrollen. Dazu noch ein paar Manatränke.
+<Außerdem werde ich einen Stärkungszauber auf dich wirken, damit deine magische Kraft für kurze Zeit gestärkt wird.
+<Wenn du immer noch bereit bist uns beizutreten und deine Prüfung abzulegen, so sprich wieder mit mir.
+$STARTMIS iceTest
+$LOGMISS iceTest, Uysal, einer der Magier des Hohen Rates im Kloster der Eismagier hat mir eine Prüfung gestellt. Wenn ich sie bestehe, kann ich als Novize im Orden aufgenommen werden. Um mich zu beweisen, soll ich einige Untote vernichten, welche im Keller des Klosters beschworen wurden. Dazu werde ich von ihm mit Spruchrollen, Manatränken und einem Stärkungszauber ausgestattet.
+
+info: goOn
+conddia: testMe
+>Ich bin bereit für meine Prüfung!
+<In Ordnung. Hier ist als erstes der Schlüssel zum Keller.
+<<ItKe_KlosterSchatz, 1
+<Der Raum befindet sich, wenn du die Treppen heruntergehst und dich rechts hälst, auf der rechten Seite.
+<Und hier sind deine Spruchrollen. Setze sie weise ein!
+<<ItSc_Windfist, 2
+<<ItSc_Zap, 2
+<<ItSc_LightningFlash
+<<ItSc_ChargeFireball
+<<ItSc_HarmUndead
+<Und deine Manatränke!
+<<ItPo_Mana_01, 4
+<Und nun werde ich dich stärken!
+!AI_TurnToNpc(self, hero);
+<!T_PRACTICEMAGIC2
+!AI_TurnToNpc(self, hero);
+!AI_Function(self, playBuffAni_Mana);
+!Buff_Apply(hero, maxManaBuff);
+!AI_StandUp(self);
+<Du bist nun bereit. Gehe hin und befreie uns vom Übel der Untoten!
+$LOGMISS iceTest, Ich bin bereit! Töten wir diese Untoten!
+
+info: gotThem
+condcode: Npc_IsDead(Monastery_Zombie)
+>Ich habe die Dämonen zur Strecke gebracht!
+<Ja, ich spüre, dass eine Last von mir abgefallen ist.
+<Ich merke gerade, wie sehr mir die reine Anwesenheit dieser Kreaturen zugesetzt hat.
+<Wie auch immer, ich bin stolz auf dich!
+<Von meiner Seite aus gibt es nichts, dass dagegen spricht, dass du uns beitrittst. Sprich aber zuerst noch mit Ulian.
+<Wenn er keine Einwände hat, sprich mit Rayan. Er wird dich in den Orden aufnehmen.
+<Meine Glückwünsche, Novize!
+$MISSUCC iceTest
+$LOGMISS iceTest, Ich habe die Dämonen im Kloster getötet. Uysal ist bereit, mich in den Orden aufzunehmen, solange Ulian keine Einwände hat.
+$EXP 450
+
+info: teachRune
+conddia: KDF_1403_Rayan, foundBook
+>Rayan sagte, du könntest mir etwas beibringen!
+<Dann hast du also den ersten Kreis der Magie verinnerlicht?
+>Habe ich.
+<In Ordnung. Ich werde dir beibringen, wie du Runen herstellst. Wir fangen mit einer einfachen Rune an.
+<Wir fangen mit der Lichtrune an. Für diese einfache, aber sehr nützliche Rune brauchst du, außer einem Runenstein, noch eine passende Spruchrolle und fünf Goldmünzen.
+>Goldmünzen?
+<Ganz richtig! Gold ist nichts anderes, als mithilfe natürlicher Magie verdichtetes Licht.
+<Und durch Magie kann die Energie des Lichts wieder freigegeben und im Runenstein gebündelt werden.
+<Und natürlich benötigst du die passende Spruchrolle. Sie wird die Energie der Magie verdichten und auf den Stein übertragen.
+<Sprich mit Kelsava. Er kann dir einen Runenstein geben und dir die praktische Anwendung näher bringen.
+$LOGMISS buildRunes, Uysal kann mir beibringen, wie ich Runen herstelle. Zuerst hat er mir erklärt, was ich für eine Lichtrune brauche. Kelsava kann mir erklären, wie ich diese Rune herstelle und kann mir einen Runenstein geben.
+!PLAYER_TALENT_RUNES[SPL_LIGHT] = TRUE;
+$LOGNOTE runes, Rune 'Licht': 5 Goldmünzen (Kreis 1)
+
+info: gotRune
+conditem: ItRu_Light, 1
+>Ich habe die Rune hergestellt!
+<Sehr gut! Dann scheinst du die Grundlagen der Runenherstellung gelernt zu haben.
+<Ab sofort werde ich dir die weiteren Runen beibringen.
+<Wenn du alle gelernt hast, wird Rayan dich den nächsten Kreis der Magie lehren!
+$LOGNOTE buildRunes, Uysal war zufrieden mit mir und wird mir jetzt die weiteren Runen des ersten Kreises beibringen.
+$MISSUCC buildRunes
+$EXP 350
+
+
+
+

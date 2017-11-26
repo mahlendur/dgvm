@@ -1,0 +1,33 @@
+person: BAU_230_Stan, 3
+
+info: Exit
+
+info: yourFarm
+>Ist das dein Hof?
+<Ganz richtig. Also pass auf, dass du dich benimmst.
+
+info: canBuySth
+conddia: yourFarm
+>Kann ich bei dir was kaufen?
+<Frag mal Ron. Er ist mein Lagerverwalter.
+<Vielleicht haben wir noch was übrig.
+
+info: bandits
+condcode: milPhase == 1
+>Du hast Probleme mit Banditen?
+<Diese verfluchten Idioten wollen meinen Hof verwüsten.
+<Sie haben schon ein paar Schafe geschlachtet, als wir vom Hof geflohen sind.
+>Sollen wir uns drum kümmern?
+<Ja, verdammt! Wofür seid ihr Stadtwachen denn da?
+<Sorg dafür, dass sie von meinem Hof verschwinden.
+
+info: banditsDead
+conddia: bandits
+condcode: Npc_IsDead(BDT_1009_Bandit_L)
+condcode: Npc_IsDead(BDT_1010_Bandit_L)
+condcode: Npc_IsDead(BDT_1011_Bandit_M)
+>Die Banditen sind tot!
+<Wirklich? Das ist gut.
+<Dann können wir endlich weiterarbeiten!
+<Wenn du irgendwas brauchst, komm zu uns. Wir haben immer etwas im Angebot!
+!setMilPhaseBack(1);

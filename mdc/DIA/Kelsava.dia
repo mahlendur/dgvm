@@ -1,0 +1,27 @@
+person: KDF_1409_Kelsava, 3
+
+info: Exit
+
+info: heyYou
+>Wer bist du?
+<Mein Name ist Kelsava, Magier des Eises und Meister der Runen.
+<Was kann ich für dich tun?
+
+info: teachLightRune
+conddia: KDF_1404_Uysal, teachRune
+>Uysal schickt mich.
+>Er sagt, du kannst mir einen Runenstein geben.
+<Soso, einen Runenstein? Wofür brauchst du denn einen?
+>Ich soll eine Lichtrune herstellen.
+<Weißt du denn auch, welche Elemente du noch brauchst?
+>Einige Goldstücke.
+<Sehr gut. Dann nimm diesen Runenstein.
+<<ItMi_RuneBlank, 1
+<Leg ihn zusammen mit dem Gold in den Runentisch. Die Essenz wird dann in den Stein übergehen.
+
+info: gotRune
+conditem: ItRu_Light, 1
+>Ich habe die Rune hergestellt!
+<Sehr gut! Dann geh direkt zu Uysal zurück! Er wird dir dann weitere Runen beibringen.
+$EXP 150
+

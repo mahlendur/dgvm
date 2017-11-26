@@ -1,0 +1,56 @@
+person: BAU_202_Joffrey, 6
+
+info: Exit
+
+info: getLost
+flags: important
+<Hey! Pass doch auf wo du langlatschst.
+<Du zertrampelst das ganze Gras und den Klee.
+
+info: youreDumb
+conddia: getLost
+>Du bist ja ein ganz Großer...
+<Machst du dich über mich lustig?
+<Ich bin der Sohn eines großen Bauern..!
+>Wenn du wüsstest, was das bedeutet, wo ich herkomme...
+<Was meinst du?
+>Ach nichts, schon gut...
+
+info: yourSheep
+conddia: getLost
+>Werden deine Schafe von Wölfen gerissen?
+<Ja, seit einigen Tagen fehlt morgens immer mal wieder ein Schaf.
+<Mein Vater ist gar nicht begeistert...
+>Rodar ist dein Vater?
+<Wundert dich das?
+>Mich wundert nur, dass du dann die Schafe bewachst.
+$IF Npc_KnowsInfo(hero, BAU_202_Joffrey_youreDumb)
+>Der Sohn des Großen Bauern scheint ja selber kein Großer Wurf zu sein...
+<Pass auf, was du von dir gibst, sonst...
+>Sagst du es deinem Vater?
+<Ich....
+>Vergessen wirs!
+$ENDIF
+
+info: knowAny
+conddia: yourSheep
+>Hast du eine Idee, wo die Wölfe herkommen?
+<Ich habe sie noch nicht gesehen, aber ich glaube manchmal ein Heulen zu hören.
+<Es kommt von den Felswänden dort hinten!
+>Dann werde ich dort wohl mal nachsehen müssen.
+$LOGMISS pestControl, Joffrey, der große Bauer, sagte, er höre immer wieder ein Heulen von den Felswänden zu ihm schallen. Vielleicht finde ich dort die gesuchen Wölfe. Oder es ist sein eigenes...
+
+info: wolfDead
+conddia: yourSheep
+condcode: NPC_IsDead(HofWolf1) == TRUE
+condcode: Npc_IsDead(HofWolf2) == TRUE
+condcode: Npc_IsDead(HofWolf3) == TRUE
+>Die Wölfe sind tot.
+<Du meinst, du hast die Monster beseitigt?
+>Monster? Es waren zwei junge Tiere dabei.
+>Wahrscheinlich hatten sie alle nur Hunger.
+>Ich meine, was würdest du tun, wenn dir deine Nahrung weggenommen wird?
+<(überzeugt) Ich würde sie mir zurückholen!
+>Na, hoffen wir, dass es niemals dazu kommt.
+$EXP 100
+

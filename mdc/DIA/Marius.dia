@@ -1,0 +1,50 @@
+person: KDF_1401_Marius, 3
+
+info: Exit
+
+info: greetingsMage
+>Grüße, ehrwürdiger Magier!
+<Ich grüße dich auch.
+<Mein Name ist Marius, ich bin ein Magier des Eises.
+<Was kann ich für dich tun?
+
+info: canLearnMage
+conddia: greetingsMage
+>Kann jeder die Kunst der Magie erlernen?
+<Jeder Mensch ist fähig, Magie zu wirken. Die einen mehr, die anderen weniger.
+<Während der Zeit im Kloster als Novize prüfen wir jeden einzelnen auf seine magischen Fähigkeiten.
+<Nur die jenigen, mit dem ausgeprägtesten magischen Verständnis erhalten einmal die Möglichkeit, die Robe eines Magiers anzulegen.
+<Nicht selten bleibt ein Mann Zeit seines Lebens Novize. Aber bei dir...
+<(grübelt) ...ich weiß nicht, ich spüre eine starke Kraft in dir. Aber sie ist nicht gezügelt.
+$IF Npc_GetTrueGuild(hero) == GIL_NONE || Npc_GetTrueGuild(hero) == GIL_VLK
+<Ich glaube, du wärst als Magier geeignet.
+$ENDIF
+
+
+info: canBeNovice
+conddia: canLearnMage
+condcode: kapitel == 1
+>Heißt das, ich könnte bei euch aufgenommen werden?
+<Du hast einen starken Geist und viel Macht.
+<Macht, die in die richtigen Bahnen gelenkt werden muss, bevor sie Unheil anrichtet.
+<Ja, ich denke, du wärst bei uns gut aufgehoben.
+<Wenn du willst, schicke ich dich zum Kloster.
+
+info: goMonastery
+conddia: canBeNovice
+>Schick' mich zum Kloster!
+<In Ordnung. Ich kann dich leider nicht begleiten, da ich durch meine Aufgaben an die Stadt gebunden bin.
+<<ItWr_Map_Monastery, 1
+<Aber ich gebe dir eine Karte mit. Hier ist das Kloster eingezeichnet. Du wirst den Weg finden, da bin ich mir sicher.
+<Auf dem halben Weg etwa findest du die Taverne 'Zum alten Scavenger'. Dort kannst du rasten.
+<Wenn du am Kloster ankommst, gib dem Novizen vor dem Tor diesen Brief. Er wird dich einlassen.
+<<ItWr_MariusMessage_Sealed, 1
+>Muss ich keinen Tribut bezahlen?
+<Was für einen Tribut?
+>Ich hörte von 1000 Gold und einem Schaf.
+<Ich weiß nicht, warum sich dieses Gerücht derart hartnäckig hält.
+<Nein, wir fordern keinen Tribut. Wer zu uns ins Kloster kommt, der tut das aus Überzeugung, nicht aus Zwang.
+<Diese Hingabe reicht uns. Mehr brauchen wir nicht.
+<Und nun geh! Lass den hohen Rat nicht warten!
+$LOGMISS newLife, Marius, der Eismagier hat mich ins Kloster geschickt. Er sagte, er spüre eine große Macht in mir. Er gab eine Karte, auf der das Kloster eingezeichnet ist und einen Brief, der mir Zutritt verschaffen soll.
+

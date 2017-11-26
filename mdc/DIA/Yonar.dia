@@ -1,0 +1,135 @@
+person: MIL_2105_Yonar, 3
+
+!var int yonarTrade;
+!var int yonarGold;
+!var int yonarWork;
+
+info: Exit
+
+info: youSmith
+>Du bist Schmied?
+<Sehr gut erkannt, Fuchs.
+>Warum hat die Miliz einen eigenen Schmied, wenn es schon welche in der Stadt gibt?
+<Weil wir Waffen brauchen. Viele Waffen. Wenn wir die bei den städtischen Schmieden kaufen, müssen wir bezahlen.
+<Und das wird teuer. Also produzieren wir selber, das ist für alle einfacher.
+
+info: youTrade
+conddia: youSmith
+>Verkaufst du auch Waffen?
+<Kommt darauf an... Was bietest du mir im Gegenzug an?
+%
+opt: shouldIKill
+>Wen soll ich töten?
+<Um Himmels Willen! Bist du wahnsinnig?
+<Tut mir leid, aber ich habe kein gutes Gewissen dabei, dir Waffen zu verkaufen.
+<Natürlich werden sie zum Töten benutzt, aber ich gehe immer von Verteidigung aus. Nie von mutwilligem Angriff.
+%%
+
+opt: whatYouWant
+>Was wäre denn in deinem Interesse?
+<Oh, das ist die richtige Frage...
+<Du könntest tatsächlich etwas für mich tun.
+!yonarWork = TRUE;
+%%
+
+opt: howManyGold
+>Wäre Gold für dich von Interesse?
+<Gold klingt immer gut, mein Freund.
+<Sagen wir, für... (überlegt) ...500 Gold kommen wir ins Geschäft!
+%%
+
+info: tradeGold
+condcode: yonarGold == TRUE
+conditem: ItMi_Gold, 500
+>Hier sind deine 500 Gold!
+>>ItMi_Gold, 500
+<Sehr gut. Sieh dich in Ruhe um, du findest bestimmt etwas von Interesse.
+!yonarTrade = TRUE;
+
+info: tradeWork
+condcode: yonarWork == TRUE
+>Was kann ich für dich tun?
+<Die Aufgabe ist etwas heikel.
+>Heikel ist mein Spezialgebiet.
+<Sehr gut. Hür zu: Wir haben hier ein Problem mit Dieben.
+>Diebe? In der Kaserne?
+<Verspotte uns nicht. Der Dieb ist sehr geschickt, wahrscheinlich hat er Kontakte zur Stadtwache.
+<Egal, wie wir unsere Wachschichten anpassen, in einem unbemerkten Moment verschafft sich der Dieb Zutritt zur Schmiede und klaut unsere Waffen.
+<Es ist nicht viel, aber zu viel, um auch noch Waffenhandel unter der Hand zu verschleiern.
+<Der Dieb muss gefasst werden! Du bist neu, unbekannt. Du bist genau der richtige Mann!
+<Finde den Dieb und ich werde dir mit Vergnügen meine Waffen verkaufen.
+$STARTMIS weaponThief
+$LOGMISS weaponThief, Yonar, der Schmied in der Kaserne ist bereit, mir seine Waffen zu verkaufen. Allerdings soll ich dafür etwas für ihn erledigen. Seit geraumer Zeit verschwinden Waffen in der Kaserne, Yonar vermutet dahinter einen Dieb. Ich soll den Dieb stellen. Er kommt in der Nacht, zwischen den Wachwechseln. Vielleicht sollte ich mich in der Schmiede auf die Lauer legen.
+
+info: eponaRose
+conddia: youSmith
+condcode: MIS_newLife == LOG_RUNNING
+>Eine Rose für Epona!
+<Was?
+<Willst du Rosen kaufen? Dann bist du in der Schmiede an der falschen Adresse mein Freund.
+!rosecounter += 1;
+
+info: foundThief1
+condcode: albrarChoice == 2
+>Ich habe den Dieb gestellt!
+<Ach? Und? Welcher Schweinehund bestiehlt mich ständig?
+>Es ist der Waffenhändler Albrar. Er schlich hier durch die Kaserne und machte sich an den Waffenkisten zu schaffen.
+<Hat er den Diebstahl gestanden?
+>Hat er.
+<Gut, ich werde ihn mir vorknöpfen.
+<Vielen Dank für deine Hilfe!
+<Hier hast du etwas für deine Mühen.
+<<ItMi_Gold, 200
+$EXP 250
+<Und natürlich steht dir jetzt mein Warenangebot zur Verfügung!
+!Npc_ExchangeRoutine(VLK_3007_Albrar, "TOT");
+!yonarTrade = TRUE;
+$MISSUCC weaponThief
+$LOGMISS weaponThief, Ich habe Yonar von Albrar berichtet. Er schien erleichtert, dass der Dieb nun endlich überführt ist. Yonar verkauft mir ab sofort seine Waffen.
+
+info: foundThief2
+condcode: albrarChoice == 1
+>Ich habe den Dieb gestellt!
+<Ach? Und? Welcher Schweinehund bestiehlt mich ständig?
+>Es ist der Waffenhändler Albrar. Er schlich hier durch die Kaserne und machte sich an den Waffenkisten zu schaffen.
+<Hat er den Diebstahl gestanden?
+>Hat er.
+<Gut, ich werde ihn mir vorknöpfen.
+>Das wird wahrscheinlich nicht möglich sein.
+<Was? Wieso das denn?
+>Ich habe ihn laufen gelassen und ihm empfohlen aus der Stadt zu verschwinden.
+>Er wird dir keinen Ärger mehr machen.
+<Das hoffe ich für dich.
+<Gut, wie auch immer. Du hast den Dieb überführt, du sollst belohnt werden.
+<<ItMi_Gold, 50
+$EXP 250
+<Auch wenn es nicht so ausgegangen ist, wie ich es mir erhofft habe, werde ich trotzdem mit dir handeln.
+!yonarTrade = TRUE;
+$MISSUCC weaponThief
+$LOGMISS weaponThief, Ich habe Yonar von Albrar berichtet. Er war nicht erfreut, dass ich ihn habe laufen lassen, aber er wird mir trotzdem seine Waffen verkaufen.
+
+info: foundThief3
+conddia: MIL_2102_Volmar, wannaTellThief
+>Ich habe den Dieb gestellt!
+<Ach? Und? Welcher Schweinehund bestiehlt mich ständig?
+>Es ist der Waffenhändler Albrar. Er schlich hier durch die Kaserne und machte sich an den Waffenkisten zu schaffen.
+<Hat er den Diebstahl gestanden?
+>Hat er.
+<Gut, ich werde ihn mir vorknöpfen.
+>Brauchst du nicht. Ich habe den Vorfall bereits an Kommandant Volmar gemeldet.
+<Wirklich? Sehr gut. Dann brauche ich mir keine Sorgen zu machen.
+<Hier, eine kleine Entschädigung für deine Mühen.
+<<ItMi_Gold, 100
+$EXP 250
+<Und natürlich steht dir jetzt mein Warenangebot zur Verfügung!
+!yonarTrade = TRUE;
+$MISSUCC weaponThief
+$LOGMISS weaponThief, Ich habe Yonar von Albrar berichtet. Er war erfreut, dass Kommandant Volmar bereits Maßnahmen ergriffen hat und wird ab sofort mit mit handeln.
+
+info: letsTrade
+flags: permanent, trade
+condcode: yonarTrade == TRUE
+Num: 998
+>Zeig mir deine Waffen!
+
+

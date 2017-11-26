@@ -1,0 +1,55 @@
+person: MIL_338_Marril, 12
+
+info: Exit
+
+info: youMarril
+>Wer bist du?
+<Ich bin Marril. Soldat des Königs und...
+<Ach, lassen wir den Scheiß!
+
+info: whatsGoingOn
+conddia: youMarril
+>Was ist los?
+<Es gibt einfach nichts zu tun.
+<Seit einer Woche bin ich nicht mehr für den Wachdienst in der Stadt eingeteilt und auch sonst ist alles ruhig.
+<Nicht einmal die Söldner trauen sich mehr in unsere Nähe.
+
+info: getUp
+conddia: MIL_2102_Volmar, whatToDo
+>Steh auf, es gibt Arbeit!
+<Ach, wirklich? Was ist es diesmal? Ratten?
+>Banditen. Also, komm mit!
+<Und warum sollte ich auf deinen Befehl hören? Ich bin dir im Rang höhergestellt!
+%
+
+opt: volmarToldSo
+>Weil der Befehl von Volmar stammt!
+<So? Na, dann habe ich wohl keine Wahl.
+<Du gehst vor!
+$END
+!Npc_ExchangeRoutine	(self,"FOLLOW");
+!self.aivar[AIV_PARTYMEMBER] = TRUE;
+%%
+
+opt: iTellYou
+>Steh auf, sonst mach ich dir Beine!
+<Na, das wollen wir ja mal sehen.
+#Angreifen lassen!
+$END
+%%
+
+opt: iGoAlone
+>Dann geh ich halt alleine.
+>Ich dachte, du würdest dich langweilen?
+<So sehr auch wieder nicht, dass ich von jedem dahergelaufenen Befehle entgegennehme.
+%%
+
+info: goBack
+conddia: getUp
+condcode: self.aivar[AIV_PARTYMEMBER] == TRUE
+>Lauf zurück!
+<Schön. Aber glaub nicht, dass ich nochmal mit dir losgehe!
+!Npc_ExchangeRoutine(self, "START");
+!self.aivar[AIV_PARTYMEMBER] = FALSE;
+$END
+

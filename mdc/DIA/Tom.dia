@@ -1,0 +1,35 @@
+person: VLK_3006_Tom, 4
+
+info: Exit
+
+info: youHunter
+>Ihr seid Jäger?
+<(sarkastisch) Sehr gut erkannt! Ich glaube, wir sollten etwas an unserem Auftreten ändern...
+
+info: gotPackage
+conddia: VLK_413_Rupert, whatCanIDo
+>Rupert schickt mich!
+>Ich habe hier ein Paket für euch.
+<Sehr gut. Das klingt nach Nachschub.
+>>ItMi_BreadPaket, 1
+>Rupert fragt, wie es aussieht?
+<Sag ihm, wir hatten bisher wenig Glück.
+<Uns sind erst ein paar Scavenger und ein Wolf vor den Bogen gelaufen.
+<Die Piraten schießen uns fast jegliche Beute weg.
+<Wir werden morgen ein wenig tiefer in die Wälder gehen und im Zweifelsfall unser Lager verlegen.
+<Sollte es soweit kommen, werden wir ihm aber rechtzeitig Bescheid geben.
+>In Ordnung. Sonst noch etwas?
+<Ja. Sag ihm, wenn er uns noch einmal in ein Gebiet mit Geistern schickt, dann kann er seinen Scheiß allein machen!
+$LOGMISS workRupert, Tom der Jäger hat das Paket 'dankend' angenommen. Er lässt ausrichten, dass sie bisher, dank der Piraten keinen Jagderfolg hatten. Desweiteren soll ich Rupert sagen, dass sie keine Lust auf Untote und Geister haben.
+
+info: canYouTeach
+conddia: youHunter
+>Kannst du mir etwas beibringen?
+<Du meinst, mit dem Bogen zu schießen, oder Felle zu nehmen?
+>An so etwas hatte ich gedacht, ja.
+<Ich nicht, dafür habe ich keine Zeit und vor allem kein Talent.
+<Aber frag mal Matt, der kann dir bestimmt ein paar Tipps für den Bogen geben.
+$LOGNOTE OutTeacher, Matt der Jäger kann mir helfen, besser mit dem Bogen umzugehen. Er befindet sich im Jägerlager außerhalb der Stadt.
+
+
+

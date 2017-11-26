@@ -1,0 +1,44 @@
+person: PIR_1305_Steve, 1
+
+info: Exit
+
+info: whatYouDoing
+condcode: Wld_IsTime(08,00,16,00)
+>Was machst du gerade?
+<Siehst du das nicht?
+<Verdammt nochmal, bist du blind?
+<Ich säge Holz! Den ganzen langen Tag säge ich gottverdammtes Holz!
+<Jetzt muss nur noch irgendjemand das alles zu Brennholz verarbeiten.
+<DEN Scheiß mache ich garantiert nicht auch noch!
+
+info: letMeHack
+condcode: kapitel >= 2
+conddia: whatYouDoing
+>Kann ich dir irgendwie helfen?
+<Was denkst du denn? Schonmal versucht zu zweit an einem Stamm zu sägen?
+<Aber du könntest das Holz kleinhacken.
+<Ich hab schon einiges da hinten gestapelt. Hier, bring mir 15 Holzscheite und dann sehen wir weiter!
+<So, und jetzt fang an!
+$STARTMIS woodChopping
+$LOGMISS woodChopping, Steve hat mir aufgetragen, 15 Holzscheite zu hacken. Vielleicht ist er dann nicht mehr so mies gelaunt.
+$END
+
+info: gotWood
+conddia: letMeHack
+conditem: ItMi_Holzscheit, 15
+>Ich hab dein Holz!
+<Echt? Mann, gute Arbeit! Gib her!
+>Hier!
+>>ItMi_Holzscheit, 15
+<Sehr gut. Das wird die Feuer in der nächsten Zeit warmhalten.
+<Hier, du hast dir ein bisschen Gold verdient.
+<<ItMi_Gold, 50
+$EXP 200
+$LOGMISS woodChopping, Steve hat sein Feuerholz bekommen.
+$MISSUCC woodChopping
+
+info: whereToGetAxe
+conddia: letMeHack
+>Woher bekomme ich eine Axt?
+<Sieh dich um! Irgendwo liegt bestimmt noch eine rum.
+<Aber nimm nichts zu Großes. Etwas handliches und dann ab dafür!

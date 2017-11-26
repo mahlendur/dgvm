@@ -1,0 +1,184 @@
+person: VLK_413_Rupert, 2
+
+!var int gotRuestung;
+!var int talkedOnceMika;
+
+info: Exit
+
+info: startDialog
+flags: important
+<Willkommen in der 'gespannten Sehne'!
+<Suchst du einen Bogen, Felle oder eine neue Rüstung?
+<Dann bist du hier genau richtig!
+
+info: startDialog2
+conddia: startDialog
+>Stellst du deine Rüstungen selber her?
+<Ganz recht! Nur so erhalten sie ihre erstklassige Qualität.
+<Übrigens, mein Name ist Rupert.
+
+info: gotMikaHose
+conddia: VLK_3005_Mika, shallIGo
+condcode: gotRuestung == FALSE
+flags: permanent
+>Ich soll für Mika eine Rüstung abholen.
+$IF talkedOnceMika == FALSE
+<Ja, der gute Mika. War schon immer ein Draufgänger. Gott weiß, was er schon wieder angestellt hat.
+<So oft, wie ich seine Klamotten wieder zusammengeflickt habe, wundert es mich, dass er noch lebt.
+<Was war es denn diesmal?
+>Er sprach von einem Rudel Wölfe.
+<Das sieht ihm ähnlich... (lacht)
+<Und du sollst seine Rüstung abholen?
+>Ja, er selbst kommt nicht aus der Mine weg. Ich habe angeboten, das gute Stück abzuholen.
+<Sehr löblich. Vorher bekomme ich allerdings noch 150 Goldstücke für die Reparatur.
+!talkedOnceMika = TRUE;
+$ELSE
+<Ich bekomme immernoch 150 Gold dafür!
+$ENDIF
+$IF Npc_HasItems(other, ItMi_Gold) >= 150
+>Hier hast du das Gold!
+>>ItMi_Gold, 150
+<In Ordnung. Hier ist die reparierte Rüstung.
+<<ItAr_Mika, 1
+<Bring sie ihm schnell, bevor er sich mit schlimmerem als dem Erz anlegt! (lacht)
+!gotRuestung = TRUE;
+$LOGMISS mikaHose, Ich habe die Rüstung von Rupert bekommen. Ist ja schon ein schickes Teil. Ich sollte sie Mika bringen.
+$ELSE
+>Soviel habe ich nicht dabei!
+<Dann besorg das Gold. Danach bekommst du die Rüstung!
+$ENDIF
+
+info: wannaLearn
+conddia: startDialog
+condcode: jobCounter <= 1
+>Kann ich bei dir etwas lernen?
+<Taugst du denn etwas?
+>Öhm...
+<(lacht) Keine Sorge, nur ein Scherz.
+<Wenn du schon ausgebildet wärst, müsstest du nichts lernen.
+<Interessiert du dich denn für die Kürschnerei oder die Lederverarbeitung?
+>Auf jeden Fall!
+<Gut, dann arbeite für mich.
+<Wenn du das zu meiner Zufriedenheit schaffst, kannst du bei mir ein Handwerk erlernen!
+
+info: whatCanIDo
+conddia: wannaLearn
+>Was hast du für mich zu tun?
+<Ich erwarte eine Nachricht von meinen Jägern.
+<Außerdem habe ich hier ein Paket mit Brot für sie.
+<Bring es ihnen und mir die Neuigkeiten, dann sehen wir weiter!
+<<ItMi_BreadPaket, 1
+>Bin gleich wieder da!
+$STARTMIS workRupert
+$LOGMISS workRupert, Um bei Rupert als Lehrling anfangen zu können, soll ich für ihn arbeiten. Er hat mir ein Paket mit Brot für seine Jäger gegeben, im Austausch sollen sie mir Informatioenn für ihn geben.
+
+info: whereHunter
+conddia: whatCanIDo
+condcode: MIS_workRupert == LOG_RUNNING
+>Wo finde ich deine Jäger?
+<Sie haben ihr Lager direkt außerhalb der Stadt aufgeschlagen.
+<Wenn du aus dem Tor auf der anderen Seite der Stadt hinausgehst, halte dich links. Nach einigen Metern gabelt sich der Weg.
+<Biege nun scharf rechts ab. Pass auf, dass du auch wirklich rechts herum gehst! Gehst du nach links, läufst du direkt den Piraten in die Arme!
+<Noch ein Stückchen den Weg hinauf und du kannst das Lager nicht mehr verfehlen!
+$LOGMISS workRupert, Das Jägerlager liegt auf einem Berg vor der Stadt. Einfach in Richtung Leuchtturm und dann scharf rechts. Gehe ich nach links, komme ich zu den Piraten. Interessant...
+
+info: gotInfos
+conddia: VLK_3006_Tom, gotPackage
+>Ich habe dein Paket überbracht!
+<Und?
+>Tom lässt ausrichten, dass sie bisher keinen Erfolg hatten. Die Piraten nehmen ihnen jegliche Beute.
+<Verdammte Hunde.
+>Außerdem sagte er, dass du, wenn du sie noch einmal in ein Geister-Gebiet schickst, den Scheiß selber machen kannst.
+<Hat er das so gesagt?
+>Wörtlich.
+<Dann will ich ihm glauben. Zwar weiß ich nicht, wo er auf Geistern treffen sollte, aber gut. Wenn du ihn das nächste Mal siehst, sag ihm, es tue mir leid.
+<Ich weiß nichts von Geistern auf der Insel.
+<Danke für deine Mühen. Wenn du immer noch Interesse hast, kann ich dich ausbilden!
+$MISSUCC workRupert
+$LOGMISS workRupert, Ich habe Rupert die Nachrichten der Jäger überbracht. Er war zufrieden mit mir und gibt mir die Möglichkeit, mich ausbilden zu lassen.
+$EXP 250
+
+info: wannaLearnKuerschner
+conddia: gotInfos
+condcode: jobCounter <= 1
+condcode: learnedKuerschner == FALSE
+>Bilde mich zum Kürschner aus! (5 LP)
+<Bist du dir sicher?
+<Du kannst immer nur zwei Berufe erlernen!
+%
+opt: noKuerschner
+>Ich brauche noch Bedenkzeit!
+<Gut, ich bin hier, falls du mich suchst.
+%%
+opt: yesKuerschner
+>Ja, ich will lernen!
+$IF other.LP >= 5
+<In Ordnung. Als erstes benötigst du ein entsprechendes Messer.
+<Achte darauf, dass es scharf ist, sonst zerstörst du die Felle!
+<Schneide am äußeren Rand entlang, vorsichtig und immer in der Form.
+<Mit genügend Übung bekommst du schöne Felle und Häute.
+<Halte dich am Anfang an kleinere Tiere wie Wölfe und Scavenger, die sind am einfachsten.
+!learnedKuerschner = TRUE;
+!kuerschnerSkill = 1;
+!jobCounter += 1;
+!AI_PrintS(self, "Neuer Beruf: Kürschnerei!");
+!other.lp = other.lp - 5;
+$LOGNOTE Kuerschnerei, Ich habe die Kürschnerei erlernt. Jetzt kann ich Wölfen das Fell und Scavengern die Haut abziehen.
+$IF MIS_getCitizen == LOG_RUNNING
+$MISSUCC getCitizen
+$LOGMISS getCitizen, Rupert hat mich als Lehrling aufgenommen und mir die Kürschnerei beigebracht. Jetzt kann ich mich Bürger der Stadt Mahlendur nennen!
+$ENDIF
+$ELSE
+<Das freut mich, aber du bist noch nicht soweit!
+<Komm wieder, wenn du erfahrener bist!
+$ENDIF
+
+info: wannaLearnLeather
+conddia: gotInfos
+condcode: jobCounter <= 1
+condcode: learnedLeather == FALSE
+>Bilde mich zum Lederverarbeiter aus! (5 LP)
+<Bist du dir sicher?
+<Du kannst immer nur zwei Berufe erlernen!
+%
+opt: noLeather
+>Ich bin mir noch nicht sicher.
+<Gut, ich bin hier, falls du mich suchst.
+%%
+opt: yesKuerschner
+>Ja, ich bin mir sicher!
+$IF other.LP >= 5
+<In Ordnung. Wenn du schon einmal Stoff genäht hast, hast du einen Vorteil.
+<Mit Leder und Fellen ist es ganz ähnlich. Nur ist das Material dicker.
+<Häute hingegen sind meistens sehr viel dünner. Sei also vorsichtig.
+<Wähle dein Werkzeug anhand deines Materials. Für Felle nimmst du eine dicke Nadel und starken Faden.
+<Für Häute brauchst du dünne Nadeln, aber trotzdem stabile Fäden.
+<Wenn du dann noch eine Vorlage hast, steht deiner ersten Rüstung nichts mehr im Wege!
+<Versuch es einmal!
+!learnedLeather = TRUE;
+!leatherSkill = 1;
+!jobCounter += 1;
+!AI_PrintS(self, "Neuer Beruf: Lederverarbeitung!");
+!other.lp = other.lp - 5;
+$LOGNOTE Kuerschnerei, Ich habe die Kürschnerei erlernt. Jetzt kann ich die ersten Häute und Felle weiterverarbeiten..
+$IF MIS_getCitizen == LOG_RUNNING
+$MISSUCC getCitizen
+$LOGMISS getCitizen, Rupert hat mich als Lehrling aufgenommen und mir die Lederverarbeitung beigebracht. Jetzt kann ich mich Bürger der Stadt Mahlendur nennen!
+$ENDIF
+$ELSE
+<Ich fürchte, das wird so nichts.
+<Komm wieder, wenn du mehr Erfahrung hast!
+$ENDIF
+
+info: letsTrade
+>Handelst du mit mir?
+<Natürlich. Ich werde dir deine Felle, Krallen und andere Jagdtrophäen abkaufen.
+
+info: letsTrade2
+flags: permanent, trade
+num: 998
+conddia: letsTrade
+!B_GiveTradeInv(self);
+>Zeig mir deine Ware!
+
+

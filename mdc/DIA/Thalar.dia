@@ -1,0 +1,24 @@
+person: MIL_2106_Thalar, 1
+
+info: Exit
+
+info: youTrain
+>Trainierst du die Stadtwache?
+<Sieht so aus, nicht?
+<Was kann ich für dich tun?
+
+info: trainMe
+conddia: youTrain
+>Kannst du mir etwas beibringen?
+<Wie du schon selbst erkannt hast, trainiere ich die Stadtwache.
+<Solange du kein Mitglied bist, werde ich dir nichts beibringen.
+<Danach kannst du bei mir deine Fähigkeiten im Einhand und Zweihandkampf verbessern.
+
+info:tellRosie
+condcode: MIS_newInfos == LOG_RUNNING
+>Eine Rose für Epona!
+<Oho, gibt es ein neues Mädchen in der 'Roten Laterne'?
+<Ich glaub, ich muss dem Laden mal wieder einen Besuch abstatten (lacht)
+<Danke für die Info!
+!roseCounter += 1;
+

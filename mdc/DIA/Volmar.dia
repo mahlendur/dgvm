@@ -1,0 +1,294 @@
+person: MIL_2102_Volmar, 7
+
+!var int talkedToHero;
+
+info: Ende
+flags: permanent
+Num: 999
+desc: ENDE
+$IF talkedToHero == FALSE
+<Pass auf dich auf!
+!IntroduceChapter (KapWechsel_1,KapWechsel_1_Text,"Chapter1_Mah.tga","chapterchange.wav", 6000);
+!talkedToHero = TRUE;
+$ENDIF
+$END
+
+info: whoAreYou
+conddia: MIL_2101_Hafenwache, youPirate
+flags: important
+<Soso, ein Pirat.
+<Normalerweise machen wir ja kurzen Prozess mit euch...
+>Kommandant, bitte haltet ein!
+>Ich bin kein Pirat!
+<Du glaubst gar nicht, wie oft ich das schon gehört habe.
+>Aber ich sage die Wahrheit, Kommandant. Ich bin... oder vielmehr war Soldat auf einem königlichen Kriegsschiff.
+<Und das soll ich dir glauben?
+>Ãœberzeugt euch dieser Ring?
+!AI_PlayAni(hero, "T_GREETLEFT");
+<Ein Siegelring der Marine. Den kannst du nirgendwo gefunden haben
+<Gut, ich will dir glauben. Aber sag mir:
+<Warum bist du hier und nicht auf deinem Schiff?
+
+info: orcAttack
+conddia: whoAreYou
+>Wir wurden auf hoher See von Orks angegriffen.
+<Von Orks?
+>Ja, von Orks. Ich weiß nicht, wann sie gelernt haben, Schiffe zu bauen, oder zur See zu fahren, aber mit Kanonen können sie umgehen.
+>Sie nutzten eine Nebelbank. Wir gerieten hinein und plötzlich eröffneten sie das Feuer.
+>Es dauerte keine zwei Minuten, dann brannte unser Schiff lichterloh. Wir versuchten uns in die Nussschalen zu retten, doch auch diese wurden versenkt.
+>Ich habe mein Glück außerhalb der Boote gesucht. Mit einer Planke als Hilfsmittel versuchte ich wegzuschwimen, so schnell ich konnte.
+>Scheinbar habe ich Glück gehabt, auch wenn ich vor Erschöpfung irgendwann eingeschlafen bin.
+<Da hast du wirklich Glück gehabt. Jetzt bist du hier.
+
+info: andNow
+conddia: orcAttack
+>Was mache ich jetzt?
+<Das ist eine gute Frage.
+<Ohne Zweifel bist du gut ausgebildet, aber ich kann dich hier nicht einfach in die Stadtwache aufnehmen.
+<Und es wird noch einige Zeit dauern, bis wieder ein Schiff zum Festland ablegt.
+<Du wirst wohl erst einmal hier bleiben müssen.
+<Am Besten ist es, du baust dir ein neues Leben auf.
+$STARTMIS newLife
+$LOGMISS newLife, An den Strand gespült, für einen Piraten gehalten und jetzt ohne Zukunft. Der Kommandant der Stadtwache sagte mir, ich solle mir ein neues Leben aufbauen. Als ob das so einfach wäre.
+
+info: myOptions
+conddia: andNow
+>Welche Möglichkeiten habe ich denn?
+<Ich empfehle dir, dich einer der Gruppierungen auf der Insel anzuschließen.
+<Leider kommst du zu einer sehr ungemütlichen Zeit.
+>Was ist denn los?
+<Wir haben hier allerhand Probleme. Seit wir auf die Insel gekommen sind, geht es immer weiter bergab.
+<Im Minental probten die Gefangenen den Aufstand. Wir mussten den Pass verriegeln, um unsere eigene Haut zu retten. Leider ist nun der Zugang zu den großen Erzvorkommen abgeschnitten.
+<Seitdem versuchen wir auf der Insel die letzten Adern auszuschöpfen.
+<Allerdings gibt es Menschen, die uns mit aller Macht daran hindern wollen.
+
+info: whichGroups
+conddia: myOptions
+>Welche Menschen sind das?
+<Zuerst einmal unser derzeit größtes Problem.
+<Wenn du die Stadt verlässt und dich nördlich hälst, kommst du irgendwann zu einem Leuchtturm. Dort und in der Bucht darunter haben sich Piraten eingenistet.
+<Sie machen uns das Leben schwer, versenken Fischerboote und tauchen in  der Stadt auf und beklauen jeden, der irgendetwas dabei hat.
+<Aber ihre Bucht ist gut geschützt und ich habe zu wenig Männer um sie frontal anzugreifen.
+<Dazu kommt noch das Problem mit den Bauern.
+>Mit den Bauern? Was können Bauern denn für Probleme bereiten?
+<Die Bauern weniger, mehr ihre Aufpasser.
+<Natürlich muss die Stadt versorgt werden und in einer Kriegszeit muss sie stärker versorgt werden als sonst.
+<Der Großbauer, dem zwei kleinere Höfe angeschlossen sind, will das aber nicht hinnehmen und hat einige Söldner um sich geschart.
+<Seitdem zahlt er keine Abgaben mehr. Und schon einige meienr Männer haben bei dem Versuch die Abgaben zu erzwingen ihr Leben verloren.
+<Im Süden der Insel ist es fast noch gefährlicher. Dort haben sich einige Schwarzmagier häuslich eingerichtet.
+<Sie überfallen die Bauernhöfe in der Nähe der Stadt und ihr Turm ist für meine Stadtwache nicht einzunehmen.
+<Als Einzige sind noch die Eismagier in ihrem Kloster im Norden auf unserer Seite.
+<Aber auch sie haben viel zu tun. Denn sie sehen sich immer wieder Angriffen der Schwarzmagier ausgesetzt.
+<Wie du siehst, ist es hier nicht ruhig und schon gar nicht friedlich.
+<Wie gesagt, ich empfehle dir Folgendes:
+<Schließe dich einer der Fraktionen an. Aber achte darauf, dass du nicht auf die schiefe Bahn gerätst.
+<Ich gebe dir eine Karte mit, dann findest du dich besser zurecht.
+<<ItWr_Map_NewWorld, 1
+$LOGMISS newLife, Volmar erzählte mir von den verschiedenen Gruppen auf der Insel. Laut ihm existiert ein Piratennest, eine Söldnertruppe und zwei Magierzirkel. Achja, und seine Stadtwache nicht zu vergessen. Ich glaube, ich sollte allen mal einen Besuch abstatten.
+
+info: canGetWeapon
+conddia: andNow
+>Bekomme ich irgendwoher eine Waffe?
+<Ich kann dir keine geben. Wenn du etwas Gold hast, kannst du bestimmt am Marktplatz etwas finden.
+<Ansonsten... Schau mal in der Nähe der Waffenkammer, vielleicht liegt da noch ein altes Schwert.
+<Für den Anfang sollte das ja reichen.
+
+info: howMiliz
+conddia: whichGroups
+>Kann ich Mitglied der Stadtwache werden?
+<Natürlich, gute Soldaten können wir immer brauchen! Aber es ist nicht ganz so einfach.
+>Wieso nicht? Ich war...
+<...Soldat in der königlichen Flotte, ich weiß. Aber hier gelten andere Regeln, an die auch ich mich zu halten habe.
+<Ich kann nur Bürger der Stadt Mahlendur in der Stadtwache aufnehmen.
+$LOGMISS newLife, Um bei der Miliz der Stadt aufgenommen zu werden, muss ich Bürger der Stadt sein. Wer hat sich den Quatsch denn ausgedacht? Immerhin bin ich bereits Soldat! Aber gut, wenn die Regeln es vorschreiben, muss auch ich mich daran halten. Mal sehen, was das alles bringen wird.
+
+info: howCitizen
+conddia: howMiliz
+>Und wie werde ich Bürger der Stadt?
+<Mach dich nützlich!
+<Lerne ein Handwerk.
+<Am Besten schaust du dich im Händler und Handwerksviertel einmal um und sprichst mit den Meistern.
+<Sie werden dir mehr dazu erzählen können.
+$STARTMIS getCitizen
+$LOGMISS getCitizen, Um Bürger der Stadt zu werden, muss ich mich nützlich machen und ein Handwerk erlernen. Volmar sagte, ich solle mit den Handwerkern sprechen. Mal sehen, welche Möglichkeiten sich mir bieten.
+
+info: whatAboutMage
+conddia: whichGroups
+>Was ist, wenn ich den Weg der Magie beschreiten möchte?
+<Dann bist du wohl am Besten im Kloster aufgehoben.
+<Die Magier werden dich beraten.
+<Sieh dich auf dem Marktplatz um, meistens ist dort ein Magier aus dem Kloster auf der Suche nach neuen Novizen.
+<Allerdings habe ich zuletzt gehört, dass sie einen Tribut verlangen.
+$LOGMISS newLife, Ich kann mich also auch den Magiern anschließen. Zumindest ein Eismagier soll sich in der Stadt aufhalten. Ob ich bei den Schwarzmagiern vielleicht auch willkommen bin?
+
+info: whatAboutOthers
+conddia: whichGroups
+>Kann ich mich den Piraten oder Söldnern anschließen?
+<Ich als Kommandant kann dir davon nur abraten.
+<Die Piraten locken mit großem Geld und die Söldner mit einem starken Kampftraining und Eigenverantwortung.
+<Das alles kannst du auch in der Stadt bekommen.
+<Wie dem auch sei, ich kann dich nicht davon abhalten. Du stehst nicht unter meinem Kommando und bist ein freier Mann.
+<Es ist deine Entscheidung!
+$LOGMISS newLife, Volmar rät mir davon ab, mich den Piraten oder den Söldnern anzuschließen. Aber wer weiß, vielleicht liegt meine Zukunft etwas abseits des Gesetzes?
+
+info: enterMiliz
+conddia: howCitizen
+condcode: kapitel == 1
+#condcode: Npc_GetTrueGuild(hero) != GIL_MIL 
+condcode: Npc_GetTrueGuild(hero) != GIL_SLD
+condcode: Npc_GetTrueGuild(hero) != GIL_PIR
+condcode: Npc_GetTrueGuild(hero) != GIL_KDF
+condcode: Npc_GetTrueGuild(hero) != GIL_KDW
+flags: permanent
+>Ich will der Miliz beitreten!
+$IF Npc_GetTrueGuild(other) != GIL_VLK
+<Ich kann dich nicht aufnehmen!
+<Lerne ein Handwerk und werde Bürger, dann sehen wir weiter!
+$ELSE
+<Bist du dir sicher? Das ist keine einfache Entscheidung!
+%
+$ENDIF
+
+opt: notSecure
+>Nein, lass mich noch überlegen!
+<In Orndung, ich bin hier, wenn du es dir überlegt hast.
+%%
+
+opt: yesSecure
+>Ja, ich will für die Stadt kämpfen!
+<Gut. Wenn dies dein Wunsch ist.
+<Dann sei herzlich willkommen in der Stadtwache!
+<Geh zu Marco und hol dir deine Waffe und deine Rüstung ab!
+!Npc_SetTrueGuild(hero, GIL_MIL);
+$LOGMISS newLife, Endlich bin ich Mitglied der Stadtwache! Auf in ein neues Kapitel meines Lebens!
+$MISSUCC newLife
+$EXP XP_BecomeMiliz
+!kapitel = 2;
+!IntroduceChapter (KapWechsel_2,KapWechsel_2_Text,"chapter2.tga","chapterchange.wav", 6000);
+!Spine_UnlockAchievement(0);
+%%
+
+info: wannaTellThief
+condcode: albrarChoice == 3
+>Ich will einen Dieb melden!
+<In Ordnung. Um wen handelt es sich und was hat er gestohlen?
+>Der Waffenhändler Albrar vom Marktplatz ist es, der seit Wochen die Stadtwache bestiehlt.
+<Und hast du dafür Beweise?
+>Ich habe den Dieb selbst gestellt.
+<In Ordnung, das reicht mir.
+$IF Wld_GetDay() <= albrarDay + 1
+<Hier hast du das Gold, dass auf die Ergreifung des Diebes ausgesetzt war.
+<<ItMi_Gold, 350
+<Gute Arbeit! Weiter so!
+!Npc_ExchangeRoutine(VLK_3007_Albrar, "Locked");
+$ELSE
+<Nur leider hat er sich vor Kurzem aus dem Staub gemacht.
+<Leider können wir ihn nun nicht mehr seiner gerechten Strafe zuführen.
+<Trotzdem sollst du etwas von dem ausgesetzten Gold erhalten.
+<<ItMi_Gold, 100
+<Immerhin hast du ihn überführt.
+$ENDIF
+<Ich bin froh, dass du bei uns an Land gespült wurdest. Männer wie dich können wir hier gut brauchen!
+$EXP 200
+
+info: tellRose
+condcode: MIS_newInfos == LOG_RUNNING
+>Eine Rose für Epona!
+<Alles in Ordnung mit dir?
+>Alles Bestens!
+!roseCounter += 1;
+
+info: newGuards
+condcode: MIS_guardChange == LOG_RUNNING
+>Du sollst eine Wachablösung an den Pass schicken!
+<Ach, wer sagt das denn?
+>Rhaegar sagt das. Er meint, der müde Haufen sei zu kaum etwas mehr zu gebrauchen.
+<Ist das so? Wovon sind die denn müde? Die bewachen einen zugeschütteten Pass.
+>Frag mich nicht. Ich wurde nur von Rhaegar geschickt. Mehr hat er mir nicht gesagt.
+<Hm, na gut. Sag ihm, ich werde ihm in den nächsten Tagen neue Männer schicken.
+$LOGMISS guardChange, Volmar hat sich nach etwas 'Überzeugungsarbeit' dazu bereit erklärt, neue Männer an den Pass zu schicken.
+
+info: whatNow
+condcode: kapitel == 2
+condcode: Npc_GetTrueGuild(hero) == GIL_MIL
+>Was ist jetzt zu tun?
+<Du wirst wie, jeder Andere auch, deinen Dienst tun. Wenn du eine Aufgabe erledigt hast, kommst du zu mir und ich zahle dir deinen Sold aus.
+<Ansonsten wird Thalar dich ab sofort trainieren. Bei Marco kannst du dir bessere Waffen und Rüstungen kaufen.
+<Ich hätte auch schon einen ersten Auftrag für dich.
+
+info: whatToDo
+conddia: whatNow
+>Was soll ich tun?
+<Die Bauern auf Stans Hof vor der Stadt haben Probleme mit Bauern.
+<Nimm dir einen der Soldaten mit und sieh nach, was da los ist.
+<Nimm dir Marril mit. Er hatte schon lange nichts mehr zu tun.
+$STARTMIS stansBandits
+$LOGMISS stansBandits, Stan hat auf seinem Hof Probleme mit Banditen. Volmar sagt, ich solle mir Marril mitnehmen und dort für Ruhe sorgen.
+!setMilPhase(1);
+
+info: banditsDead
+conddia: whatToDo
+condcode: Npc_IsDead(BDT_1009_Bandit_L)
+condcode: Npc_IsDead(BDT_1010_Bandit_L)
+condcode: Npc_IsDead(BDT_1011_Bandit_M)
+>Die Banditen sind tot!
+<Hervorragend. Das hast du gut gemacht.
+<Gab es Schwierigkeiten?
+>Keine nennenswerten.
+<Gut. Dann wird Stan hoffentlich bald seine Abgaben wieder liefern.
+<Hier hast du deinen Sold!
+<<ItMi_Gold, 250
+$MISSUCC stansBandits
+$LOGMISS stansBandits, Volmar war zufrieden mit dem Ausgang des Auftrags und hat mich entlohnt.
+$EXP XP_AmbientKap3
+
+info: whatNext
+conddia: banditsDead
+>Was gibt es noch zu tun?
+<Im Moment nichts. Sieh dich am Besten auf der Insel um, dass alles glattläuft!
+<Aber keine Alleingänge gegen Piraten oder Söldner!
+!volmarDay = Wld_GetDay();
+
+info: nextStep
+condcode: toldNewQuest == TRUE
+>Du hast einen neuen Auftrag für mich?
+<Richtig. Allerdings ist das etwas heikel.
+<Wir müssen wissen, was die Söldner und die Piraten planen. Du wirst das für uns herausfinden.
+>Und wie soll ich das machen?
+<Schleich dich an und beobachte. Aber pass auf, dass dich niemand sieht. Von denen ist keiner gut auf uns zu sprechen.
+<Komm in einem Stück wieder!
+$STARTMIS snitchPirSld
+$LOGMISS snitchPirSld, Volmar hat mich losgeschickt, sowohl die Piraten, als auch die Söldner zu beobachten und herauszufinden, was beide Gruppen planen. Ich soll in einem Stück zurückkommen. Der hat leicht Reden...
+!changeSldRtnPreAttack();
+
+info: shallWeGo
+conddia: nextStep
+condcode: MIS_snitchPirSld != TRUE
+>Sollten wir den Piraten oder Söldnern nicht zuvorkommen?
+<Du meinst, wir sollten sie angreifen? Und damit die Stadt ungeschützt?
+<Nein, wir bleiben hier. Wenn wir angegriffen werden, dann werden wir uns mit allen Mitteln verteidigen!
+>Was soll ich tun?
+<Werde stärker! Trainiere fleißig und bereite dich vor.
+<Ansonsten können wir nur abwarten. Mehr bleibt uns nicht übrig.
+!volmarDay = Wld_GetDay();
+
+info: howToTrain
+conddia: shallWeGo
+>Wo kann ich noch trainieren?
+<Viele hier können dir etwas beibringen.
+<Halte dich am Besten an Thalar. Er wird dich im Schertkampf unterrichten.
+>Gibt es hier eine Arena?
+>Auf dem Festland sind sie wie Unkraut aus dem Boden geschossen.
+<Einige der Soldaten haben tatsächlich eine Arena eingerichtet.
+<Du findest sie an der großen Anlegestelle. Kannst sie eigentlich gar nicht verfehlen.
+
+info: cityAttack
+condcode: toldNewQuest2 == TRUE
+>Was ist los?
+<Die Torwachen berichten, dass die Söldner sich vor der Stadt postiert haben.
+<Ich fürchte...
+<(lauter Lärm erklingt aus Richtung der Stadttore)
+<Verdammt, sie greifen an. Wir müssen los!
+!B_Attack(self, SLD_700_Jareck, AR_Kill, 1);
+$END
+

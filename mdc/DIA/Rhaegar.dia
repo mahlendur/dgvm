@@ -1,0 +1,73 @@
+person: MIL_337_Rhaegar, 3
+
+info: Exit
+
+info: whoAreYou
+>Was macht ihr denn hier?
+<Wonach sieht es denn aus?
+<Natürlich bewachen wir den Pass!
+
+info: guardForWhat
+conddia: whoAreYou
+>Wovor bewacht ihr denn den Pass?
+<Natürlich vor den Orks. 
+>Aber ich denke, der Pass...
+<...wurde verschüttet. Jaja, schon klar!
+<Das bedeutet aber nicht, dass wir jetzt alle in Sicherheit sind. Ganz im Gegenteil.
+<Dadurch, dass der Pass gesprengt wurde, sind die Orks nur nich wütender geworden.
+<Hast du schonmal einen richtig wütenden Ork gesehen?
+>Naja...
+<Siehst du, das dachte ich mir! Wenn die Felle irgendwann doch noch auf die Idee kommen, den Pass wieder frei zu räumen, sind wir hier.
+
+info: smthToDo
+conddia: guardForWhat
+>Kann ich etwas für euch tun?
+<Ja, da würde mir tatsächlich etwas einfallen.
+<Zum einen brauchen wir was zum Essen.
+<Es wäre gut, wenn du uns ein paar gebratene Keulen Fleisch und ein paar Bier bringen könntest.
+<Zwei Keulen und ein Bier pro Mann sollten reichen.
+$STARTMIS foodForGuard
+$LOGMISS foodForGuard, Rhaegar, Anführer des kleinen Miliztrupps am Pass zum Minental hat mich gebeten, den Männern etwas zu Essen zu besorgen. Er sagt, ein paar gebratene Keulen Fleisch und etwas Bier sollte reichen.
+>Alkohol im Dienst?
+<Ich bitte dich. Wir sind hier soweit ab vom Schuss, das bekommt sowieso niemand mit.
+<Außerdem brauchen ich hier frische Männer! Geh zu Volmar und sag ihm, er soll eine neue Truppe schicken.
+$STARTMIS guardChange
+$LOGMISS guardChange, Rhaegar braucht frische Männer am Pass. Ich soll zu Volmar gehen und eine Wachablösung beantragen.
+>Sonst noch was?
+<Nein, das wäre erstmal alles!
+
+info: gotYourMeal
+conddia: smthToDo
+conditem: ItFo_Beer, 6
+conditem: ItFoMutton, 12
+>Hier ist euer Essen!
+<Sehr gut. Aber...
+$MISSUCC foodForGuard
+$LOGMISS foodForGuard, Auch wenn das Fleisch fast kalt war, ist Rhaegar zufrieden.
+$EXP 150
+<Das Fleisch ist ja fast kalt!
+>Wenn ihr soweit weg seid....
+<Hmpf, hast ja Recht. Wie auch immer, danke!
+<Gib her, ich werde die Sachen an die Männer verteilen.
+>>ItFo_Beer, 6
+>>ItFoMutton, 12
+<Hier, etwas für deine Mühen!
+<<ItMi_Gold, 50
+$IF MIS_guardChange == LOG_RUNNING
+<Wie siehts aus mit der Wachablösung?
+>Ich arbeite dran!
+<Das hoffe ich! Der müde Haufen ist zu nichts mehr zu bewegen!
+$ENDIF
+
+info: gotGuards
+conddia: MIL_2102_Volmar, newGuards
+>Volmar wird dir eine Wachablösung schicken!
+<Und wann wird die eintreffen? Warum hast du die Männer nicht gleich mitgebracht?
+>Entspann dich! Rhaegar wird die Männer in den nächsten Tagen losschicken.
+<In den nächsten Tagen?! Der Spinner weiß doch gar nicht...
+<Hm, schön. Danke auf jeden Fall für deine Mühen.
+<Hier, hast du etwas Gold! Ich werde dann mal sehen, was ich noch mit den Jungs hinbekomme.
+<<ItMi_Gold, 50
+$LOGMISS guardChange, Rhaegar ist mit der Wachablösung zwar nicht zufrieden, nimmt es aber hin.
+$MISSUCC guardChange
+$EXP 250

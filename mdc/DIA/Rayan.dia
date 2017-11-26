@@ -1,0 +1,172 @@
+person: KDF_1403_Rayan, 12
+
+!var int circle2;
+!var int knowsMageInfo;
+
+info: Exit
+
+info: whoAreYou
+flags: important
+<Wer bist du denn? Und vor allem, was tust du hier?
+<Wer hat dich hier reingelassen?
+
+info: gotLetter
+conditem: ItWr_MariusMessage
+>Sellan hat mir den Schlüssel gegeben.
+>Außerdem habe ich hier einen Brief vom Magier Marius.
+<Von Marius? Gib mir den Brief!
+>>ItWr_MariusMessage, 1
+<Es ist lange her, dass Marius einen neuen Novizen geschickt hat.
+<Wollen wir doch einmal sehen, was er schreibt.
+!AI_StandUp(self);
+!AI_TurnToNpc(self, hero);
+!B_UseFakeScroll();
+!AI_TurnToNpc(self, hero);
+<Aah, Marius schickt tatsächlich einen neuen Novizen.
+<Er schreibt, er spüre große Macht in dir. (leiser) Und du könntest unser aller Retter sein.
+<Gut, wir werden dich auf die Probe stellen.
+<Wenn es dein Wunsch ist unserem Orden beizutreten, dann sprich mit Uysal.
+<Er soll dich prüfen und dann werden wir entscheiden, ob du würdig bist, die Robe eines Novizen zu tragen.
+$LOGMISS newLife, Rayan, einer der drei Räte des Eisordens hat mich in Empfang genommen. Nachdem er den Brief gelesen hat, sagte er mir, ich solle mit Uysal sprechen, wenn ich dem Orden beitreten wolle. Er würde mir eine Prüfung stellen. Da bin ich ja mal gespannt...
+
+info: whatTest
+conddia: gotLetter
+>Was für eine Prüfung erwartet mich?
+<Sprich mit Uysal. Er alleine bestimmt über Form und Größe der Prüfung.
+<Ich kann dir dazu nichts sagen.
+
+info: whatNovice
+conddia: gotLetter
+>Was erwartet mich als Novize?
+<Als Novize wirst du in die Kunst der Magie eingeführt.
+<Wir werden dich unterrichten, deine magischen Energien zu bündeln und freizusetzen.
+<Zusätzlich wirst du Arbeit für die Gemeinschaft verrichten.
+<Aber dazu später mehr.
+<Bestehe zuerst die Prüfung, dann sehen wir weiter.
+
+info: joinMages
+conddia: KDF_1405_Ulian, yourYes
+conddia: KDF_1404_Uysal, gotThem
+condcode: kapitel == 1
+condcode: Npc_GetTrueGuild(hero) == GIL_NONE
+flags: permanent
+>Ich habe die Prüfung bestanden.
+<Ich merke es. Der Schatten, der das Kloster befallen hat, ist verschwunden.
+<Hast du auch mit Ulian gesprochen?
+>Habe ich. Er dankte mir für meinen Einsatz und gab mir seinen Segen.
+<Dann liegt die Entscheidung nun bei dir.
+<Ist es immer noch dein Wunsch unserem Orden beizutreten und verpflichtest du dich, den Glauben Adanos zu leben und in die Welt zu tragen?
+%
+opt: noMage
+>Ehrlich gesagt, ist das eine schwere Entscheidung...
+<Das verstehe ich gut.
+<Es ist eine Entscheidung, die man nicht leichtfertig treffen solle.
+<In Ordnung, ich gebe dir noch etwas Bedenkzeit. Wenn du dich entschieden hast, komm zu mir.
+%%
+opt: yesMage
+>Ja, ich möchte dem Orden beitreten!
+<Wenn dies dein eigener und freier Wille ist, so gehe mit dem Segen Adanos.
+<Lege die Robe eines Novizen an und trage sie mit Ehrfurcht.
+<Sie soll dich schützen und dich leiten, auf allen Wegen, die du in dieser Welt beschreiten wirst.
+<Und nun genug des zeremoniellen: Herzlichen Glückwunsch und Willkommen im Orden!
+!kapitel = 2;
+!IntroduceChapter (KapWechsel_2,KapWechsel_2_Text,"chapter2.tga","chapterchange.wav", 6000);
+$LOGMISS newLife, Rayan, Uysal und Ulian haben mich in die Reihen der Magier aufgenommen. Ich kann mich nun Novize des Eises nennen! Herzlich willkommen in einem magischen Leben...
+$MISSUCC newLife
+$EXP XP_becomeMiliz
+!Npc_SetTrueGuild(hero, GIL_MIL);
+!Spine_UnlockAchievement(0);
+<<ItAr_Nov_L, 1
+%%
+
+info: whatToDo
+condcode: kapitel == 2
+>Hast du eine Aufgabe für mich?
+<Ich gebe dir eine Daueraufgabe.
+>Okay?
+<Lerne!
+<Als Novize und im übrigen auch als ausgebildeter Magier ist es deine Aufgabe zu lernen.
+<Denn nur wer lernt, der kann stärker werden.
+<Einiges können dir die anderen Magier beibringen.
+>Zum Beispiel?
+<Ulian wird dir dabei helfen, deine magische Kraft zu steigern.
+<Uysal kann dich lehren, deine eigenen Runen herzustellen.
+<Doch bevor du sie nutzen kannst, musst du zuerst den ersten Kreis der Magie erlernen.
+<Und damit kommt meine erste Aufgabe.
+>Und die wäre?
+<In der Bibliothek im Keller ist ein Buch versteckt, welches dem Leser in einem Selbststudium den ersten Kreis der Magie beibringt.
+<Finde es und lerne!
+<Weitere Magiekreise kannst du danach bei mir lernen.
+$STARTMIS findBookIce
+$LOGMISS findBookIce, Rayan hat mir meine erste Aufgabe gegeben. Ich soll in der Bibliothek ein Buch finden, mit welchem ich den ersten Kreis der Magie erlernen kann. Hoffentlich sind da unten nicht noch mehr Dämonen...
+
+info: foundBook
+conddia: whatToDo
+condcode: Npc_GetTalentSkill(hero, NPC_TALENT_MAGE) >= 1
+conditem: ItWr_Kreis1
+>Ich habe das Buch der Magie gefunden!
+<Und hast du es gelesen?
+>Habe ich. Es war sehr aufschlussreich.
+<Dann gib es mir, damit ich es wieder in die Bibliothek zurück bringen kann. Andere Novizen nach dir werden auch noch danach suchen.
+>>ItWr_Kreis1, 1
+$LOGMISS findBookIce, Ich habe Rayan von meinem Erfolg berichtet und das Buch zurückgebracht.
+$MISSUCC findBookIce
+$EXP 350
+<Dann bist du nun bereit, deine erste Rune herzustellen.
+<Geh zu Uysal und lerne die Herstellung der Rune "Licht". Sie wird dir in vielen Situationen nützlich sein.
+<Wenn du alle Runen des ersten Kreises verinnerlicht hast, werde ich dich den zweiten Kreis der Magie lehren.
+$STARTMIS buildRunes
+$LOGMISS buildRunes, Für meine erste Aufgabe als Novize soll ich eine Rune bauen. Eine Lichtrune. Sie wird nützlich sein, sagt Rayan. Uysal könne mir beibringen, wie ich die Rune herstelle. Da bin ich ja gespannt...
+
+info: secondCircle
+conddia: KDF_1404_Uysal, gotRune
+condcode: circle2 == FALSE
+flags: permanent
+desc: Lehre mich den zweiten Kreis der Magie (10 Lernpunkte)
+>Lehre mich den zweiten Kreis der Magie!
+$IF PLAYER_TALENT_RUNES[SPL_Firebolt] == TRUE && PLAYER_TALENT_RUNES[SPL_Zap] == TRUE && PLAYER_TALENT_RUNES[SPL_LightHeal] == TRUE && PLAYER_TALENT_RUNES[SPL_SummonGoblinSkeleton] == TRUE && hero.lp >= 10
+<In Ordnung.
+<Du hast gelernt dich in die Magie einzufühlen.
+<Die ersten Schritte hast du bereits unternommen, um diese Kraft nach deinem Willen zu formen.
+<Die nächsten Runen bündeln mächtigere Magie. Es ist schwieriger, den Fokus zu halten.
+<Daher lehren wir sie nicht jedem. Aber du hast Potenzial.
+<Jetzt kannst du zu Uysal gehen. Er wird dich weitere Runen zeigen.
+!Npc_SetTalentSkill(hero, NPC_TALENT_MAGE, 2);
+!PrintS("Gelernt: Zweiter Kreis der Magie!");
+!Snd_Play ("LevelUp");
+!circle2 = TRUE;
+!hero.lp = hero.lp - 10;
+$ELSEIF PLAYER_TALENT_RUNES[SPL_Firebolt] == TRUE && PLAYER_TALENT_RUNES[SPL_Zap] == TRUE && PLAYER_TALENT_RUNES[SPL_LightHeal] == TRUE && PLAYER_TALENT_RUNES[SPL_SummonGoblinSkeleton] == TRUE && hero.lp << 10
+<Mir scheint, als wärest du nicht erfahren genug.
+<Komm wieder, wenn du reifer bist!
+$ELSE
+<Nein! Du bist noch nicht gefestigt genug.
+<Lerne und wir sehen weiter!
+$ENDIF
+
+info: thirdCircle
+conddia: secondCircle
+condcode: Npc_GetTalentSkill(hero, NPC_TALENT_MAGE) == 2
+flags: permanent
+desc: Lehre mich den dritten Kreis der Magie! (15 Lernpunkte)
+>Lehre mich den dritten Kreis der Magie!
+$IF kapitel << 3 || Npc_GetTrueGuild(hero) != GIL_KDF
+<Nein! Du hast zwar Potenzial, aber in die höheren Kreise der Magie führen wir nur vollwertige Magier ein.
+<Trainiere weiter und wir werden dir vielleicht die Chance geben.
+$ELSEIF kapitel >= 3 && Npc_GetTrueGuild(hero) == GIL_KDF && hero.lp >= 15
+<In Ordnung. Du kennst nun bereits die Grundlagen der Magie.
+<Doch die wirklich  mächtigen Zauber liegen noch vor dir. Du wirst die Möglichkeit bekommen, auf Magie zurückzugreifen, die ohne große Anstrengung vielen Menschen großes Leid zufügen kann.
+<Du hast dich bewiesen. Ich schätze, wir können dir diese Macht gewähren.
+<Du wirst bemerken, dass die neuen Runen weitaus schwieriger zu fokussieren sind. Du wirst deine ganze Konzentration benötigen.
+<Aber dafür wirst du auch belohnt.
+<Jetzt geh hin und lerne! Uysal wird dir erklären, wie du die nächsten Runen herstellen kannst.
+!Npc_SetTalentSkill(hero, NPC_TALENT_MAGE, 3);
+!PrintS("Gelernt: Dritter Kreis der Magie!");
+!Snd_Play ("LevelUp");
+!circle2 = TRUE;
+!hero.lp = hero.lp - 15;
+$ELSEIF kapitel >= 3 && Npc_GetTrueGuild(hero) == GIL_KDF && hero.lp << 15
+<Du kennst bereits die Grundlagen. Aber mir scheint, du hast dein Wissen noch nicht genug gefestigt.
+<Komm wieder, wenn du mehr Erfahrung hast!
+$ENDIF
+

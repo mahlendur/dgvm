@@ -1,0 +1,176 @@
+person: VLK_412_Hatof, 12
+
+!var int talkedToPlayer;
+
+info: Exit
+
+info: startDialog
+condcode: Npc_IsInState(self, ZS_Talk)
+condcode: talkedToPlayer == FALSE
+flags: important
+<Sieh an, ein neues Gesicht!
+<Möchtest du etwas kaufen, verkaufen, oder nur meine Schmiede besetzen? (lacht)
+!talkedToPlayer = TRUE;
+
+info: lookingForWork
+condcode: jobCounter <= 1
+>Ich suche Arbeit!
+<Ja, das tun viele. Hmm, bist du dir denn sicher, dass das Schmiedehandwerk etwas für dich ist?
+>Ich glaube schon...
+<Das ist immerhin etwas. Der letzte, der hier war konnte nicht einmal den Hammer halten. Du siehst auf jeden Fall kräftiger aus.
+<Wenn es dir ernst ist, habe ich etwas zu tun für dich.
+
+info: whatToDo
+conddia: lookingForWork
+>Was hast du zu tun?
+<Ich erwarte eine Lieferung aus einer der Minen vor der Stadt.
+<Bring mir die Kiste, dann sehen wir weiter!
+$STARTMIS workHatof
+$LOGMISS workHatof, Hatof der Schmied hat mich beauftragt eine Kiste mit Erz von einer der Minen zu ihm zu bringen. Vielleicht nimmt er mich danach als Lehrling auf.
+
+info: wheresMine
+conddia: whatToDo
+condcode: MIS_workHatof == LOG_RUNNING
+>Wo finde ich die Schürfer?
+<Die Schürfer, die mir eine Kiste Erz schulden sind direkt vor der Stadt. Wenn du durch das Nordtor gehst, dich rechts hälst und direkt den Hügel hinauf, kannst du die Mine nicht verfehlen.
+<Rede mit Mika, er wird dir die Kiste geben.
+
+info: gotTheOre
+conddia: lookingForWork
+conditem: ItMi_Erzkiste, 1
+>Ich hab das Erz!
+>>ItMi_Erzkiste, 1
+<Sehr gut, dann kann ich wenigstens vernünftig weiterarbeiten.
+<Hat er irgendetwas gesagt?
+>Ja, ich soll schöne Grüße ausrichten und sagen, dass du nicht so schnell arbeiten sollst.
+>Die Jungs kommen mit dem Schürfen nicht hinterher.
+<(lacht) Der hat gut Reden... Ich hab eine ganze Stadtwache mit Waffen zu versorgen.
+<Aber, wie dem auch sei. Du hast deinen Job gemacht, das ist schonmal mehr als die meisten anderen.
+<Wenn du immer noch mein Lehrling werden möchtest, komm wieder zu mir, dann besprechen wir alles weitere.
+$LOGMISS workHatof, Hatof hat seine Erzkiste erhalten. Jetzt kann ich von ihm das Schmiedehandwerk lernen!
+$MISSUCC workHatof
+$EXP 250
+
+info: becomeApprentice
+conddia: gotTheOre
+condcode: jobCounter <= 1
+condcode: learnedBergbau == FALSE
+flags: permanent
+desc: Ich will den Bergbau lernen! (5 LP)
+>Ich will den Bergbau lernen!
+<Bist du dir sicher?
+<Denk daran, du kannst nur zwei Berufe gleichzeitig ausüben!
+%
+opt: noBergbau
+>Nein, ich brauche noch etwas Bedenkzeit.
+<Gut, du weißt ja, wo du mich findest!
+%%
+opt: yesBergbau
+>Ja, ich will bei dir lernen!
+$IF other.LP >= 5
+<Gut, dann hör mir genau zu.
+<Natürlich brauchst du eine Spitzhacke. Das sollte klar sein.
+<Am Anfang solltest du dich an einfache Erze wie Eisen halten.
+<Versuch besser nicht Gold, oder gar magisches Erz abzubauen. Das geht nur schief und du bekommst unbrauchbare Stücke!
+<Nimm dir also die Spitzhacke und such dir eine schöne Eisenader. Dann schaust du genau, wo das Erz an die Oberfläche tritt.
+<Schlag präzise und fest, aber nicht auf das Mineral, sondern daneben!
+<So brichst du große Stücke Eisen aus dem Stein.
+<Mit dem Erz kannst du dann an eine Schmiede gehen und es zu Stahl einschmelzen.
+$IF (Npc_GetTrueGuild(hero) != GIL_VLK)
+<Und jetzt: Kannst du dich auch Bürger der Stadt nennen!
+$ENDIF
+!jobcounter += 1;
+!learnedBergbau = TRUE;
+!bergbauSkill = 1;
+!AI_PrintS(self, "Neuer Beruf: Bergbau!");
+!other.lp = other.lp - 5;
+$LOGNOTE Bergbau, Ich habe den Bergbau gelernt. Jetzt kann ich Eisenerz aus entsprechenden Adern herauslösen und einschmelzen.
+$IF MIS_getCitizen == LOG_RUNNING
+$MISSUCC getCitizen
+$LOGMISS getCitizen, Hatof hat mich als Lehrling aufgenommen und mir den Bergbau beigebracht. Jetzt kann ich mich Bürger der Stadt Mahlendur nennen!
+!Npc_SetTrueGuild(hero, GIL_VLK);
+!other.guild = GIL_VLK;
+$ENDIF
+$ELSE
+<Das ist löblich, aber es sieht aus, als hättest du noch nicht genug Erfahrung.
+<Komm wieder, wenn du bereit bist!
+$ENDIF
+%%
+
+info: becomeApprentice2
+conddia: gotTheOre
+condcode: jobCounter <= 1
+condcode: learnedSmith == FALSE
+flags: permanent
+>Ich will das Schmieden lernen! (5 LP)
+<In Ordnung, das kann ich dir beibringen!
+<Bist du dir sicher?
+%
+opt: noSmith
+>Nein, gib mir noch Zeit!
+<Gut, ich laufe hier nicht weg!
+%%
+opt: yesSmith
+>Ja, bring mir die Schmiedekunst bei!
+$IF other.LP >= 5
+<In Ordnung. Schmieden ist eigentlich kein Hexenwerk.
+<Du darfst nur nicht vergessen, dass es hauptsächlich auf die Technik ankommt.
+<Lass dich also nicht verunsichern, wenn deine ersten Versuche etwas krumm werden. Stärke alleine reicht nicht.
+<Wenn du dir ein Stück Rohstahl nimmst, erhitze es zuerst am Schmiedefeuer. Achte darauf, dass es rotglühend ist.
+<Wird das Eisen zu heiß, verbrennt dir der Stahl und der Rohling ist unbrauchbar.
+<Wenn bis hierhin alles funktioniert hat, musst du nur noch die Waffe am Amboss zurechtschlagen.
+<Hab das Ziel immer vor Augen. Wenn du einen Fehler nicht bemerkst, ist es zu spät.
+<Härte die Waffe zum Schluss noch im Wassereimer. Auch hier musst du ein wenig Vorsicht walten lassen.
+<Höre genau hin. Knistert die Waffe, ist der Stahl zu heiß und wird spröde.
+<Auch wenn das alles kompliziert klingt, es ist nur eine Frage der Ãœbung.
+<Und jetzt: Ran an den Stahl!
+$IF (Npc_GetTrueGuild(hero) != GIL_VLK)
+<Übrigens kannst du dich nun Bürger der Stadt nennen.
+$ENDIF
+!jobcounter += 1;
+!learnedSmith = TRUE;
+!smithSkill = 1;
+!AI_PrintS(self, "Neuer Beruf: Schmiedekunst!");
+!other.lp = other.lp - 5;
+$LOGNOTE TalentSmith, Ich habe die Schmiedekunst erlernt. Ich kann jetzt einfache Schwerter herstellen.
+$IF MIS_getCitizen == LOG_RUNNING
+$MISSUCC getCitizen
+$LOGMISS getCitizen, Hatof hat mich als Lehrling aufgenommen und mir die Schmiedekunst beigebracht. Jetzt kann ich mich Bürger der Stadt Mahlendur nennen!
+!Npc_SetTrueGuild(hero, GIL_VLK);
+!other.guild = GIL_VLK;
+$ENDIF
+$ELSE
+<Das ist löblich, aber es sieht aus, als hättest du noch nicht genug Erfahrung.
+<Komm wieder, wenn du bereit bist!
+$ENDIF
+%%
+
+info: canTrade
+conddia: startDialog
+>Du verkaufst auch Waffen?
+<Waffen eher weniger. Die Stadtwache kauft mir die meisten Schwerter direkt ab. Ein paar habe ich noch hier.
+<Hauptsächlich kann ich die Materialien fürs Schmieden verkaufen. Wenn du daran Interesse hast, sag Bescheid!
+
+info: letsTrade
+conddia: canTrade
+num: 998
+flags: permanent, trade
+!B_GiveTradeInv(self);
+>Zeig mir deine Waffen!
+
+info: teachMeSth
+conddia: lookingForWork
+>Kannst du mir auch was beibringen?
+<Hmm, lass mich überlegen.
+<Ja, ich glaube, ich könnte dich etwas stärker machen. Schließlich bin ich nicht umsonst Schmied geworden (lacht)
+<Komm zu mir, dann gebe ich dir ein paar Tipps!
+$LOGNOTE teacherCity, Hatof, der Schmied, kann mir beibringen, stärker zu werden!
+
+info: teachSwords
+condcode: learnedSmith == TRUE
+>Kannst du mir beibringen, andere Waffen zu schmieden?
+<Einige Schwerte kann ich dich lehren. Für die meisten brauchst du allerdings einen Baulan.
+<Einen kann ich dir noch verkaufen, ansonsten sieh dich bei den Händlern um. Manchmal haben sie einen Plan zu verkaufen.
+<Ansonsten: Sieh dich um! Du glaubst gar nicht, was man alles finden kann.
+$LOGNOTE TalentSmith, Hatof kann mir beibringen, einige andere Schwerter zu schmieden. Für die meisten brauche ich aber einen Bauplan.
+

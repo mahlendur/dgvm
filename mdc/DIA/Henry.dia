@@ -1,0 +1,228 @@
+person: PIR_1301_Henry, 9
+
+!var int getsRune;
+
+info: Exit
+$IF getsRune == TRUE
+>Achso, eines noch!
+>Hier, nimm diese Teleportrune mit.
+>Dann musst du nicht jedes Mal über die halbe Insel rennen, wenn du zurück ins Lager willst.
+>>ItRu_TeleportPirates, 1
+$ENDIF
+
+info: whoAreYou
+flags: important
+<Wer bist du denn? Hat Gilbert dich etwa reingelassen?
+>Hat er. Er sagte, ich solle mich bei dir melden.
+<Jeden Arsch schickt der einfach durch. Ich glaube, ich brauche eine neue Torwache.
+<Was willst du?
+
+info: wannaJoin
+conddia: whoAreYou
+condcode: wannaJoinPirates == TRUE
+>Ich will euch beitreten!
+<Du? Als Pirat?
+<Was meinst du, befähigt dich dazu?
+>Ich bin schon früher zur See gefahren. Als Soldat auf einem königlichen Kriegsschiff bleibt das nicht aus.
+<(erstaunt) Auf einem königlichen Kriegsschiff? Na, dann haben wir ja hohen Besuch.
+<Kommst du im Auftrag der Paladine?
+>Nein, ich bin aus eigenem Antrieb hier. Wie gesagt, ich will mich euch anschließen.
+<Und warum sollten wir dich bei uns aufnehmen?
+>Ich kann nützlich sein für euch.
+<Da bin ich ja mal gespannt...
+
+info: whatToDo
+conddia: wannaJoin
+>Wie kann ich dir beweisen, dass ich etwas tauge?
+<Ich habe Männer, die kämpfen können und sogar ein paar der Sorte Dumm und Stark. Die können anpacken.
+<Und wenn der Käpt'n mit dem Rest von der Kaperfahrt wiederkommt werden es noch mehr.
+<Aber wir alle haben einen Nachteil: Wir werden gesucht. Keiner von uns kann auch nur einen Fuß in die Nähe der Stadt setzen, ohne von Pfeilen durchbohrt zu werden.
+<Was wir brauchen ist jemand wie du. Ein unbekanntes Gesicht.
+>Soll ich etwa den Anführer der Paladine töten? Dann wäre ich nicht mehr unbekannt.
+<(lacht) Nein, das wäre zu viel des Guten, aber ich mag die Art, wie du denkst.
+<Ich habe eine viel einfachere Aufgabe für dich.
+<Wir können die Stadt nicht frontal angreifen, zu gefährlich. Also müssen wir es heimlich und unauffällig tun.
+<Finde einen Weg in die Stadt! Einen Weg, der uns am Besten mitten in die Stadt führt, aber nicht oder nur sehr wenig bewacht wird.
+<Finde ihn und du bist dabei!
+$LOGMISS newLife, Henry, der Anführer der Piraten ist bereit mich in die Truppe aufzunehmen. Dazu muss ich nur seinen Auftrag erfüllen.
+$STARTMIS wayCity
+$LOGMISS wayCity, Um Mitglied der Piratenbande zu werden, muss ich einen Auftrag für Henry erfüllen. Die Piraten können die Stadt nicht mehr betreten, da sie alle gesucht werden. Meine Aufgabe ist nun, einen solchen Weg zu finden. Mal schauen, wo ich anfange...
+
+info: whereToTake
+conddia: whatToDo
+>Wo soll es denn einen solchen Weg geben?
+<Wenn ich dir die Frage beantworten könnte, müsste ich dich nicht losschicken.
+<Ich weiß es nicht. Sei kreativ.
+>Wie wärs mit Fliegen?
+<Noch so eine blöde Idee und du lernst das Fliegen!
+>Schon gut... Ich geh mal auf die Suche!
+$END
+
+info: foundWay
+conddia: whereToTake
+condcode: bothDoorsFound == TRUE
+>Ich habe einen Weg gefunden!
+<Echt? Ehrlicherweise muss ich sagen, dass ich damit nicht gerechnet hätte.
+<Hier, nimm erstmal ein Bier und dann erzähl!
+<<ItFo_Beer, 1
+>Danke!
+!AI_UseItem(hero, ItFo_Beer);
+>Also, der Weg ist eigentlich ganz einfach.
+>Wenn ihr die Klippe umschifft, die euer Lager vom Hafen trennt und euch nah an den Felsen haltet, kommt ihr zum Eingang der Kanalisation.
+<Kanalistation? Glaubst du allen Ernstes ich latsche durch die Scheiße?
+>Entspann dich! Die Kanalisation ist quasi trocken. Solange du nicht in der Mitte läufst, ist alles in Ordnung.
+<Das will ich für dich hoffen. Gut, weiter!
+>Folgt ihr dem Weg und verlauft euch nicht, kommt ihr zu einer Treppe. Diese führt zum Hotel hinauf.
+>Ihr kommt also unbemerkt für alle direkt an der Kaserne aus. Dort sind vergleichsweise wenig Wachen also ideal für euch.
+<Das ist...
+<Mensch. Ich bin beeindruckt! Gute Arbeit. Jetzt kann der Spaß anfangen.
+<Aber, wenn du willst, kannst du uns beitreten. Du bist fähiger als die Hälfte der Männer, die gerade mit dem Käpt'n unterwegs sind.
+<Wie siehts aus?
+$MISSUCC wayCity
+$LOGMISS wayCity, Ich habe den Piraten von dem Weg durch die Kanalisation berichtet. Henry ist sehr zufrieden mit mir und ist bereit mich in die Reihen der Piraten aufzunehmen.
+$EXP 350
+
+info: wannaJoinPir
+conddia: foundWay
+condcode: MIS_newLife == LOG_RUNNING
+flags: permanent
+>Ich will euch beitreten!
+<Lass mich kurz überlegen.
+<Du hast für uns einen Weg in die Stadt gefunden.
+<Das macht dich nützlicher als die Holzköpfe, die hier sonst rumhängen.
+<Gut, ich will dich aufnehmen.
+<Bist du dir sicher?
+%
+opt: noPirate
+>Ich brauche noch Zeit.
+<In Ordnung. Du kannst froh sein, dass ich dich brauchen kann.
+<Sonst wäre mein Angebot jetzt beendet. Aber ich bleibe dabei.
+<Nimm dir die Zeit, die du brauchst. Du weißt, wo du mich findest.
+%%
+opt: yesPirate
+>Ja, ich will mitmachen!
+<Gut, dann lege die Piratenkleidung an und trage sie mit Stolz!
+<Und dass du mir ja keinen Mist baust! Wenn du uns irgendwie verrätst, machen wir kurzen Prozess.
+<Also: Willkommen in der Meute!
+<<ItAr_Pir_L_Addon
+$MISSUCC newLife
+$LOGMISS newLife, Henry hat mich in die Reihen der Piraten aufgenommen. Mal sehen, was mir der lustige Haufen bringt.
+$EXP XP_BecomeMiliz
+!Npc_SetTrueGuild(hero, GIL_PIR);
+<Aber pass auf. Da du jetzt die Rüstung trägst, wirst du dich nicht mehr einfach so in der Stadt bewegen können.
+<Leg' am besten eine andere Rüstung an, bevor du in deinen Tod rennst.
+!kapitel = 2;
+!IntroduceChapter (KapWechsel_2,KapWechsel_2_Text,"chapter2.tga","chapterchange.wav", 6000);
+!Spine_UnlockAchievement(0);
+%%
+
+info: whatNow
+condcode: kapitel == 2
+>Was machen wir jetzt?
+<Wir? Naja, wir müssen stärker werden. Wir brauchen Vorräte, neue Leute, alles!
+>Gut, was soll ich tun?
+<Hast du mir nicht zugehört? Wir brauchen Vorräte, neue Leute und alles andere!
+<Such dir Arbeit und dann fang an!
+
+info: newPirates
+conddia: whatNow
+>Woher könnten denn neue Kameraden kommen?
+<Was weiß ich? Wenn wir jemand neues aufgenommen haben, ist er zu uns gekommen.
+<Normalerweise gehen wir niemanden anwerben.
+<Aber die Zeiten sind hart. Die Stadtwache rückt uns immer mehr auf die Pelle.
+<Wenn sie auf die Idee kommen uns anzugreifen, sind wir geliefert.
+<Frag mal vorsichtig auf den Bauernhöfen rum. Vielleicht ist da jemand, der neu anfangen will.
+<Wenn du mutig genug bist, kansnt du dich auch in der Stadt umsehen. Oder... vielleicht bist du auch einfach nur dumm genug.
+$STARTMIS newPirates
+$LOGMISS newPirates, Henry hat mir aufgetragen, neue Leute anzuwerben. Vielleicht finde ich ja jemanden auf einem der Bauernhöfe.
+
+info: getGoods
+conddia: whatNow
+>Vorräte? Wer soll uns denn beliefern?
+<Genau das ist ja die Frage. Bisher haben wir uns mit kleineren Streifzügen über Wasser gehalten.
+<Aber seit die Stadtwache aktiver wird, ist es schwer für uns geworden.
+<Wir müssen einen neuen Lieferanten finden. Aber nichts einmaliges, sondern etwas regelmäßiges.
+<Die Insel ist groß. Sieh und hör dich um. Du findest bestimmt jemanden!
+$STARTMIS getGoodsPirates
+$LOGMISS getGoodsPirates, Wir brauchen neue Vorräte im Piratenlager. Aber es muss etwas regelmäßiges sein. Das kann ja heiter werden... Wo ich so jemanden finden soll?
+
+info: whichSupplies
+conddia: getGoods
+>Was für Vorräte brauchen wir?
+<Kannst du dir das nicht denken?
+<Wasser und Bier, wenns sein muss auch Wein. 
+<Und Fleisch! Von dem ganzen Fisch wird einem ja übel.
+<Ich weiß, wir sind Seemänner, aber auf dem Meer gibt es die ganze Zeit nur Fisch.
+<Hier im Lager braucht man auch mal was handfestes zwischen den Zähnen.
+<Das alles muss für etwa zwanzig Leute reichen.
+>Zwanzig Leute? Wo hast du die denn versteckt?
+<Sehr witzig. Erstens hoffe ich ja, dass wir zahlenmäßig wachsend, zweitens können wir so einen Vorrat aufbauen.
+<Im Moment ist es ruhig. Aber wie ich die Sache kenne, dauert das nicht lange. Also müssen wir vorsorgen.
+>Klingt einleuchtend...
+<Na also! Los jetzt!
+$LOGMISS getGoodsPirates, Wasser und Bier oder Wein und Fleisch. Und das für zwanzig Leute. Regelmäßig! Der hat Vorstellungen...
+>Eins noch: Wo soll denn alles hingeliefert werden?
+<Das ist die etwas heiklere Sache. Aber auch dafür haben wir eine Lösung.
+<Unten im Tal, zwischen der Stadt und unserem Leuchtturm gibt es eine Höhle.
+<Dorthin kann alles geliefert werden. Wo wir gerade dabei sind... Könnte sein, dass da noch ein paar Viecher rumlaufen.
+<Sieh dich da mal kurz um und mach sauber. Dann steht den Lieferungen nichts mehr im Wege.
+>Außer, dass wir keinen Lieferanten haben.
+<Jaja, aber das bekommst du schon in den Griff.
+$STARTMIS caveFree
+$LOGMISS caveFree, Henry sagte, wenn ich schonmal dabei bin, solle ich die Höhle im Tal bei der Stadt von Viechern säubern. Was tut man nicht alles...
+
+info: gotEverything
+condcode: knowsWater == TRUE && knowsBeer == TRUE && knowsMeat == TRUE
+>Das müsste alles sein.
+<Gut, wir haben Wasser, Bier, Fleisch und sogar Wein. Wobei der Wein... egal!
+<Damit sollten wir erstmal über die Runden kommen.
+<Okay, das wäre dann erstmal alles.
+<Frag mal rum, vielleicht haben die anderen noch was für dich zu tun.
+$MISSUCC getGoodsPirates
+$LOGMISS getGoodsPirates, Die Vorräte sind aufgestockt. Langsam macht sich das Lager.
+
+info: whatNext
+conddia: gotEverything
+>Was steht sonst noch an?
+<Mit dir kann ich ja reden...
+<Mir bereitet die Stadtwache Kopfschmerzen. Wir kommen hier kaum noch weg, unser Kapitän ist irgendwo auf See und...
+<Naja, du kannst dir ja denken, was alles los ist.
+<Folgendes: Ich befürchte, wir werden nicht mehr all zu lange unsere Ruhe haben.
+<Alleine können wir aber nicht gegen die Miliz bestehen.
+<Ich habe also noch einen Auftrag für dich: Wir brauchen neue Freunde!
+<Oder zumindest jemanden, der mit uns zusammen kämpft.
+<Such uns neue Schwertbrüder, damit wir nicht alleine gegen die Typen antreten müssen.
+!getsRune == TRUE;
+$STARTMIS findFriends
+$LOGMISS findFriends, Henry hat mich losgeschickt, für uns 'neue Freunde' zu finden. Er befürchtet einen baldigen Angriff der Stadtwache und möchte ihnen nicht alleine gegenüberstehen.
+
+info: whereFriends
+conddia: whatNext
+condcode: MIS_findFriends == LOG_RUNNING
+>Wo soll ich denn Kämpfer finden?
+<Was weiß denn ich? Sieh dich um, frag vielleicht mal auf dem Bauernhof bei den Söldnern nach oder geh ins Kloster, wenn du dich traust.
+<Vielleicht können ja auch die Schwarzmagier jemanden abstellen.
+<Hör dich mal um. Ich bin mir sicher, du wirst jemanden finden.
+$LOGMISS findFriends, Henry sagt, ich könnte vielleicht jemanden auf einem der Bauernhöfe finden.
+
+info: meetingWithJareck
+conddia: SLD_700_Jareck, newFriends
+>Jareck will mit dir reden!
+<Was? Wieso das? Was will er denn?
+>Er wird uns unterstützen. Aber dafür musste ich einen Deal mit ihm eingehen.
+<(lauernd) Was für einen Deal?
+>Wir müssen die Stadt angreifen!
+<(bestürzt) Bist du wahnsinnig? Das werden wir niemals schaffen!
+>Deswegen unterstützt er uns.
+>Überleg mal: Wir haben einen gemeinsamen Gegner.
+>Sowohl wir Piraten, als auch die Söldner können nicht mehr unbehelligt in die Stadt.
+>Wir treten auf der Stelle. Seine Männer sind gut trainiert. Zusammen haben wir eine echte Chance!
+<Und worüber will er noch mit mir sprechen? Du hast doch schon alles geklärt.
+>Er will deine Zustimmung haben. Ich bin nur Handlanger, du bist der Boss.
+>Außerdem wollte er schon immer ein Bier mit dir trinken.
+<(lacht) Gut, dann will ich mal nicht so sein.
+<Wir treffen uns dann dort und besprechen alles Weitere!
+$LOGMISS findFriends, Henry hat einem Treffen zugestimmt. Er geht zu Jareck und wird dort dann mit mir alles Weitere besprechen.
+
+
+

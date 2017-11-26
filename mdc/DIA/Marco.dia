@@ -1,0 +1,74 @@
+person: MIL_2104_Marco, 8
+
+info: Exit
+
+info: youSellWeapons
+>Du verkaufst Waffen?
+<Auf ausdrücklichen Befehl der Paladine darf ich diese Waffen nur an Mitglieder der Stadtwache verteilen.
+<Natürlich kostenfrei, versteht sich.
+>Also verkaufst du welche?
+<Hast du mir nicht zugehört?
+<Als Miliz bekommst du eine Waffe, ansonsten nicht.
+<Und versuch gar nicht erst, mich zu bestechen.
+
+info: newInfos
+conddia: youSellWeapons
+>Du kannst doch bestimmt gut mit Waffen umgehen...
+<Sollte man meinen, nicht?
+<Aber mein Job ist nicht wirklich spannend.
+<Ich fasse zwar täglich mehrere Dutzend Schwerter an, aber mein eigenes schwinge ich nur sehr selten.
+>Schade, ich dachte...
+<...ich könnte dir etwas beibringen?
+<Leider nicht. Aber frag mal im Innenhof der Kaserne nach, da kann dir bestimmt jemand helfen.
+
+info: newInfos2
+conddia: newInfos
+condcode: MIS_newInfos == LOG_RUNNING
+>Eine Rose für Epona!
+<Psst! Spinnst du, das hier so laut rumzutröten?
+<Komm heute Abend gegen 19 Uhr zum Baum vor der Kaserne.
+<Dann sprechen wir!
+!FF_Remove(countRoses);
+!Npc_ExchangeRoutine(self,"Date");
+$LOGMISS newInfos, Es scheint, als hätte ich den Spitzel gefunden. Marco, der Milizionär, welcher die Waffen an die Soldaten verteilt, will sich heute Abend mit mir treffen. Ich soll gegen 19 Uhr zum Baum vor der Kaserne kommen.
+
+info: getInfos
+conddia:newInfos
+condcode: Npc_GetDistToWP(self, "NW_CITY_HABOUR_KASERN_05_01") <= 500
+condcode: Wld_IsTime(18,00,20,00)
+>Eine Rose für Epona!
+<Jaja, hör auf mit dem Quatsch.
+<Wer bist du, was willst du und woher hast du diesen Spruch?
+>Ich komme im Auftrag von Jareck. Da du es scheinbar nicht schaffst, soll ich deinen neuesten Bericht abholen.
+<Nicht schaffen? Hast du gesehen, wieviel Waffen in der Kaserne produziert und verteilt werden?
+<Ich KANN nicht einfach weg. Und genau DAS ist mein Bericht.
+>Wie bitte? Was meinst du damit?
+<Sag Jareck folgendes: Die Stadtwache bereitet sich auf etwas vor. An allen Ecken und Enden wird aufgerüstet.
+<Ich kann nicht sagen, wofür, aber die Söldner sollten sich besser vorbereiten.
+<Bevor es zu spät ist!
+>Na also, geht doch.
+<Und noch etwas: Wenn du das nächste Mal unser Erkennungszeichen so in die Welt herausschreist, dann NUTZE ich meine Klinge!
+!Npc_ExchangeRoutine(self, "Start");
+$LOGMISS newInfos, Marco hat beunruhigende Informationen für die Söldner. Die Stadtwache bereitet sich entweder auf einen Großangriff oder eine Verteidigung vor. Die gesamte Miliz wird mit neuen Waffen ausgestattet. Ich sollte Jareck schnellstmöglich davon berichten.
+$END
+
+info: getWeapon
+condcode: kapitel == 2
+>Ich soll mir meine Rüstung und eine Waffe abholen.
+<So, sollst du das?
+<Gut, dass ich noch was hier habe.
+<Hier hast du die Rüstung.
+<<ItAr_MIL_L, 1
+!AI_EquipBestArmor(self);
+<Wenn du eine bessere willst, musst du dafür bezahlen.
+<Und eine Waffe...
+<Ah, ja. Die hier sollte für den Anfang gut sein.
+<<ItMw_1h_Mil_Sword, 1
+<Wenn du eine andere haben möchtest, kann ich dir welche verkaufen.
+
+info: trade
+flags: permanent, trade
+conddia: getWeapon
+!B_GiveTradeInv(self);
+>Zeig mir deine Waffen!
+

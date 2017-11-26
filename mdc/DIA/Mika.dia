@@ -1,0 +1,116 @@
+person: VLK_3005_Mika, 9
+
+!var int knowsAboutHose;
+!var int mikaAkt;
+
+info: Exit
+
+info: youSchuerfer
+>Du bist Schürfer?
+<Ach was, wie kommst du denn darauf?
+<Was hat mich verraten?
+%
+opt: spitzhacke
+>Ich dachte da an deine Spitzhacke...
+<Ts... Du bist mir ja ein Spaßvogel.
+<Was kann ich für dich tun?
+%%
+opt: thoughtOfIt
+>Eigentlich nur die komische Hose.
+<Ach was, das unbequeme Ding.
+<Ich wünschte, ich hätte meine alte Lederrüstung noch.
+<Da drunter war es zwar warm, aber immerhin bekam ich so nicht immer die Splitter ab.
+<Gut, was kann ich für dich tun?
+!knowsAboutHose = TRUE;
+%%
+
+info:justTalk
+conddia: youSchuerfer
+>Ich wollte nur ein bisschen quatschen.
+<Sorry, dafür hab ich keine Zeit!
+<Du siehst ja, wieviel Erz wir noch aus dem Stein holen müssen.
+$END
+
+info: fromHatof
+conddia: VLK_412_Hatof, whatToDo
+>Hatof schickt mich, ich soll eine Erzkiste abholen!
+<Kann ich dir denn vertrauen?
+<Na gut, ich will mal nicht so sein. Wenigstens muss ich das Ding nicht selber schleppen.
+<<ItMi_Erzkiste, 1
+$LOGMISS workHatof, Mika hat mir die Erzkiste gegeben. Große Götter ist das Ding schwer! Schnell zu Hatof damit!
+<Richte ihm schöne Grüße aus und sag ihm, er soll langsamer schmieden! (lacht)
+<Wir kommen gar nicht hinterher mit dem Schürfen.
+
+info: youLookForHose
+condcode: knowsAboutHose == TRUE
+>Du suchst deine alte Lederrüstung?
+<Ja, Mann! Das Ding ist kaputt. Komplett zerissen.
+<Seit meinem letzten Kampf mit ein paar Wölfen ist sie in Reparatur.
+<Und ich komm hier verdammt nochmal nicht weg.
+
+info: shallIGo
+conddia: youLookForHose
+>Soll ich sie für dich holen?
+<Das würdest du tun?
+<Mensch, das wär klasse!
+>Wo hast du sie denn abgegeben?
+<Bei Ruperts 'gespannter Sehne'. Rupert ist der Lederverarbeiter in Mahlendur.
+<Hier hast du etwas Gold. Schließlich arbeitet auch er nicht umsonst.
+<<ItMi_Gold, 150
+<Aber versauf das Gold nicht!
+>Bin gleich wieder zurück!
+$STARTMIS mikaHose
+$LOGMISS mikaHose, Mika, einer der Schürfer vor der Stadt hat vor einigen Tagen seine Lederrüstung bei Rupert dem Lederer zur Reparatur abgegeben. Ich habe mich angeboten, die Rüstung für ihn abzuholen.
+!mikaTag = Wld_GetDay();
+
+info: gotYourRuestung
+conddia: shallIGo
+conditem: ItAr_Mika
+>Ich hab deine Rüstung!
+>>ItAr_Mika, 1
+!mikaAkt = Wld_GetDay() - mikaTag;
+$IF mikaAkt >= 3
+<Das hat aber auch lange gedauert! Musstest du die Rüstung erst noch nähen?
+>Ich nicht, aber Rupert!
+<Hah, das glaubst du doch wohl selber nicht.
+<Hast wahrscheinlich das Gold doch versoffen und musstest erst neues auftreiben.
+>Ich..
+<Ist ja auch egal, jetzt hab ich meine Rüstung ja wieder. Danke dafür.
+<Hier hast du ein wenig Gold. Diesmal kannst du es versaufen!
+<<ItMi_Gold, 20
+$EXP XP_AmbientKap1
+$LOGMISS mikaHose, Mika hat seine Rüstung wieder. Scheinbar hat es ihm zu lange gedauert, aber immerhin habe ich etwas Gold bekommen.
+$MISSUCC mikaHose
+$ENDIF
+$IF mikaAkt == 2
+<Ich dachte schon, du hättest dir nen Knopf an die Back genäht.
+>So ähnlich...
+<(lacht) Gut, dass du dann noch sprechen kannst.
+<Vielen Dank für die Rüstung. Ein Weg gespart.
+<Warte, ich geb dir etwas Gold als Belohnung. Hast du dir verdient.
+<<ItMi_Gold, 30
+$EXP XP_AmbientKap2
+$LOGMISS mikaHose, Mika hat seine Rüstung wieder. Er schien zufrieden. Wenigstens ist mein Goldbeutel etwas voller.
+$MISSUCC mikaHose
+$ENDIF
+$IF mikaAkt == 1
+<Mensch, das ging flott!
+<Danke fürs Laufen. Hier ist deine Belohnung. Versauf nicht alles auf einmal!
+<<ItMi_Gold, 50
+$EXP XP_AmbientKap2
+$LOGMISS mikaHose, Mika hat seine Rüstung wieder. Er war sehr glücklich und gab mir etwas Gold für meine Mühen.
+$MISSUCC mikaHose
+$ENDIF
+$IF mikaAkt == 0
+<Bist du geflogen?
+<Wie auch immer. Ich danke dir für den Weg.
+<Hier, das sollte dir helfen. Viel Erfolg für die Zukunft!
+<<ItMi_Gold, 75
+<<ItPo_Health_01, 1
+$EXP XP_AmbientKap3
+$LOGMISS mikaHose, Mika hat seine Rüstung wieder. Er schien sehr zufrieden mit mir, gab mir etwas Gold und sogar einen Heiltrank!
+$MISSUCC mikaHose
+$ENDIF
+
+
+

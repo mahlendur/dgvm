@@ -1,0 +1,88 @@
+person: VLK_418_Timon, 6
+
+!var int pflanzenzahl;
+!var int heilPflanzenzahl;
+!var int clovisChoice;
+
+info: Exit
+
+info: sellPlants
+>Du verkaufst Pflanzen?
+<Und zwar nur die erlesensten! Alles frisch gesammelt. Bessere Ware wirst du auf der ganzen Insel nicht finden.
+<Brauchst du etwas?
+
+info: letsTrade
+conddia: sellPlants
+num: 998
+flags: permanent, trade
+!B_GiveTradeInv(self);
+>Zeig mir deine Pflanzen!
+
+info: knowPlants
+conddia: VLK_417_Clovis, whatsThis
+>Kennst du dich auch mit Pflanzen aus?
+<Natürlich! Wie sollte ich sonst mit gutem Gewissen das Grünzeug verkaufen?
+<Wieso fragst du?
+
+info: canIdentify
+conditem: ItPl_Unknown, 2
+conddia: knowPlants
+>Kannst du diese Pflanzen für mich identifizieren?
+>>ItPl_Unknown, 2
+<Das könnte ich, ja. Wofür brauchst du sie denn?
+%
+
+opt: wannaSell
+>Ich will die Pflanzen verkaufen!
+<Und ich soll sie identifizieren? Damit ich mir mein eigenes Geschäft kaputt mache?
+<Nein, Danke! Such dir einen anderen Dummen!
+<<ItPl_Unknown, 2
+%%
+
+opt: wannaLearn
+desc: Ich will bei Clovis als Lehrling anfangen
+>Ich will bei Clovis als Lehrling anfangen und er hat mich losgeschickt, zehn Heilpflanzen zu besorgen.
+<Soso, Clovis mal wieder.
+<Du bist nicht der erste, der diesen Auftrag bekommen hat und auch nicht der erste, der entnervt aufgegeben hat.
+<Aber, wenn es dir ernst ist, werde ich dir die Pflanzen identifizieren.
+<Lass mal sehen...
+<Hm, sieht aus, als hättest du Glück. Zumindest eine Heilpflanze ist dabei. Das andere ist leider nur Unkraut.
+<<ItPl_Weed, 1
+<<ItPl_Health_Herb_01, 1
+<Wenn du noch mehr Pflanzen brauchst, komm wieder zu mir! Ich werde dir dabei helfen! Jeweils zehn Pflanzen identifiziere ich dir gleichzeitig!
+$LOGMISS workClovis, Timon, der Kräuter- und Tränkehändler am Marktplatz hat mir angeboten, die Pflanzen für mich zu identifizieren.
+!clovisChoice = 1;
+%%
+
+opt: wannaEat
+>Ich wollte die Pflanzen essen.
+<Ach, wirklich? Lass mal sehen.
+<Hmm, die eine könntest du essen. Blauflieder, sehr schmackhaft.
+<<ItPl_Blueplant, 1
+<Bei der anderen würde ich dir davon abraten. Sumpfkraut macht sehr schnell abhängig!
+<<ItPl_SwampHerb, 1
+<Kann ich sonst noch etwas für dich tun?
+!clovisChoice = 2;
+%%
+
+info: canIdentifyMore
+condcode: MIS_workClovis == LOG_RUNNING
+condcode: clovisChoice == 1
+flags: permanent
+>Kannst du noch ein paar Pflanzen für mich identifizieren?
+<Klar, gib her! Denk dran, mindestens zehn Stück!
+$IF Npc_HasItems(hero, ItPl_Unknown) >= 10
+>Hier!
+>>ItPl_Unknown, 10
+<Na, siehst du, ein paar Heilpflanzen sind immerhin dabei!
+<<ItPl_Health_Herb_01, 3
+<Der Rest ist glaube ich erst einmal uninteressant.
+<Ich geb dir etwas Gold dafür!
+<<ItMi_Gold, 50
+<Wenn du noch welche brauchst, komm wieder!
+$ELSE
+>Dann habe ich nicht genug dabei!
+<Gut, dann sammel noch welche und komm dann wieder!
+$ENDIF
+
+

@@ -1,0 +1,148 @@
+person: VLK_417_Clovis, 10
+
+info: Exit
+
+info: niceDranks
+>Nette Tränke hast du hier.
+>Verkaufst du die auch?
+<Kommt drauf an... Hast du Gold?
+
+info: workAlch
+conddia: niceDranks
+>Kann ich auch dafür arbeiten?
+<Ein Tagelöhner? Damit kann ich nichts anfangen.
+>Ich dachte mehr an einen Lehrling.
+<Einen Lehrling? Das ist etwas anderes... Ich habe lange keinen Lehrling mehr gehabt.
+<Es wird anstrengend, dessen bist du dir bewusst?
+>Was soll denn am Tränke brauen so anstrengend sein?
+<Ignorant! Natürlich nicht am Brauen.
+<Aber was glaubst du, wo die Pflanzen herkommen?
+<Die fallen garantiert nicht vom Himmel.
+<Ich glaube, bevor ich dich als Lehrling aufnehme, wirst du erst einmal Respekt vor den Pflanzen lernen müssen.
+
+info: whatPlants
+conddia: workAlch
+>Was soll ich für dich tun?
+<Ich benötige neue Pflanzen. Um genau zu sein, zehn Heilkräuter.
+<Besorge sie mir und wir schauen weiter.
+$STARTMIS workClovis
+$LOGMISS workClovis, Clovis der Alchemist möchte, dass ich für ihn Blümchen pflücke. Zehn Heilkräuter soll ich ihm bringen, dann nimmt er mich vielleicht als Lehrling auf.
+
+info: whereToFind
+conddia: whatPlants
+>Und wo finde ich Heilkräuter?
+<Die Dinger wachsen überall.
+<Aber achte darauf, dass du die richtigen pflückst.
+<Halte einfach die Augen auf.
+$LOGMISS workClovis, Er sagt, die Pflanzen wachsen überall. Mal sehen, wo die Dinger sind.
+
+info: whatsThis
+conddia: whereToFind
+conditem: ItPl_Unknown, 3
+>Was sind das denn für Pflanzen?
+>>ItPl_Unknown, 2
+<Was meinst du?
+>Hier, diese Pflanzen! Die Büschel sehen für mich alle gleich aus!
+<Achso, du hast Probleme die Pflanzen zu identifizieren?
+<Tja, gut, dass du noch keine gegessen hast. Eine war nämlich giftig.
+<<ItPl_Unknown
+>Wie bitte? Das sagst du mir jetzt?
+<Ich hatte gehofft, dass du so intelligent bist.
+>Und was sollich mit den Büscheln machen?
+<Na, identifizieren natürlich!
+>Und wie? Ich sagte doch schon, die sehen alle gleich aus.
+<Du bist doch ein intelligenter Bursche. Du schaffst das schon.
+
+info: canYouIdentify
+conddia: whatsThis
+condcode: MIS_workClovis == LOG_RUNNING
+>Kannst du die Pflanzen nicht identifizieren?
+<Könnte ich, aber ich habe keine Zeit dazu.
+<Such dir jemand anderen. Du findest bestimmt jemanden!
+
+info: getYourself
+conddia: whatsThis
+condcode: MIS_workClovis == LOG_RUNNING
+>Wie wärs, wenn du deine Pflanzen selber holst?
+>Den Scheiß macht doch niemand freiwillig.
+<Hah! Wusste ich es doch, dass du nicht der Richtige bist.
+<In Ordnung, ich hole meine Pflanzen selbst.
+<Aber glaube nicht, dass ich dir auch nur eine Sache beibringe, oder dir noch etwas verkaufe.
+$END
+$EXP 50
+$MISFAIL workClovis
+$LOGMISS workClovis, Jetzt habe ich's verbockt. Clovis ist sauer und wird mir weder etwas beibringen, noch etwas verkaufen. Manchmal sollte ich mir vorher überlegen, was ich sage...
+
+info: gotYourPlants
+conddia: whatsThis
+conditem: ItPl_Health_Herb_01, 10
+>Ich habe hier deine Pflanzen!
+<Du hast sie tatsählich alle gefunden?
+<Potzblitz! Damit habe ich nicht gerechnet.
+<Und? Merkst du jetzt, dass die Arbeit als Alchemist und Kräutersammler keine leichte ist?
+>Ja, das habe ich am eigenen Leib erfahren...
+<Bist du trotzdem noch bereit bei mir anzufangen?
+<Wenn du willst, bringe ich dir die Alchemie oder die Kräuterkunde bei.
+$EXP 250
+
+info: wannaHerb
+conddia: gotYourPlants
+condcode: jobCounter <= 1
+condcode: learnedHerb == FALSE
+flags: permanent
+desc: Bring mir das Kräutersammeln bei! (5 LP)
+>Bring mir das Kräutersammeln bei!
+$IF other.lp >= 5
+<In Ordnung. Wie du vielleicht selbst bemerkt hast, ist das Sammeln nicht das Schwierige.
+<Aber es ist schon eine gewisse Kunst, zu erkennen, welche Pflanze nützlich ist und welche Unkraut oder gar giftig.
+<Du hast recht, die Pflanzen sehen sich sehr ähnlich. Allerdings kann man sie mit etwas Übung gut unterscheiden.
+<Übe etwas. Du wirst sehen, mit der Zeit wird es dir leichter fallen, auch extrem ähnlich aussehende Pflanzen zu unterscheiden.
+$LOGNOTE Herbalism, Ich habe von Clovis die Kräuterkunde gelernt. Er zeigte mir, wie ich verschiedene Pflanzen unterscheiden kann.
+$EXP 200
+!jobCounter += 1;
+!learnedHerb = TRUE;
+!AI_PrintS(self, "Neuer Beruf: Kräuterkunde!");
+!other.lp = other.lp-5;
+!herbSkill = 1;
+$IF MIS_getCitizen == LOG_RUNNING
+$MISSUCC getCitizen
+$LOGMISS getCitizen, Clovis hat mich als Lehrling aufgenommen und mir beigebracht, wie ich verschiedene Pflanzen unterscheide. Ich darf mich jetzt Lehrling der Kräuterkunde und Bürger der Stadt nennen!
+!Npc_SetTrueGuild(hero, GIL_VLK);
+$ENDIF
+$ELSE
+<Das würde ich gerne, aber mir scheint, du bist noch nicht bereit dazu.
+<Komm wieder, wenn du mehr Erfahrung hast!
+$ENDIF
+
+info: wannaAlchy
+conddia: gotYourPlants
+condcode: jobCounter <= 1
+condcode: learnedAlch == FALSE
+flags: permanent
+desc: Lehre mich die Alchemie! (5 LP)
+>Lehre mich die Alchemie!
+$IF other.lp >= 5
+<Gut, pass auf und hör mir genau zu!
+<Alchemie bedeutet nicht ein paar Pflanzen zusammen mit Wasser zu erhitzen. Die Alchemie ist ein nützliches, aber auch sehr gefährliches Handwerk.
+<Einige Tränke bestehen aus Pflanzen, die normalerweise giftig wären. Erhitzt du einen solchen Trank zu lange, kann er tödlich werden, erhitzt du ihn zu kurz, wird er unwirksam.
+<Deswegen: Halte dich zuerst an einfache Tränke, wie Heil oder Manatränke. Wenn diese gelingen, kannst du schwierigere Gebräue versuchen.
+<Achte aber darauf, dass du niemanden umbringst!
+$EXP 200
+$LOGNOTE Alchemy, Clovis hat mir die Grundlagen der Alchemie beigebracht. Ich kann jetzt Heiltränke und Manatränke brauen!
+!jobCounter += 1;
+!learnedAlch = TRUE;
+!AI_PrintS(self, "Neuer Beruf: Alchemie!");
+!other.lp = other.lp-5;
+!alchSkill = 1;
+$IF MIS_getCitizen == LOG_RUNNING
+$MISSUCC getCitizen
+$LOGMISS getCitizen, Clovis hat mich als Lehrling aufgenommen und mir beigebracht, wie ich verschiedene Tränke braue. Ich darf mich jetzt Lehrling der Alchemie und Bürger der Stadt nennen!
+!Npc_SetTrueGuild(hero, GIL_VLK);
+$ENDIF
+$ELSE
+<Das würde ich gerne, aber mir scheint, du bist noch nicht bereit dazu.
+<Komm wieder, wenn du mehr Erfahrung hast!
+$ENDIF
+
+
+

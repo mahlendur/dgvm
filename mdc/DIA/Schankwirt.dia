@@ -1,0 +1,35 @@
+person: VLK_4008_Schankwirt, 4
+
+info: Exit
+
+info: start
+condcode: Npc_IsInState(self, ZS_TALK)
+flags: important
+>Hey, du! Du siehst durstig aus.
+>Komm zu uns und trink dir ein Bier. Geht aufs Haus!
+>>ItFo_Beer, 1
+
+info: fromWhere
+>Woher bekommst du dein Bier?
+<Och, einige der Handwerker zahlen mir regelmäßig Gold. Sie wollen nach der Arbeit was trinken und der Wirt am Tempel soll sehr unfreundlich sein.
+<Dann geben die Stadtwache und die Paladine immer wieder Gold. Für sich selbst, aber vor allem für die Reisenden.
+
+info: couldSend
+condcode: MIS_getGoodsPirates == LOG_RUNNING
+>Könntest du auch Bier liefern?
+<Liefern? Wo soll's denn hingehen?
+>Wir haben da eine Höhle, hier direkt neben der Stadt.
+<Wir? Wer ist denn wir?
+>Wir sind...
+>...naja...
+>...sagen wir...
+>...eine freie Gruppe Abenteurer.
+<(lächelt) Soso. Weißt du, eigentlich ist mir das auch egal.
+<Wenn ich da 50 Goldstücke finde, dann liefer ich die das Bier.
+<Wieviel brauchst du denn?
+>Genug für zwanzig Leute.
+<Zwanzig? Okay, das ist auch machbar, aber das wird teurer.
+>Wieviel?
+<125 Goldstücke. Dann ist alles geritzt.
+$LOGMISS getGoodsPirates, Wir bekommen Bier aus der Stadt geliefert. 125 Goldstücke im Tausch für ein paar Fässer, das klingt fair.
+

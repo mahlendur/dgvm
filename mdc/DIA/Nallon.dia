@@ -1,0 +1,83 @@
+person: NONE_9991_Nallon, 14
+
+info: Exit
+
+info: whoAreYou
+>Schöne Taverne, nicht?
+<Hm? Jaja, mag schon sein.
+
+info: whatsGoingOn
+conddia: whoAreYou
+>Was ist denn mit dir los?
+<Hm? Achso, entschuldige meine ruppige Art.
+<Ich bin einfach ein alter Mann, der viel zu lange zur See gefahren ist.
+<Und jetzt? Mein letztes Schiff wurde beschlagnahmt und ich verbringe meine Zeit, indem ich hier sitze und alte Geschichten und Legenden erzähle.
+<Manchmal wird man da etwas melancholisch. Und je näher es auf das eigene Ende zu geht, desto häufiger passiert das.
+
+info: yourEnd
+conddia: whatsGoingOn
+>Das eigenes Ende?
+<Ach Junge, ich mache mir nichts vor. Sieh mich doch an. Ich bin ein alter Mann.
+<Meine Lebensuhr läuft ab. Ich kann spüren, dass meine Zeit bald abgelaufen ist.
+
+info: youKnowLegends
+conddia: whatsGoingOn
+conddia: NONE_9990_Elvellia, whereIsHe
+>Du kennst dich mit alten Legenden aus?
+<Vielleicht nicht so gut wie irgendein Schriftgelehrter, aber für schaurig-schöne Tavernenabende reicht es allemale.
+<Wieso, möchtest du eine hören?
+
+info: knowAeon
+conddia: youKnowLegends
+>Kennst du die Legende von Aeon?
+<Aeon... Den Namen habe ich schon Ewigkeiten nicht mehr gehört.
+<Ja, die Legende ist mir durchaus bekannt.
+>Worum geht es?
+<Es ist die Legende des Paradieses. Sie wird hauptsächlich in Seefahrerkreisen erzählt, denn sie besagt, dass du Aeon nur über das Meer erreichst.
+<Schlägst du die richtige Richtung ein und segelst lange genug, dann erreichst du irgendwann die Küste von Aeon.
+<Allerdings hat die Sache einen Haken. Aeon liegt nicht in unserer Sphäre. Aeon ist der Ort der Toten, der friedvollen Seelen.
+<Das ist aber eine spezielle Legende... Wieso fragst du?
+%
+
+opt: justSo
+>Nur so.
+>Ich habe den Namen letztens irgendwo aufgeschnappt und fand ihn einfach interessant.
+<Ach so. Dann hoffe ich, dass ich dir helfen konnte.
+$MISFAIL shoreToAeon
+%%
+
+opt: ghostWoman
+>Ich habe eine Frau getroffen, die an diese Legende glaubt.
+<Wirklich? Immerhin macht das kaum noch jemand. Was sagt sie denn?
+>Sie wartet auf ihren Liebsten, damit sie zusammen nach Aeon reisen können.
+<Achje. Das ist nicht gut. Ist etwas... ungewöhnlich an dieser Frau?
+>Naja, sie ist... Sie ist ein Geist.
+<Ein Geist!? Dann ist sie wirklich bemitleidenswert.
+<Und ihr Liebster?
+>Ist mit der königlichen Marine von Mahlendur aus aufgebrochen. Allerdings glaube ich, dass sein Schiff zerstört wurde.
+<Das ist nicht gut. Das würde bedeuten, dass sie diese Welt nicht verlassen kann.
+$LOGMISS shoreToAeon, Nallon, ein alter Seemann in der Taverne kennt ebenfalls die Legende von Aeon. Er sprach von einem Ort, der den Seelen der Toten gehört. Das würde erklären, warum ein Geist dorthin will. Wenn ihr Liebster allerdings wirklich tot ist, dann kann sie diese Welt nicht verlassen. Irgendwie muss ihr doch zu helfen sein...
+%%
+
+info: canHelp
+conddia: knowAeon
+condcode: MIS_shoreToAeon == LOG_RUNNING
+>Gibt es nicht einen Weg ihr zu helfen?
+<Jemand müsste sie dorthin geleiten.
+<Es müsste jemand sein, der sein Leben gelebt hat und sich freiwillig auf die möglicherweise endlose Reise macht.
+<Wenn du also jemanden kennst, dann Ja.
+>Naja...
+<Kennst du so jemanden?
+>Ich kenne zumindest einen alten Seebären mit einem großen Herzen, der seine eigene Lebensuhr ablaufen fühlt.
+<Und wer... Oh! Das habe ich verstanden.
+<Vielleicht hast du Recht. Ich habe mein Leben gelebt. Vielleicht ist das die erstrebenswerteste Art, diese Welt zu verlassen.
+<Wenn ich dadurch meine eigene und die Seele eines anderen Menschen retten kann, wer weiß?
+<Also gut, wo finde ich die Frau?
+>An der Küste, hinter dem Piratenlager. Wenn du ein kleines Boot vom Hafen aus nimmst, fahre am Piratennest vorbei. In der nächsten Bucht wartet sie.
+<In Ordnung. Ich danke dir. So kann ich dem Rest meines Lebens wenigstens noch einen Sinn verleihen.
+>Die Frau heißt übrigens Elvellia.
+<Elvellia und Nallon. Passt irgendwie zusammen, findest du nicht?
+<Gut, ich werde zu ihr gehen. Wir werden diese Reise gemeinsam antreten.
+$MISSUCC shoreToAeon
+$LOGMISS shoreToAeon, Nallon hat sich bereit erklärt, Elvellia nach Aeon zu bringen. Ich hoffe für die Beiden, dass es wirklich existiert.
+$EXP 700

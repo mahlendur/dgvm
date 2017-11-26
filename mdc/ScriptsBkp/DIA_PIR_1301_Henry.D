@@ -1,0 +1,565 @@
+// Diese Datei wurde automatisch durch den Miranda Dialog Creator erstellt!
+// Sie sollte nicht manuell editiert werden, da �nderungen beim erneuten Aufruf
+// des Creators �berschrieben werden!
+
+<<<<<<< .mine
+||||||| .r34
+var int knowsWater;
+var int knowsBeer;
+var int knowsMeat;
+=======
+var int getsRune;
+>>>>>>> .r35
+
+// **************************************************
+
+instance PIR_1301_Henry_Exit (C_INFO)
+{
+	npc			= PIR_1301_Henry;
+	condition		= PIR_1301_Henry_Exit_Condition;
+	information		= PIR_1301_Henry_Exit_Info;
+	important		= FALSE;
+	permanent		= TRUE;
+	nr			= 999;
+	description		= DIALOG_ENDE;
+};
+
+func int PIR_1301_Henry_Exit_Condition()
+{
+	return TRUE;
+};
+
+func void PIR_1301_Henry_Exit_Info()
+{
+	if (getsRune == TRUE)
+	{
+		AI_Output(other, self, "PIR_1301_Henry_Exit_Info_15_01"); // Achso, eines noch!
+		AI_Output(other, self, "PIR_1301_Henry_Exit_Info_15_02"); // Hier, nimm diese Teleportrune mit.
+		AI_Output(other, self, "PIR_1301_Henry_Exit_Info_15_03"); // Dann musst du nicht jedes Mal über die halbe Insel rennen, wenn du zurück ins Lager willst.
+		B_GiveInvItems(other, self, ItRu_TeleportPirates,  1);
+	};
+	AI_StopProcessInfos(self);
+};
+
+// **************************************************
+
+instance PIR_1301_Henry_whoAreYou (C_INFO)
+{
+	npc			= PIR_1301_Henry;
+	condition		= PIR_1301_Henry_whoAreYou_Condition;
+	information		= PIR_1301_Henry_whoAreYou_Info;
+	important		= TRUE;
+	permanent		= FALSE;
+};
+
+func int PIR_1301_Henry_whoAreYou_Condition()
+{
+	return TRUE;
+};
+
+func void PIR_1301_Henry_whoAreYou_Info()
+{
+	AI_Output(self, other, "PIR_1301_Henry_whoAreYou_Info_09_01"); // Wer bist du denn? Hat Gilbert dich etwa reingelassen?
+	AI_Output(other, self, "PIR_1301_Henry_whoAreYou_Info_15_02"); // Hat er. Er sagte, ich solle mich bei dir melden.
+	AI_Output(self, other, "PIR_1301_Henry_whoAreYou_Info_09_03"); // Jeden Arsch schickt der einfach durch. Ich glaube, ich brauche eine neue Torwache.
+	AI_Output(self, other, "PIR_1301_Henry_whoAreYou_Info_09_04"); // Was willst du?
+};
+
+// **************************************************
+
+instance PIR_1301_Henry_wannaJoin (C_INFO)
+{
+	npc			= PIR_1301_Henry;
+	condition		= PIR_1301_Henry_wannaJoin_Condition;
+	information		= PIR_1301_Henry_wannaJoin_Info;
+	important		= FALSE;
+	permanent		= FALSE;
+	description		= "Ich will euch beitreten!";
+};
+
+func int PIR_1301_Henry_wannaJoin_Condition()
+{
+	if ((Npc_KnowsInfo(hero, PIR_1301_Henry_whoAreYou)) && (wannaJoinPirates == TRUE))
+	{
+		return TRUE;
+	};
+};
+
+func void PIR_1301_Henry_wannaJoin_Info()
+{
+	AI_Output(other, self, "PIR_1301_Henry_wannaJoin_Info_15_01"); // Ich will euch beitreten!
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoin_Info_09_02"); // Du? Als Pirat?
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoin_Info_09_03"); // Was meinst du, befähigt dich dazu?
+	AI_Output(other, self, "PIR_1301_Henry_wannaJoin_Info_15_04"); // Ich bin schon früher zur See gefahren. Als Soldat auf einem königlichen Kriegsschiff bleibt das nicht aus.
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoin_Info_09_05"); // (erstaunt) Auf einem königlichen Kriegsschiff? Na, dann haben wir ja hohen Besuch.
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoin_Info_09_06"); // Kommst du im Auftrag der Paladine?
+	AI_Output(other, self, "PIR_1301_Henry_wannaJoin_Info_15_07"); // Nein, ich bin aus eigenem Antrieb hier. Wie gesagt, ich will mich euch anschließen.
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoin_Info_09_08"); // Und warum sollten wir dich bei uns aufnehmen?
+	AI_Output(other, self, "PIR_1301_Henry_wannaJoin_Info_15_09"); // Ich kann nützlich sein für euch.
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoin_Info_09_10"); // Da bin ich ja mal gespannt...
+};
+
+// **************************************************
+
+instance PIR_1301_Henry_whatToDo (C_INFO)
+{
+	npc			= PIR_1301_Henry;
+	condition		= PIR_1301_Henry_whatToDo_Condition;
+	information		= PIR_1301_Henry_whatToDo_Info;
+	important		= FALSE;
+	permanent		= FALSE;
+	description		= "Wie kann ich dir beweisen, dass ich etwas tauge?";
+};
+
+func int PIR_1301_Henry_whatToDo_Condition()
+{
+	if (Npc_KnowsInfo(hero, PIR_1301_Henry_wannaJoin))
+	{
+		return TRUE;
+	};
+};
+
+func void PIR_1301_Henry_whatToDo_Info()
+{
+	AI_Output(other, self, "PIR_1301_Henry_whatToDo_Info_15_01"); // Wie kann ich dir beweisen, dass ich etwas tauge?
+	AI_Output(self, other, "PIR_1301_Henry_whatToDo_Info_09_02"); // Ich habe Männer, die kämpfen können und sogar ein paar der Sorte Dumm und Stark. Die können anpacken.
+	AI_Output(self, other, "PIR_1301_Henry_whatToDo_Info_09_03"); // Und wenn der Käpt'n mit dem Rest von der Kaperfahrt wiederkommt werden es noch mehr.
+	AI_Output(self, other, "PIR_1301_Henry_whatToDo_Info_09_04"); // Aber wir alle haben einen Nachteil: Wir werden gesucht.
+	AI_Output(self, other, "PIR_1301_Henry_whatToDo_Info_09_05"); // Keiner von uns kann auch nur einen Fuß in die Nähe der Stadt setzen, ohne von Pfeilen durchbohrt zu werden.
+	AI_Output(self, other, "PIR_1301_Henry_whatToDo_Info_09_06"); // Was wir brauchen ist jemand wie du. Ein unbekanntes Gesicht.
+	AI_Output(other, self, "PIR_1301_Henry_whatToDo_Info_15_07"); // Soll ich etwa den Anführer der Paladine töten? Dann wäre ich nicht mehr unbekannt.
+	AI_Output(self, other, "PIR_1301_Henry_whatToDo_Info_09_08"); // (lacht) Nein, das wäre zu viel des Guten, aber ich mag die Art, wie du denkst.
+	AI_Output(self, other, "PIR_1301_Henry_whatToDo_Info_09_09"); // Ich habe eine viel einfachere Aufgabe für dich.
+	AI_Output(self, other, "PIR_1301_Henry_whatToDo_Info_09_10"); // Wir können die Stadt nicht frontal angreifen, zu gefährlich. Also müssen wir es heimlich und unauffällig tun.
+	AI_Output(self, other, "PIR_1301_Henry_whatToDo_Info_09_11"); // Finde einen Weg in die Stadt! Einen Weg, der uns am Besten mitten in die Stadt führt, aber nicht oder nur sehr wenig bewacht wird.
+	AI_Output(self, other, "PIR_1301_Henry_whatToDo_Info_09_12"); // Finde ihn und du bist dabei!
+	B_LogEntry(TOPIC_newLife, "Henry, der Anführer der Piraten ist bereit mich in die Truppe aufzunehmen. Dazu muss ich nur seinen Auftrag erfüllen.");
+	MIS_wayCity = LOG_RUNNING;
+	Log_CreateTopic(TOPIC_wayCity, LOG_MISSION);
+	Log_SetTopicStatus(TOPIC_wayCity, LOG_RUNNING);
+	Log_AddEntry(TOPIC_wayCity, "Um Mitglied der Piratenbande zu werden, muss ich einen Auftrag für Henry erfüllen. Die Piraten können die Stadt nicht mehr betreten, da sie alle gesucht werden. Meine Aufgabe ist nun, einen solchen Weg zu finden. Mal schauen, wo ich anfange...");
+};
+
+// **************************************************
+
+instance PIR_1301_Henry_whereToTake (C_INFO)
+{
+	npc			= PIR_1301_Henry;
+	condition		= PIR_1301_Henry_whereToTake_Condition;
+	information		= PIR_1301_Henry_whereToTake_Info;
+	important		= FALSE;
+	permanent		= FALSE;
+	description		= "Wo soll es denn einen solchen Weg geben?";
+};
+
+func int PIR_1301_Henry_whereToTake_Condition()
+{
+	if (Npc_KnowsInfo(hero, PIR_1301_Henry_whatToDo))
+	{
+		return TRUE;
+	};
+};
+
+func void PIR_1301_Henry_whereToTake_Info()
+{
+	AI_Output(other, self, "PIR_1301_Henry_whereToTake_Info_15_01"); // Wo soll es denn einen solchen Weg geben?
+	AI_Output(self, other, "PIR_1301_Henry_whereToTake_Info_09_02"); // Wenn ich dir die Frage beantworten könnte, müsste ich dich nicht losschicken.
+	AI_Output(self, other, "PIR_1301_Henry_whereToTake_Info_09_03"); // Ich weiß es nicht. Sei kreativ.
+	AI_Output(other, self, "PIR_1301_Henry_whereToTake_Info_15_04"); // Wie wärs mit Fliegen?
+	AI_Output(self, other, "PIR_1301_Henry_whereToTake_Info_09_05"); // Noch so eine blöde Idee und du lernst das Fliegen!
+	AI_Output(other, self, "PIR_1301_Henry_whereToTake_Info_15_06"); // Schon gut... Ich geh mal auf die Suche!
+	AI_StopProcessInfos(self);
+};
+
+// **************************************************
+
+instance PIR_1301_Henry_foundWay (C_INFO)
+{
+	npc			= PIR_1301_Henry;
+	condition		= PIR_1301_Henry_foundWay_Condition;
+	information		= PIR_1301_Henry_foundWay_Info;
+	important		= FALSE;
+	permanent		= FALSE;
+	description		= "Ich habe einen Weg gefunden!";
+};
+
+func int PIR_1301_Henry_foundWay_Condition()
+{
+	if ((Npc_KnowsInfo(hero, PIR_1301_Henry_whereToTake)) && (bothDoorsFound == TRUE))
+	{
+		return TRUE;
+	};
+};
+
+func void PIR_1301_Henry_foundWay_Info()
+{
+	AI_Output(other, self, "PIR_1301_Henry_foundWay_Info_15_01"); // Ich habe einen Weg gefunden!
+	AI_Output(self, other, "PIR_1301_Henry_foundWay_Info_09_02"); // Echt? Ehrlicherweise muss ich sagen, dass ich damit nicht gerechnet hätte.
+	AI_Output(self, other, "PIR_1301_Henry_foundWay_Info_09_03"); // Hier, nimm erstmal ein Bier und dann erzähl!
+	CreateInvItems(self, ItFo_Beer,  1);
+	B_GiveInvItems(self, other, ItFo_Beer,  1);
+	AI_Output(other, self, "PIR_1301_Henry_foundWay_Info_15_04"); // Danke!
+	AI_UseItem(hero, ItFo_Beer);
+	AI_Output(other, self, "PIR_1301_Henry_foundWay_Info_15_05"); // Also, der Weg ist eigentlich ganz einfach.
+	AI_Output(other, self, "PIR_1301_Henry_foundWay_Info_15_06"); // Wenn ihr die Klippe umschifft, die euer Lager vom Hafen trennt und euch nah an den Felsen haltet, kommt ihr zum Eingang der Kanalisation.
+	AI_Output(self, other, "PIR_1301_Henry_foundWay_Info_09_07"); // Kanalistation? Glaubst du allen Ernstes ich latsche durch die Scheiße?
+	AI_Output(other, self, "PIR_1301_Henry_foundWay_Info_15_08"); // Entspann dich! Die Kanalisation ist quasi trocken. Solange du nicht in der Mitte läufst, ist alles in Ordnung.
+	AI_Output(self, other, "PIR_1301_Henry_foundWay_Info_09_09"); // Das will ich für dich hoffen. Gut, weiter!
+	AI_Output(other, self, "PIR_1301_Henry_foundWay_Info_15_10"); // Folgt ihr dem Weg und verlauft euch nicht, kommt ihr zu einer Treppe. Diese führt zum Hotel hinauf.
+	AI_Output(other, self, "PIR_1301_Henry_foundWay_Info_15_11"); // Ihr kommt also unbemerkt für alle direkt an der Kaserne aus. Dort sind vergleichsweise wenig Wachen also ideal für euch.
+	AI_Output(self, other, "PIR_1301_Henry_foundWay_Info_09_12"); // Das ist...
+	AI_Output(self, other, "PIR_1301_Henry_foundWay_Info_09_13"); // Mensch. Ich bin beeindruckt! Gute Arbeit. Jetzt kann der Spaß anfangen.
+	AI_Output(self, other, "PIR_1301_Henry_foundWay_Info_09_14"); // Aber, wenn du willst, kannst du uns beitreten. Du bist fähiger als die Hälfte der Männer, die gerade mit dem Käpt'n unterwegs sind.
+	AI_Output(self, other, "PIR_1301_Henry_foundWay_Info_09_15"); // Wie siehts aus?
+	MIS_wayCity = LOG_SUCCESS;
+	Log_SetTopicStatus(TOPIC_wayCity, LOG_SUCCESS);
+	B_LogEntry(TOPIC_wayCity, "Ich habe den Piraten von dem Weg durch die Kanalisation berichtet. Henry ist sehr zufrieden mit mir und ist bereit mich in die Reihen der Piraten aufzunehmen.");
+	B_GivePlayerXP(350);
+};
+
+// **************************************************
+
+instance PIR_1301_Henry_wannaJoinPir (C_INFO)
+{
+	npc			= PIR_1301_Henry;
+	condition		= PIR_1301_Henry_wannaJoinPir_Condition;
+	information		= PIR_1301_Henry_wannaJoinPir_Info;
+	important		= FALSE;
+	permanent		= TRUE;
+	description		= "Ich will euch beitreten!";
+};
+
+func int PIR_1301_Henry_wannaJoinPir_Condition()
+{
+	if ((Npc_KnowsInfo(hero, PIR_1301_Henry_foundWay)) && (MIS_newLife == LOG_RUNNING))
+	{
+		return TRUE;
+	};
+};
+
+func void PIR_1301_Henry_wannaJoinPir_Info()
+{
+	AI_Output(other, self, "PIR_1301_Henry_wannaJoinPir_Info_15_01"); // Ich will euch beitreten!
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoinPir_Info_09_02"); // Lass mich kurz überlegen.
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoinPir_Info_09_03"); // Du hast für uns einen Weg in die Stadt gefunden.
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoinPir_Info_09_04"); // Das macht dich nützlicher als die Holzköpfe, die hier sonst rumhängen.
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoinPir_Info_09_05"); // Gut, ich will dich aufnehmen.
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoinPir_Info_09_06"); // Bist du dir sicher?
+	Info_ClearChoices(PIR_1301_Henry_wannaJoinPir);
+	Info_AddChoice(PIR_1301_Henry_wannaJoinPir, "Ich brauche noch Zeit.", PIR_1301_Henry_wannaJoinPir_noPirate);
+	Info_AddChoice(PIR_1301_Henry_wannaJoinPir, "Ja, ich will mitmachen!", PIR_1301_Henry_wannaJoinPir_yesPirate);
+};
+
+func void PIR_1301_Henry_wannaJoinPir_noPirate()
+{
+	AI_Output(other, self, "PIR_1301_Henry_wannaJoinPir_noPirate_15_01"); // Ich brauche noch Zeit.
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoinPir_noPirate_09_02"); // In Ordnung. Du kannst froh sein, dass ich dich brauchen kann.
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoinPir_noPirate_09_03"); // Sonst wäre mein Angebot jetzt beendet. Aber ich bleibe dabei.
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoinPir_noPirate_09_04"); // Nimm dir die Zeit, die du brauchst. Du weißt, wo du mich findest.
+	Info_ClearChoices(PIR_1301_Henry_wannaJoinPir);
+};
+
+func void PIR_1301_Henry_wannaJoinPir_yesPirate()
+{
+	AI_Output(other, self, "PIR_1301_Henry_wannaJoinPir_yesPirate_15_01"); // Ja, ich will mitmachen!
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoinPir_yesPirate_09_02"); // Gut, dann lege die Piratenkleidung an und trage sie mit Stolz!
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoinPir_yesPirate_09_03"); // Und dass du mir ja keinen Mist baust! Wenn du uns irgendwie verrätst, machen wir kurzen Prozess.
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoinPir_yesPirate_09_04"); // Also: Willkommen in der Meute!
+	CreateInvItems(self, ItAr_Pir_L_Addon, 1);
+	B_GiveInvItems(self, other, ItAr_Pir_L_Addon, 1);
+	MIS_newLife = LOG_SUCCESS;
+	Log_SetTopicStatus(TOPIC_newLife, LOG_SUCCESS);
+	B_LogEntry(TOPIC_newLife, "Henry hat mich in die Reihen der Piraten aufgenommen. Mal sehen, was mir der lustige Haufen bringt.");
+	B_GivePlayerXP(XP_BecomeMiliz);
+	Npc_SetTrueGuild(hero, GIL_PIR);
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoinPir_yesPirate_09_05"); // Aber pass auf. Da du jetzt die Rüstung trägst, wirst du dich nicht mehr einfach so in der Stadt bewegen können.
+	AI_Output(self, other, "PIR_1301_Henry_wannaJoinPir_yesPirate_09_06"); // Leg' am besten eine andere Rüstung an, bevor du in deinen Tod rennst.
+	kapitel = 2;
+	IntroduceChapter (KapWechsel_2,KapWechsel_2_Text,"chapter2.tga","chapterchange.wav", 6000);
+	Spine_UnlockAchievement(0);
+	Info_ClearChoices(PIR_1301_Henry_wannaJoinPir);
+};
+
+// **************************************************
+
+instance PIR_1301_Henry_whatNow (C_INFO)
+{
+	npc			= PIR_1301_Henry;
+	condition		= PIR_1301_Henry_whatNow_Condition;
+	information		= PIR_1301_Henry_whatNow_Info;
+	important		= FALSE;
+	permanent		= FALSE;
+	description		= "Was machen wir jetzt?";
+};
+
+func int PIR_1301_Henry_whatNow_Condition()
+{
+	if (kapitel == 2)
+	{
+		return TRUE;
+	};
+};
+
+func void PIR_1301_Henry_whatNow_Info()
+{
+	AI_Output(other, self, "PIR_1301_Henry_whatNow_Info_15_01"); // Was machen wir jetzt?
+	AI_Output(self, other, "PIR_1301_Henry_whatNow_Info_09_02"); // Wir? Naja, wir müssen stärker werden. Wir brauchen Vorräte, neue Leute, alles!
+	AI_Output(other, self, "PIR_1301_Henry_whatNow_Info_15_03"); // Gut, was soll ich tun?
+	AI_Output(self, other, "PIR_1301_Henry_whatNow_Info_09_04"); // Hast du mir nicht zugehört? Wir brauchen Vorräte, neue Leute und alles andere!
+	AI_Output(self, other, "PIR_1301_Henry_whatNow_Info_09_05"); // Such dir Arbeit und dann fang an!
+};
+
+// **************************************************
+
+instance PIR_1301_Henry_newPirates (C_INFO)
+{
+	npc			= PIR_1301_Henry;
+	condition		= PIR_1301_Henry_newPirates_Condition;
+	information		= PIR_1301_Henry_newPirates_Info;
+	important		= FALSE;
+	permanent		= FALSE;
+	description		= "Woher könnten denn neue Kameraden kommen?";
+};
+
+func int PIR_1301_Henry_newPirates_Condition()
+{
+	if (Npc_KnowsInfo(hero, PIR_1301_Henry_whatNow))
+	{
+		return TRUE;
+	};
+};
+
+func void PIR_1301_Henry_newPirates_Info()
+{
+	AI_Output(other, self, "PIR_1301_Henry_newPirates_Info_15_01"); // Woher könnten denn neue Kameraden kommen?
+	AI_Output(self, other, "PIR_1301_Henry_newPirates_Info_09_02"); // Was weiß ich? Wenn wir jemand neues aufgenommen haben, ist er zu uns gekommen.
+	AI_Output(self, other, "PIR_1301_Henry_newPirates_Info_09_03"); // Normalerweise gehen wir niemanden anwerben.
+	AI_Output(self, other, "PIR_1301_Henry_newPirates_Info_09_04"); // Aber die Zeiten sind hart. Die Stadtwache rückt uns immer mehr auf die Pelle.
+	AI_Output(self, other, "PIR_1301_Henry_newPirates_Info_09_05"); // Wenn sie auf die Idee kommen uns anzugreifen, sind wir geliefert.
+	AI_Output(self, other, "PIR_1301_Henry_newPirates_Info_09_06"); // Frag mal vorsichtig auf den Bauernhöfen rum. Vielleicht ist da jemand, der neu anfangen will.
+	AI_Output(self, other, "PIR_1301_Henry_newPirates_Info_09_07"); // Wenn du mutig genug bist, kansnt du dich auch in der Stadt umsehen. Oder... vielleicht bist du auch einfach nur dumm genug.
+	MIS_newPirates = LOG_RUNNING;
+	Log_CreateTopic(TOPIC_newPirates, LOG_MISSION);
+	Log_SetTopicStatus(TOPIC_newPirates, LOG_RUNNING);
+	B_LogEntry(TOPIC_newPirates, "Henry hat mir aufgetragen, neue Leute anzuwerben. Vielleicht finde ich ja jemanden auf einem der Bauernhöfe.");
+};
+
+// **************************************************
+
+instance PIR_1301_Henry_getGoods (C_INFO)
+{
+	npc			= PIR_1301_Henry;
+	condition		= PIR_1301_Henry_getGoods_Condition;
+	information		= PIR_1301_Henry_getGoods_Info;
+	important		= FALSE;
+	permanent		= FALSE;
+	description		= "Vorräte? Wer soll uns denn beliefern?";
+};
+
+func int PIR_1301_Henry_getGoods_Condition()
+{
+	if (Npc_KnowsInfo(hero, PIR_1301_Henry_whatNow))
+	{
+		return TRUE;
+	};
+};
+
+func void PIR_1301_Henry_getGoods_Info()
+{
+	AI_Output(other, self, "PIR_1301_Henry_getGoods_Info_15_01"); // Vorräte? Wer soll uns denn beliefern?
+	AI_Output(self, other, "PIR_1301_Henry_getGoods_Info_09_02"); // Genau das ist ja die Frage. Bisher haben wir uns mit kleineren Streifzügen über Wasser gehalten.
+	AI_Output(self, other, "PIR_1301_Henry_getGoods_Info_09_03"); // Aber seit die Stadtwache aktiver wird, ist es schwer für uns geworden.
+	AI_Output(self, other, "PIR_1301_Henry_getGoods_Info_09_04"); // Wir müssen einen neuen Lieferanten finden. Aber nichts einmaliges, sondern etwas regelmäßiges.
+	AI_Output(self, other, "PIR_1301_Henry_getGoods_Info_09_05"); // Die Insel ist groß. Sieh und hör dich um. Du findest bestimmt jemanden!
+	MIS_getGoodsPirates = LOG_RUNNING;
+	Log_CreateTopic(TOPIC_getGoodsPirates, LOG_MISSION);
+	Log_SetTopicStatus(TOPIC_getGoodsPirates, LOG_RUNNING);
+	B_LogEntry(TOPIC_getGoodsPirates, "Wir brauchen neue Vorräte im Piratenlager. Aber es muss etwas regelmäßiges sein. Das kann ja heiter werden... Wo ich so jemanden finden soll?");
+};
+
+// **************************************************
+
+instance PIR_1301_Henry_whichSupplies (C_INFO)
+{
+	npc			= PIR_1301_Henry;
+	condition		= PIR_1301_Henry_whichSupplies_Condition;
+	information		= PIR_1301_Henry_whichSupplies_Info;
+	important		= FALSE;
+	permanent		= FALSE;
+	description		= "Was für Vorräte brauchen wir?";
+};
+
+func int PIR_1301_Henry_whichSupplies_Condition()
+{
+	if (Npc_KnowsInfo(hero, PIR_1301_Henry_getGoods))
+	{
+		return TRUE;
+	};
+};
+
+func void PIR_1301_Henry_whichSupplies_Info()
+{
+	AI_Output(other, self, "PIR_1301_Henry_whichSupplies_Info_15_01"); // Was für Vorräte brauchen wir?
+	AI_Output(self, other, "PIR_1301_Henry_whichSupplies_Info_09_02"); // Kannst du dir das nicht denken?
+	AI_Output(self, other, "PIR_1301_Henry_whichSupplies_Info_09_03"); // Wasser und Bier, wenns sein muss auch Wein.
+	AI_Output(self, other, "PIR_1301_Henry_whichSupplies_Info_09_04"); // Und Fleisch! Von dem ganzen Fisch wird einem ja übel.
+	AI_Output(self, other, "PIR_1301_Henry_whichSupplies_Info_09_05"); // Ich weiß, wir sind Seemänner, aber auf dem Meer gibt es die ganze Zeit nur Fisch.
+	AI_Output(self, other, "PIR_1301_Henry_whichSupplies_Info_09_06"); // Hier im Lager braucht man auch mal was handfestes zwischen den Zähnen.
+	AI_Output(self, other, "PIR_1301_Henry_whichSupplies_Info_09_07"); // Das alles muss für etwa zwanzig Leute reichen.
+	AI_Output(other, self, "PIR_1301_Henry_whichSupplies_Info_15_08"); // Zwanzig Leute? Wo hast du die denn versteckt?
+	AI_Output(self, other, "PIR_1301_Henry_whichSupplies_Info_09_09"); // Sehr witzig. Erstens hoffe ich ja, dass wir zahlenmäßig wachsend, zweitens können wir so einen Vorrat aufbauen.
+	AI_Output(self, other, "PIR_1301_Henry_whichSupplies_Info_09_10"); // Im Moment ist es ruhig. Aber wie ich die Sache kenne, dauert das nicht lange. Also müssen wir vorsorgen.
+	AI_Output(other, self, "PIR_1301_Henry_whichSupplies_Info_15_11"); // Klingt einleuchtend...
+	AI_Output(self, other, "PIR_1301_Henry_whichSupplies_Info_09_12"); // Na also! Los jetzt!
+	B_LogEntry(TOPIC_getGoodsPirates, "Wasser und Bier oder Wein und Fleisch. Und das für zwanzig Leute. Regelmäßig! Der hat Vorstellungen...");
+	AI_Output(other, self, "PIR_1301_Henry_whichSupplies_Info_15_13"); // Eins noch: Wo soll denn alles hingeliefert werden?
+	AI_Output(self, other, "PIR_1301_Henry_whichSupplies_Info_09_14"); // Das ist die etwas heiklere Sache. Aber auch dafür haben wir eine Lösung.
+	AI_Output(self, other, "PIR_1301_Henry_whichSupplies_Info_09_15"); // Unten im Tal, zwischen der Stadt und unserem Leuchtturm gibt es eine Höhle.
+	AI_Output(self, other, "PIR_1301_Henry_whichSupplies_Info_09_16"); // Dorthin kann alles geliefert werden. Wo wir gerade dabei sind... Könnte sein, dass da noch ein paar Viecher rumlaufen.
+	AI_Output(self, other, "PIR_1301_Henry_whichSupplies_Info_09_17"); // Sieh dich da mal kurz um und mach sauber. Dann steht den Lieferungen nichts mehr im Wege.
+	AI_Output(other, self, "PIR_1301_Henry_whichSupplies_Info_15_18"); // Außer, dass wir keinen Lieferanten haben.
+	AI_Output(self, other, "PIR_1301_Henry_whichSupplies_Info_09_19"); // Jaja, aber das bekommst du schon in den Griff.
+	MIS_caveFree = LOG_RUNNING;
+	Log_CreateTopic(TOPIC_caveFree, LOG_MISSION);
+	Log_SetTopicStatus(TOPIC_caveFree, LOG_RUNNING);
+	Log_AddEntry(TOPIC_caveFree, "Henry sagte, wenn ich schonmal dabei bin, solle ich die Höhle im Tal bei der Stadt von Viechern säubern. Was tut man nicht alles...");
+};
+
+// **************************************************
+
+instance PIR_1301_Henry_gotEverything (C_INFO)
+{
+	npc			= PIR_1301_Henry;
+	condition		= PIR_1301_Henry_gotEverything_Condition;
+	information		= PIR_1301_Henry_gotEverything_Info;
+	important		= FALSE;
+	permanent		= FALSE;
+	description		= "Das müsste alles sein.";
+};
+
+func int PIR_1301_Henry_gotEverything_Condition()
+{
+	if ((knowsWater == TRUE && knowsBeer == TRUE && knowsMeat == TRUE))
+	{
+		return TRUE;
+	};
+};
+
+func void PIR_1301_Henry_gotEverything_Info()
+{
+	AI_Output(other, self, "PIR_1301_Henry_gotEverything_Info_15_01"); // Das müsste alles sein.
+	AI_Output(self, other, "PIR_1301_Henry_gotEverything_Info_09_02"); // Gut, wir haben Wasser, Bier, Fleisch und sogar Wein. Wobei der Wein... egal!
+	AI_Output(self, other, "PIR_1301_Henry_gotEverything_Info_09_03"); // Damit sollten wir erstmal über die Runden kommen.
+	AI_Output(self, other, "PIR_1301_Henry_gotEverything_Info_09_04"); // Okay, das wäre dann erstmal alles.
+	AI_Output(self, other, "PIR_1301_Henry_gotEverything_Info_09_05"); // Frag mal rum, vielleicht haben die anderen noch was für dich zu tun.
+	MIS_getGoodsPirates = LOG_SUCCESS;
+	Log_SetTopicStatus(TOPIC_getGoodsPirates, LOG_SUCCESS);
+	B_LogEntry(TOPIC_getGoodsPirates, "Die Vorräte sind aufgestockt. Langsam macht sich das Lager.");
+};
+
+// **************************************************
+
+instance PIR_1301_Henry_whatNext (C_INFO)
+{
+	npc			= PIR_1301_Henry;
+	condition		= PIR_1301_Henry_whatNext_Condition;
+	information		= PIR_1301_Henry_whatNext_Info;
+	important		= FALSE;
+	permanent		= FALSE;
+	description		= "Was steht sonst noch an?";
+};
+
+func int PIR_1301_Henry_whatNext_Condition()
+{
+	if (Npc_KnowsInfo(hero, PIR_1301_Henry_gotEverything))
+	{
+		return TRUE;
+	};
+};
+
+func void PIR_1301_Henry_whatNext_Info()
+{
+	AI_Output(other, self, "PIR_1301_Henry_whatNext_Info_15_01"); // Was steht sonst noch an?
+	AI_Output(self, other, "PIR_1301_Henry_whatNext_Info_09_02"); // Mit dir kann ich ja reden...
+	AI_Output(self, other, "PIR_1301_Henry_whatNext_Info_09_03"); // Mir bereitet die Stadtwache Kopfschmerzen. Wir kommen hier kaum noch weg, unser Kapitän ist irgendwo auf See und...
+	AI_Output(self, other, "PIR_1301_Henry_whatNext_Info_09_04"); // Naja, du kannst dir ja denken, was alles los ist.
+	AI_Output(self, other, "PIR_1301_Henry_whatNext_Info_09_05"); // Folgendes: Ich befürchte, wir werden nicht mehr all zu lange unsere Ruhe haben.
+	AI_Output(self, other, "PIR_1301_Henry_whatNext_Info_09_06"); // Alleine können wir aber nicht gegen die Miliz bestehen.
+	AI_Output(self, other, "PIR_1301_Henry_whatNext_Info_09_07"); // Ich habe also noch einen Auftrag für dich: Wir brauchen neue Freunde!
+	AI_Output(self, other, "PIR_1301_Henry_whatNext_Info_09_08"); // Oder zumindest jemanden, der mit uns zusammen kämpft.
+	AI_Output(self, other, "PIR_1301_Henry_whatNext_Info_09_09"); // Such uns neue Schwertbrüder, damit wir nicht alleine gegen die Typen antreten müssen.
+	getsRune == TRUE;
+	MIS_findFriends = LOG_RUNNING;
+	Log_CreateTopic(TOPIC_findFriends, LOG_MISSION);
+	Log_SetTopicStatus(TOPIC_findFriends, LOG_RUNNING);
+	B_LogEntry(TOPIC_findFriends, "Henry hat mich losgeschickt, für uns 'neue Freunde' zu finden. Er befürchtet einen baldigen Angriff der Stadtwache und möchte ihnen nicht alleine gegenüberstehen.");
+};
+
+// **************************************************
+
+instance PIR_1301_Henry_whereFriends (C_INFO)
+{
+	npc			= PIR_1301_Henry;
+	condition		= PIR_1301_Henry_whereFriends_Condition;
+	information		= PIR_1301_Henry_whereFriends_Info;
+	important		= FALSE;
+	permanent		= FALSE;
+	description		= "Wo soll ich denn Kämpfer finden?";
+};
+
+func int PIR_1301_Henry_whereFriends_Condition()
+{
+	if ((Npc_KnowsInfo(hero, PIR_1301_Henry_whatNext)) && (MIS_findFriends == LOG_RUNNING))
+	{
+		return TRUE;
+	};
+};
+
+func void PIR_1301_Henry_whereFriends_Info()
+{
+	AI_Output(other, self, "PIR_1301_Henry_whereFriends_Info_15_01"); // Wo soll ich denn Kämpfer finden?
+	AI_Output(self, other, "PIR_1301_Henry_whereFriends_Info_09_02"); // Was weiß denn ich? Sieh dich um, frag vielleicht mal auf dem Bauernhof bei den Söldnern nach oder geh ins Kloster, wenn du dich traust.
+	AI_Output(self, other, "PIR_1301_Henry_whereFriends_Info_09_03"); // Vielleicht können ja auch die Schwarzmagier jemanden abstellen.
+	AI_Output(self, other, "PIR_1301_Henry_whereFriends_Info_09_04"); // Hör dich mal um. Ich bin mir sicher, du wirst jemanden finden.
+	B_LogEntry(TOPIC_findFriends, "Henry sagt, ich könnte vielleicht jemanden auf einem der Bauernhöfe finden.");
+};
+
+// **************************************************
+
+instance PIR_1301_Henry_meetingWithJareck (C_INFO)
+{
+	npc			= PIR_1301_Henry;
+	condition		= PIR_1301_Henry_meetingWithJareck_Condition;
+	information		= PIR_1301_Henry_meetingWithJareck_Info;
+	important		= FALSE;
+	permanent		= FALSE;
+	description		= "Jareck will mit dir reden!";
+};
+
+func int PIR_1301_Henry_meetingWithJareck_Condition()
+{
+	if (Npc_KnowsInfo(hero, SLD_700_Jareck_newFriends))
+	{
+		return TRUE;
+	};
+};
+
+func void PIR_1301_Henry_meetingWithJareck_Info()
+{
+	AI_Output(other, self, "PIR_1301_Henry_meetingWithJareck_Info_15_01"); // Jareck will mit dir reden!
+	AI_Output(self, other, "PIR_1301_Henry_meetingWithJareck_Info_09_02"); // Was? Wieso das? Was will er denn?
+	AI_Output(other, self, "PIR_1301_Henry_meetingWithJareck_Info_15_03"); // Er wird uns unterstützen. Aber dafür musste ich einen Deal mit ihm eingehen.
+	AI_Output(self, other, "PIR_1301_Henry_meetingWithJareck_Info_09_04"); // (lauernd) Was für einen Deal?
+	AI_Output(other, self, "PIR_1301_Henry_meetingWithJareck_Info_15_05"); // Wir müssen die Stadt angreifen!
+	AI_Output(self, other, "PIR_1301_Henry_meetingWithJareck_Info_09_06"); // (bestürzt) Bist du wahnsinnig? Das werden wir niemals schaffen!
+	AI_Output(other, self, "PIR_1301_Henry_meetingWithJareck_Info_15_07"); // Deswegen unterstützt er uns.
+	AI_Output(other, self, "PIR_1301_Henry_meetingWithJareck_Info_15_08"); // Überleg mal: Wir haben einen gemeinsamen Gegner.
+	AI_Output(other, self, "PIR_1301_Henry_meetingWithJareck_Info_15_09"); // Sowohl wir Piraten, als auch die Söldner können nicht mehr unbehelligt in die Stadt.
+	AI_Output(other, self, "PIR_1301_Henry_meetingWithJareck_Info_15_10"); // Wir treten auf der Stelle. Seine Männer sind gut trainiert. Zusammen haben wir eine echte Chance!
+	AI_Output(self, other, "PIR_1301_Henry_meetingWithJareck_Info_09_11"); // Und worüber will er noch mit mir sprechen? Du hast doch schon alles geklärt.
+	AI_Output(other, self, "PIR_1301_Henry_meetingWithJareck_Info_15_12"); // Er will deine Zustimmung haben. Ich bin nur Handlanger, du bist der Boss.
+	AI_Output(other, self, "PIR_1301_Henry_meetingWithJareck_Info_15_13"); // Außerdem wollte er schon immer ein Bier mit dir trinken.
+	AI_Output(self, other, "PIR_1301_Henry_meetingWithJareck_Info_09_14"); // (lacht) Gut, dann will ich mal nicht so sein.
+	AI_Output(self, other, "PIR_1301_Henry_meetingWithJareck_Info_09_15"); // Wir treffen uns dann dort und besprechen alles Weitere!
+	B_LogEntry(TOPIC_findFriends, "Henry hat einem Treffen zugestimmt. Er geht zu Jareck und wird dort dann mit mir alles Weitere besprechen.");
+};

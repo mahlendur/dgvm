@@ -1,0 +1,1568 @@
+VLK_3007_Albrar_youTrader_Info_15_01(Held):  Du bist Händler?
+VLK_3007_Albrar_youTrader_Info_13_02:  Sehr gut erkannt. Ich bin Albrar. Bei mir bekommst du die besten Waffen in der ganzen Stadt. (gähnt)
+VLK_3007_Albrar_canTrade_Info_15_01(Held):  Verkaufst du auch Waffen?
+VLK_3007_Albrar_canTrade_Info_13_02:  Aber sicher doch!
+VLK_3007_Albrar_canTrade_Info_13_03:  Ich habe... (gähnt) ... gerade erst eine neue Lieferung bekommen!
+VLK_3007_Albrar_canTrade_Info_13_04:  Sieh dich in Ruhe um!
+VLK_3007_Albrar_letsTrade_Info_15_01(Held):  Zeig mir deine Waffen!
+VLK_3007_Albrar_youTired_Info_15_01(Held):  Müde?
+VLK_3007_Albrar_youTired_Info_13_02:  Ach, weißt du...
+VLK_3007_Albrar_youTired_Info_13_03:  Mein Lieferant arbeitet außerhalb der Stadt und kann deshalb nur nachts liefern.
+VLK_3007_Albrar_youTired_Info_13_04:  Das ist anstrengend, jedes Mal bis weit nach Mitternacht warten zu müssen, nur um dann am Vormittag schon wieder hier zu stehen.
+VLK_3007_Albrar_youTired_Info_13_05:  Aber was solls... Was tut man nicht alles fürs Geschäft (lacht)
+VLK_3007_Albrar_youThief_Info_15_01(Held):  Du bist also der Dieb!
+VLK_3007_Albrar_youThief_Info_13_02:  Was? Wie? Nein, das ist eine Verwechslung!
+VLK_3007_Albrar_youThief_Info_15_03(Held):  Schon klar. Es ist mitten in der Nacht, seit mehreren Tagen verschwinden hier Waffen und dich erwische ich, wie du an den Kisten rumfummelst.
+VLK_3007_Albrar_youThief_Info_13_04:  Aber...
+VLK_3007_Albrar_youThief_Info_15_05(Held):  Kein aber! Ich...
+VLK_3007_Albrar_youThief_letGo_15_01(Held):  ... lasse dich nochmal laufen.
+VLK_3007_Albrar_youThief_letGo_15_02(Held):  Aber ich schwöre dir: Wenn du dich noch einmal an den Waffen zu schaffen machst, dann war es das letzte, das du tust.
+VLK_3007_Albrar_youThief_letGo_13_03:  Wirklich? Danke! Vielen Dank! Das werde ich dir nie vergessen!
+VLK_3007_Albrar_youThief_letGo_13_04:  Natürlich werde ich keine Waffen mehr stehlen!
+VLK_3007_Albrar_youThief_letGo_15_05(Held):  Das will ich auch hoffen.
+VLK_3007_Albrar_youThief_letGo_15_06(Held):  Am besten verschwindest du aus der Stadt!
+VLK_3007_Albrar_youThief_tellYonar_15_01(Held):  ... werde Yonar davon berichten!
+VLK_3007_Albrar_youThief_tellYonar_13_02:  Nein, bitte nicht das! Er wird mich umbringen.
+VLK_3007_Albrar_youThief_tellYonar_15_03(Held):  Das ist nicht meine Entscheidung. Am Besten verschwindest du von hier.
+VLK_3007_Albrar_youThief_tellYonar_13_04:  Das... das... Ach verdammt!
+VLK_3007_Albrar_youThief_tellVolmar_15_01(Held):  ... werde dem Kommandanten davon berichten!
+VLK_3007_Albrar_youThief_tellVolmar_13_02:  Ach du scheiße! Der wird mich ins Gefängnis stecken!
+VLK_3007_Albrar_youThief_tellVolmar_15_03(Held):  Du stiehlst Waffen der Stadtwache. Ich glaube, das Gefängnis ist dein kleinstes Übel...
+VLK_3007_Albrar_youThief_tellVolmar_13_04:  Ich... Ich glaube, ich sollte gehen.
+VLK_3007_Albrar_youThief_tellVolmar_15_05(Held):  Das ist besser, ja!
+BAU_970_Alec_welcomeTavern_Info_06_01:  Willkommen in der Taverne 'Zum alten Scavenger'!
+BAU_970_Alec_welcomeTavern_Info_06_02:  MÃ¶chtest du etwas trinken? Oder ein Bett?
+BAU_970_Alec_welcomeTavern_Info_06_03:  Sag einfach Bescheid, wenn du etwas brauchst!
+BAU_970_Alec_wannaDrink_Info_15_01(Held):  Gib mir was zu Trinken!
+BAU_970_Alec_wannaDrink_Info_06_02:  Gerne!
+BAU_970_Alec_whatsHere_Info_15_01(Held):  Wo bin ich hier?
+BAU_970_Alec_whatsHere_Info_06_02:  Du bist hier im Herzen der Insel. Von meiner Taverne aus kommst du Ã¼berall hin, wo du hin willst.
+BAU_970_Alec_whatsHere_Info_06_03:  Ich nehme an, du bist gerade aus der Stadt gekommen. Dann ist es von hier nicht mehr weit, um zum Kloster oder zu den BauernhÃ¶fen zu gelangen.
+BAU_970_Alec_whosHere_Info_15_01(Held):  Welche Menschen trifft man hier?
+BAU_970_Alec_whosHere_Info_06_02:  Alle mÃ¶glichen! Meine Taverne ist so etwas wie die neutrale Zone auf der Insel.
+BAU_970_Alec_whosHere_Info_06_03:  Meistens findest du hier einige Bauern, die ihren kleinen Lohn versaufen. Aber auch die SÃ¶ldner lassen gerne ihr Gold hier.
+BAU_970_Alec_whosHere_Info_06_04:  Ab und an kommt auch einer der Magier bei mir vorbei, meistens wenn er auf dem Weg in die Stadt ist, oder von dort kommt.
+BAU_970_Alec_whosHere_Info_06_05:  Sollte die Stadtwache gerade irgendwo hin unterwegs sein, trinken auch sie gerne mal ein Bier bei mir.
+BAU_970_Alec_whosHere_Info_06_06:  Nur Piraten oder Schwarzmagier habe ich hier noch nicht gesehen.
+BAU_970_Alec_getNews_Info_15_01(Held):  Du bekommst doch sicher viel mit, oder?
+BAU_970_Alec_getNews_Info_06_02:  NatÃ¼rlich! (lacht) Die meisten Menschen werden redselig, wenn sie erst einmal getrunken haben.
+BAU_970_Alec_getNews_Info_06_03:  Da hÃ¶rt man vieles, leider auch Dinge, die man eigentlich gar nicht hÃ¶ren mÃ¶chte... (schmunzelt)
+BAU_970_Alec_someNews_Info_15_01(Held):  Hast du irgendwelche Neuigkeiten?
+BAU_970_Alec_someNews_Info_06_02:  Hmm, lass mal sehen...
+BAU_970_Alec_someNews_Info_06_03:  Die Bauern und die SÃ¶ldner verschanzen sich immer mehr, genau wie die Magier im Kloster.
+BAU_970_Alec_someNews_Info_06_04:  Dazu rÃ¼stet die Stadtwache noch auf.
+BAU_970_Alec_someNews_Info_06_05:  Gut, wer will es ihnen verdenken? Immerhin ist die Bedrohung durch die Piraten und die Schwarzmagier real.
+BAU_970_Alec_someNews_Info_06_06:  Ansonsten...
+BAU_970_Alec_someNews_Info_06_07:  Es wird hier langsam brenzlig.
+BAU_970_Alec_someNews_Info_06_08:  Mir fehlen immer mehr GÃ¤ste und ich meine gehÃ¶rt zu haben, dass die SÃ¶ldner ein Lager in der NÃ¤he der Stadt einrichten.
+BAU_970_Alec_someNews_Info_06_09:  Angeblich nehmen auch die Angriffe der Schwarzmagier auf das Kloster immer mehr zu.
+BAU_970_Alec_someNews_Info_06_10:  Ansonsten...
+BAU_970_Alec_someNews_Info_06_11:  Die neue Bedrohung durch die Geister und Untoten rÃ¼ckt immer nÃ¤her.
+BAU_970_Alec_someNews_Info_06_12:  Waren es bisher vereinzelte Wesen, tauchen sie jetzt immer hÃ¤ufiger und in grÃ¶ÃŸeren Gruppen auf.
+BAU_970_Alec_someNews_Info_06_13:  Zumindest hier kommen die DÃ¤monenjÃ¤ger der SÃ¶ldner kaum noch hinterher.
+BAU_970_Alec_someNews_Info_06_14:  Ansonsten...
+BAU_970_Alec_someNews_Info_06_15:  ... soweit nichts Neues.
+BAU_970_Alec_needSomething_Info_15_01(Held):  Brauchst du noch irgendwas?
+BAU_970_Alec_needSomething_Info_06_02:  Hmm, kommt ganz darauf an.
+BAU_970_Alec_needSomething_Info_06_03:  Kannst du jagen?
+BAU_970_Alec_needSomething_letsTry_15_01(Held):  Ich kÃ¶nnte es auf einen Versuch ankommen lassen.
+BAU_970_Alec_needSomething_letsTry_06_02:  Sicher? Du klingst nicht wirklich begeistert.
+BAU_970_Alec_needSomething_letsTry_06_03:  Aber gut, wenn du willst: Mir fressen die Bauern und SÃ¶ldner und all die Anderen hier regelmÃ¤ÃŸig die Haare vom Kopf.
+BAU_970_Alec_needSomething_letsTry_06_04:  Ich brauche Fleisch. Ziemlich dringend und ziemlich viel.
+BAU_970_Alec_needSomething_letsTry_06_05:  Wenn du mir, sagen wir, etwa fÃ¼nfzig Keulen besorgst, kann ich die Meute wieder verkÃ¶stigen.
+BAU_970_Alec_needSomething_letsTry_15_06(Held):  50 StÃ¼ck Fleisch! Wo soll ich die denn hernehmen?
+BAU_970_Alec_needSomething_letsTry_06_07:  Siehst du, deswegen fragte ich, ob du jagen kannst. Hier rennt genug Viehzeug rum, die groÃŸ und saftig genug sind.
+BAU_970_Alec_needSomething_letsTry_06_08:  Ich brauche das Fleisch aber roh! Sonst kann ich meine Spezialmarinade nicht verwenden.
+BAU_970_Alec_needSomething_letsTry_15_09(Held):  (seufzt) In Ordnung. Ich werde sehen, was ich tun kann.
+BAU_970_Alec_needSomething_ofCourse_15_01(Held):  NatÃ¼rlich kann ich jagen!
+BAU_970_Alec_needSomething_ofCourse_06_02:  Wirklich? Das ist sehr gut. Folgendes Problem:
+BAU_970_Alec_needSomething_ofCourse_06_03:  Mir fressen die Bauern und SÃ¶ldner und all die Anderen hier regelmÃ¤ÃŸig die Haare vom Kopf.
+BAU_970_Alec_needSomething_ofCourse_06_04:  Ich brauche Fleisch. Ziemlich dringend und ziemlich viel.
+BAU_970_Alec_needSomething_ofCourse_06_05:  Wenn du mir, sagen wir, etwa fÃ¼nfzig Keulen besorgst, kann ich die Meute wieder verkÃ¶stigen.
+BAU_970_Alec_needSomething_ofCourse_15_06(Held):  50 StÃ¼ck Fleisch? Kein Problem!
+BAU_970_Alec_needSomething_ofCourse_06_07:  (lacht) Dachte ich mir. Bring mir einfach, soviel wie du bekommst. Es muss nicht alles auf einmal sein!
+BAU_970_Alec_needSomething_ofCourse_06_08:  Ich brauche das Fleisch aber roh! Sonst kann ich meine Spezialmarinade nicht verwenden.
+BAU_970_Alec_needSomething_ofCourse_15_09(Held):  Bin gleich wieder da!
+BAU_970_Alec_needSomething_betterNot_15_01(Held):  Lass mal lieber!
+BAU_970_Alec_needSomething_betterNot_06_02:  Schade. Dann habe ich leider nichts fÃ¼r dich zu tun.
+BAU_970_Alec_gotSomeMeat_Info_15_01(Held):  Ich habe Fleisch fÃ¼r dich!
+BAU_970_Alec_gotSomeMeat_Info_06_02:  Wirklich? Sehr gut, dann kann ich schon wieder einige Keulen marinieren.
+BAU_970_Alec_gotSomeMeat_Info_06_03:  Gib her!
+BAU_970_Alec_gotSomeMeat_Info_06_04:  Aber ich brauche noch mehr!
+BAU_970_Alec_gotSomeMeat_Info_06_05:  Gut, das dÃ¼rften dann alle gewesen sein!
+BAU_970_Alec_gotSomeMeat_Info_06_06:  Vielen Dank fÃ¼r deine MÃ¼he. Hier, ich gebe dir etwas Gold.
+BAU_970_Alec_gotSomeMeat_Info_06_07:  AuÃŸerdem... Lass mich Ã¼berlegen. Klar, du bekommst hier auch immer ein warmes Zimmer.
+BAU_970_Alec_gotSomeMeat_Info_06_08:  NatÃ¼rlich kostenlos!
+BAU_970_Alec_gotSomeMeat_Info_06_09:  Wie gesagt, Danke fÃ¼r alles!
+KDW_14001_Arpad_whoAreYou_Info_05_01:  Wo kommst du denn her?
+KDW_14001_Arpad_whoAreYou_Info_05_02:  Wie hast du es geschafft, durch die Barriere zu gelangen?
+KDW_14001_Arpad_whoAreYou_Info_15_03(Held):  Barriere? Welche Barriere?
+KDW_14001_Arpad_whoAreYou_Info_05_04:  Hast du es nicht bemerkt?
+KDW_14001_Arpad_whoAreYou_Info_15_05(Held):  Was denn?
+KDW_14001_Arpad_whoAreYou_Info_05_06:  Das gesamte nähere Umland ist von einer magischen Barriere umgeben.
+KDW_14001_Arpad_whoAreYou_Info_05_07:  Sie wirkt sich auf die Psyche desjenigen aus, der versucht sie zu durchbrechen.
+KDW_14001_Arpad_whoAreYou_Info_05_08:  (neugierig) Also erzähl: Wie hast du es durchgeschafft?
+KDW_14001_Arpad_whoAreYou_justWalked_15_01(Held):  Ich bin einfach durchgelaufen!
+KDW_14001_Arpad_whoAreYou_justWalked_05_02:  Echt? Dann musst du eine stark ausgeprägte Affinität zur Magie haben.
+KDW_14001_Arpad_whoAreYou_justWalked_05_03:  Denn nur Magier und solche, die eine magische Veranlagung in sich tragen können die Barriere unbeschadet passieren.
+KDW_14001_Arpad_whoAreYou_justWalked_05_04:  Du solltest schnellstens in den Turm gehen und mit unserem Meister sprechen.
+KDW_14001_Arpad_whoAreYou_justWalked_05_05:  Er wird sich bestimmt brennend für dich interessieren.
+KDW_14001_Arpad_whoAreYou_noClue_15_01(Held):  Ich habe keine Ahnung, was ich getan habe!
+KDW_14001_Arpad_whoAreYou_noClue_05_02:  Wahnsinn. Normalerweise brauchen selbst wir eine ganze Menge Konzentration um hierher zu gelangen.
+KDW_14001_Arpad_whoAreYou_noClue_05_03:  Du solltest schnellstens in den Turm gehen und mit unserem Meister sprechen.
+KDW_14001_Arpad_whoAreYou_noClue_05_04:  Er wird sich bestimmt brennend für dich interessieren.
+KDW_14001_Arpad_whatBarrier_Info_15_01(Held):  Was macht die Barriere genau?
+KDW_14001_Arpad_whatBarrier_Info_15_02(Held):  Ich hörte einmal Gerüchte über eine magische Barriere, die Menschen hinein, aber nicht mehr herauslässt.
+KDW_14001_Arpad_whatBarrier_Info_05_03:  Das wäre ja ziemlich dämlich in unserer Situation.
+KDW_14001_Arpad_whatBarrier_Info_05_04:  Nein, unsere Barriere wirkt wie gesagt psychisch. Wenn du dich ihr näherst, merkst du zuerst leichte Kopfschmerzen.
+KDW_14001_Arpad_whatBarrier_Info_05_05:  Wer magisch begabt ist, merkt wenig bis gar nichts davon. Und nach einer Zeit hast du dich sowieso daran gewöhnt.
+KDW_14001_Arpad_whatBarrier_Info_05_06:  Und hier im inneren Bereich sind keine Auswirkungen mehr spürbar. Sonst wäre die Hälfte von uns wahrscheinlich verrückt.
+VLK_3008_Brandon_whoAreYou_Info_15_01(Held):  Wer bist du?
+VLK_3008_Brandon_whoAreYou_Info_06_02:  Ich bin Brandon. Meines Zeichens JÃ¤ger.
+VLK_3008_Brandon_whoAreYou_Info_06_03:  Kann ich irgendwas fÃ¼r dich tun?
+VLK_3008_Brandon_canTeachMe_Info_15_01(Held):  Kannst du mir etwas beibringen?
+VLK_3008_Brandon_canTeachMe_Info_06_02:  Sicher kann ich das. Aber... Bist du es denn auch wert?
+VLK_3008_Brandon_whatToDo_Info_15_01(Held):  (seufzt) Was muss ich tun, dass du mich trainierst?
+VLK_3008_Brandon_whatToDo_Info_06_02:  Okay, hÃ¶r zu. Die ganze Sache ist etwas heikel.
+VLK_3008_Brandon_whatToDo_Info_15_03(Held):  Spucks schon aus!
+VLK_3008_Brandon_whatToDo_Info_06_04:  Gut. Wie du vielleicht weiÃŸt, sind wir schon lange hier drauÃŸen.
+VLK_3008_Brandon_whatToDo_Info_15_05(Held):  Und jetzt? Soll ich dir eine Frau besorgen?
+VLK_3008_Brandon_whatToDo_Info_06_06:  (lacht) Nein, das wÃ¤re mein kleinstes Problem.
+VLK_3008_Brandon_whatToDo_Info_06_07:  Ich brauch Sumpfkraut! Ich hab' schon seit Tagen nichts mehr geraucht und bekomme langsam Kopfschmerzen davon.
+VLK_3008_Brandon_whatToDo_Info_06_08:  Besorg mir was! Am besten mindestens fÃ¼nf StÃ¤ngel!
+VLK_3008_Brandon_whatToDo_Info_06_09:  Dann kann ich dir bestimmt was beibringen!
+VLK_3008_Brandon_whereToFind_Info_15_01(Held):  Woher bekomme ich Sumpfkraut?
+VLK_3008_Brandon_whereToFind_Info_06_02:  Keine Ahnung. Die Stadtwache hat in den letzten Wochen den Handel extrem stark eingeschrÃ¤nkt.
+VLK_3008_Brandon_whereToFind_Info_06_03:  Das einzige, wo du in der Stadt noch rauchen kannst, ist vor der Kaserne.
+VLK_3008_Brandon_whereToFind_Info_06_04:  Du kÃ¶nntest dich da mal umschauen, ansonsten vielleicht bei den Piraten oder den SÃ¶ldnern?
+VLK_3008_Brandon_whereToFind_Info_06_05:  Versuchs nur besser nicht im Kloster (lacht)
+VLK_3008_Brandon_gotYourPot_Info_15_01(Held):  Hier ist das Zeug!
+VLK_3008_Brandon_gotYourPot_Info_06_02:  Wirklich? Mensch, das ist 'ne Ãœberraschung!
+VLK_3008_Brandon_gotYourPot_Info_06_03:  Danke, Mann. Hier, das ist es mir wert.
+VLK_3008_Brandon_gotYourPot_Info_06_04:  So. Jetzt kann ich dir auch was beibringen.
+VLK_417_Clovis_niceDranks_Info_15_01(Held):  Nette Tränke hast du hier.
+VLK_417_Clovis_niceDranks_Info_15_02(Held):  Verkaufst du die auch?
+VLK_417_Clovis_niceDranks_Info_10_03:  Kommt drauf an... Hast du Gold?
+VLK_417_Clovis_workAlch_Info_15_01(Held):  Kann ich auch dafür arbeiten?
+VLK_417_Clovis_workAlch_Info_10_02:  Ein Tagelöhner? Damit kann ich nichts anfangen.
+VLK_417_Clovis_workAlch_Info_15_03(Held):  Ich dachte mehr an einen Lehrling.
+VLK_417_Clovis_workAlch_Info_10_04:  Einen Lehrling? Das ist etwas anderes... Ich habe lange keinen Lehrling mehr gehabt.
+VLK_417_Clovis_workAlch_Info_10_05:  Es wird anstrengend, dessen bist du dir bewusst?
+VLK_417_Clovis_workAlch_Info_15_06(Held):  Was soll denn am Tränke brauen so anstrengend sein?
+VLK_417_Clovis_workAlch_Info_10_07:  Ignorant! Natürlich nicht am Brauen.
+VLK_417_Clovis_workAlch_Info_10_08:  Aber was glaubst du, wo die Pflanzen herkommen?
+VLK_417_Clovis_workAlch_Info_10_09:  Die fallen garantiert nicht vom Himmel.
+VLK_417_Clovis_workAlch_Info_10_10:  Ich glaube, bevor ich dich als Lehrling aufnehme, wirst du erst einmal Respekt vor den Pflanzen lernen müssen.
+VLK_417_Clovis_whatPlants_Info_15_01(Held):  Was soll ich für dich tun?
+VLK_417_Clovis_whatPlants_Info_10_02:  Ich benötige neue Pflanzen. Um genau zu sein, zehn Heilkräuter.
+VLK_417_Clovis_whatPlants_Info_10_03:  Besorge sie mir und wir schauen weiter.
+VLK_417_Clovis_whereToFind_Info_15_01(Held):  Und wo finde ich Heilkräuter?
+VLK_417_Clovis_whereToFind_Info_10_02:  Die Dinger wachsen überall.
+VLK_417_Clovis_whereToFind_Info_10_03:  Aber achte darauf, dass du die richtigen pflückst.
+VLK_417_Clovis_whereToFind_Info_10_04:  Halte einfach die Augen auf.
+VLK_417_Clovis_whatsThis_Info_15_01(Held):  Was sind das denn für Pflanzen?
+VLK_417_Clovis_whatsThis_Info_10_02:  Was meinst du?
+VLK_417_Clovis_whatsThis_Info_15_03(Held):  Hier, diese Pflanzen! Die Büschel sehen für mich alle gleich aus!
+VLK_417_Clovis_whatsThis_Info_10_04:  Achso, du hast Probleme die Pflanzen zu identifizieren?
+VLK_417_Clovis_whatsThis_Info_10_05:  Tja, gut, dass du noch keine gegessen hast. Eine war nämlich giftig.
+VLK_417_Clovis_whatsThis_Info_15_06(Held):  Wie bitte? Das sagst du mir jetzt?
+VLK_417_Clovis_whatsThis_Info_10_07:  Ich hatte gehofft, dass du so intelligent bist.
+VLK_417_Clovis_whatsThis_Info_15_08(Held):  Und was sollich mit den Büscheln machen?
+VLK_417_Clovis_whatsThis_Info_10_09:  Na, identifizieren natürlich!
+VLK_417_Clovis_whatsThis_Info_15_10(Held):  Und wie? Ich sagte doch schon, die sehen alle gleich aus.
+VLK_417_Clovis_whatsThis_Info_10_11:  Du bist doch ein intelligenter Bursche. Du schaffst das schon.
+VLK_417_Clovis_canYouIdentify_Info_15_01(Held):  Kannst du die Pflanzen nicht identifizieren?
+VLK_417_Clovis_canYouIdentify_Info_10_02:  Könnte ich, aber ich habe keine Zeit dazu.
+VLK_417_Clovis_canYouIdentify_Info_10_03:  Such dir jemand anderen. Du findest bestimmt jemanden!
+VLK_417_Clovis_getYourself_Info_15_01(Held):  Wie wärs, wenn du deine Pflanzen selber holst?
+VLK_417_Clovis_getYourself_Info_15_02(Held):  Den Scheiß macht doch niemand freiwillig.
+VLK_417_Clovis_getYourself_Info_10_03:  Hah! Wusste ich es doch, dass du nicht der Richtige bist.
+VLK_417_Clovis_getYourself_Info_10_04:  In Ordnung, ich hole meine Pflanzen selbst.
+VLK_417_Clovis_getYourself_Info_10_05:  Aber glaube nicht, dass ich dir auch nur eine Sache beibringe, oder dir noch etwas verkaufe.
+VLK_417_Clovis_gotYourPlants_Info_15_01(Held):  Ich habe hier deine Pflanzen!
+VLK_417_Clovis_gotYourPlants_Info_10_02:  Du hast sie tatsählich alle gefunden?
+VLK_417_Clovis_gotYourPlants_Info_10_03:  Potzblitz! Damit habe ich nicht gerechnet.
+VLK_417_Clovis_gotYourPlants_Info_10_04:  Und? Merkst du jetzt, dass die Arbeit als Alchemist und Kräutersammler keine leichte ist?
+VLK_417_Clovis_gotYourPlants_Info_15_05(Held):  Ja, das habe ich am eigenen Leib erfahren...
+VLK_417_Clovis_gotYourPlants_Info_10_06:  Bist du trotzdem noch bereit bei mir anzufangen?
+VLK_417_Clovis_gotYourPlants_Info_10_07:  Wenn du willst, bringe ich dir die Alchemie oder die Kräuterkunde bei.
+VLK_417_Clovis_wannaHerb_Info_15_01(Held):  Bring mir das Kräutersammeln bei!
+VLK_417_Clovis_wannaHerb_Info_10_02:  In Ordnung. Wie du vielleicht selbst bemerkt hast, ist das Sammeln nicht das Schwierige.
+VLK_417_Clovis_wannaHerb_Info_10_03:  Aber es ist schon eine gewisse Kunst, zu erkennen, welche Pflanze nützlich ist und welche Unkraut oder gar giftig.
+VLK_417_Clovis_wannaHerb_Info_10_04:  Du hast recht, die Pflanzen sehen sich sehr ähnlich. Allerdings kann man sie mit etwas Übung gut unterscheiden.
+VLK_417_Clovis_wannaHerb_Info_10_05:  Übe etwas. Du wirst sehen, mit der Zeit wird es dir leichter fallen, auch extrem ähnlich aussehende Pflanzen zu unterscheiden.
+VLK_417_Clovis_wannaHerb_Info_10_06:  Das würde ich gerne, aber mir scheint, du bist noch nicht bereit dazu.
+VLK_417_Clovis_wannaHerb_Info_10_07:  Komm wieder, wenn du mehr Erfahrung hast!
+VLK_417_Clovis_wannaAlchy_Info_15_01(Held):  Lehre mich die Alchemie!
+VLK_417_Clovis_wannaAlchy_Info_10_02:  Gut, pass auf und hör mir genau zu!
+VLK_417_Clovis_wannaAlchy_Info_10_03:  Alchemie bedeutet nicht ein paar Pflanzen zusammen mit Wasser zu erhitzen. Die Alchemie ist ein nützliches, aber auch sehr gefährliches Handwerk.
+VLK_417_Clovis_wannaAlchy_Info_10_04:  Einige Tränke bestehen aus Pflanzen, die normalerweise giftig wären.
+VLK_417_Clovis_wannaAlchy_Info_10_05:  Erhitzt du einen solchen Trank zu lange, kann er tödlich werden, erhitzt du ihn zu kurz, wird er unwirksam.
+VLK_417_Clovis_wannaAlchy_Info_10_06:  Deswegen: Halte dich zuerst an einfache Tränke, wie Heil oder Manatränke. Wenn diese gelingen, kannst du schwierigere Gebräue versuchen.
+VLK_417_Clovis_wannaAlchy_Info_10_07:  Achte aber darauf, dass du niemanden umbringst!
+VLK_417_Clovis_wannaAlchy_Info_10_08:  Das würde ich gerne, aber mir scheint, du bist noch nicht bereit dazu.
+VLK_417_Clovis_wannaAlchy_Info_10_09:  Komm wieder, wenn du mehr Erfahrung hast!
+NONE_9990_Elvellia_whoAreYou_Info_15_01(Held):  Wer bist du denn?
+NONE_9990_Elvellia_whoAreYou_Info_16_02:  Ich? Ich bin Elvellia!
+NONE_9990_Elvellia_whoAreYou_Info_16_03:  Und du?
+NONE_9990_Elvellia_whoAreYou_Info_15_04(Held):  Ich bin...
+NONE_9990_Elvellia_whoAreYou_Info_16_05:  Ach, ist eigentlich auch egal. Namen sind doch nur Schall und Rauch.
+NONE_9990_Elvellia_whatHappened_Info_15_01(Held):  Was ist dir passiert?
+NONE_9990_Elvellia_whatHappened_Info_16_02:  Was meinst du?
+NONE_9990_Elvellia_whatHappened_Info_15_03(Held):  Du bist...
+NONE_9990_Elvellia_whatHappened_Info_15_04(Held):  Naja...
+NONE_9990_Elvellia_whatHappened_Info_15_05(Held):  Ein Geist.
+NONE_9990_Elvellia_whatHappened_Info_16_06:  Wie bitte?
+NONE_9990_Elvellia_whatHappened_Info_16_07:  Wie kommst du denn auf die Idee?
+NONE_9990_Elvellia_whatHappened_Info_16_08:  BlÃ¶dsinn, mir ging es noch nie besser.
+NONE_9990_Elvellia_whatDoing_Info_15_01(Held):  Was tust du hier?
+NONE_9990_Elvellia_whatDoing_Info_16_02:  Ich warte auf meinen Liebsten.
+NONE_9990_Elvellia_whatDoing_Info_16_03:  Er wird bald zu mir kommen. Dann verreisen wir zusammen.
+NONE_9990_Elvellia_whatDoing_Info_15_04(Held):  Und wo soll's hingehen?
+NONE_9990_Elvellia_whatDoing_Info_16_05:  Nach Aeon. Dort ist immer schÃ¶nes Wetter und es herrscht unendlicher Frieden.
+NONE_9990_Elvellia_whatDoing_Info_15_06(Held):  Ach.. Klingt ja wie das Paradies.
+NONE_9990_Elvellia_whatDoing_Info_16_07:  Ja, nicht wahr?
+NONE_9990_Elvellia_whatDoing_Info_16_08:  Hoffentlich kommt mein Liebster bald.
+NONE_9990_Elvellia_whereIsHe_Info_15_01(Held):  Wo ist er denn gerade?
+NONE_9990_Elvellia_whereIsHe_Info_16_02:  Irgendwo auf See. Er ist mit einem der letzten Schiffe in See gestochen, welche die Insel verlassen haben.
+NONE_9990_Elvellia_whereIsHe_Info_16_03:  Er ist Soldat, weiÃŸt du? Ein tapferer Mann in der kÃ¶niglichen Marine.
+NONE_9990_Elvellia_whereIsHe_Info_15_04(Held):  Ja, das sind tapfere MÃ¤nner.
+NONE_9990_Elvellia_whereIsHe_Info_15_05(Held):  (zu sich) Die Marine wurde fast vollstÃ¤ndig aufgerieben. Die letzten Schiffe von Mahlendur sollen alle zerstÃ¶rt worden sein.
+NONE_9990_Elvellia_whereIsHe_Info_16_06:  Das ist wahr. Hoffentlich kommt er bald...
+PIR_1303_Gilbert_heyYou_Info_14_01:  Hey, du!
+PIR_1303_Gilbert_heyYou_Info_14_02:  Wo kommst du denn her?
+PIR_1303_Gilbert_heyYou_Info_15_03(Held):  Aus der Stadt!
+PIR_1303_Gilbert_heyYou_Info_14_04:  Und was willst du hier?
+PIR_1303_Gilbert_heyYou_justLooking_15_01(Held):  Ich seh' mich nur mal um.
+PIR_1303_Gilbert_heyYou_justLooking_14_02:  Umsehen ist nicht. Entweder du machst dich nÃ¼tzlich, oder du verschwindest gleich wieder!
+PIR_1303_Gilbert_heyYou_justLooking_14_03:  Am Besten meldest du dich direkt bei Henry.
+PIR_1303_Gilbert_heyYou_justLooking_14_04:  Marsch, sonst mache ich dir Beine!
+PIR_1303_Gilbert_heyYou_wannaJoin_15_01(Held):  Ich will mich euch anschlieÃŸen!
+PIR_1303_Gilbert_heyYou_wannaJoin_14_02:  Du? Dich uns anschlieÃŸen? (lacht)
+PIR_1303_Gilbert_heyYou_wannaJoin_14_03:  Na, das kann ja was werden.
+PIR_1303_Gilbert_heyYou_wannaJoin_14_04:  Ich wette, du wirst die erste Woche nicht Ã¼berleben.
+PIR_1303_Gilbert_heyYou_wannaJoin_14_05:  Aber, wie du willst... Wir brauchen immer neue MÃ¤nner.
+PIR_1303_Gilbert_heyYou_wannaJoin_14_06:  Geh und sprich mit Henry. Er wird sich um dich kÃ¼mmern.
+PIR_1303_Gilbert_heyYou_wannaKill_15_01(Held):  Ich wollte hier mal aufrÃ¤umen.
+PIR_1303_Gilbert_heyYou_wannaKill_14_02:  Volmar, dieser Stadtwachen-Spinner hat dich geschickt, nicht?
+PIR_1303_Gilbert_heyYou_wannaKill_14_03:  Dumme Idee, dich mit mir anzulegen!
+PIR_1303_Gilbert_whereHenry_Info_15_01(Held):  Wo finde ich Henry?
+PIR_1303_Gilbert_whereHenry_Info_14_02:  Kletter einfach an der Klippe die Leiter hinab.
+PIR_1303_Gilbert_whereHenry_Info_14_03:  Aber stÃ¼rz nicht ab. Ich habe keine Lust dich von den Felsen abzukratzen!
+PIR_1303_Gilbert_whereHenry_Info_15_04(Held):  Danke fÃ¼r die warmen Worte..
+PIR_1303_Gilbert_whereHenry_Info_14_05:  Hey, das hier ist nicht das Stadtwachen-Kuschel-Lager. Hier wird angepackt und wers verbockt, der hat Pech gehabt.
+PIR_1303_Gilbert_whereHenry_Info_14_06:  Also sieh zu, dass du es nicht verbockst!
+PIR_1303_Gilbert_whatsNew_Info_15_01(Held):  Was gibt's neues?
+PIR_1303_Gilbert_whatsNew_Info_14_02:  Nichts, was dich interessiert. Hier ist alles ruhig!
+MIL_2101_Hafenwache_youPirate_Info_04_01:  Hey, du!
+MIL_2101_Hafenwache_youPirate_Info_04_02:  Wo kommst du denn her?
+MIL_2101_Hafenwache_youPirate_Info_15_03(Held):  Ich...
+MIL_2101_Hafenwache_youPirate_Info_04_04:  Du bist doch bestimmt einer dieser dreckigen Piraten!
+MIL_2101_Hafenwache_youPirate_Info_15_05(Held):  Aber...
+MIL_2101_Hafenwache_youPirate_Info_04_06:  Keine Widerrede! Ich bringe dich erstmal zum Kommandanten!
+MIL_2101_Hafenwache_youPirate_Info_04_07:  Kommandant!
+MIL_2101_Hafenwache_youPirate_Info_04_08:  Einer aus dieser Piratenbande wurde an Land gespült!
+VLK_412_Hatof_startDialog_Info_12_01:  Sieh an, ein neues Gesicht!
+VLK_412_Hatof_startDialog_Info_12_02:  Möchtest du etwas kaufen, verkaufen, oder nur meine Schmiede besetzen? (lacht)
+VLK_412_Hatof_lookingForWork_Info_15_01(Held):  Ich suche Arbeit!
+VLK_412_Hatof_lookingForWork_Info_12_02:  Ja, das tun viele. Hmm, bist du dir denn sicher, dass das Schmiedehandwerk etwas für dich ist?
+VLK_412_Hatof_lookingForWork_Info_15_03(Held):  Ich glaube schon...
+VLK_412_Hatof_lookingForWork_Info_12_04:  Das ist immerhin etwas. Der letzte, der hier war konnte nicht einmal den Hammer halten. Du siehst auf jeden Fall kräftiger aus.
+VLK_412_Hatof_lookingForWork_Info_12_05:  Wenn es dir ernst ist, habe ich etwas zu tun für dich.
+VLK_412_Hatof_whatToDo_Info_15_01(Held):  Was hast du zu tun?
+VLK_412_Hatof_whatToDo_Info_12_02:  Ich erwarte eine Lieferung aus einer der Minen vor der Stadt.
+VLK_412_Hatof_whatToDo_Info_12_03:  Bring mir die Kiste, dann sehen wir weiter!
+VLK_412_Hatof_wheresMine_Info_15_01(Held):  Wo finde ich die Schürfer?
+VLK_412_Hatof_wheresMine_Info_12_02:  Die Schürfer, die mir eine Kiste Erz schulden sind direkt vor der Stadt.
+VLK_412_Hatof_wheresMine_Info_12_03:  Wenn du durch das Nordtor gehst, dich rechts hälst und direkt den Hügel hinauf, kannst du die Mine nicht verfehlen.
+VLK_412_Hatof_wheresMine_Info_12_04:  Rede mit Mika, er wird dir die Kiste geben.
+VLK_412_Hatof_gotTheOre_Info_15_01(Held):  Ich hab das Erz!
+VLK_412_Hatof_gotTheOre_Info_12_02:  Sehr gut, dann kann ich wenigstens vernünftig weiterarbeiten.
+VLK_412_Hatof_gotTheOre_Info_12_03:  Hat er irgendetwas gesagt?
+VLK_412_Hatof_gotTheOre_Info_15_04(Held):  Ja, ich soll schöne Grüße ausrichten und sagen, dass du nicht so schnell arbeiten sollst.
+VLK_412_Hatof_gotTheOre_Info_15_05(Held):  Die Jungs kommen mit dem Schürfen nicht hinterher.
+VLK_412_Hatof_gotTheOre_Info_12_06:  (lacht) Der hat gut Reden... Ich hab eine ganze Stadtwache mit Waffen zu versorgen.
+VLK_412_Hatof_gotTheOre_Info_12_07:  Aber, wie dem auch sei. Du hast deinen Job gemacht, das ist schonmal mehr als die meisten anderen.
+VLK_412_Hatof_gotTheOre_Info_12_08:  Wenn du immer noch mein Lehrling werden möchtest, komm wieder zu mir, dann besprechen wir alles weitere.
+VLK_412_Hatof_becomeApprentice_Info_15_01(Held):  Ich will den Bergbau lernen!
+VLK_412_Hatof_becomeApprentice_Info_12_02:  Bist du dir sicher?
+VLK_412_Hatof_becomeApprentice_Info_12_03:  Denk daran, du kannst nur zwei Berufe gleichzeitig ausüben!
+VLK_412_Hatof_becomeApprentice_noBergbau_15_01(Held):  Nein, ich brauche noch etwas Bedenkzeit.
+VLK_412_Hatof_becomeApprentice_noBergbau_12_02:  Gut, du weißt ja, wo du mich findest!
+VLK_412_Hatof_becomeApprentice_yesBergbau_15_01(Held):  Ja, ich will bei dir lernen!
+VLK_412_Hatof_becomeApprentice_yesBergbau_12_02:  Gut, dann hör mir genau zu.
+VLK_412_Hatof_becomeApprentice_yesBergbau_12_03:  Natürlich brauchst du eine Spitzhacke. Das sollte klar sein.
+VLK_412_Hatof_becomeApprentice_yesBergbau_12_04:  Am Anfang solltest du dich an einfache Erze wie Eisen halten.
+VLK_412_Hatof_becomeApprentice_yesBergbau_12_05:  Versuch besser nicht Gold, oder gar magisches Erz abzubauen. Das geht nur schief und du bekommst unbrauchbare Stücke!
+VLK_412_Hatof_becomeApprentice_yesBergbau_12_06:  Nimm dir also die Spitzhacke und such dir eine schöne Eisenader. Dann schaust du genau, wo das Erz an die Oberfläche tritt.
+VLK_412_Hatof_becomeApprentice_yesBergbau_12_07:  Schlag präzise und fest, aber nicht auf das Mineral, sondern daneben!
+VLK_412_Hatof_becomeApprentice_yesBergbau_12_08:  So brichst du große Stücke Eisen aus dem Stein.
+VLK_412_Hatof_becomeApprentice_yesBergbau_12_09:  Mit dem Erz kannst du dann an eine Schmiede gehen und es zu Stahl einschmelzen.
+VLK_412_Hatof_becomeApprentice_yesBergbau_12_10:  Und jetzt: Kannst du dich auch Bürger der Stadt nennen!
+VLK_412_Hatof_becomeApprentice_yesBergbau_12_11:  Das ist löblich, aber es sieht aus, als hättest du noch nicht genug Erfahrung.
+VLK_412_Hatof_becomeApprentice_yesBergbau_12_12:  Komm wieder, wenn du bereit bist!
+VLK_412_Hatof_becomeApprentice2_Info_15_01(Held):  Ich will das Schmieden lernen! (5 LP)
+VLK_412_Hatof_becomeApprentice2_Info_12_02:  In Ordnung, das kann ich dir beibringen!
+VLK_412_Hatof_becomeApprentice2_Info_12_03:  Bist du dir sicher?
+VLK_412_Hatof_becomeApprentice2_noSmith_15_01(Held):  Nein, gib mir noch Zeit!
+VLK_412_Hatof_becomeApprentice2_noSmith_12_02:  Gut, ich laufe hier nicht weg!
+VLK_412_Hatof_becomeApprentice2_yesSmith_15_01(Held):  Ja, bring mir die Schmiedekunst bei!
+VLK_412_Hatof_becomeApprentice2_yesSmith_12_02:  In Ordnung. Schmieden ist eigentlich kein Hexenwerk.
+VLK_412_Hatof_becomeApprentice2_yesSmith_12_03:  Du darfst nur nicht vergessen, dass es hauptsächlich auf die Technik ankommt.
+VLK_412_Hatof_becomeApprentice2_yesSmith_12_04:  Lass dich also nicht verunsichern, wenn deine ersten Versuche etwas krumm werden. Stärke alleine reicht nicht.
+VLK_412_Hatof_becomeApprentice2_yesSmith_12_05:  Wenn du dir ein Stück Rohstahl nimmst, erhitze es zuerst am Schmiedefeuer. Achte darauf, dass es rotglühend ist.
+VLK_412_Hatof_becomeApprentice2_yesSmith_12_06:  Wird das Eisen zu heiß, verbrennt dir der Stahl und der Rohling ist unbrauchbar.
+VLK_412_Hatof_becomeApprentice2_yesSmith_12_07:  Wenn bis hierhin alles funktioniert hat, musst du nur noch die Waffe am Amboss zurechtschlagen.
+VLK_412_Hatof_becomeApprentice2_yesSmith_12_08:  Hab das Ziel immer vor Augen. Wenn du einen Fehler nicht bemerkst, ist es zu spät.
+VLK_412_Hatof_becomeApprentice2_yesSmith_12_09:  Härte die Waffe zum Schluss noch im Wassereimer. Auch hier musst du ein wenig Vorsicht walten lassen.
+VLK_412_Hatof_becomeApprentice2_yesSmith_12_10:  Höre genau hin. Knistert die Waffe, ist der Stahl zu heiß und wird spröde.
+VLK_412_Hatof_becomeApprentice2_yesSmith_12_11:  Auch wenn das alles kompliziert klingt, es ist nur eine Frage der Ãœbung.
+VLK_412_Hatof_becomeApprentice2_yesSmith_12_12:  Und jetzt: Ran an den Stahl!
+VLK_412_Hatof_becomeApprentice2_yesSmith_12_13:  Übrigens kannst du dich nun Bürger der Stadt nennen.
+VLK_412_Hatof_becomeApprentice2_yesSmith_12_14:  Das ist löblich, aber es sieht aus, als hättest du noch nicht genug Erfahrung.
+VLK_412_Hatof_becomeApprentice2_yesSmith_12_15:  Komm wieder, wenn du bereit bist!
+VLK_412_Hatof_canTrade_Info_15_01(Held):  Du verkaufst auch Waffen?
+VLK_412_Hatof_canTrade_Info_12_02:  Waffen eher weniger. Die Stadtwache kauft mir die meisten Schwerter direkt ab. Ein paar habe ich noch hier.
+VLK_412_Hatof_canTrade_Info_12_03:  Hauptsächlich kann ich die Materialien fürs Schmieden verkaufen. Wenn du daran Interesse hast, sag Bescheid!
+VLK_412_Hatof_letsTrade_Info_15_01(Held):  Zeig mir deine Waffen!
+VLK_412_Hatof_teachMeSth_Info_15_01(Held):  Kannst du mir auch was beibringen?
+VLK_412_Hatof_teachMeSth_Info_12_02:  Hmm, lass mich überlegen.
+VLK_412_Hatof_teachMeSth_Info_12_03:  Ja, ich glaube, ich könnte dich etwas stärker machen. Schließlich bin ich nicht umsonst Schmied geworden (lacht)
+VLK_412_Hatof_teachMeSth_Info_12_04:  Komm zu mir, dann gebe ich dir ein paar Tipps!
+PIR_1301_Henry_whoAreYou_Info_09_01:  Wer bist du denn? Hat Gilbert dich etwa reingelassen?
+PIR_1301_Henry_whoAreYou_Info_15_02(Held):  Hat er. Er sagte, ich solle mich bei dir melden.
+PIR_1301_Henry_whoAreYou_Info_09_03:  Jeden Arsch schickt der einfach durch. Ich glaube, ich brauche eine neue Torwache.
+PIR_1301_Henry_whoAreYou_Info_09_04:  Was willst du?
+PIR_1301_Henry_wannaJoin_Info_15_01(Held):  Ich will euch beitreten!
+PIR_1301_Henry_wannaJoin_Info_09_02:  Du? Als Pirat?
+PIR_1301_Henry_wannaJoin_Info_09_03:  Was meinst du, befÃ¤higt dich dazu?
+PIR_1301_Henry_wannaJoin_Info_15_04(Held):  Ich bin schon frÃ¼her zur See gefahren. Als Soldat auf einem kÃ¶niglichen Kriegsschiff bleibt das nicht aus.
+PIR_1301_Henry_wannaJoin_Info_09_05:  (erstaunt) Auf einem kÃ¶niglichen Kriegsschiff? Na, dann haben wir ja hohen Besuch.
+PIR_1301_Henry_wannaJoin_Info_09_06:  Kommst du im Auftrag der Paladine?
+PIR_1301_Henry_wannaJoin_Info_15_07(Held):  Nein, ich bin aus eigenem Antrieb hier. Wie gesagt, ich will mich euch anschlieÃŸen.
+PIR_1301_Henry_wannaJoin_Info_09_08:  Und warum sollten wir dich bei uns aufnehmen?
+PIR_1301_Henry_wannaJoin_Info_15_09(Held):  Ich kann nÃ¼tzlich sein fÃ¼r euch.
+PIR_1301_Henry_wannaJoin_Info_09_10:  Da bin ich ja mal gespannt...
+PIR_1301_Henry_whatToDo_Info_15_01(Held):  Wie kann ich dir beweisen, dass ich etwas tauge?
+PIR_1301_Henry_whatToDo_Info_09_02:  Ich habe MÃ¤nner, die kÃ¤mpfen kÃ¶nnen und sogar ein paar der Sorte Dumm und Stark. Die kÃ¶nnen anpacken.
+PIR_1301_Henry_whatToDo_Info_09_03:  Und wenn der KÃ¤pt'n mit dem Rest von der Kaperfahrt wiederkommt werden es noch mehr.
+PIR_1301_Henry_whatToDo_Info_09_04:  Aber wir alle haben einen Nachteil: Wir werden gesucht.
+PIR_1301_Henry_whatToDo_Info_09_05:  Keiner von uns kann auch nur einen FuÃŸ in die NÃ¤he der Stadt setzen, ohne von Pfeilen durchbohrt zu werden.
+PIR_1301_Henry_whatToDo_Info_09_06:  Was wir brauchen ist jemand wie du. Ein unbekanntes Gesicht.
+PIR_1301_Henry_whatToDo_Info_15_07(Held):  Soll ich etwa den AnfÃ¼hrer der Paladine tÃ¶ten? Dann wÃ¤re ich nicht mehr unbekannt.
+PIR_1301_Henry_whatToDo_Info_09_08:  (lacht) Nein, das wÃ¤re zu viel des Guten, aber ich mag die Art, wie du denkst.
+PIR_1301_Henry_whatToDo_Info_09_09:  Ich habe eine viel einfachere Aufgabe fÃ¼r dich.
+PIR_1301_Henry_whatToDo_Info_09_10:  Wir kÃ¶nnen die Stadt nicht frontal angreifen, zu gefÃ¤hrlich. Also mÃ¼ssen wir es heimlich und unauffÃ¤llig tun.
+PIR_1301_Henry_whatToDo_Info_09_11:  Finde einen Weg in die Stadt! Einen Weg, der uns am Besten mitten in die Stadt fÃ¼hrt, aber nicht oder nur sehr wenig bewacht wird.
+PIR_1301_Henry_whatToDo_Info_09_12:  Finde ihn und du bist dabei!
+PIR_1301_Henry_whereToTake_Info_15_01(Held):  Wo soll es denn einen solchen Weg geben?
+PIR_1301_Henry_whereToTake_Info_09_02:  Wenn ich dir die Frage beantworten kÃ¶nnte, mÃ¼sste ich dich nicht losschicken.
+PIR_1301_Henry_whereToTake_Info_09_03:  Ich weiÃŸ es nicht. Sei kreativ.
+PIR_1301_Henry_whereToTake_Info_15_04(Held):  Wie wÃ¤rs mit Fliegen?
+PIR_1301_Henry_whereToTake_Info_09_05:  Noch so eine blÃ¶de Idee und du lernst das Fliegen!
+PIR_1301_Henry_whereToTake_Info_15_06(Held):  Schon gut... Ich geh mal auf die Suche!
+PIR_1301_Henry_foundWay_Info_15_01(Held):  Ich habe einen Weg gefunden!
+PIR_1301_Henry_foundWay_Info_09_02:  Echt? Ehrlicherweise muss ich sagen, dass ich damit nicht gerechnet hÃ¤tte.
+PIR_1301_Henry_foundWay_Info_09_03:  Hier, nimm erstmal ein Bier und dann erzÃ¤hl!
+PIR_1301_Henry_foundWay_Info_15_04(Held):  Danke!
+PIR_1301_Henry_foundWay_Info_15_05(Held):  Also, der Weg ist eigentlich ganz einfach.
+PIR_1301_Henry_foundWay_Info_15_06(Held):  Wenn ihr die Klippe umschifft, die euer Lager vom Hafen trennt und euch nah an den Felsen haltet, kommt ihr zum Eingang der Kanalisation.
+PIR_1301_Henry_foundWay_Info_09_07:  Kanalistation? Glaubst du allen Ernstes ich latsche durch die ScheiÃŸe?
+PIR_1301_Henry_foundWay_Info_15_08(Held):  Entspann dich! Die Kanalisation ist quasi trocken. Solange du nicht in der Mitte lÃ¤ufst, ist alles in Ordnung.
+PIR_1301_Henry_foundWay_Info_09_09:  Das will ich fÃ¼r dich hoffen. Gut, weiter!
+PIR_1301_Henry_foundWay_Info_15_10(Held):  Folgt ihr dem Weg und verlauft euch nicht, kommt ihr zu einer Treppe. Diese fÃ¼hrt zum Hotel hinauf.
+PIR_1301_Henry_foundWay_Info_15_11(Held):  Ihr kommt also unbemerkt fÃ¼r alle direkt an der Kaserne aus. Dort sind vergleichsweise wenig Wachen also ideal fÃ¼r euch.
+PIR_1301_Henry_foundWay_Info_09_12:  Das ist...
+PIR_1301_Henry_foundWay_Info_09_13:  Mensch. Ich bin beeindruckt! Gute Arbeit. Jetzt kann der SpaÃŸ anfangen.
+PIR_1301_Henry_foundWay_Info_09_14:  Aber, wenn du willst, kannst du uns beitreten. Du bist fÃ¤higer als die HÃ¤lfte der MÃ¤nner, die gerade mit dem KÃ¤pt'n unterwegs sind.
+PIR_1301_Henry_foundWay_Info_09_15:  Wie siehts aus?
+PIR_1301_Henry_wannaJoinPir_Info_15_01(Held):  Ich will euch beitreten!
+PIR_1301_Henry_wannaJoinPir_Info_09_02:  Lass mich kurz Ã¼berlegen.
+PIR_1301_Henry_wannaJoinPir_Info_09_03:  Du hast fÃ¼r uns einen Weg in die Stadt gefunden.
+PIR_1301_Henry_wannaJoinPir_Info_09_04:  Das macht dich nÃ¼tzlicher als die HolzkÃ¶pfe, die hier sonst rumhÃ¤ngen.
+PIR_1301_Henry_wannaJoinPir_Info_09_05:  Gut, ich will dich aufnehmen.
+PIR_1301_Henry_wannaJoinPir_Info_09_06:  Bist du dir sicher?
+PIR_1301_Henry_wannaJoinPir_noPirate_15_01(Held):  Ich brauche noch Zeit.
+PIR_1301_Henry_wannaJoinPir_noPirate_09_02:  In Ordnung. Du kannst froh sein, dass ich dich brauchen kann.
+PIR_1301_Henry_wannaJoinPir_noPirate_09_03:  Sonst wÃ¤re mein Angebot jetzt beendet. Aber ich bleibe dabei.
+PIR_1301_Henry_wannaJoinPir_noPirate_09_04:  Nimm dir die Zeit, die du brauchst. Du weiÃŸt, wo du mich findest.
+PIR_1301_Henry_wannaJoinPir_yesPirate_15_01(Held):  Ja, ich will mitmachen!
+PIR_1301_Henry_wannaJoinPir_yesPirate_09_02:  Gut, dann lege die Piratenkleidung an und trage sie mit Stolz!
+PIR_1301_Henry_wannaJoinPir_yesPirate_09_03:  Und dass du mir ja keinen Mist baust! Wenn du uns irgendwie verrÃ¤tst, machen wir kurzen Prozess.
+PIR_1301_Henry_wannaJoinPir_yesPirate_09_04:  Also: Willkommen in der Meute!
+PIR_1301_Henry_wannaJoinPir_yesPirate_09_05:  Aber pass auf. Da du jetzt die RÃ¼stung trÃ¤gst, wirst du dich nicht mehr einfach so in der Stadt bewegen kÃ¶nnen.
+PIR_1301_Henry_wannaJoinPir_yesPirate_09_06:  Leg' am besten eine andere RÃ¼stung an, bevor du in deinen Tod rennst.
+SLD_700_Jareck_youMerc_Info_15_01(Held):  Bist du Jareck?
+SLD_700_Jareck_youMerc_Info_04_02:  Kommt darauf an... Wer will das wissen?
+SLD_700_Jareck_youMerc_Info_15_03(Held):  Ich bin...
+SLD_700_Jareck_youMerc_Info_04_04:  Ach weißt du, ist mir eigentlich auch egal.
+SLD_700_Jareck_youMerc_Info_04_05:  Ja, ich bin Jareck, Anführer der Söldner auf diesem götterverdammten Hof.
+SLD_700_Jareck_youMerc_Info_04_06:  Was willst du?
+SLD_700_Jareck_wannaJoin_Info_15_01(Held):  Ich will bei euch mitmachen!
+SLD_700_Jareck_wannaJoin_Info_04_02:  Mitmachen, soso (lacht)
+SLD_700_Jareck_wannaJoin_Info_04_03:  Bei uns wird nicht einfach "mitgemacht", Kleiner.
+SLD_700_Jareck_wannaJoin_Info_04_04:  Das Leben als Söldner ist harte Arbeit, gefährlich und nicht selten kürzer als du denkst.
+SLD_700_Jareck_wannaJoin_Info_04_05:  Weißt du überhaupt, worauf du dich einlässt?
+SLD_700_Jareck_wannaJoin_thoughtCampfire_15_01(Held):  Ich dachte, Söldner sitzen den ganzen Tag am Lagerfeuer und singen Liedchen.
+SLD_700_Jareck_wannaJoin_thoughtCampfire_04_02:  Sag mal, willst du mich verarschen?
+SLD_700_Jareck_wannaJoin_thoughtCampfire_04_03:  So einen Kuschelkurs kannst du vielleicht bei der Stadtwache erwarten.
+SLD_700_Jareck_wannaJoin_thoughtCampfire_04_04:  Aber nicht hier bei uns! Vergiss es.
+SLD_700_Jareck_wannaJoin_thoughtCampfire_04_05:  So einer wie du wird niemals Söldner!
+SLD_700_Jareck_wannaJoin_thougtDanglingEggs_15_01(Held):  Ich dachte, ihr schaukelt den ganzen Tag eure Eier.
+SLD_700_Jareck_wannaJoin_thougtDanglingEggs_04_02:  (lacht) Haha, das ist köstlich.
+SLD_700_Jareck_wannaJoin_thougtDanglingEggs_04_03:  Normalerweise würde man so etwas beim Bürgermeister und seinen 'Mitarbeitern' erwarten.
+SLD_700_Jareck_wannaJoin_thougtDanglingEggs_04_04:  Aber...
+SLD_700_Jareck_wannaJoin_thougtDanglingEggs_04_05:  Naja, ein wenig sieht es schon so aus, da hast du recht.
+SLD_700_Jareck_wannaJoin_thougtDanglingEggs_04_06:  Gut, wenn es dir ernst ist, führe einen Auftrag für mich aus und du bist dabei.
+SLD_700_Jareck_wannaJoin_thoughtShinyClothes_15_01(Held):  Erst dachte ich an strahlende Rüstungen, aber jetzt sehe ich, dass ihr doch ziemlich cool seid.
+SLD_700_Jareck_wannaJoin_thoughtShinyClothes_04_02:  Hey, meine Rüstung ist doch...
+SLD_700_Jareck_wannaJoin_thoughtShinyClothes_04_03:  Ach, schon gut. (grinst)
+SLD_700_Jareck_wannaJoin_thoughtShinyClothes_04_04:  Du hast Recht. Die Rüstung bleibt nicht lange sauber. Das heißt aber nichts, denn nur eine schmutzige Rüstung ist eine gebraucht Rüstung.
+SLD_700_Jareck_wannaJoin_thoughtShinyClothes_04_05:  Dein Humor gefällt mir. Arbeite ein wenig für mich, dann sehen wir weiter.
+SLD_700_Jareck_whatToDo_Info_15_01(Held):  Was soll ich für dich tun?
+SLD_700_Jareck_whatToDo_Info_04_02:  Die Sache ist etwas heikel.
+SLD_700_Jareck_whatToDo_Info_15_03(Held):  Heikel klingt spannender als einfach.
+SLD_700_Jareck_whatToDo_Info_04_04:  Das ist die richtige Einstellung!
+SLD_700_Jareck_whatToDo_Info_04_05:  Gut, hör mir zu! Auch wenn das jetzt vielleicht merkwürdig klingt, als Söldner brauchst du nicht nur Muskeln, sondern auch Köpfchen.
+SLD_700_Jareck_whatToDo_Info_04_06:  Schau dich aber besser nicht zu sehr bei den Jungs um. Es gab eine Zeit, da war ich nicht sehr wählerisch.
+SLD_700_Jareck_whatToDo_Info_04_07:  Wie auch immer. Wir haben in der Stadt einen Informanten.
+SLD_700_Jareck_whatToDo_Info_04_08:  Er gibt uns Hinweise, wenn die Stadtwache Überfälle, oder wie sie es nennen, "Befreiungsaktionen" plant.
+SLD_700_Jareck_whatToDo_Info_04_09:  Er ist etwas überfällig mit seinem Bericht. Das hat aber nichts zu bedeuten, schließlich kann er nicht einfach zu uns marschieren.
+SLD_700_Jareck_whatToDo_Info_04_10:  Und da kommst du ins Spiel. Geh in die Stadt und finde ihn. Bring mir den Bericht und dann werde ich mir überlegen, was ich mit dir anfange.
+SLD_700_Jareck_whyKopf_Info_15_01(Held):  Wer ist euer Informant?
+SLD_700_Jareck_whyKopf_Info_04_02:  Und genau da kommt die Sache mit dem Köpfchen.
+SLD_700_Jareck_whyKopf_Info_04_03:  Ich kenne dich nicht. Zwar bist du mir sympathischer als der größte Teil der Menschen auf dieser Insel, aber trotzdem...
+SLD_700_Jareck_whyKopf_Info_04_04:  Ich werde dir nicht sagen, wer der Informant ist. Aber ich und die anderen Söldner werden dir Hinweise geben.
+SLD_700_Jareck_whyKopf_Info_04_05:  Wenn es dir wichtig ist, bei uns aufgenommen zu werden, dann denk nach und kombiniere klug.
+SLD_700_Jareck_whyKopf_Info_04_06:  Wenn du gut bist, wirst du herausfinden, wer der Spitzel ist.
+SLD_700_Jareck_yourHint_Info_15_01(Held):  Welchen Hinweis kannst du mir geben?
+SLD_700_Jareck_yourHint_Info_04_02:  Unser Informant ist bei der Stadtwache tätig, aber das war dir vermutlich klar.
+SLD_700_Jareck_yourHint_Info_04_03:  Er bekleidet keine sehr hohe Position, bekommt aber doch vieles mit, was geplant ist.
+SLD_700_Jareck_yourHint_Info_15_04(Held):  Das ist ja irgendwie... nichtssagend.
+SLD_700_Jareck_yourHint_Info_04_05:  Erst in der Fülle erschleißen sich die Informationen.
+SLD_700_Jareck_yourHint_Info_04_06:  Geh und sprich mit den anderen Söldnern. Sie werden dir weitere Hinweise geben.
+SLD_700_Jareck_canIJoin_Info_15_01(Held):  Kann ich jetzt bei euch mitmachen?
+SLD_700_Jareck_canIJoin_Info_04_02:  Hab ich mich unklar ausgedrückt?
+SLD_700_Jareck_canIJoin_Info_04_03:  Vergiss es!
+SLD_700_Jareck_canIJoin_Info_04_04:  Geh und setz dich zu den anderen Bauern ans Lagerfeuer, da kannst du deine Liedchen singen!
+SLD_700_Jareck_youFailed_Info_04_01:  Du Idiot! Musstest du in der ganzen Stadt jeden Mann mit einer Waffe fragen?
+SLD_700_Jareck_youFailed_Info_15_02(Held):  Ich...
+SLD_700_Jareck_youFailed_Info_04_03:  Genau, Du! DU hast es vermasselt! Unser Informant musste aus der Stadt fliehen.
+SLD_700_Jareck_youFailed_Info_15_04(Held):  Aber...
+SLD_700_Jareck_youFailed_Info_04_05:  Kein Aber! Du wirst garantiert kein Mitglied der Söldner!
+SLD_700_Jareck_youFailed_Info_04_06:  Nur über meine Leiche!
+SLD_700_Jareck_youFailed_gotIt_15_01(Held):  Das lässt sich einrichten...
+SLD_700_Jareck_youFailed_gotIt_04_02:  Ach, auch noch frech werden?
+SLD_700_Jareck_youFailed_gotIt_04_03:  Na, warte Freundchen...
+SLD_700_Jareck_gotInfos_Info_15_01(Held):  Ich bringe Infos von Marco!
+SLD_700_Jareck_gotInfos_Info_04_02:  Sehr gut. Du hast unseren Informanten also gefunden.
+SLD_700_Jareck_gotInfos_Info_04_03:  Du scheinst was zu taugen... Was sagt er?
+SLD_700_Jareck_gotInfos_Info_15_04(Held):  Ihr sollt euch vorbereiten! Die Stadtwache rüstet auf und zwar gewaltig. Deswegen konnte er auch nicht aus der Stadt weg.
+SLD_700_Jareck_gotInfos_Info_04_05:  Und wofür rüsten sie auf?
+SLD_700_Jareck_gotInfos_Info_15_06(Held):  Das konnte er mir nicht sagen. Scheinbar ist er nicht in alles eingeweiht.
+SLD_700_Jareck_gotInfos_Info_04_07:  Natürlich nicht... Wäre ja auch zu schön, einen der hochrangigen Speichellecker als Spitzel zu haben.
+SLD_700_Jareck_gotInfos_Info_04_08:  Aber gut. Was immer die Stadtwache plant. Wir werden vorbereitet sein.
+SLD_700_Jareck_gotInfos_Info_04_09:  Ich danke dir! Jetzt kann ich wenigstens etwas ruhiger schlafen.
+SLD_700_Jareck_wannaBecomeSld_Info_15_01(Held):  Kann ich euch jetzt beitreten?
+SLD_700_Jareck_wannaBecomeSld_Info_04_02:  Lass mich überlegen.
+SLD_700_Jareck_wannaBecomeSld_Info_04_03:  Du hast für uns die Infos besorgt. Das bringt uns schonmal ein Stück weiter.
+SLD_700_Jareck_wannaBecomeSld_Info_04_04:  Und bei Rodar warst du auch schon.
+SLD_700_Jareck_wannaBecomeSld_Info_04_05:  Seine Aufgabe war vielleicht einfach, aber du hast dafür gesorgt, dass du in seinen Augen wichtig bist.
+SLD_700_Jareck_wannaBecomeSld_Info_04_06:  Zumindest wichtiger als ein paar der Jungs.
+SLD_700_Jareck_wannaBecomeSld_Info_04_07:  Und immerhin hast du alle Viecher getötet. Das ist sehr gut.
+SLD_700_Jareck_wannaBecomeSld_Info_04_08:  Ja, wenn du willst, nehme ich dich bei uns auf!
+SLD_700_Jareck_wannaBecomeSld_Info_04_09:  Und bei Rodar warst du auch schon.
+SLD_700_Jareck_wannaBecomeSld_Info_04_10:  Aber ich habe noch nichts von ihm gehört.
+SLD_700_Jareck_wannaBecomeSld_Info_04_11:  Hast du seine Aufgabe schon erledigt?
+SLD_700_Jareck_wannaBecomeSld_Info_15_12(Held):  Naja...
+SLD_700_Jareck_wannaBecomeSld_Info_04_13:  Dachte ich mir. Tu, was immer er von dir verlangt, dann werde ich dich aufnehmen!
+SLD_700_Jareck_wannaBecomeSld_Info_04_14:  Aber Rodar kennt dich noch gar nicht.
+SLD_700_Jareck_wannaBecomeSld_Info_04_15:  Geh am Besten gleich zu ihm und tu, was immer er von dir verlangt!
+SLD_700_Jareck_wannaBecomeSld_Info_04_16:  Dann sehen wir weiter.
+SLD_700_Jareck_becomeSld_Info_15_01(Held):  Ich will beu euch mitmachen!
+SLD_700_Jareck_becomeSld_Info_04_02:  Bist du dir sicher?
+SLD_700_Jareck_becomeSld_Info_04_03:  Hast du einmal die Rüstung eines Söldners angelegt, wirst du sie nicht mehr so einfach los.
+SLD_700_Jareck_becomeSld_Info_04_04:  Diese Entscheidung will gut überlegt sein!
+SLD_700_Jareck_becomeSld_notReady_15_01(Held):  Nein, ich brauche noch Bedenkzeit!
+SLD_700_Jareck_becomeSld_notReady_04_02:  Gut. Wenn du es dir überlegt hast: Du weißt, wo du mich findest!
+SLD_700_Jareck_becomeSld_yesSure_15_01(Held):  Ja, ich bin mir sicher!
+SLD_700_Jareck_becomeSld_yesSure_04_02:  Dann trage diese Rüstung mit Stolz!
+SLD_700_Jareck_becomeSld_yesSure_04_03:  Lege sie an und vor allem: Mach uns keine Schande!
+SLD_700_Jareck_becomeSld_yesSure_04_04:  Aber sei vorsichtig: Auch wenn dich niemand offen angreifen würde, wenn du die Rüstung trägst, wird die Stadtwache dir immer misstrauen.
+SLD_700_Jareck_becomeSld_yesSure_04_05:  Genauso die Magier aus dem Kloster. Sag hinterher nicht, ich hätte dich nicht gewarnt! (lacht)
+SLD_700_Jareck_becomeSld_yesSure_04_06:  Wie auch immer. Willkommen, Söldner!
+BAU_202_Joffrey_getLost_Info_06_01:  Hey! Pass doch auf wo du langlatschst.
+BAU_202_Joffrey_getLost_Info_06_02:  Du zertrampelst das ganze Gras und den Klee.
+BAU_202_Joffrey_youreDumb_Info_15_01(Held):  Du bist ja ein ganz Großer...
+BAU_202_Joffrey_youreDumb_Info_06_02:  Machst du dich über mich lustig?
+BAU_202_Joffrey_youreDumb_Info_06_03:  Ich bin der Sohn eines großen Bauern..!
+BAU_202_Joffrey_youreDumb_Info_15_04(Held):  Wenn du wüsstest, was das bedeutet, wo ich herkomme...
+BAU_202_Joffrey_youreDumb_Info_06_05:  Was meinst du?
+BAU_202_Joffrey_youreDumb_Info_15_06(Held):  Ach nichts, schon gut...
+BAU_202_Joffrey_yourSheep_Info_15_01(Held):  Werden deine Schafe von Wölfen gerissen?
+BAU_202_Joffrey_yourSheep_Info_06_02:  Ja, seit einigen Tagen fehlt morgens immer mal wieder ein Schaf.
+BAU_202_Joffrey_yourSheep_Info_06_03:  Mein Vater ist gar nicht begeistert...
+BAU_202_Joffrey_yourSheep_Info_15_04(Held):  Rodar ist dein Vater?
+BAU_202_Joffrey_yourSheep_Info_06_05:  Wundert dich das?
+BAU_202_Joffrey_yourSheep_Info_15_06(Held):  Mich wundert nur, dass du dann die Schafe bewachst.
+BAU_202_Joffrey_yourSheep_Info_15_07(Held):  Der Sohn des Großen Bauern scheint ja selber kein Großer Wurf zu sein...
+BAU_202_Joffrey_yourSheep_Info_06_08:  Pass auf, was du von dir gibst, sonst...
+BAU_202_Joffrey_yourSheep_Info_15_09(Held):  Sagst du es deinem Vater?
+BAU_202_Joffrey_yourSheep_Info_06_10:  Ich....
+BAU_202_Joffrey_yourSheep_Info_15_11(Held):  Vergessen wirs!
+BAU_202_Joffrey_knowAny_Info_15_01(Held):  Hast du eine Idee, wo die Wölfe herkommen?
+BAU_202_Joffrey_knowAny_Info_06_02:  Ich habe sie noch nicht gesehen, aber ich glaube manchmal ein Heulen zu hören.
+BAU_202_Joffrey_knowAny_Info_06_03:  Es kommt von den Felswänden dort hinten!
+BAU_202_Joffrey_knowAny_Info_15_04(Held):  Dann werde ich dort wohl mal nachsehen müssen.
+BAU_202_Joffrey_wolfDead_Info_15_01(Held):  Die Wölfe sind tot.
+BAU_202_Joffrey_wolfDead_Info_06_02:  Du meinst, du hast die Monster beseitigt?
+BAU_202_Joffrey_wolfDead_Info_15_03(Held):  Monster? Es waren zwei junge Tiere dabei.
+BAU_202_Joffrey_wolfDead_Info_15_04(Held):  Wahrscheinlich hatten sie alle nur Hunger.
+BAU_202_Joffrey_wolfDead_Info_15_05(Held):  Ich meine, was würdest du tun, wenn dir deine Nahrung weggenommen wird?
+BAU_202_Joffrey_wolfDead_Info_06_06:  (überzeugt) Ich würde sie mir zurückholen!
+BAU_202_Joffrey_wolfDead_Info_15_07(Held):  Na, hoffen wir, dass es niemals dazu kommt.
+SLD_702_Kilian_attention_Info_09_01:  Hey du, pass doch auf!
+SLD_702_Kilian_attention_Info_09_02:  Siehst du nicht, dass ich hier trainiere?
+SLD_702_Kilian_attention_Info_09_03:  Fast hätte ich dich verletzt. Was machst du überhautp hier?
+SLD_702_Kilian_wannaJoin_Info_15_01(Held):  Ich will bei euch mitmachen!
+SLD_702_Kilian_wannaJoin_Info_09_02:  Dann sieh zu und lerne. Wer nicht mit dem Schwert umgehen kann, der hat bei uns nichts verloren.
+SLD_702_Kilian_wannaJoin_Info_09_03:  Ich bin Kilian, ich kann dir beibringen, wie du besser mit dem Schwert wirst.
+SLD_702_Kilian_canTeach_Info_15_01(Held):  Hilf mir, meinen Kampfstil zu verbessern!
+SLD_702_Kilian_canTeach_Info_09_02:  Sprich erst mit Rodar und Jareck. Wenn die beiden dich bei uns Söldnern aufnehmen, werde ich dir alles beibringen, was ich weiß.
+SLD_702_Kilian_yourHint_Info_15_01(Held):  Hast du einen Hinweis für mich, wer euer Informant bei der Stadtwache ist?
+SLD_702_Kilian_yourHint_Info_09_02:  Warum sollte ich dir was sagen?
+SLD_702_Kilian_yourHint_Info_15_03(Held):  Jareck schickt mich, seinen Bericht zu holen. Aber er vertraut mir noch nicht genug, um mir den Namen zu nennen.
+SLD_702_Kilian_yourHint_Info_15_04(Held):  Ich soll Hinweise holen und selber nachdenken, wer der Informant ist.
+SLD_702_Kilian_yourHint_Info_09_05:  Kluge Entscheidung. Hör zu: Unser Informant wird sich zu erkennen geben, wenn du ihm folgendes sagst:
+SLD_702_Kilian_yourHint_Info_09_06:  "Eine Rose für Epona"
+SLD_702_Kilian_yourHint_Info_09_07:  Dann wird er dir seine Informationen geben.
+SLD_702_Kilian_yourHint_Info_15_08(Held):  Ist das nicht etwas klischeebehaftet?
+SLD_702_Kilian_yourHint_Info_09_09:  Mag sein, aber es funktioniert.
+SLD_702_Kilian_yourHint_Info_09_10:  Bisher ist er nicht aufgeflogen.
+SLD_702_Kilian_yourHint_Info_09_11:  Also hüte dich, dem Falschen diesen Satz zu sagen.
+BAU_201_Laria_heyYou_Info_17_01:  Hey, du! Warte bitte!
+BAU_201_Laria_heyYou_Info_17_02:  Du siehst stark aus. Zumindest stärker als alles, was hier an "Männern" auf meinem Hof rumrennt.
+BAU_201_Laria_heyYou_Info_17_03:  Könntest du mir einen Gefallen tun?
+BAU_201_Laria_heyYou_Info_17_04:  Wir haben ein Problem mit Riesenratten in der Scheune. Vielleicht könntest du dich darum kümmern?
+BAU_201_Laria_heyYou_Info_15_05(Held):  Das trifft sich gut.
+BAU_201_Laria_heyYou_Info_15_06(Held):  Rodar hat mich geschickt, um dein Rattenproblem in den Griff zu bekommen.
+BAU_201_Laria_heyYou_Info_17_07:  Wirklich? Und ich dachte schon, er hätte mich vergessen.
+BAU_201_Laria_heyYou_Info_17_08:  Aber dann wird ja alles gut.
+BAU_201_Laria_heyYou_Info_17_09:  Vielen Dank schonmal!
+BAU_201_Laria_heyYou_Info_15_10(Held):  Ich werde sehen, was sich machen lässt.
+BAU_201_Laria_heyYou_Info_17_11:  Du als starker Mann wirst doch bestimmt Interesse an einem Platz bei den Söldnern haben.
+BAU_201_Laria_heyYou_Info_17_12:  Wenn du mir hilfst, wird das Rodar, den Großbauern bestimmt beeindrucken.
+BAU_201_Laria_heyYou_Info_15_13(Held):  Das klingt nach einem Plan...
+BAU_201_Laria_ratsDead_Info_15_01(Held):  Die Ratten sind erledigt!
+BAU_201_Laria_ratsDead_Info_17_02:  Wirklich? Vielen lieben Dank!
+BAU_201_Laria_ratsDead_Info_17_03:  Das wird das Leben hier wieder etwas einfacher machen.
+BAU_201_Laria_ratsDead_Info_17_04:  Warte, ich habe etwas für dich. Das wird dir helfen.
+BAU_201_Laria_ratsDead_Info_17_05:  Lass es dir schmecken. Und wenn du einmal einen Platz zum Schlafen brauchst, komm wieder.
+BAU_201_Laria_ratsDead_Info_17_06:  Hier brennt immer ein Feuer!
+MIL_2104_Marco_youSellWeapons_Info_15_01(Held):  Du verkaufst Waffen?
+MIL_2104_Marco_youSellWeapons_Info_08_02:  Auf ausdrücklichen Befehl der Paladine darf ich diese Waffen nur an Mitglieder der Stadtwache verteilen.
+MIL_2104_Marco_youSellWeapons_Info_08_03:  Natürlich kostenfrei, versteht sich.
+MIL_2104_Marco_youSellWeapons_Info_15_04(Held):  Also verkaufst du welche?
+MIL_2104_Marco_youSellWeapons_Info_08_05:  Hast du mir nicht zugehört?
+MIL_2104_Marco_youSellWeapons_Info_08_06:  Als Miliz bekommst du eine Waffe, ansonsten nicht.
+MIL_2104_Marco_youSellWeapons_Info_08_07:  Und versuch gar nicht erst, mich zu bestechen.
+MIL_2104_Marco_newInfos_Info_15_01(Held):  Du kannst doch bestimmt gut mit Waffen umgehen...
+MIL_2104_Marco_newInfos_Info_08_02:  Sollte man meinen, nicht?
+MIL_2104_Marco_newInfos_Info_08_03:  Aber mein Job ist nicht wirklich spannend.
+MIL_2104_Marco_newInfos_Info_08_04:  Ich fasse zwar täglich mehrere Dutzend Schwerter an, aber mein eigenes schwinge ich nur sehr selten.
+MIL_2104_Marco_newInfos_Info_15_05(Held):  Schade, ich dachte...
+MIL_2104_Marco_newInfos_Info_08_06:  ... ich könnte dir etwas beibringen?
+MIL_2104_Marco_newInfos_Info_08_07:  Leider nicht. Aber frag mal im Innenhof der Kaserne nach, da kann dir bestimmt jemand helfen.
+MIL_2104_Marco_newInfos2_Info_15_01(Held):  Eine Rose für Epona!
+MIL_2104_Marco_newInfos2_Info_08_02:  Psst! Spinnst du, das hier so laut rumzutröten?
+MIL_2104_Marco_newInfos2_Info_08_03:  Komm heute Abend gegen 19 Uhr zum Baum vor der Kaserne.
+MIL_2104_Marco_newInfos2_Info_08_04:  Dann sprechen wir!
+MIL_2104_Marco_getInfos_Info_15_01(Held):  Eine Rose für Epona!
+MIL_2104_Marco_getInfos_Info_08_02:  Jaja, hör auf mit dem Quatsch.
+MIL_2104_Marco_getInfos_Info_08_03:  Wer bist du, was willst du und woher hast du diesen Spruch?
+MIL_2104_Marco_getInfos_Info_15_04(Held):  Ich komme im Auftrag von Jareck. Da du es scheinbar nicht schaffst, soll ich deinen neuesten Bericht abholen.
+MIL_2104_Marco_getInfos_Info_08_05:  Nicht schaffen? Hast du gesehen, wieviel Waffen in der Kaserne produziert und verteilt werden?
+MIL_2104_Marco_getInfos_Info_08_06:  Ich KANN nicht einfach weg. Und genau DAS ist mein Bericht.
+MIL_2104_Marco_getInfos_Info_15_07(Held):  Wie bitte? Was meinst du damit?
+MIL_2104_Marco_getInfos_Info_08_08:  Sag Jareck folgendes: Die Stadtwache bereitet sich auf etwas vor. An allen Ecken und Enden wird aufgerüstet.
+MIL_2104_Marco_getInfos_Info_08_09:  Ich kann nicht sagen, wofür, aber die Söldner sollten sich besser vorbereiten.
+MIL_2104_Marco_getInfos_Info_08_10:  Bevor es zu spät ist!
+MIL_2104_Marco_getInfos_Info_15_11(Held):  Na also, geht doch.
+MIL_2104_Marco_getInfos_Info_08_12:  Und noch etwas: Wenn du das nächste Mal unser Erkennungszeichen so in die Welt herausschreist, dann NUTZE ich meine Klinge!
+MIL_2104_Marco_getWeapon_Info_15_01(Held):  Ich soll mir meine Rüstung und eine Waffe abholen.
+MIL_2104_Marco_getWeapon_Info_08_02:  So, sollst du das?
+MIL_2104_Marco_getWeapon_Info_08_03:  Gut, dass ich noch was hier habe.
+MIL_2104_Marco_getWeapon_Info_08_04:  Hier hast du die Rüstung.
+MIL_2104_Marco_getWeapon_Info_08_05:  Wenn du eine bessere willst, musst du dafür bezahlen.
+MIL_2104_Marco_getWeapon_Info_08_06:  Und eine Waffe...
+MIL_2104_Marco_getWeapon_Info_08_07:  Ah, ja. Die hier sollte für den Anfang gut sein.
+MIL_2104_Marco_getWeapon_Info_08_08:  Wenn du eine andere haben möchtest, kann ich dir welche verkaufen.
+MIL_2104_Marco_trade_Info_15_01(Held):  Zeig mir deine Waffen!
+KDF_1401_Marius_greetingsMage_Info_15_01(Held):  Grüße, ehrwürdiger Magier!
+KDF_1401_Marius_greetingsMage_Info_03_02:  Ich grüße dich auch.
+KDF_1401_Marius_greetingsMage_Info_03_03:  Mein Name ist Marius, ich bin ein Magier des Eises.
+KDF_1401_Marius_greetingsMage_Info_03_04:  Was kann ich für dich tun?
+KDF_1401_Marius_canLearnMage_Info_15_01(Held):  Kann jeder die Kunst der Magie erlernen?
+KDF_1401_Marius_canLearnMage_Info_03_02:  Jeder Mensch ist fähig, Magie zu wirken. Die einen mehr, die anderen weniger.
+KDF_1401_Marius_canLearnMage_Info_03_03:  Während der Zeit im Kloster als Novize prüfen wir jeden einzelnen auf seine magischen Fähigkeiten.
+KDF_1401_Marius_canLearnMage_Info_03_04:  Nur die jenigen, mit dem ausgeprägtesten magischen Verständnis erhalten einmal die Möglichkeit, die Robe eines Magiers anzulegen.
+KDF_1401_Marius_canLearnMage_Info_03_05:  Nicht selten bleibt ein Mann Zeit seines Lebens Novize. Aber bei dir...
+KDF_1401_Marius_canLearnMage_Info_03_06:  (grübelt) ... ich weiß nicht, ich spüre eine starke Kraft in dir. Aber sie ist nicht gezügelt.
+KDF_1401_Marius_canLearnMage_Info_03_07:  Ich glaube, du wärst als Magier geeignet.
+KDF_1401_Marius_canBeNovice_Info_15_01(Held):  Heißt das, ich könnte bei euch aufgenommen werden?
+KDF_1401_Marius_canBeNovice_Info_03_02:  Du hast einen starken Geist und viel Macht.
+KDF_1401_Marius_canBeNovice_Info_03_03:  Macht, die in die richtigen Bahnen gelenkt werden muss, bevor sie Unheil anrichtet.
+KDF_1401_Marius_canBeNovice_Info_03_04:  Ja, ich denke, du wärst bei uns gut aufgehoben.
+KDF_1401_Marius_canBeNovice_Info_03_05:  Wenn du willst, schicke ich dich zum Kloster.
+KDF_1401_Marius_goMonastery_Info_15_01(Held):  Schick' mich zum Kloster!
+KDF_1401_Marius_goMonastery_Info_03_02:  In Ordnung. Ich kann dich leider nicht begleiten, da ich durch meine Aufgaben an die Stadt gebunden bin.
+KDF_1401_Marius_goMonastery_Info_03_03:  Aber ich gebe dir eine Karte mit. Hier ist das Kloster eingezeichnet. Du wirst den Weg finden, da bin ich mir sicher.
+KDF_1401_Marius_goMonastery_Info_03_04:  Auf dem halben Weg etwa findest du die Taverne 'Zum alten Scavenger'. Dort kannst du rasten.
+KDF_1401_Marius_goMonastery_Info_03_05:  Wenn du am Kloster ankommst, gib dem Novizen vor dem Tor diesen Brief. Er wird dich einlassen.
+KDF_1401_Marius_goMonastery_Info_15_06(Held):  Muss ich keinen Tribut bezahlen?
+KDF_1401_Marius_goMonastery_Info_03_07:  Was für einen Tribut?
+KDF_1401_Marius_goMonastery_Info_15_08(Held):  Ich hörte von 1000 Gold und einem Schaf.
+KDF_1401_Marius_goMonastery_Info_03_09:  Ich weiß nicht, warum sich dieses Gerücht derart hartnäckig hält.
+KDF_1401_Marius_goMonastery_Info_03_10:  Nein, wir fordern keinen Tribut. Wer zu uns ins Kloster kommt, der tut das aus Überzeugung, nicht aus Zwang.
+KDF_1401_Marius_goMonastery_Info_03_11:  Diese Hingabe reicht uns. Mehr brauchen wir nicht.
+KDF_1401_Marius_goMonastery_Info_03_12:  Und nun geh! Lass den hohen Rat nicht warten!
+MIL_338_Marril_youMarril_Info_15_01(Held):  Wer bist du?
+MIL_338_Marril_youMarril_Info_12_02:  Ich bin Marril. Soldat des KÃ¶nigs und...
+MIL_338_Marril_youMarril_Info_12_03:  Ach, lassen wir den ScheiÃŸ!
+MIL_338_Marril_whatsGoingOn_Info_15_01(Held):  Was ist los?
+MIL_338_Marril_whatsGoingOn_Info_12_02:  Es gibt einfach nichts zu tun.
+MIL_338_Marril_whatsGoingOn_Info_12_03:  Seit einer Woche bin ich nicht mehr fÃ¼r den Wachdienst in der Stadt eingeteilt und auch sonst ist alles ruhig.
+MIL_338_Marril_whatsGoingOn_Info_12_04:  Nicht einmal die SÃ¶ldner trauen sich mehr in unsere NÃ¤he.
+MIL_338_Marril_getUp_Info_15_01(Held):  Steh auf, es gibt Arbeit!
+MIL_338_Marril_getUp_Info_12_02:  Ach, wirklich? Was ist es diesmal? Ratten?
+MIL_338_Marril_getUp_Info_15_03(Held):  Banditen. Also, komm mit!
+MIL_338_Marril_getUp_Info_12_04:  Und warum sollte ich auf deinen Befehl hÃ¶ren? Ich bin dir im Rang hÃ¶hergestellt!
+MIL_338_Marril_getUp_volmarToldSo_15_01(Held):  Weil der Befehl von Volmar stammt!
+MIL_338_Marril_getUp_volmarToldSo_12_02:  So? Na, dann habe ich wohl keine Wahl.
+MIL_338_Marril_getUp_volmarToldSo_12_03:  Du gehst vor!
+MIL_338_Marril_getUp_iTellYou_15_01(Held):  Steh auf, sonst mach ich dir Beine!
+MIL_338_Marril_getUp_iTellYou_12_02:  Na, das wollen wir ja mal sehen.
+MIL_338_Marril_getUp_iGoAlone_15_01(Held):  Dann geh ich halt alleine.
+MIL_338_Marril_getUp_iGoAlone_15_02(Held):  Ich dachte, du wÃ¼rdest dich langweilen?
+MIL_338_Marril_getUp_iGoAlone_12_03:  So sehr auch wieder nicht, dass ich von jedem dahergelaufenen Befehle entgegennehme.
+MIL_338_Marril_goBack_Info_15_01(Held):  Lauf zurÃ¼ck!
+MIL_338_Marril_goBack_Info_12_02:  SchÃ¶n. Aber glaub nicht, dass ich nochmal mit dir losgehe!
+VLK_3005_Mika_youSchuerfer_Info_15_01(Held):  Du bist Schürfer?
+VLK_3005_Mika_youSchuerfer_Info_09_02:  Ach was, wie kommst du denn darauf?
+VLK_3005_Mika_youSchuerfer_Info_09_03:  Was hat mich verraten?
+VLK_3005_Mika_youSchuerfer_spitzhacke_15_01(Held):  Ich dachte da an deine Spitzhacke...
+VLK_3005_Mika_youSchuerfer_spitzhacke_09_02:  Ts... Du bist mir ja ein Spaßvogel.
+VLK_3005_Mika_youSchuerfer_spitzhacke_09_03:  Was kann ich für dich tun?
+VLK_3005_Mika_youSchuerfer_thoughtOfIt_15_01(Held):  Eigentlich nur die komische Hose.
+VLK_3005_Mika_youSchuerfer_thoughtOfIt_09_02:  Ach was, das unbequeme Ding.
+VLK_3005_Mika_youSchuerfer_thoughtOfIt_09_03:  Ich wünschte, ich hätte meine alte Lederrüstung noch.
+VLK_3005_Mika_youSchuerfer_thoughtOfIt_09_04:  Da drunter war es zwar warm, aber immerhin bekam ich so nicht immer die Splitter ab.
+VLK_3005_Mika_youSchuerfer_thoughtOfIt_09_05:  Gut, was kann ich für dich tun?
+VLK_3005_Mika_justTalk_Info_15_01(Held):  Ich wollte nur ein bisschen quatschen.
+VLK_3005_Mika_justTalk_Info_09_02:  Sorry, dafür hab ich keine Zeit!
+VLK_3005_Mika_justTalk_Info_09_03:  Du siehst ja, wieviel Erz wir noch aus dem Stein holen müssen.
+VLK_3005_Mika_fromHatof_Info_15_01(Held):  Hatof schickt mich, ich soll eine Erzkiste abholen!
+VLK_3005_Mika_fromHatof_Info_09_02:  Kann ich dir denn vertrauen?
+VLK_3005_Mika_fromHatof_Info_09_03:  Na gut, ich will mal nicht so sein. Wenigstens muss ich das Ding nicht selber schleppen.
+VLK_3005_Mika_fromHatof_Info_09_04:  Richte ihm schöne Grüße aus und sag ihm, er soll langsamer schmieden! (lacht)
+VLK_3005_Mika_fromHatof_Info_09_05:  Wir kommen gar nicht hinterher mit dem Schürfen.
+VLK_3005_Mika_youLookForHose_Info_15_01(Held):  Du suchst deine alte Lederrüstung?
+VLK_3005_Mika_youLookForHose_Info_09_02:  Ja, Mann! Das Ding ist kaputt. Komplett zerissen.
+VLK_3005_Mika_youLookForHose_Info_09_03:  Seit meinem letzten Kampf mit ein paar Wölfen ist sie in Reparatur.
+VLK_3005_Mika_youLookForHose_Info_09_04:  Und ich komm hier verdammt nochmal nicht weg.
+VLK_3005_Mika_shallIGo_Info_15_01(Held):  Soll ich sie für dich holen?
+VLK_3005_Mika_shallIGo_Info_09_02:  Das würdest du tun?
+VLK_3005_Mika_shallIGo_Info_09_03:  Mensch, das wär klasse!
+VLK_3005_Mika_shallIGo_Info_15_04(Held):  Wo hast du sie denn abgegeben?
+VLK_3005_Mika_shallIGo_Info_09_05:  Bei Ruperts 'gespannter Sehne'. Rupert ist der Lederverarbeiter in Mahlendur.
+VLK_3005_Mika_shallIGo_Info_09_06:  Hier hast du etwas Gold. Schließlich arbeitet auch er nicht umsonst.
+VLK_3005_Mika_shallIGo_Info_09_07:  Aber versauf das Gold nicht!
+VLK_3005_Mika_shallIGo_Info_15_08(Held):  Bin gleich wieder zurück!
+VLK_3005_Mika_gotYourRuestung_Info_15_01(Held):  Ich hab deine Rüstung!
+VLK_3005_Mika_gotYourRuestung_Info_09_02:  Das hat aber auch lange gedauert! Musstest du die Rüstung erst noch nähen?
+VLK_3005_Mika_gotYourRuestung_Info_15_03(Held):  Ich nicht, aber Rupert!
+VLK_3005_Mika_gotYourRuestung_Info_09_04:  Hah, das glaubst du doch wohl selber nicht.
+VLK_3005_Mika_gotYourRuestung_Info_09_05:  Hast wahrscheinlich das Gold doch versoffen und musstest erst neues auftreiben.
+VLK_3005_Mika_gotYourRuestung_Info_15_06(Held):  Ich..
+VLK_3005_Mika_gotYourRuestung_Info_09_07:  Ist ja auch egal, jetzt hab ich meine Rüstung ja wieder. Danke dafür.
+VLK_3005_Mika_gotYourRuestung_Info_09_08:  Hier hast du ein wenig Gold. Diesmal kannst du es versaufen!
+VLK_3005_Mika_gotYourRuestung_Info_09_09:  Ich dachte schon, du hättest dir nen Knopf an die Back genäht.
+VLK_3005_Mika_gotYourRuestung_Info_15_10(Held):  So ähnlich...
+VLK_3005_Mika_gotYourRuestung_Info_09_11:  (lacht) Gut, dass du dann noch sprechen kannst.
+VLK_3005_Mika_gotYourRuestung_Info_09_12:  Vielen Dank für die Rüstung. Ein Weg gespart.
+VLK_3005_Mika_gotYourRuestung_Info_09_13:  Warte, ich geb dir etwas Gold als Belohnung. Hast du dir verdient.
+VLK_3005_Mika_gotYourRuestung_Info_09_14:  Mensch, das ging flott!
+VLK_3005_Mika_gotYourRuestung_Info_09_15:  Danke fürs Laufen. Hier ist deine Belohnung. Versauf nicht alles auf einmal!
+VLK_3005_Mika_gotYourRuestung_Info_09_16:  Bist du geflogen?
+VLK_3005_Mika_gotYourRuestung_Info_09_17:  Wie auch immer. Ich danke dir für den Weg.
+VLK_3005_Mika_gotYourRuestung_Info_09_18:  Hier, das sollte dir helfen. Viel Erfolg für die Zukunft!
+NONE_9991_Nallon_whoAreYou_Info_15_01(Held):  SchÃ¶ne Taverne, nicht?
+NONE_9991_Nallon_whoAreYou_Info_14_02:  Hm? Jaja, mag schon sein.
+NONE_9991_Nallon_whatsGoingOn_Info_15_01(Held):  Was ist denn mit dir los?
+NONE_9991_Nallon_whatsGoingOn_Info_14_02:  Hm? Achso, entschuldige meine ruppige Art.
+NONE_9991_Nallon_whatsGoingOn_Info_14_03:  Ich bin einfach ein alter Mann, der viel zu lange zur See gefahren ist.
+NONE_9991_Nallon_whatsGoingOn_Info_14_04:  Und jetzt? Mein letztes Schiff wurde beschlagnahmt und ich verbringe meine Zeit, indem ich hier sitze und alte Geschichten und Legenden erzÃ¤hle.
+NONE_9991_Nallon_whatsGoingOn_Info_14_05:  Manchmal wird man da etwas melancholisch. Und je nÃ¤her es auf das eigene Ende zu geht, desto hÃ¤ufiger passiert das.
+NONE_9991_Nallon_yourEnd_Info_15_01(Held):  Das eigenes Ende?
+NONE_9991_Nallon_yourEnd_Info_14_02:  Ach Junge, ich mache mir nichts vor. Sieh mich doch an. Ich bin ein alter Mann.
+NONE_9991_Nallon_yourEnd_Info_14_03:  Meine Lebensuhr lÃ¤uft ab. Ich kann spÃ¼ren, dass meine Zeit bald abgelaufen ist.
+NONE_9991_Nallon_youKnowLegends_Info_15_01(Held):  Du kennst dich mit alten Legenden aus?
+NONE_9991_Nallon_youKnowLegends_Info_14_02:  Vielleicht nicht so gut wie irgendein Schriftgelehrter, aber fÃ¼r schaurig-schÃ¶ne Tavernenabende reicht es allemale.
+NONE_9991_Nallon_youKnowLegends_Info_14_03:  Wieso, mÃ¶chtest du eine hÃ¶ren?
+NONE_9991_Nallon_knowAeon_Info_15_01(Held):  Kennst du die Legende von Aeon?
+NONE_9991_Nallon_knowAeon_Info_14_02:  Aeon... Den Namen habe ich schon Ewigkeiten nicht mehr gehÃ¶rt.
+NONE_9991_Nallon_knowAeon_Info_14_03:  Ja, die Legende ist mir durchaus bekannt.
+NONE_9991_Nallon_knowAeon_Info_15_04(Held):  Worum geht es?
+NONE_9991_Nallon_knowAeon_Info_14_05:  Es ist die Legende des Paradieses. Sie wird hauptsÃ¤chlich in Seefahrerkreisen erzÃ¤hlt, denn sie besagt, dass du Aeon nur Ã¼ber das Meer erreichst.
+NONE_9991_Nallon_knowAeon_Info_14_06:  SchlÃ¤gst du die richtige Richtung ein und segelst lange genug, dann erreichst du irgendwann die KÃ¼ste von Aeon.
+NONE_9991_Nallon_knowAeon_Info_14_07:  Allerdings hat die Sache einen Haken. Aeon liegt nicht in unserer SphÃ¤re. Aeon ist der Ort der Toten, der friedvollen Seelen.
+NONE_9991_Nallon_knowAeon_Info_14_08:  Das ist aber eine spezielle Legende... Wieso fragst du?
+NONE_9991_Nallon_knowAeon_justSo_15_01(Held):  Nur so.
+NONE_9991_Nallon_knowAeon_justSo_15_02(Held):  Ich habe den Namen letztens irgendwo aufgeschnappt und fand ihn einfach interessant.
+NONE_9991_Nallon_knowAeon_justSo_14_03:  Ach so. Dann hoffe ich, dass ich dir helfen konnte.
+NONE_9991_Nallon_knowAeon_ghostWoman_15_01(Held):  Ich habe eine Frau getroffen, die an diese Legende glaubt.
+NONE_9991_Nallon_knowAeon_ghostWoman_14_02:  Wirklich? Immerhin macht das kaum noch jemand. Was sagt sie denn?
+NONE_9991_Nallon_knowAeon_ghostWoman_15_03(Held):  Sie wartet auf ihren Liebsten, damit sie zusammen nach Aeon reisen kÃ¶nnen.
+NONE_9991_Nallon_knowAeon_ghostWoman_14_04:  Achje. Das ist nicht gut. Ist etwas... ungewÃ¶hnlich an dieser Frau?
+NONE_9991_Nallon_knowAeon_ghostWoman_15_05(Held):  Naja, sie ist... Sie ist ein Geist.
+NONE_9991_Nallon_knowAeon_ghostWoman_14_06:  Ein Geist!? Dann ist sie wirklich bemitleidenswert.
+NONE_9991_Nallon_knowAeon_ghostWoman_14_07:  Und ihr Liebster?
+NONE_9991_Nallon_knowAeon_ghostWoman_15_08(Held):  Ist mit der kÃ¶niglichen Marine von Mahlendur aus aufgebrochen. Allerdings glaube ich, dass sein Schiff zerstÃ¶rt wurde.
+NONE_9991_Nallon_knowAeon_ghostWoman_14_09:  Das ist nicht gut. Das wÃ¼rde bedeuten, dass sie diese Welt nicht verlassen kann.
+NONE_9991_Nallon_canHelp_Info_15_01(Held):  Gibt es nicht einen Weg ihr zu helfen?
+NONE_9991_Nallon_canHelp_Info_14_02:  Jemand mÃ¼sste sie dorthin geleiten.
+NONE_9991_Nallon_canHelp_Info_14_03:  Es mÃ¼sste jemand sein, der sein Leben gelebt hat und sich freiwillig auf die mÃ¶glicherweise endlose Reise macht.
+NONE_9991_Nallon_canHelp_Info_14_04:  Wenn du also jemanden kennst, dann Ja.
+NONE_9991_Nallon_canHelp_Info_15_05(Held):  Naja...
+NONE_9991_Nallon_canHelp_Info_14_06:  Kennst du so jemanden?
+NONE_9991_Nallon_canHelp_Info_15_07(Held):  Ich kenne zumindest einen alten SeebÃ¤ren mit einem groÃŸen Herzen, der seine eigene Lebensuhr ablaufen fÃ¼hlt.
+NONE_9991_Nallon_canHelp_Info_14_08:  Und wer... Oh! Das habe ich verstanden.
+NONE_9991_Nallon_canHelp_Info_14_09:  Vielleicht hast du Recht. Ich habe mein Leben gelebt. Vielleicht ist das die erstrebenswerteste Art, diese Welt zu verlassen.
+NONE_9991_Nallon_canHelp_Info_14_10:  Wenn ich dadurch meine eigene und die Seele eines anderen Menschen retten kann, wer weiÃŸ?
+NONE_9991_Nallon_canHelp_Info_14_11:  Also gut, wo finde ich die Frau?
+NONE_9991_Nallon_canHelp_Info_15_12(Held):  An der KÃ¼ste, hinter dem Piratenlager. Wenn du ein kleines Boot vom Hafen aus nimmst, fahre am Piratennest vorbei.
+NONE_9991_Nallon_canHelp_Info_15_13(Held):  In der nÃ¤chsten Bucht wartet sie.
+NONE_9991_Nallon_canHelp_Info_14_14:  In Ordnung. Ich danke dir. So kann ich dem Rest meines Lebens wenigstens noch einen Sinn verleihen.
+NONE_9991_Nallon_canHelp_Info_15_15(Held):  Die Frau heiÃŸt Ã¼brigens Elvellia.
+NONE_9991_Nallon_canHelp_Info_14_16:  Elvellia und Nallon. Passt irgendwie zusammen, findest du nicht?
+NONE_9991_Nallon_canHelp_Info_14_17:  Gut, ich werde zu ihr gehen. Wir werden diese Reise gemeinsam antreten.
+SLD_703_Orf_youSmith_Info_15_01(Held):  Bist du der Schmied?
+SLD_703_Orf_youSmith_Info_05_02:  Sieht so aus. Oder meinst du nicht?
+SLD_703_Orf_youSmith_Info_15_03(Held):  Doch, irgendwie schon.
+SLD_703_Orf_youSmith_Info_05_04:  Na also. Was soll dann die blöde Frage?
+SLD_703_Orf_youTrade_Info_15_01(Held):  Verkaufst du auch Waffen?
+SLD_703_Orf_youTrade_Info_05_02:  Die Frage ist schon intelligenter.
+SLD_703_Orf_youTrade_Info_05_03:  Ja, tue ich. Aber nur an Söldner.
+SLD_703_Orf_youTrade_Info_05_04:  Also, werde Mitglied bei uns und dann kommen wir ins Geschäft!
+SLD_703_Orf_yourHint_Info_15_01(Held):  Hast du einen Hinweis auf euren Informanten?
+SLD_703_Orf_yourHint_Info_05_02:  Jareck schickt dich, hm?
+SLD_703_Orf_yourHint_Info_15_03(Held):  Genau. Kannst du mir etwas sagen?
+SLD_703_Orf_yourHint_Info_05_04:  Hmm, wie drücke ich das aus?
+SLD_703_Orf_yourHint_Info_05_05:  Ahja, hör zu: Der Informant hat viele Waffen in der Hand, benutzt seine aber nur sehr selten.
+SLD_703_Orf_yourHint_Info_15_06(Held):  Was zum...
+SLD_703_Orf_yourHint_Info_05_07:  Tja, niemand hat gesagt, dass deine Prüfung einfach wird.
+SLD_703_Orf_yourHint_Info_05_08:  Jareck sagte schon, er wolle mal wieder jemanden mit Grips haben.
+SLD_703_Orf_yourHint_Info_05_09:  Mal schauen, ob du ins Profil passt.
+SLD_703_Orf_yourHint_Info_05_10:  Also, mach dich auf den Weg und hol uns die Infos!
+KDF_1403_Rayan_whoAreYou_Info_12_01:  Wer bist du denn? Und vor allem, was tust du hier?
+KDF_1403_Rayan_whoAreYou_Info_12_02:  Wer hat dich hier reingelassen?
+KDF_1403_Rayan_gotLetter_Info_15_01(Held):  Sellan hat mir den Schlüssel gegeben.
+KDF_1403_Rayan_gotLetter_Info_15_02(Held):  Außerdem habe ich hier einen Brief vom Magier Marius.
+KDF_1403_Rayan_gotLetter_Info_12_03:  Von Marius? Gib mir den Brief!
+KDF_1403_Rayan_gotLetter_Info_12_04:  Es ist lange her, dass Marius einen neuen Novizen geschickt hat.
+KDF_1403_Rayan_gotLetter_Info_12_05:  Wollen wir doch einmal sehen, was er schreibt.
+KDF_1403_Rayan_gotLetter_Info_12_06:  Aah, Marius schickt tatsächlich einen neuen Novizen.
+KDF_1403_Rayan_gotLetter_Info_12_07:  Er schreibt, er spüre große Macht in dir. (leiser) Und du könntest unser aller Retter sein.
+KDF_1403_Rayan_gotLetter_Info_12_08:  Gut, wir werden dich auf die Probe stellen.
+KDF_1403_Rayan_gotLetter_Info_12_09:  Wenn es dein Wunsch ist unserem Orden beizutreten, dann sprich mit Uysal.
+KDF_1403_Rayan_gotLetter_Info_12_10:  Er soll dich prüfen und dann werden wir entscheiden, ob du würdig bist, die Robe eines Novizen zu tragen.
+KDF_1403_Rayan_whatTest_Info_15_01(Held):  Was für eine Prüfung erwartet mich?
+KDF_1403_Rayan_whatTest_Info_12_02:  Sprich mit Uysal. Er alleine bestimmt über Form und Größe der Prüfung.
+KDF_1403_Rayan_whatTest_Info_12_03:  Ich kann dir dazu nichts sagen.
+KDF_1403_Rayan_whatNovice_Info_15_01(Held):  Was erwartet mich als Novize?
+KDF_1403_Rayan_whatNovice_Info_12_02:  Als Novize wirst du in die Kunst der Magie eingeführt.
+KDF_1403_Rayan_whatNovice_Info_12_03:  Wir werden dich unterrichten, deine magischen Energien zu bündeln und freizusetzen.
+KDF_1403_Rayan_whatNovice_Info_12_04:  Zusätzlich wirst du Arbeit für die Gemeinschaft verrichten.
+KDF_1403_Rayan_whatNovice_Info_12_05:  Aber dazu später mehr.
+KDF_1403_Rayan_whatNovice_Info_12_06:  Bestehe zuerst die Prüfung, dann sehen wir weiter.
+KDF_1403_Rayan_joinMages_Info_15_01(Held):  Ich habe die Prüfung bestanden.
+KDF_1403_Rayan_joinMages_Info_12_02:  Ich merke es. Der Schatten, der das Kloster befallen hat, ist verschwunden.
+KDF_1403_Rayan_joinMages_Info_12_03:  Hast du auch mit Ulian gesprochen?
+KDF_1403_Rayan_joinMages_Info_15_04(Held):  Habe ich. Er dankte mir für meinen Einsatz und gab mir seinen Segen.
+KDF_1403_Rayan_joinMages_Info_12_05:  Dann liegt die Entscheidung nun bei dir.
+KDF_1403_Rayan_joinMages_Info_12_06:  Ist es immer noch dein Wunsch unserem Orden beizutreten und verpflichtest du dich, den Glauben Adanos zu leben und in die Welt zu tragen?
+KDF_1403_Rayan_joinMages_noMage_15_01(Held):  Ehrlich gesagt, ist das eine schwere Entscheidung...
+KDF_1403_Rayan_joinMages_noMage_12_02:  Das verstehe ich gut.
+KDF_1403_Rayan_joinMages_noMage_12_03:  Es ist eine Entscheidung, die man nicht leichtfertig treffen solle.
+KDF_1403_Rayan_joinMages_noMage_12_04:  In Ordnung, ich gebe dir noch etwas Bedenkzeit. Wenn du dich entschieden hast, komm zu mir.
+KDF_1403_Rayan_joinMages_yesMage_15_01(Held):  Ja, ich möchte dem Orden beitreten!
+KDF_1403_Rayan_joinMages_yesMage_12_02:  Wenn dies dein eigener und freier Wille ist, so gehe mit dem Segen Adanos.
+KDF_1403_Rayan_joinMages_yesMage_12_03:  Lege die Robe eines Novizen an und trage sie mit Ehrfurcht.
+KDF_1403_Rayan_joinMages_yesMage_12_04:  Sie soll dich schützen und dich leiten, auf allen Wegen, die du in dieser Welt beschreiten wirst.
+KDF_1403_Rayan_joinMages_yesMage_12_05:  Und nun genug des zeremoniellen: Herzlichen Glückwunsch und Willkommen im Orden!
+KDF_1403_Rayan_whatToDo_Info_15_01(Held):  Hast du eine Aufgabe für mich?
+KDF_1403_Rayan_whatToDo_Info_12_02:  Ich gebe dir eine Daueraufgabe.
+KDF_1403_Rayan_whatToDo_Info_15_03(Held):  Okay?
+KDF_1403_Rayan_whatToDo_Info_12_04:  Lerne!
+KDF_1403_Rayan_whatToDo_Info_12_05:  Als Novize und im übrigen auch als ausgebildeter Magier ist es deine Aufgabe zu lernen.
+KDF_1403_Rayan_whatToDo_Info_12_06:  Denn nur wer lernt, der kann stärker werden.
+KDF_1403_Rayan_whatToDo_Info_12_07:  Einiges können dir die anderen Magier beibringen.
+KDF_1403_Rayan_whatToDo_Info_15_08(Held):  Zum Beispiel?
+KDF_1403_Rayan_whatToDo_Info_12_09:  Ulian wird dir dabei helfen, deine magische Kraft zu steigern.
+KDF_1403_Rayan_whatToDo_Info_12_10:  Uysal kann dich lehren, deine eigenen Runen herzustellen.
+KDF_1403_Rayan_whatToDo_Info_12_11:  Doch bevor du sie nutzen kannst, musst du zuerst den ersten Kreis der Magie erlernen.
+KDF_1403_Rayan_whatToDo_Info_12_12:  Und damit kommt meine erste Aufgabe.
+KDF_1403_Rayan_whatToDo_Info_15_13(Held):  Und die wäre?
+KDF_1403_Rayan_whatToDo_Info_12_14:  In der Bibliothek im Keller ist ein Buch versteckt, welches dem Leser in einem Selbststudium den ersten Kreis der Magie beibringt.
+KDF_1403_Rayan_whatToDo_Info_12_15:  Finde es und lerne!
+KDF_1403_Rayan_whatToDo_Info_12_16:  Weitere Magiekreise kannst du danach bei mir lernen.
+KDF_1403_Rayan_foundBook_Info_15_01(Held):  Ich habe das Buch der Magie gefunden!
+KDF_1403_Rayan_foundBook_Info_12_02:  Und hast du es gelesen?
+KDF_1403_Rayan_foundBook_Info_15_03(Held):  Habe ich. Es war sehr aufschlussreich.
+KDF_1403_Rayan_foundBook_Info_12_04:  Dann gib es mir, damit ich es wieder in die Bibliothek zurück bringen kann. Andere Novizen nach dir werden auch noch danach suchen.
+KDF_1403_Rayan_foundBook_Info_12_05:  Dann bist du nun bereit, deine erste Rune herzustellen.
+KDF_1403_Rayan_foundBook_Info_12_06:  Geh zu Uysal und lerne die Herstellung der Rune "Licht". Sie wird dir in vielen Situationen nützlich sein.
+KDF_1403_Rayan_foundBook_Info_12_07:  Wenn du alle Runen des ersten Kreises verinnerlicht hast, werde ich dich den zweiten Kreis der Magie lehren.
+MIL_337_Rhaegar_whoAreYou_Info_15_01(Held):  Was macht ihr denn hier?
+MIL_337_Rhaegar_whoAreYou_Info_03_02:  Wonach sieht es denn aus?
+MIL_337_Rhaegar_whoAreYou_Info_03_03:  NatÃ¼rlich bewachen wir den Pass!
+MIL_337_Rhaegar_guardForWhat_Info_15_01(Held):  Wovor bewacht ihr denn den Pass?
+MIL_337_Rhaegar_guardForWhat_Info_03_02:  NatÃ¼rlich vor den Orks.
+MIL_337_Rhaegar_guardForWhat_Info_15_03(Held):  Aber ich denke, der Pass...
+MIL_337_Rhaegar_guardForWhat_Info_03_04:  ... wurde verschÃ¼ttet. Jaja, schon klar!
+MIL_337_Rhaegar_guardForWhat_Info_03_05:  Das bedeutet aber nicht, dass wir jetzt alle in Sicherheit sind. Ganz im Gegenteil.
+MIL_337_Rhaegar_guardForWhat_Info_03_06:  Dadurch, dass der Pass gesprengt wurde, sind die Orks nur nich wÃ¼tender geworden.
+MIL_337_Rhaegar_guardForWhat_Info_03_07:  Hast du schonmal einen richtig wÃ¼tenden Ork gesehen?
+MIL_337_Rhaegar_guardForWhat_Info_15_08(Held):  Naja...
+MIL_337_Rhaegar_guardForWhat_Info_03_09:  Siehst du, das dachte ich mir! Wenn die Felle irgendwann doch noch auf die Idee kommen, den Pass wieder frei zu rÃ¤umen, sind wir hier.
+MIL_337_Rhaegar_smthToDo_Info_15_01(Held):  Kann ich etwas fÃ¼r euch tun?
+MIL_337_Rhaegar_smthToDo_Info_03_02:  Ja, da wÃ¼rde mir tatsÃ¤chlich etwas einfallen.
+MIL_337_Rhaegar_smthToDo_Info_03_03:  Zum einen brauchen wir was zum Essen.
+MIL_337_Rhaegar_smthToDo_Info_03_04:  Es wÃ¤re gut, wenn du uns ein paar gebratene Keulen Fleisch und ein paar Bier bringen kÃ¶nntest.
+MIL_337_Rhaegar_smthToDo_Info_03_05:  Zwei Keulen und ein Bier pro Mann sollten reichen.
+MIL_337_Rhaegar_smthToDo_Info_15_06(Held):  Alkohol im Dienst?
+MIL_337_Rhaegar_smthToDo_Info_03_07:  Ich bitte dich. Wir sind hier soweit ab vom Schuss, das bekommt sowieso niemand mit.
+MIL_337_Rhaegar_smthToDo_Info_03_08:  AuÃŸerdem brauchen ich hier frische MÃ¤nner! Geh zu Volmar und sag ihm, er soll eine neue Truppe schicken.
+MIL_337_Rhaegar_smthToDo_Info_15_09(Held):  Sonst noch was?
+MIL_337_Rhaegar_smthToDo_Info_03_10:  Nein, das wÃ¤re erstmal alles!
+MIL_337_Rhaegar_gotYourMeal_Info_15_01(Held):  Hier ist euer Essen!
+MIL_337_Rhaegar_gotYourMeal_Info_03_02:  Sehr gut. Aber...
+MIL_337_Rhaegar_gotYourMeal_Info_03_03:  Das Fleisch ist ja fast kalt!
+MIL_337_Rhaegar_gotYourMeal_Info_15_04(Held):  Wenn ihr soweit weg seid....
+MIL_337_Rhaegar_gotYourMeal_Info_03_05:  Hmpf, hast ja Recht. Wie auch immer, danke!
+MIL_337_Rhaegar_gotYourMeal_Info_03_06:  Gib her, ich werde die Sachen an die MÃ¤nner verteilen.
+MIL_337_Rhaegar_gotYourMeal_Info_03_07:  Hier, etwas fÃ¼r deine MÃ¼hen!
+MIL_337_Rhaegar_gotYourMeal_Info_03_08:  Wie siehts aus mit der WachablÃ¶sung?
+MIL_337_Rhaegar_gotYourMeal_Info_15_09(Held):  Ich arbeite dran!
+MIL_337_Rhaegar_gotYourMeal_Info_03_10:  Das hoffe ich! Der mÃ¼de Haufen ist zu nichts mehr zu bewegen!
+MIL_337_Rhaegar_gotGuards_Info_15_01(Held):  Volmar wird dir eine WachablÃ¶sung schicken!
+MIL_337_Rhaegar_gotGuards_Info_03_02:  Und wann wird die eintreffen? Warum hast du die MÃ¤nner nicht gleich mitgebracht?
+MIL_337_Rhaegar_gotGuards_Info_15_03(Held):  Entspann dich! Rhaegar wird die MÃ¤nner in den nÃ¤chsten Tagen losschicken.
+MIL_337_Rhaegar_gotGuards_Info_03_04:  In den nÃ¤chsten Tagen?! Der Spinner weiÃŸ doch gar nicht...
+MIL_337_Rhaegar_gotGuards_Info_03_05:  Hm, schÃ¶n. Danke auf jeden Fall fÃ¼r deine MÃ¼hen.
+MIL_337_Rhaegar_gotGuards_Info_03_06:  Hier, hast du etwas Gold! Ich werde dann mal sehen, was ich noch mit den Jungs hinbekomme.
+BAU_200_Rodar_whyHere_Info_02_01:  Was machst du hier auf meinem Hof? Sprich!
+BAU_200_Rodar_lookingForWork_Info_15_01(Held):  Ich suche Arbeit!
+BAU_200_Rodar_lookingForWork_Info_02_02:  Ich kann keine Tagelöhner mehr gebrauchen!
+BAU_200_Rodar_lookingForWork_Info_02_03:  Also verschwinde! Oder ich lasse dich von meinem Hof entfernen!
+BAU_200_Rodar_imNotBauer_Info_15_01(Held):  Ich bin kein Tagelöhner.
+BAU_200_Rodar_imNotBauer_Info_02_02:  Und was willst du dann hier?
+BAU_200_Rodar_imNotBauer_Info_02_03:  Du siehst nicht aus, als könntest du kämpfen.
+BAU_200_Rodar_imNotBauer_Info_15_04(Held):  Ich kann kämpfen?
+BAU_200_Rodar_imNotBauer_Info_02_05:  Achja? (lacht) Dann beweis' es mir!
+BAU_200_Rodar_imNotBauer_Info_02_06:  Und sprich vor allem mit Jareck.
+BAU_200_Rodar_whosJareck_Info_15_01(Held):  Wer ist Jareck?
+BAU_200_Rodar_whosJareck_Info_02_02:  Jareck ist der Anführer meiner Söldner. Wenn du wirklich kämpfen willst, kannst du das, wenn du ihnen beitrittst.
+BAU_200_Rodar_whosJareck_Info_02_03:  Dafür brauchst du aber seine und meine Zustimmung.
+BAU_200_Rodar_whosJareck_Info_02_04:  Erst, wenn du uns beide überzeugt hast, glaube ich dir, dass du meinen Hof beschützen kannst.
+BAU_200_Rodar_whatToDo_Info_15_01(Held):  Was soll ich für dich tun?
+BAU_200_Rodar_whatToDo_Info_02_02:  Wir haben ein Problem mit Viechern. Um genau zu sein, zwei Probleme.
+BAU_200_Rodar_whatToDo_Info_15_03(Held):  Und welche sind das?
+BAU_200_Rodar_whatToDo_Info_02_04:  Wie du bestimmt weißt, sind an meinen Hof zwei weitere Höfe angeschlossen.
+BAU_200_Rodar_whatToDo_Info_02_05:  Auf einem von ihnen hat Laria, die Pächterin, Probleme mit Riesenratten in ihrer Vorratskammer.
+BAU_200_Rodar_whatToDo_Info_02_06:  Für die Bauern ist es eine zu große Herausforderung, aber meine Söldner lachen sich kaputt, wenn ich sie wegen Ratten schicke.
+BAU_200_Rodar_whatToDo_Info_02_07:  Aber für dich ist es genau die richtige Kragenweite.
+BAU_200_Rodar_whatToDo_Info_02_08:  Damit du dich aber auch nicht langweilst: Zu allem Überfluss ist ein Rudel Wölfe aufgetaucht und reißt meine Schafe.
+BAU_200_Rodar_whatToDo_Info_02_09:  Darum könntest du dich auch noch kümmern!
+BAU_200_Rodar_wheresLaria_Info_15_01(Held):  Wo finde ich Larias Hof?
+BAU_200_Rodar_wheresLaria_Info_02_02:  Geh den Weg zurück in Richtung Stadt. Wenn du an der Kreuzung inmitten der Felder rechts abbiegst, kannst du den Hof gar nicht verfehlen.
+BAU_200_Rodar_wheresWolf_Info_15_01(Held):  Wo finde ich das Wolfsrudel?
+BAU_200_Rodar_wheresWolf_Info_02_02:  Woher soll ich das wissen?
+BAU_200_Rodar_wheresWolf_Info_02_03:  Sprich mit den Hirten. Sie waren in der Nähe, als die Wölfe kamen.
+VLK_413_Rupert_startDialog_Info_02_01:  Willkommen in der 'gespannten Sehne'!
+VLK_413_Rupert_startDialog_Info_02_02:  Suchst du einen Bogen, Felle oder eine neue Rüstung?
+VLK_413_Rupert_startDialog_Info_02_03:  Dann bist du hier genau richtig!
+VLK_413_Rupert_startDialog2_Info_15_01(Held):  Stellst du deine Rüstungen selber her?
+VLK_413_Rupert_startDialog2_Info_02_02:  Ganz recht! Nur so erhalten sie ihre erstklassige Qualität.
+VLK_413_Rupert_startDialog2_Info_02_03:  Übrigens, mein Name ist Rupert.
+VLK_413_Rupert_gotMikaHose_Info_15_01(Held):  Ich soll für Mika eine Rüstung abholen.
+VLK_413_Rupert_gotMikaHose_Info_02_02:  Ja, der gute Mika. War schon immer ein Draufgänger. Gott weiß, was er schon wieder angestellt hat.
+VLK_413_Rupert_gotMikaHose_Info_02_03:  So oft, wie ich seine Klamotten wieder zusammengeflickt habe, wundert es mich, dass er noch lebt.
+VLK_413_Rupert_gotMikaHose_Info_02_04:  Was war es denn diesmal?
+VLK_413_Rupert_gotMikaHose_Info_15_05(Held):  Er sprach von einem Rudel Wölfe.
+VLK_413_Rupert_gotMikaHose_Info_02_06:  Das sieht ihm ähnlich... (lacht)
+VLK_413_Rupert_gotMikaHose_Info_02_07:  Und du sollst seine Rüstung abholen?
+VLK_413_Rupert_gotMikaHose_Info_15_08(Held):  Ja, er selbst kommt nicht aus der Mine weg. Ich habe angeboten, das gute Stück abzuholen.
+VLK_413_Rupert_gotMikaHose_Info_02_09:  Sehr löblich. Vorher bekomme ich allerdings noch 150 Goldstücke für die Reparatur.
+VLK_413_Rupert_gotMikaHose_Info_02_10:  Ich bekomme immernoch 150 Gold dafür!
+VLK_413_Rupert_gotMikaHose_Info_15_11(Held):  Hier hast du das Gold!
+VLK_413_Rupert_gotMikaHose_Info_02_12:  In Ordnung. Hier ist die reparierte Rüstung.
+VLK_413_Rupert_gotMikaHose_Info_02_13:  Bring sie ihm schnell, bevor er sich mit schlimmerem als dem Erz anlegt! (lacht)
+VLK_413_Rupert_gotMikaHose_Info_15_14(Held):  Soviel habe ich nicht dabei!
+VLK_413_Rupert_gotMikaHose_Info_02_15:  Dann besorg das Gold. Danach bekommst du die Rüstung!
+VLK_413_Rupert_wannaLearn_Info_15_01(Held):  Kann ich bei dir etwas lernen?
+VLK_413_Rupert_wannaLearn_Info_02_02:  Taugst du denn etwas?
+VLK_413_Rupert_wannaLearn_Info_15_03(Held):  Öhm...
+VLK_413_Rupert_wannaLearn_Info_02_04:  (lacht) Keine Sorge, nur ein Scherz.
+VLK_413_Rupert_wannaLearn_Info_02_05:  Wenn du schon ausgebildet wärst, müsstest du nichts lernen.
+VLK_413_Rupert_wannaLearn_Info_02_06:  Interessiert du dich denn für die Kürschnerei oder die Lederverarbeitung?
+VLK_413_Rupert_wannaLearn_Info_15_07(Held):  Auf jeden Fall!
+VLK_413_Rupert_wannaLearn_Info_02_08:  Gut, dann arbeite für mich.
+VLK_413_Rupert_wannaLearn_Info_02_09:  Wenn du das zu meiner Zufriedenheit schaffst, kannst du bei mir ein Handwerk erlernen!
+VLK_413_Rupert_whatCanIDo_Info_15_01(Held):  Was hast du für mich zu tun?
+VLK_413_Rupert_whatCanIDo_Info_02_02:  Ich erwarte eine Nachricht von meinen Jägern.
+VLK_413_Rupert_whatCanIDo_Info_02_03:  Außerdem habe ich hier ein Paket mit Brot für sie.
+VLK_413_Rupert_whatCanIDo_Info_02_04:  Bring es ihnen und mir die Neuigkeiten, dann sehen wir weiter!
+VLK_413_Rupert_whatCanIDo_Info_15_05(Held):  Bin gleich wieder da!
+VLK_413_Rupert_whereHunter_Info_15_01(Held):  Wo finde ich deine Jäger?
+VLK_413_Rupert_whereHunter_Info_02_02:  Sie haben ihr Lager direkt außerhalb der Stadt aufgeschlagen.
+VLK_413_Rupert_whereHunter_Info_02_03:  Wenn du aus dem Tor auf der anderen Seite der Stadt hinausgehst, halte dich links. Nach einigen Metern gabelt sich der Weg.
+VLK_413_Rupert_whereHunter_Info_02_04:  Biege nun scharf rechts ab. Pass auf, dass du auch wirklich rechts herum gehst! Gehst du nach links, läufst du direkt den Piraten in die Arme!
+VLK_413_Rupert_whereHunter_Info_02_05:  Noch ein Stückchen den Weg hinauf und du kannst das Lager nicht mehr verfehlen!
+VLK_413_Rupert_gotInfos_Info_15_01(Held):  Ich habe dein Paket überbracht!
+VLK_413_Rupert_gotInfos_Info_02_02:  Und?
+VLK_413_Rupert_gotInfos_Info_15_03(Held):  Tom lässt ausrichten, dass sie bisher keinen Erfolg hatten. Die Piraten nehmen ihnen jegliche Beute.
+VLK_413_Rupert_gotInfos_Info_02_04:  Verdammte Hunde.
+VLK_413_Rupert_gotInfos_Info_15_05(Held):  Außerdem sagte er, dass du, wenn du sie noch einmal in ein Geister-Gebiet schickst, den Scheiß selber machen kannst.
+VLK_413_Rupert_gotInfos_Info_02_06:  Hat er das so gesagt?
+VLK_413_Rupert_gotInfos_Info_15_07(Held):  Wörtlich.
+VLK_413_Rupert_gotInfos_Info_02_08:  Dann will ich ihm glauben. Zwar weiß ich nicht, wo er auf Geistern treffen sollte, aber gut.
+VLK_413_Rupert_gotInfos_Info_02_09:  Wenn du ihn das nächste Mal siehst, sag ihm, es tue mir leid.
+VLK_413_Rupert_gotInfos_Info_02_10:  Ich weiß nichts von Geistern auf der Insel.
+VLK_413_Rupert_gotInfos_Info_02_11:  Danke für deine Mühen. Wenn du immer noch Interesse hast, kann ich dich ausbilden!
+VLK_413_Rupert_wannaLearnKuerschner_Info_15_01(Held):  Bilde mich zum Kürschner aus! (5 LP)
+VLK_413_Rupert_wannaLearnKuerschner_Info_02_02:  Bist du dir sicher?
+VLK_413_Rupert_wannaLearnKuerschner_Info_02_03:  Du kannst immer nur zwei Berufe erlernen!
+VLK_413_Rupert_wannaLearnKuerschner_noKuerschner_15_01(Held):  Ich brauche noch Bedenkzeit!
+VLK_413_Rupert_wannaLearnKuerschner_noKuerschner_02_02:  Gut, ich bin hier, falls du mich suchst.
+VLK_413_Rupert_wannaLearnKuerschner_yesKuerschner_15_01(Held):  Ja, ich will lernen!
+VLK_413_Rupert_wannaLearnKuerschner_yesKuerschner_02_02:  In Ordnung. Als erstes benötigst du ein entsprechendes Messer.
+VLK_413_Rupert_wannaLearnKuerschner_yesKuerschner_02_03:  Achte darauf, dass es scharf ist, sonst zerstörst du die Felle!
+VLK_413_Rupert_wannaLearnKuerschner_yesKuerschner_02_04:  Schneide am äußeren Rand entlang, vorsichtig und immer in der Form.
+VLK_413_Rupert_wannaLearnKuerschner_yesKuerschner_02_05:  Mit genügend Übung bekommst du schöne Felle und Häute.
+VLK_413_Rupert_wannaLearnKuerschner_yesKuerschner_02_06:  Halte dich am Anfang an kleinere Tiere wie Wölfe und Scavenger, die sind am einfachsten.
+VLK_413_Rupert_wannaLearnKuerschner_yesKuerschner_02_07:  Das freut mich, aber du bist noch nicht soweit!
+VLK_413_Rupert_wannaLearnKuerschner_yesKuerschner_02_08:  Komm wieder, wenn du erfahrener bist!
+VLK_413_Rupert_wannaLearnLeather_Info_15_01(Held):  Bilde mich zum Lederverarbeiter aus! (5 LP)
+VLK_413_Rupert_wannaLearnLeather_Info_02_02:  Bist du dir sicher?
+VLK_413_Rupert_wannaLearnLeather_Info_02_03:  Du kannst immer nur zwei Berufe erlernen!
+VLK_413_Rupert_wannaLearnLeather_noLeather_15_01(Held):  Ich bin mir noch nicht sicher.
+VLK_413_Rupert_wannaLearnLeather_noLeather_02_02:  Gut, ich bin hier, falls du mich suchst.
+VLK_413_Rupert_wannaLearnLeather_yesKuerschner_15_01(Held):  Ja, ich bin mir sicher!
+VLK_413_Rupert_wannaLearnLeather_yesKuerschner_02_02:  In Ordnung. Wenn du schon einmal Stoff genäht hast, hast du einen Vorteil.
+VLK_413_Rupert_wannaLearnLeather_yesKuerschner_02_03:  Mit Leder und Fellen ist es ganz ähnlich. Nur ist das Material dicker.
+VLK_413_Rupert_wannaLearnLeather_yesKuerschner_02_04:  Häute hingegen sind meistens sehr viel dünner. Sei also vorsichtig.
+VLK_413_Rupert_wannaLearnLeather_yesKuerschner_02_05:  Wähle dein Werkzeug anhand deines Materials. Für Felle nimmst du eine dicke Nadel und starken Faden.
+VLK_413_Rupert_wannaLearnLeather_yesKuerschner_02_06:  Für Häute brauchst du dünne Nadeln, aber trotzdem stabile Fäden.
+VLK_413_Rupert_wannaLearnLeather_yesKuerschner_02_07:  Wenn du dann noch eine Vorlage hast, steht deiner ersten Rüstung nichts mehr im Wege!
+VLK_413_Rupert_wannaLearnLeather_yesKuerschner_02_08:  Versuch es einmal!
+VLK_413_Rupert_wannaLearnLeather_yesKuerschner_02_09:  Ich fürchte, das wird so nichts.
+VLK_413_Rupert_wannaLearnLeather_yesKuerschner_02_10:  Komm wieder, wenn du mehr Erfahrung hast!
+VLK_413_Rupert_letsTrade_Info_15_01(Held):  Handelst du mit mir?
+VLK_413_Rupert_letsTrade_Info_02_02:  Natürlich. Ich werde dir deine Felle, Krallen und andere Jagdtrophäen abkaufen.
+VLK_413_Rupert_letsTrade2_Info_15_01(Held):  Zeig mir deine Ware!
+KDF_1402_Sellan_welcomeToMonastery_Info_08_01:  Willkommen, Reisender!
+KDF_1402_Sellan_welcomeToMonastery_Info_08_02:  Sei herzlich begrüßt im Kloster der Eismagier.
+KDF_1402_Sellan_welcomeToMonastery_Info_08_03:  Mein Name ist Sellan.
+KDF_1402_Sellan_welcomeToMonastery_Info_08_04:  Wie kann ich dir helfen?
+KDF_1402_Sellan_goIn_Info_15_01(Held):  Ich würde gerne ins Kloster!
+KDF_1402_Sellan_goIn_Info_08_02:  Und was möchtest du tun, sobald du im Kloster bist?
+KDF_1402_Sellan_goIn_wannaJoin_15_01(Held):  Ich will dem Orden beitreten!
+KDF_1402_Sellan_goIn_wannaJoin_08_02:  Tut mir leid, leider kann ich dich nicht einlassen.
+KDF_1402_Sellan_goIn_wannaJoin_08_03:  Ich benötige die Zustimmung eines Magiers, um dir den Zutritt zu gewähren.
+KDF_1402_Sellan_goIn_wannaPray_15_01(Held):  Ich will beten!
+KDF_1402_Sellan_goIn_wannaPray_08_02:  Dafür findest du auf der ganzen Insel verteilt Schreine.
+KDF_1402_Sellan_goIn_wannaPray_08_03:  Hier im Kloster widmen sich die Magier ihren Studien.
+KDF_1402_Sellan_goIn_wannaPray_08_04:  Ich kann dich nicht im Kloster beten lassen, solange du dem Orden nicht angehörst.
+KDF_1402_Sellan_goIn_wannaTalk_15_01(Held):  Ich möchte mit den Magiern sprechen.
+KDF_1402_Sellan_goIn_wannaTalk_08_02:  Die Magier im Kloster sind sehr beschäftigt. Ich glaube nicht, dass sie Zeit haben, sich mit dir zu unterhalten.
+KDF_1402_Sellan_goIn_wannaTalk_08_03:  Geh in die Stadt und suche nach einem Magier. Er wird dir mehr über das Kloster erzählen können.
+KDF_1402_Sellan_gotLetter_Info_15_01(Held):  Ich habe hier einen Brief vom Magier Marius.
+KDF_1402_Sellan_gotLetter_Info_08_02:  So, du hast also mit einem Magier gesprochen?
+KDF_1402_Sellan_gotLetter_Info_08_03:  Zeig her den Brief!
+KDF_1402_Sellan_gotLetter_Info_08_04:  Aber... Der Brief ist ja geöffnet!
+KDF_1402_Sellan_gotLetter_Info_15_05(Held):  Ich war neugierig...
+KDF_1402_Sellan_gotLetter_Info_08_06:  Lass das nicht die anderen Magier hören.
+KDF_1402_Sellan_gotLetter_Info_08_07:  Wenn ein Magier einen Brief versiegelt, so soll er nur von demjenigen geöffnet werden, für den der Brief bestimmt ist.
+KDF_1402_Sellan_gotLetter_Info_08_08:  Ich werde ein Auge zudrücken und dich nicht verpfeifen.
+KDF_1402_Sellan_gotLetter_Info_08_09:  Oh, ein Siegelbrief. Es kommt selten vor, dass ein Magier versiegelte Briefe von einem Fremden überbringen lässt.
+KDF_1402_Sellan_gotLetter_Info_08_10:  Mal sehen, was er schreibt...
+KDF_1402_Sellan_gotLetter_Info_08_11:  In Ordnung. Marius schreibt, ich soll dich ins Kloster einlassen.
+KDF_1402_Sellan_gotLetter_Info_08_12:  Er sagt, er spüre eine große Macht in dir.
+KDF_1402_Sellan_gotLetter_Info_08_13:  Desweiteren soll ich dich zum hohen Rat schicken.
+KDF_1402_Sellan_gotLetter_Info_08_14:  Hier, nimm den Schlüssel zum Kloster. Damit kannst du die Türe aufschließen.
+KDF_1402_Sellan_gotLetter_Info_08_15:  Geh am Besten direkt zum Hohen Rat. Du findest ihn in der Kirche. Begegne ihnen mit Respekt und überbringe den Brief.
+KDF_1402_Sellan_gotLetter_Info_08_16:  Geh mit Adanos Segen!
+SLD_701_Silvan_heyYou_Info_02_01:  Hey, wo willst du denn hin?
+SLD_701_Silvan_heyYou_Info_15_02(Held):  Da rein! Oder was dachtest du?
+SLD_701_Silvan_heyYou_Info_02_03:  Werd' jetzt nicht frech!
+SLD_701_Silvan_heyYou_Info_02_04:  Was willst du?
+SLD_701_Silvan_whoAreYou_Info_15_01(Held):  Wer bist du?
+SLD_701_Silvan_whoAreYou_Info_02_02:  Ich bin Silvan, rechte Hand von Jareck und Söldner auf Rodars Hof.
+SLD_701_Silvan_whoAreYou_Info_02_03:  Also, machst du hier Ärger, bekommst du es mit mir zu tun.
+SLD_701_Silvan_wannaJoin_Info_15_01(Held):  Ich will mich euch anschließen!
+SLD_701_Silvan_wannaJoin_Info_02_02:  Du halbe Portion? (lacht) Haha, da bin bin ich ja mal gespannt.
+SLD_701_Silvan_wannaJoin_Info_02_03:  Wie du willst.
+SLD_701_Silvan_wannaJoin_Info_02_04:  Geh ruhig rein und sprich mit Rodar und Jareck. Die beiden entscheiden, ob du dabei bist.
+SLD_701_Silvan_whereRodar_Info_15_01(Held):  Wo finde ich Rodar?
+SLD_701_Silvan_whereRodar_Info_02_02:  Wenn du hier durch die Türe gehst, wende dich nach links.
+SLD_701_Silvan_whereRodar_Info_02_03:  Der Bauer thront in seinem Wohnzimmer auf dem Sessel.
+SLD_701_Silvan_whereRodar_Info_02_04:  Du kannst ihn eigentlich nicht verfehlen.
+SLD_701_Silvan_whereJareck_Info_15_01(Held):  Wo ist Jareck?
+SLD_701_Silvan_whereJareck_Info_02_02:  Geh hoch und dann rechts. Dort findest du unser Hauptquartier.
+SLD_701_Silvan_whereJareck_Info_02_03:  Jareck hält sich die meiste Zeit des Tages dort auf.
+SLD_701_Silvan_whereJareck_Info_02_04:  Wenn nicht, sieh dich auf dem Hof um. Er wird dann irgendwo bei den Jungs sein.
+SLD_701_Silvan_yourHint_Info_15_01(Held):  Kannst du mir sagen, wer euer Informant in der Stadt ist?
+SLD_701_Silvan_yourHint_Info_02_02:  Wie bitte? Wieso sollte ich das tun?
+SLD_701_Silvan_yourHint_Info_15_03(Held):  Jareck hat mir den Auftrag gegeben, neue Informationen zu holen. Dazu muss ich aber wissen, wer euer Informant ist.
+SLD_701_Silvan_yourHint_Info_02_04:  Und du glaubst, ich sage dir, wer es ist? Dann kann ich ihm auch selber das Schwert in die Brust stecken.
+SLD_701_Silvan_yourHint_Info_02_05:  Der neue Kommandant der Stadtwache fackelt nicht lange, wenn es um Verräter geht.
+SLD_701_Silvan_yourHint_Info_02_06:  Jareck hat sicher NICHT gesagt, dass ich dir den Namen einfach sagen soll!
+SLD_701_Silvan_yourHint_Info_15_07(Held):  Naja, er...
+SLD_701_Silvan_yourHint_Info_02_08:  Aha. Hör zu, ich gebe dir einen Tipp, dann findest du ihn bestimmt selber.
+SLD_701_Silvan_yourHint_Info_15_09(Held):  Genau das wollte Jareck.
+SLD_701_Silvan_yourHint_Info_02_10:  Und warum sagst du das nicht gleich?
+SLD_701_Silvan_yourHint_Info_02_11:  Gut, hör zu: Unser Informant hat sehr viel mit Waffen zu tun.
+SLD_701_Silvan_yourHint_Info_15_12(Held):  Also wie so ziemlich jedes Mitglied der Stadtwache?
+SLD_701_Silvan_yourHint_Info_02_13:  Mehr als andere, glaub es mir.
+SLD_701_Silvan_yourHint_Info_02_14:  Und nun: Such!
+BAU_230_Stan_yourFarm_Info_15_01(Held):  Ist das dein Hof?
+BAU_230_Stan_yourFarm_Info_03_02:  Ganz richtig. Also pass auf, dass du dich benimmst.
+BAU_230_Stan_canBuySth_Info_15_01(Held):  Kann ich bei dir was kaufen?
+BAU_230_Stan_canBuySth_Info_03_02:  Frag mal Ron. Er ist mein Lagerverwalter.
+BAU_230_Stan_canBuySth_Info_03_03:  Vielleicht haben wir noch was Ã¼brig.
+BAU_230_Stan_bandits_Info_15_01(Held):  Du hast Probleme mit Banditen?
+BAU_230_Stan_bandits_Info_03_02:  Diese verfluchten Idioten wollen meinen Hof verwÃ¼sten.
+BAU_230_Stan_bandits_Info_03_03:  Sie haben schon ein paar Schafe geschlachtet, als wir vom Hof geflohen sind.
+BAU_230_Stan_bandits_Info_15_04(Held):  Sollen wir uns drum kÃ¼mmern?
+BAU_230_Stan_bandits_Info_03_05:  Ja, verdammt! WofÃ¼r seid ihr Stadtwachen denn da?
+BAU_230_Stan_bandits_Info_03_06:  Sorg dafÃ¼r, dass sie von meinem Hof verschwinden.
+BAU_230_Stan_banditsDead_Info_15_01(Held):  Die Banditen sind tot!
+BAU_230_Stan_banditsDead_Info_03_02:  Wirklich? Das ist gut.
+BAU_230_Stan_banditsDead_Info_03_03:  Dann kÃ¶nnen wir endlich weiterarbeiten!
+BAU_230_Stan_banditsDead_Info_03_04:  Wenn du irgendwas brauchst, komm zu uns. Wir haben immer etwas im Angebot!
+SLD_704_Steph_whoAreYou_Info_07_01:  Hey, pass doch auf, wo du hintrittst!
+SLD_704_Steph_whoAreYou_Info_07_02:  Du zertrampelst noch meine ganzen Pflanzen!
+SLD_704_Steph_whatAreYouDoing_Info_15_01(Held):  Was machst du hier?
+SLD_704_Steph_whatAreYouDoing_Info_07_02:  Ich baue Sumpfkraut an, riechst du das nicht?
+SLD_704_Steph_whatAreYouDoing_Info_15_03(Held):  Das Zeug wÃ¤chst hier?
+SLD_704_Steph_whatAreYouDoing_Info_07_04:  Wie Teufel! HÃ¤tte ich nicht gedacht. Aber nur hier. Scheint die NÃ¤he zur Kapelle zu machen
+SLD_704_Steph_whatAreYouDoing_Info_07_05:  Scheinbar stehen die GÃ¶tter auf den Stoff (lacht)
+SLD_704_Steph_canBuySth_Info_15_01(Held):  Kann ich dir etwas Sumpfkraut abkaufen?
+SLD_704_Steph_canBuySth_Info_07_02:  Klar, Mann! Ich hab' den besten Stoff der ganzen Insel. Wieviel brauchst du?
+SLD_704_Steph_canBuySth_tenPcs_15_01(Held):  Gib mir zehn StÃ¤ngel!
+SLD_704_Steph_canBuySth_tenPcs_07_02:  Zehn StÃ¤ngel? Mensch, du haust ja richtig rein.
+SLD_704_Steph_canBuySth_tenPcs_07_03:  Ich mach dir einen Freundschaftspreis. Nur 100 GoldstÃ¼cke!
+SLD_704_Steph_canBuySth_tenPcs_15_04(Held):  Hier!
+SLD_704_Steph_canBuySth_tenPcs_07_05:  Danke, Mann! Hier ist dein Zeug!
+SLD_704_Steph_canBuySth_tenPcs_15_06(Held):  Soviel hab ich nicht dabei.
+SLD_704_Steph_canBuySth_tenPcs_07_07:  Kein Problem, Mann! Ich lauf hier nicht weg!
+SLD_704_Steph_canBuySth_fivePcs_15_01(Held):  FÃ¼nf reichen erstmal.
+SLD_704_Steph_canBuySth_fivePcs_07_02:  Gut. Ich mach dir einen Freundschaftspreis. Nur 50 GoldstÃ¼cke!
+SLD_704_Steph_canBuySth_fivePcs_15_03(Held):  Hier!
+SLD_704_Steph_canBuySth_fivePcs_07_04:  Danke, Mann! Hier ist dein Zeug!
+SLD_704_Steph_canBuySth_fivePcs_15_05(Held):  Soviel hab ich nicht dabei.
+SLD_704_Steph_canBuySth_fivePcs_07_06:  Kein Problem, Mann! Ich lauf hier nicht weg!
+SLD_704_Steph_canBuySth_onePcs_15_01(Held):  Gib mir einen!
+SLD_704_Steph_canBuySth_onePcs_07_02:  Ah, ein GenieÃŸer!
+SLD_704_Steph_canBuySth_onePcs_07_03:  Ich mach dir einen Freundschaftspreis. Nur 10 GoldstÃ¼cke!
+SLD_704_Steph_canBuySth_onePcs_15_04(Held):  Hier!
+SLD_704_Steph_canBuySth_onePcs_07_05:  Danke, Mann! Hier ist dein Zeug!
+SLD_704_Steph_canBuySth_onePcs_15_06(Held):  Soviel hab ich nicht dabei.
+SLD_704_Steph_canBuySth_onePcs_07_07:  Kein Problem, Mann! Ich lauf hier nicht weg!
+SLD_704_Steph_canBuyMore_Info_15_01(Held):  Kannst du mir noch mehr verkaufen?
+SLD_704_Steph_canBuyMore_Info_07_02:  WeiÃŸt du, meine VorrÃ¤te sind langsam aufgebraucht.
+SLD_704_Steph_canBuyMore_Info_07_03:  Aber ich biete dir etwas besseres: Ich bringe dir bei, wie du selber herrliche StÃ¤ngel herstellst!
+SLD_704_Steph_canBuyMore_Info_07_04:  Du mÃ¼sstest mir nur einen kleinen Gefallen tun.
+SLD_704_Steph_whatToDo_Info_15_01(Held):  Was soll ich fÃ¼r dich tun?
+SLD_704_Steph_whatToDo_Info_07_02:  HÃ¶r zu: Ich komme hier in der letzten Zeit kaum noch weg. AuÃŸerdem lassen uns die Wachen nicht mehr in die Stadt.
+SLD_704_Steph_whatToDo_Info_07_03:  Ich habe hier ein groÃŸes Paket, 15 StÃ¤ngel. Die mÃ¼ssen an den Mann gebracht werden.
+SLD_704_Steph_whatToDo_Info_07_04:  Ich mache dir einen Vorschlag: Du bringst das Zeug in die Stadt und an den Mann.
+SLD_704_Steph_whatToDo_Info_07_05:  Dann bringst du mir das Gold und ich bringe dir die hohe Kunst des StÃ¤ngeldrehens bei.
+SLD_704_Steph_whatToDo_Info_07_06:  Was sagst du?
+SLD_704_Steph_whatToDo_noThanks_15_01(Held):  Danke, verzichte.
+SLD_704_Steph_whatToDo_noThanks_07_02:  Wie du willst. Man kanns halt nicht jedem Recht machen.
+SLD_704_Steph_whatToDo_yeahSure_15_01(Held):  Klar, gib her!
+SLD_704_Steph_whatToDo_yeahSure_07_02:  Gut, hier sind die StÃ¤ngel.
+SLD_704_Steph_whatToDo_yeahSure_07_03:  Du kannst jeden fÃ¼r 30 Gold verkaufen. Wenn du mir also...
+SLD_704_Steph_whatToDo_yeahSure_07_04:  ... also...
+SLD_704_Steph_whatToDo_yeahSure_15_05(Held):  450?
+SLD_704_Steph_whatToDo_yeahSure_07_06:  Genau, 450 GoldstÃ¼cke bringst, dann sind wir im GeschÃ¤ft!
+SLD_704_Steph_whatToDo_yeahSure_07_07:  Ich verlass mich auf dich!
+KDW_14002_Tenho_youNew_Info_03_01:  Soso, du bist also der Neuankömmling.
+KDW_14002_Tenho_youNew_Info_03_02:  Man berichtete mir schon, dass jemand mit starken magischen Fähigkeiten unser Reich betreten hat.
+KDW_14002_Tenho_youNew_Info_03_03:  Sprich, warum bist du hier?
+KDW_14002_Tenho_wannaJoin_Info_15_01(Held):  Ich will mich euch anschließen!
+KDW_14002_Tenho_wannaJoin_Info_03_02:  Anschließen? Das habe ich schon lange nicht mehr gehört.
+KDW_14002_Tenho_wannaJoin_Info_03_03:  Aber gut, wenn es dir ernst ist, werde ich dich prüfen.
+KDW_14002_Tenho_whyHere_Info_15_01(Held):  Warum seid ihr hier?
+KDW_14002_Tenho_whyHere_Info_03_02:  Der Krieg, Junge. Was sonst sollte einen magischen Zirkel wie unseren aus seiner Heimat vertreiben?
+KDW_14002_Tenho_whyHere_Info_03_03:  Die Orks waren auf dem Vormarsch.
+KDW_14002_Tenho_whyHere_Info_03_04:  Zwar war unser Heim auch auf dem Festland von einer ähnlichen Barriere geschützt gewesen, doch wirkt sie bei Orks anders als bei Menschen.
+KDW_14002_Tenho_whyHere_Info_03_05:  Die magisch begabten Schamanen der Orks wurden aufgehalten, ihre Krieger jedoch nur noch rasender.
+KDW_14002_Tenho_whyHere_Info_03_06:  Du siehst, unsere Schutzzauber waren im Endeffekt wirkungslos.
+KDW_14002_Tenho_whyHere_Info_03_07:  Als wir die Barriere aufgehoben hatten, wurde der Ansturm der Orks immer stärker. Sie waren uns zahlenmäßig einfach überlegen.
+KDW_14002_Tenho_whyHere_Info_03_08:  In einem großen Zauber bündelten wir unsere Energie und vertrieben sie vorläufig. Doch sie erholten sich schnell und rückten wieder vor.
+KDW_14002_Tenho_whyHere_Info_03_09:  Schließlich zogen wir den letzten Ausweg in Betracht, packten unsere Sachen und flohen.
+KDW_14002_Tenho_whyHere_Info_03_10:  Ohne geeignete Karten irtten wir mehrere Tage auf See umher, bis wir diese Insel fanden. Wir hatten schon häufiger von ihr gehört.
+KDW_14002_Tenho_whyHere_Info_03_11:  Angeblich sollte ein großer Teil des magischen Erzes, das zum Schmieden der Waffen verwendet wird, hier abgebaut werden.
+KDW_14002_Tenho_whyHere_Info_03_12:  Als wir das große Schiff der Paladine sahen, wussten wir, dass wir nicht einfach in die Stadt gehen können.
+KDW_14002_Tenho_whyHere_Info_03_13:  Denn dummerweise stehen wir auf unterschiedlichen Seiten der Götter. Innos und Beliar vertragen sich nicht unbedingt gut.
+KDW_14002_Tenho_whyHere_Info_03_14:  Wir nutzten einen unbeobachteten Moment, brachten unsere Ladung an Land, zerstörten das Schiff und liefen an der Stadt vorbei.
+KDW_14002_Tenho_whyHere_Info_03_15:  Vor einigen Wochen kamen wir dann hier an und bauten diesen Turm.
+KDW_14002_Tenho_whyHere_Info_03_16:  Leider brauchen auch wir eine grundlegende Versorgung, denn der Boden hier eignet sich nicht gut zum Anbauen von Getreide.
+KDW_14002_Tenho_whyHere_Info_03_17:  Anfangs versuchten wir noch mit den Bauern zu handeln.
+KDW_14002_Tenho_whyHere_Info_03_18:  Bis wir eines Tages einer Patrouille der Stadtwache in die Arme liefen, funktionierte das auch.
+KDW_14002_Tenho_whyHere_Info_03_19:  Die Milizen gingen sofort davon aus, wir würden Nahrungsmittel stehlen. Wir flohen zurück zum Turm und sie verfolgten uns.
+KDW_14002_Tenho_whyHere_Info_03_20:  Nur dank unserer Barriere haben sie es bisher nicht geschafft uns anzugreifen.
+KDW_14002_Tenho_whyHere_Info_03_21:  Sie rücken immer wieder vor, doch selbst die stärksten Paladine haben Probleme.
+KDW_14002_Tenho_whyHere_Info_03_22:  Du bist seit langer Zeit der erste, der es geschafft hat, unsere Barriere unbeschadet zu durchbrechen!
+KDW_14002_Tenho_whyIce_Info_15_01(Held):  Warum bekämpft ihr die Eismagier?
+KDW_14002_Tenho_whyIce_Info_03_02:  Wie bitte? Ich glaube, dabei handelt es sich um eine Verwechslung.
+KDW_14002_Tenho_whyIce_Info_03_03:  Wobei... Nein, du hast Recht! Wir bekämpfen die Eismagier.
+KDW_14002_Tenho_whyIce_Info_03_04:  Wie du vielleicht weißt, arbeiten Stadt und Kloster eng zusammen. Nach dem Vorfall mit den Stadtwachen suchten die Paladine Hilfe bei den Eismagiern.
+KDW_14002_Tenho_whyIce_Info_03_05:  Seitdem greifen sie uns immer wieder an, denn auch sie sind in der Lage, die Barriere zu umgehen.
+KDW_14002_Tenho_whyIce_Info_03_06:  Meistens beschränken sie sich allerdings auf kleinere Sticheleien.
+KDW_14002_Tenho_whyIce_Info_03_07:  Und wir tun im Gegenzug dasselbe. Wir haben nicht die Absicht, die Eismagier auszulöschen. Wir wollen eigentlich nur unsere Ruhe haben.
+KDW_14002_Tenho_whyIce_Info_03_08:  Aber ich befürchte, die letzte große Auseinandersetzung ist unvermeidbar.
+KDW_14002_Tenho_whatToDo_Info_15_01(Held):  Prüfe mich, Meister!
+KDW_14002_Tenho_whatToDo_Info_03_02:  Meister, pah! Den hochgestochenen Quatsch kannst du im Kloster loswerden. Ich bin Tenho, nichts weiter.
+KDW_14002_Tenho_whatToDo_Info_03_03:  Ich bin genauso ein Magier wie alle anderen hier.
+KDW_14002_Tenho_whatToDo_Info_03_04:  Zwar bin ich etwas älter und habe etwas mehr Erfahrung, aber das macht mich noch lange nicht zu etwas Besserem.
+KDW_14002_Tenho_whatToDo_Info_03_05:  Aber gut, ich will dich prüfen. Aber bitte, hör auf mit dem Meister!
+KDW_14002_Tenho_whatToDo_Info_03_06:  Also gut, deine Prüfung sieht wie folgt aus: Berge ein Artefakt!
+KDW_14002_Tenho_whatToDo_Info_15_07(Held):  Ein Artefakt?
+KDW_14002_Tenho_whatToDo_Info_03_08:  Sehr richtig.
+KDW_14002_Tenho_whatToDo_Info_15_09(Held):  Wo finde ich das Artefakt?
+KDW_14002_Tenho_whatToDo_Info_03_10:  Na, wo wäre denn der Witz an der Sache, wenn ich dir alles verrate? (lacht)
+KDW_14002_Tenho_whatToDo_Info_03_11:  Ich gebe dir eine Richtung vor: Lauf den Weg zur Stadt zurück und achte auf den Wasserfall. In seiner Nähe befindet sich eine Höhle.
+KDW_14002_Tenho_whatToDo_Info_03_12:  Durchquere sie und du wirst hoffentlich suchen, was wir haben wollen!
+KDW_14002_Tenho_shallIGo_Info_15_01(Held):  Soll ich so gehen?
+KDW_14002_Tenho_shallIGo_Info_03_02:  Wie denn sonst?
+KDW_14002_Tenho_shallIGo_Info_15_03(Held):  Naja, ich dachte, ich bekomme vielleicht etwas Ausrüstung oder so...
+KDW_14002_Tenho_shallIGo_Info_03_04:  Deine Robe musst du dir erst verdienen! Aber ich gebe dir ein paar Spruchrollen mit.
+KDW_14002_Tenho_shallIGo_Info_03_05:  Wenn du mehr brauchst, musst du sie dir kaufen.
+KDW_14002_Tenho_shallIGo_Info_03_06:  Sprich mit den anderen Magiern. Einer wird schon mit dir handeln.
+KDW_14002_Tenho_shallIGo_Info_03_07:  Und hier: Damit du sie auch benutzen kannst.
+KDW_14002_Tenho_shallIGo_Info_03_08:  Und jetzt geh! Finde das Artefakt und beweise, dass du es wert bist das Schwarz anzulegen!
+KDW_14002_Tenho_gotThem_Info_15_01(Held):  Ich habe dein 'Artefakt'!
+KDW_14002_Tenho_gotThem_Info_03_02:  Sehr gut. Bist du auf Schwierigkeiten gestoßen?
+KDW_14002_Tenho_gotThem_youBastard_15_01(Held):  Du Arsch hast mich in eine Höhle mit Goblin-Skeletten geschickt!
+KDW_14002_Tenho_gotThem_youBastard_03_02:  (aufbrausend) Was? Wie wagst du es mit mir zu sprechen?
+KDW_14002_Tenho_gotThem_youBastard_15_03(Held):  Moment, du sagtest, ich solle dieses hochtrabende Geschwafel sein lassen.
+KDW_14002_Tenho_gotThem_youBastard_15_04(Held):  Also, jetzt rede ich mit dir, wie mit jedem anderen auch.
+KDW_14002_Tenho_gotThem_youBastard_03_05:  (grummelt) Na gut...
+KDW_14002_Tenho_gotThem_youBastard_03_06:  Hast du das Artefekt?
+KDW_14002_Tenho_gotThem_youBastard_15_07(Held):  Du meinst dieses Buch hier?
+KDW_14002_Tenho_gotThem_youBastard_03_08:  Genau das. Gib es mir! Es hat eine starke magische Aura, die ich bis hier oben gespürt habe.
+KDW_14002_Tenho_gotThem_youBastard_03_09:  In Ordnung. Du sollst Teil unseres Zirkels werden, wenn du immer noch entschlossen bist.
+KDW_14002_Tenho_gotThem_youBastard_03_10:  Sprich mit mir, wenn du das Schwarz tragen willst!
+KDW_14002_Tenho_gotThem_aLittle_15_01(Held):  Ein wenig Probleme, ja.
+KDW_14002_Tenho_gotThem_aLittle_03_02:  Wirklich? Das hatte ich nicht erwartet.
+KDW_14002_Tenho_gotThem_aLittle_15_03(Held):  Naja, einige Goblin-Skelette wollten mir das Leben schwer machen.
+KDW_14002_Tenho_gotThem_aLittle_03_04:  Aber du bist ja in einem Stück zurückgekehrt.
+KDW_14002_Tenho_gotThem_aLittle_03_05:  Das ist ein gutes Zeichen.
+KDW_14002_Tenho_gotThem_aLittle_03_06:  Wie steht es mit dem Artefakt?
+KDW_14002_Tenho_gotThem_aLittle_15_07(Held):  Meinst du dieses Buch?
+KDW_14002_Tenho_gotThem_aLittle_03_08:  Genau das. Gib es mir! Es hat eine starke magische Aura, die ich bis hier oben gespürt habe.
+KDW_14002_Tenho_gotThem_aLittle_03_09:  In Ordnung. Du sollst Teil unseres Zirkels werden, wenn du immer noch entschlossen bist.
+KDW_14002_Tenho_gotThem_aLittle_03_10:  Sprich mit mir, wenn du das Schwarz tragen willst!
+KDW_14002_Tenho_gotThem_noProblems_15_01(Held):  Keine nennenswerten!
+KDW_14002_Tenho_gotThem_noProblems_03_02:  (lacht) Haha, damit habe ich gerechnet, du Draufgänger!
+KDW_14002_Tenho_gotThem_noProblems_03_03:  In Ordnung. Wie sieht es aus? Hast du das Artefakt gefunden?
+KDW_14002_Tenho_gotThem_noProblems_15_04(Held):  Naja, ich habe hier ein Buch.
+KDW_14002_Tenho_gotThem_noProblems_15_05(Held):  Meinst du das?
+KDW_14002_Tenho_gotThem_noProblems_03_06:  Genau das. Gib es mir! Es hat eine starke magische Aura, die ich bis hier oben gespürt habe.
+KDW_14002_Tenho_gotThem_noProblems_03_07:  In Ordnung. Du sollst Teil unseres Zirkels werden, wenn du immer noch entschlossen bist.
+KDW_14002_Tenho_gotThem_noProblems_03_08:  Sprich mit mir, wenn du das Schwarz tragen willst!
+KDW_14002_Tenho_nowJoin_Info_15_01(Held):  Ich will dem Zirkel beitreten!
+KDW_14002_Tenho_nowJoin_Info_03_02:  Ist das deine endgültige Entscheidung? Bedenke, du kannst sie nicht mehr ändern!
+KDW_14002_Tenho_nowJoin_no_15_01(Held):  Ich brauche noch Bedenkzeit.
+KDW_14002_Tenho_nowJoin_no_03_02:  In Ordnung. Ich bin hier, falls du eine Entscheidung getroffen hast.
+KDW_14002_Tenho_nowJoin_yes_15_01(Held):  Ich bin bereit!
+KDW_14002_Tenho_nowJoin_yes_03_02:  Gut, dann darfst du dich ab heute als Mitglied des schwarzen Zirkels bezeichnen.
+KDW_14002_Tenho_nowJoin_yes_03_03:  Trage die schwarze Novizenrobe mit Stolz und Würde.
+KDW_14002_Tenho_nowJoin_yes_03_04:  Und mach' dem Kreis ja keinen Ärger!
+KDW_14002_Tenho_whatMyQuests_Info_15_01(Held):  Was sind meine Aufgaben als Novize?
+KDW_14002_Tenho_whatMyQuests_Info_03_02:  Du wirst vor allem deine magischen Fähigkeiten trainieren.
+KDW_14002_Tenho_whatMyQuests_Info_03_03:  Außerdem wirst du Aufgaben für den Zirkel übernehmen.
+KDW_14002_Tenho_whatMyQuests_Info_03_04:  Meistens werden es Botengänge oder Besorgungen werden. Du bist dafür perfekt geeignet, da du neu bist.
+KDW_14002_Tenho_whatMyQuests_Info_03_05:  Außerdem trägst du nur unsere Novizenrobe. Mit der Magierrobe könntest du nicht einen Fuß in die Stadt setzen.
+KDW_14002_Tenho_whatMyQuests_Info_03_06:  Lass dich nicht beirren. Gerade in der Stadt wird man versuchen, dich zu überzeugen, den Zirkel zu verlassen.
+KDW_14002_Tenho_whatMyQuests_Info_03_07:  Angeblich sei es nicht gut für junge Menschen auf einen derart falschen Weg geführt zu werden.
+KDW_14002_Tenho_whatMyQuests_Info_03_08:  Aber vergiss nicht: Unser Weg ist der Richtige! Er ist genauso richtig, wie die Wege der anderen Magier.
+KDW_14002_Tenho_whatMyQuests_Info_03_09:  Nur beziehen wir unsere Macht von einem anderen Gott.
+KDW_14002_Tenho_whatAboutTraining_Info_15_01(Held):  Wie kann ich meine magischen Kräfte steigern?
+KDW_14002_Tenho_whatAboutTraining_Info_03_02:  Magie an sich kann jeder wirken. Du hast es ja an den Spruchrollen gesehen. Selbst ein Bauer könnte mit Spruchrollen erheblichen Schaden anrichten.
+KDW_14002_Tenho_whatAboutTraining_Info_03_03:  Die wahre Magie aber liegt in den Runensteinen. Sie verbrauchen sich nicht und funktionieren anders als Spruchrollen.
+KDW_14002_Tenho_whatAboutTraining_Info_03_04:  In einer Spruchrolle steckt die Magie des Zaubers. Eine Rune jedoch wirkt nur als Fokus für deine magischen Kräfte.
+KDW_14002_Tenho_whatAboutTraining_Info_03_05:  Daher vrabraucht sie sich auch nicht.
+KDW_14002_Tenho_whatAboutTraining_Info_03_06:  Um einen Runenzauber zu wirken musst du deine magischen Kräfte durch den Runenstein kanalisieren.
+KDW_14002_Tenho_whatAboutTraining_Info_03_07:  Und vor allem musst du fest überzeugt sein, dass du diesen Zauber wirken möchtest.
+KDW_14002_Tenho_whatAboutTraining_Info_03_08:  Du darfst keine Sekunde zögern und musst dir bewusst sein, was der Zauber auslöst. Nur dann wird er gelingen.
+KDW_14002_Tenho_whatAboutTraining_Info_03_09:  Bist du unkonzentriert, wird er fehlschlagen und dich im schlimmsten Fall verletzen oder sogar töten.
+KDW_14002_Tenho_whatAboutTraining_Info_03_10:  Deshalb sind die Runen in verschiedene Magiekreise aufgeteilt. Im ersten Kreis findest du einfache Zauber, die eigentlich nicht schiefgehen können.
+KDW_14002_Tenho_whatAboutTraining_Info_03_11:  Je höher du in den Kreisen gelangst, desto anspruchsvoller und zerstörerischer werden die Zauber.
+KDW_14002_Tenho_whatAboutTraining_Info_03_12:  Für den letzten Kreis benötigst du aber die Zustimmung unseres Gottes!
+KDW_14002_Tenho_whatAboutTraining_Info_03_13:  Den ersten Kreis der Magie kannst du schnell und einfach erlernen. Lies das Buch, dass du mir gebracht hast. Diesmal aber spüre die Kraft der Magie.
+KDW_14002_Tenho_whatAboutTraining_Info_03_14:  Lass dich von ihr durchströmen. Sie wird dir den Weg weisen und dir ermöglichen, einfache Runen zu fokussieren.
+KDW_14002_Tenho_whatAboutTraining_Info_03_15:  Die nächsten Zirkel kannst du nach etwas praktischer Übung bei mir lernen.
+KDW_14002_Tenho_whatAboutAtts_Info_15_01(Held):  Kann ich meine magische Kraft steigern?
+KDW_14002_Tenho_whatAboutAtts_Info_03_02:  Du kannst deine Kraftreserven steigern. Wir nennen diese Reserven Mana.
+KDW_14002_Tenho_whatAboutAtts_Info_03_03:  Es ist alles nur eine Frage der Konzentration und der Belastbarkeit deines Körpers.
+KDW_14002_Tenho_whatAboutAtts_Info_03_04:  Sprich mit den anderen Magiern. Einer von ihnen wird dir beibringen können, dein Mana zu erweitern.
+KDW_14002_Tenho_toDoForMe_Info_15_01(Held):  Hast du etwas zu tun für mich?
+KDW_14002_Tenho_toDoForMe_Info_03_02:  Gut, dass du fragst. Ich hätte tatsächliche eine Aufgabe für dich.
+KDW_14002_Tenho_toDoForMe_Info_03_03:  Bramor, der Kartenzeichner in der Stadt handelt auch mit anderen Schriftstücken.
+KDW_14002_Tenho_toDoForMe_Info_03_04:  Ich habe vor einiger Zeit ein Buch bei ihm bestellt. Geh zu ihm und sieh nach, ob er es mittlerweile auftreiben konnte.
+KDW_14002_Tenho_toDoForMe_Info_03_05:  Hier sind 100 Goldstücke. Schließlich will er das Buch bezahlt haben.
+MIL_2106_Thalar_youTrain_Info_15_01(Held):  Trainierst du die Stadtwache?
+MIL_2106_Thalar_youTrain_Info_01_02:  Sieht so aus, nicht?
+MIL_2106_Thalar_youTrain_Info_01_03:  Was kann ich für dich tun?
+MIL_2106_Thalar_trainMe_Info_15_01(Held):  Kannst du mir etwas beibringen?
+MIL_2106_Thalar_trainMe_Info_01_02:  Wie du schon selbst erkannt hast, trainiere ich die Stadtwache.
+MIL_2106_Thalar_trainMe_Info_01_03:  Solange du kein Mitglied bist, werde ich dir nichts beibringen.
+MIL_2106_Thalar_trainMe_Info_01_04:  Danach kannst du bei mir deine Fähigkeiten im Einhand und Zweihandkampf verbessern.
+MIL_2106_Thalar_tellRosie_Info_15_01(Held):  Eine Rose für Epona!
+MIL_2106_Thalar_tellRosie_Info_01_02:  Oho, gibt es ein neues Mädchen in der 'Roten Laterne'?
+MIL_2106_Thalar_tellRosie_Info_01_03:  Ich glaub, ich muss dem Laden mal wieder einen Besuch abstatten (lacht)
+MIL_2106_Thalar_tellRosie_Info_01_04:  Danke für die Info!
+VLK_418_Timon_sellPlants_Info_15_01(Held):  Du verkaufst Pflanzen?
+VLK_418_Timon_sellPlants_Info_06_02:  Und zwar nur die erlesensten! Alles frisch gesammelt. Bessere Ware wirst du auf der ganzen Insel nicht finden.
+VLK_418_Timon_sellPlants_Info_06_03:  Brauchst du etwas?
+VLK_418_Timon_letsTrade_Info_15_01(Held):  Zeig mir deine Pflanzen!
+VLK_418_Timon_knowPlants_Info_15_01(Held):  Kennst du dich auch mit Pflanzen aus?
+VLK_418_Timon_knowPlants_Info_06_02:  NatÃ¼rlich! Wie sollte ich sonst mit gutem Gewissen das GrÃ¼nzeug verkaufen?
+VLK_418_Timon_knowPlants_Info_06_03:  Wieso fragst du?
+VLK_418_Timon_canIdentify_Info_15_01(Held):  Kannst du diese Pflanzen fÃ¼r mich identifizieren?
+VLK_418_Timon_canIdentify_Info_06_02:  Das kÃ¶nnte ich, ja. WofÃ¼r brauchst du sie denn?
+VLK_418_Timon_canIdentify_wannaSell_15_01(Held):  Ich will die Pflanzen verkaufen!
+VLK_418_Timon_canIdentify_wannaSell_06_02:  Und ich soll sie identifizieren? Damit ich mir mein eigenes GeschÃ¤ft kaputt mache?
+VLK_418_Timon_canIdentify_wannaSell_06_03:  Nein, Danke! Such dir einen anderen Dummen!
+VLK_418_Timon_canIdentify_wannaLearn_15_01(Held):  Ich will bei Clovis als Lehrling anfangen und er hat mich losgeschickt, zehn Heilpflanzen zu besorgen.
+VLK_418_Timon_canIdentify_wannaLearn_06_02:  Soso, Clovis mal wieder.
+VLK_418_Timon_canIdentify_wannaLearn_06_03:  Du bist nicht der erste, der diesen Auftrag bekommen hat und auch nicht der erste, der entnervt aufgegeben hat.
+VLK_418_Timon_canIdentify_wannaLearn_06_04:  Aber, wenn es dir ernst ist, werde ich dir die Pflanzen identifizieren.
+VLK_418_Timon_canIdentify_wannaLearn_06_05:  Lass mal sehen...
+VLK_418_Timon_canIdentify_wannaLearn_06_06:  Hm, sieht aus, als hÃ¤ttest du GlÃ¼ck. Zumindest eine Heilpflanze ist dabei. Das andere ist leider nur Unkraut.
+VLK_418_Timon_canIdentify_wannaLearn_06_07:  Wenn du noch mehr Pflanzen brauchst, komm wieder zu mir! Ich werde dir dabei helfen! Jeweils zehn Pflanzen identifiziere ich dir gleichzeitig!
+VLK_418_Timon_canIdentify_wannaEat_15_01(Held):  Ich wollte die Pflanzen essen.
+VLK_418_Timon_canIdentify_wannaEat_06_02:  Ach, wirklich? Lass mal sehen.
+VLK_418_Timon_canIdentify_wannaEat_06_03:  Hmm, die eine kÃ¶nntest du essen. Blauflieder, sehr schmackhaft.
+VLK_418_Timon_canIdentify_wannaEat_06_04:  Bei der anderen wÃ¼rde ich dir davon abraten. Sumpfkraut macht sehr schnell abhÃ¤ngig!
+VLK_418_Timon_canIdentify_wannaEat_06_05:  Kann ich sonst noch etwas fÃ¼r dich tun?
+VLK_418_Timon_canIdentifyMore_Info_15_01(Held):  Kannst du noch ein paar Pflanzen fÃ¼r mich identifizieren?
+VLK_418_Timon_canIdentifyMore_Info_06_02:  Klar, gib her! Denk dran, mindestens zehn StÃ¼ck!
+VLK_418_Timon_canIdentifyMore_Info_15_03(Held):  Hier!
+VLK_418_Timon_canIdentifyMore_Info_06_04:  Na, siehst du, ein paar Heilpflanzen sind immerhin dabei!
+VLK_418_Timon_canIdentifyMore_Info_06_05:  Der Rest ist glaube ich erst einmal uninteressant.
+VLK_418_Timon_canIdentifyMore_Info_06_06:  Ich geb dir etwas Gold dafÃ¼r!
+VLK_418_Timon_canIdentifyMore_Info_06_07:  Wenn du noch welche brauchst, komm wieder!
+VLK_418_Timon_canIdentifyMore_Info_15_08(Held):  Dann habe ich nicht genug dabei!
+VLK_418_Timon_canIdentifyMore_Info_06_09:  Gut, dann sammel noch welche und komm dann wieder!
+VLK_3006_Tom_youHunter_Info_15_01(Held):  Ihr seid Jäger?
+VLK_3006_Tom_youHunter_Info_04_02:  (sarkastisch) Sehr gut erkannt! Ich glaube, wir sollten etwas an unserem Auftreten ändern...
+VLK_3006_Tom_gotPackage_Info_15_01(Held):  Rupert schickt mich!
+VLK_3006_Tom_gotPackage_Info_15_02(Held):  Ich habe hier ein Paket für euch.
+VLK_3006_Tom_gotPackage_Info_04_03:  Sehr gut. Das klingt nach Nachschub.
+VLK_3006_Tom_gotPackage_Info_15_04(Held):  Rupert fragt, wie es aussieht?
+VLK_3006_Tom_gotPackage_Info_04_05:  Sag ihm, wir hatten bisher wenig Glück.
+VLK_3006_Tom_gotPackage_Info_04_06:  Uns sind erst ein paar Scavenger und ein Wolf vor den Bogen gelaufen.
+VLK_3006_Tom_gotPackage_Info_04_07:  Die Piraten schießen uns fast jegliche Beute weg.
+VLK_3006_Tom_gotPackage_Info_04_08:  Wir werden morgen ein wenig tiefer in die Wälder gehen und im Zweifelsfall unser Lager verlegen.
+VLK_3006_Tom_gotPackage_Info_04_09:  Sollte es soweit kommen, werden wir ihm aber rechtzeitig Bescheid geben.
+VLK_3006_Tom_gotPackage_Info_15_10(Held):  In Ordnung. Sonst noch etwas?
+VLK_3006_Tom_gotPackage_Info_04_11:  Ja. Sag ihm, wenn er uns noch einmal in ein Gebiet mit Geistern schickt, dann kann er seinen Scheiß allein machen!
+VLK_3006_Tom_canYouTeach_Info_15_01(Held):  Kannst du mir etwas beibringen?
+VLK_3006_Tom_canYouTeach_Info_04_02:  Du meinst, mit dem Bogen zu schießen, oder Felle zu nehmen?
+VLK_3006_Tom_canYouTeach_Info_15_03(Held):  An so etwas hatte ich gedacht, ja.
+VLK_3006_Tom_canYouTeach_Info_04_04:  Ich nicht, dafür habe ich keine Zeit und vor allem kein Talent.
+VLK_3006_Tom_canYouTeach_Info_04_05:  Aber frag mal Matt, der kann dir bestimmt ein paar Tipps für den Bogen geben.
+KDF_1405_Ulian_greetingsMage_Info_15_01(Held):  Ich grüße Euch, Magier!
+KDF_1405_Ulian_greetingsMage_Info_09_02:  Und ich grüße dich, neuer Anwärter.
+KDF_1405_Ulian_greetingsMage_Info_09_03:  Was kann der hohe Rat für dich tun?
+KDF_1405_Ulian_wannaJoin_Info_15_01(Held):  Ich will dem Orden beitreten!
+KDF_1405_Ulian_wannaJoin_Info_09_02:  Wirklich? Es ist selten geworden, dass jemand unserem Orden beitreten möchte.
+KDF_1405_Ulian_wannaJoin_Info_09_03:  Geh und sprich mit Uysal, er wird dich prüfen.
+KDF_1405_Ulian_yourYes_Info_15_01(Held):  Ich war bei Uysal!
+KDF_1405_Ulian_yourYes_Info_09_02:  Und? Hat er dir eine Prüfungsaufgabe gegeben?
+KDF_1405_Ulian_yourYes_Info_15_03(Held):  Hat er. Ich soll die Dämonen, welche sich im Keller eingenistet haben töten.
+KDF_1405_Ulian_yourYes_Info_09_04:  Dann tu' dies. Danach sehen wir weiter.
+KDF_1405_Ulian_yourYes_Info_15_05(Held):  Die Dämonen sind bereits Geschichte.
+KDF_1405_Ulian_yourYes_Info_09_06:  Wirklich? Das erklärt, warum sich mein Geist klarer anfühlt.
+KDF_1405_Ulian_yourYes_Info_09_07:  Ich danke dir für deine Mühen. Und nun? Möchtest du dem Orden beitreten?
+KDF_1405_Ulian_yourYes_Info_09_08:  Dann sprich mit Rayan. Meinen Segen sollst du haben.
+KDF_1405_Ulian_canTeach_Info_15_01(Held):  Rayan sagte, du könntest mir etwas beibringen?
+KDF_1405_Ulian_canTeach_Info_09_02:  Das ist richtig. Ich kann dir beibringen, deine magische Kraft zu stärken.
+KDF_1404_Uysal_greetingsMage_Info_15_01(Held):  Ich grüße euch, hoher Magier!
+KDF_1404_Uysal_greetingsMage_Info_01_02:  Sei gegrüßt. Du musst der neue Anwärter sein.
+KDF_1404_Uysal_testMe_Info_15_01(Held):  Stellt mich auf die Probe!
+KDF_1404_Uysal_testMe_Info_01_02:  Schickt Rayan dich?
+KDF_1404_Uysal_testMe_Info_15_03(Held):  Ja, er sagt, Ihr sollt mich prüfen.
+KDF_1404_Uysal_testMe_Info_01_04:  In Ordnung. Deine Prüfung ist bereits vorbereitet.
+KDF_1404_Uysal_testMe_Info_15_05(Held):  So schnell?
+KDF_1404_Uysal_testMe_Info_01_06:  Sie ist schon länger vorbereitet.
+KDF_1404_Uysal_testMe_Info_01_07:  Wie du vielleicht weißt, haben wir einige Probleme mit einer anderen Magiergruppierung auf der Insel.
+KDF_1404_Uysal_testMe_Info_01_08:  Die Schwarzmagier machen uns immer wieder das Leben schwer.
+KDF_1404_Uysal_testMe_Info_01_09:  Zwar greifen sie nicht direkt an, doch sorgen sie immer wieder dafür, dass unser Ordensleben gestört wird.
+KDF_1404_Uysal_testMe_Info_01_10:  Meistens sind es Kleinigkeiten. Schafe die krank werden, oder Vorräte die vermodern. Ab und an wurde unser Trinkwasser ungenießbar.
+KDF_1404_Uysal_testMe_Info_01_11:  Das haben wir alles in den Griff bekommen.
+KDF_1404_Uysal_testMe_Info_01_12:  Jetzt sind aber weitere Probleme aufgetaucht. Eine kleine Gruppe Schwarzmagier hat es geschafft, eine Gruppe Untote in unserem Keller zu beschwören.
+KDF_1404_Uysal_testMe_Info_01_13:  Da wir den Teil des Kellers derzeit nicht benötigen, haben wir die Türe verschlossen. Interessanterweise lassen sich die Untoten dadurch aufhalten.
+KDF_1404_Uysal_testMe_Info_01_14:  Aber sie sind immer noch im Keller und ich muss zugeben, ich habe kein gutes Gefühl dabei.
+KDF_1404_Uysal_testMe_Info_01_15:  Daher stelle ich dir nun deine Prüfung:
+KDF_1404_Uysal_testMe_Info_01_16:  Geh hin und vernichte die Kreaturen der Dunkelheit!
+KDF_1404_Uysal_testMe_Info_01_17:  Du bekommst von mir den Schlüssel, sowie einige Spruchrollen. Dazu noch ein paar Manatränke.
+KDF_1404_Uysal_testMe_Info_01_18:  Außerdem werde ich einen Stärkungszauber auf dich wirken, damit deine magische Kraft für kurze Zeit gestärkt wird.
+KDF_1404_Uysal_testMe_Info_01_19:  Wenn du immer noch bereit bist uns beizutreten und deine Prüfung abzulegen, so sprich wieder mit mir.
+KDF_1404_Uysal_goOn_Info_15_01(Held):  Ich bin bereit für meine Prüfung!
+KDF_1404_Uysal_goOn_Info_01_02:  In Ordnung. Hier ist als erstes der Schlüssel zum Keller.
+KDF_1404_Uysal_goOn_Info_01_03:  Der Raum befindet sich, wenn du die Treppen heruntergehst und dich rechts hälst, auf der rechten Seite.
+KDF_1404_Uysal_goOn_Info_01_04:  Und hier sind deine Spruchrollen. Setze sie weise ein!
+KDF_1404_Uysal_goOn_Info_01_05:  Und deine Manatränke!
+KDF_1404_Uysal_goOn_Info_01_06:  Und nun werde ich dich stärken!
+KDF_1404_Uysal_goOn_Info_01_07:  Du bist nun bereit. Gehe hin und befreie uns vom Übel der Untoten!
+KDF_1404_Uysal_gotThem_Info_15_01(Held):  Ich habe die Dämonen zur Strecke gebracht!
+KDF_1404_Uysal_gotThem_Info_01_02:  Ja, ich spüre, dass eine Last von mir abgefallen ist.
+KDF_1404_Uysal_gotThem_Info_01_03:  Ich merke gerade, wie sehr mir die reine Anwesenheit dieser Kreaturen zugesetzt hat.
+KDF_1404_Uysal_gotThem_Info_01_04:  Wie auch immer, ich bin stolz auf dich!
+KDF_1404_Uysal_gotThem_Info_01_05:  Von meiner Seite aus gibt es nichts, dass dagegen spricht, dass du uns beitrittst. Sprich aber zuerst noch mit Ulian.
+KDF_1404_Uysal_gotThem_Info_01_06:  Wenn er keine Einwände hat, sprich mit Rayan. Er wird dich in den Orden aufnehmen.
+KDF_1404_Uysal_gotThem_Info_01_07:  Meine Glückwünsche, Novize!
+MIL_2102_Volmar_Ende_Info_07_01:  Pass auf dich auf!
+MIL_2102_Volmar_whoAreYou_Info_07_01:  Soso, ein Pirat.
+MIL_2102_Volmar_whoAreYou_Info_07_02:  Normalerweise machen wir ja kurzen Prozess mit euch...
+MIL_2102_Volmar_whoAreYou_Info_15_03(Held):  Kommandant, bitte haltet ein!
+MIL_2102_Volmar_whoAreYou_Info_15_04(Held):  Ich bin kein Pirat!
+MIL_2102_Volmar_whoAreYou_Info_07_05:  Du glaubst gar nicht, wie oft ich das schon gehört habe.
+MIL_2102_Volmar_whoAreYou_Info_15_06(Held):  Aber ich sage die Wahrheit, Kommandant. Ich bin... oder vielmehr war Soldat auf einem königlichen Kriegsschiff.
+MIL_2102_Volmar_whoAreYou_Info_07_07:  Und das soll ich dir glauben?
+MIL_2102_Volmar_whoAreYou_Info_15_08(Held):  Ãœberzeugt euch dieser Ring?
+MIL_2102_Volmar_whoAreYou_Info_07_09:  Ein Siegelring der Marine. Den kannst du nirgendwo gefunden haben
+MIL_2102_Volmar_whoAreYou_Info_07_10:  Gut, ich will dir glauben. Aber sag mir:
+MIL_2102_Volmar_whoAreYou_Info_07_11:  Warum bist du hier und nicht auf deinem Schiff?
+MIL_2102_Volmar_orcAttack_Info_15_01(Held):  Wir wurden auf hoher See von Orks angegriffen.
+MIL_2102_Volmar_orcAttack_Info_07_02:  Von Orks?
+MIL_2102_Volmar_orcAttack_Info_15_03(Held):  Ja, von Orks. Ich weiß nicht, wann sie gelernt haben, Schiffe zu bauen, oder zur See zu fahren, aber mit Kanonen können sie umgehen.
+MIL_2102_Volmar_orcAttack_Info_15_04(Held):  Sie nutzten eine Nebelbank. Wir gerieten hinein und plötzlich eröffneten sie das Feuer.
+MIL_2102_Volmar_orcAttack_Info_15_05(Held):  Es dauerte keine zwei Minuten, dann brannte unser Schiff lichterloh.
+MIL_2102_Volmar_orcAttack_Info_15_06(Held):  Wir versuchten uns in die Nussschalen zu retten, doch auch diese wurden versenkt.
+MIL_2102_Volmar_orcAttack_Info_15_07(Held):  Ich habe mein Glück außerhalb der Boote gesucht. Mit einer Planke als Hilfsmittel versuchte ich wegzuschwimen, so schnell ich konnte.
+MIL_2102_Volmar_orcAttack_Info_15_08(Held):  Scheinbar habe ich Glück gehabt, auch wenn ich vor Erschöpfung irgendwann eingeschlafen bin.
+MIL_2102_Volmar_orcAttack_Info_07_09:  Da hast du wirklich Glück gehabt. Jetzt bist du hier.
+MIL_2102_Volmar_andNow_Info_15_01(Held):  Was mache ich jetzt?
+MIL_2102_Volmar_andNow_Info_07_02:  Das ist eine gute Frage.
+MIL_2102_Volmar_andNow_Info_07_03:  Ohne Zweifel bist du gut ausgebildet, aber ich kann dich hier nicht einfach in die Stadtwache aufnehmen.
+MIL_2102_Volmar_andNow_Info_07_04:  Und es wird noch einige Zeit dauern, bis wieder ein Schiff zum Festland ablegt.
+MIL_2102_Volmar_andNow_Info_07_05:  Du wirst wohl erst einmal hier bleiben müssen.
+MIL_2102_Volmar_andNow_Info_07_06:  Am Besten ist es, du baust dir ein neues Leben auf.
+MIL_2102_Volmar_myOptions_Info_15_01(Held):  Welche Möglichkeiten habe ich denn?
+MIL_2102_Volmar_myOptions_Info_07_02:  Ich empfehle dir, dich einer der Gruppierungen auf der Insel anzuschließen.
+MIL_2102_Volmar_myOptions_Info_07_03:  Leider kommst du zu einer sehr ungemütlichen Zeit.
+MIL_2102_Volmar_myOptions_Info_15_04(Held):  Was ist denn los?
+MIL_2102_Volmar_myOptions_Info_07_05:  Wir haben hier allerhand Probleme. Seit wir auf die Insel gekommen sind, geht es immer weiter bergab.
+MIL_2102_Volmar_myOptions_Info_07_06:  Im Minental probten die Gefangenen den Aufstand. Wir mussten den Pass verriegeln, um unsere eigene Haut zu retten.
+MIL_2102_Volmar_myOptions_Info_07_07:  Leider ist nun der Zugang zu den großen Erzvorkommen abgeschnitten.
+MIL_2102_Volmar_myOptions_Info_07_08:  Seitdem versuchen wir auf der Insel die letzten Adern auszuschöpfen.
+MIL_2102_Volmar_myOptions_Info_07_09:  Allerdings gibt es Menschen, die uns mit aller Macht daran hindern wollen.
+MIL_2102_Volmar_whichGroups_Info_15_01(Held):  Welche Menschen sind das?
+MIL_2102_Volmar_whichGroups_Info_07_02:  Zuerst einmal unser derzeit größtes Problem.
+MIL_2102_Volmar_whichGroups_Info_07_03:  Wenn du die Stadt verlässt und dich nördlich hälst, kommst du irgendwann zu einem Leuchtturm.
+MIL_2102_Volmar_whichGroups_Info_07_04:  Dort und in der Bucht darunter haben sich Piraten eingenistet.
+MIL_2102_Volmar_whichGroups_Info_07_05:  Sie machen uns das Leben schwer, versenken Fischerboote und tauchen in  der Stadt auf und beklauen jeden, der irgendetwas dabei hat.
+MIL_2102_Volmar_whichGroups_Info_07_06:  Aber ihre Bucht ist gut geschützt und ich habe zu wenig Männer um sie frontal anzugreifen.
+MIL_2102_Volmar_whichGroups_Info_07_07:  Dazu kommt noch das Problem mit den Bauern.
+MIL_2102_Volmar_whichGroups_Info_15_08(Held):  Mit den Bauern? Was können Bauern denn für Probleme bereiten?
+MIL_2102_Volmar_whichGroups_Info_07_09:  Die Bauern weniger, mehr ihre Aufpasser.
+MIL_2102_Volmar_whichGroups_Info_07_10:  Natürlich muss die Stadt versorgt werden und in einer Kriegszeit muss sie stärker versorgt werden als sonst.
+MIL_2102_Volmar_whichGroups_Info_07_11:  Der Großbauer, dem zwei kleinere Höfe angeschlossen sind, will das aber nicht hinnehmen und hat einige Söldner um sich geschart.
+MIL_2102_Volmar_whichGroups_Info_07_12:  Seitdem zahlt er keine Abgaben mehr. Und schon einige meienr Männer haben bei dem Versuch die Abgaben zu erzwingen ihr Leben verloren.
+MIL_2102_Volmar_whichGroups_Info_07_13:  Im Süden der Insel ist es fast noch gefährlicher. Dort haben sich einige Schwarzmagier häuslich eingerichtet.
+MIL_2102_Volmar_whichGroups_Info_07_14:  Sie überfallen die Bauernhöfe in der Nähe der Stadt und ihr Turm ist für meine Stadtwache nicht einzunehmen.
+MIL_2102_Volmar_whichGroups_Info_07_15:  Als Einzige sind noch die Eismagier in ihrem Kloster im Norden auf unserer Seite.
+MIL_2102_Volmar_whichGroups_Info_07_16:  Aber auch sie haben viel zu tun. Denn sie sehen sich immer wieder Angriffen der Schwarzmagier ausgesetzt.
+MIL_2102_Volmar_whichGroups_Info_07_17:  Wie du siehst, ist es hier nicht ruhig und schon gar nicht friedlich.
+MIL_2102_Volmar_whichGroups_Info_07_18:  Wie gesagt, ich empfehle dir Folgendes:
+MIL_2102_Volmar_whichGroups_Info_07_19:  Schließe dich einer der Fraktionen an. Aber achte darauf, dass du nicht auf die schiefe Bahn gerätst.
+MIL_2102_Volmar_whichGroups_Info_07_20:  Ich gebe dir eine Karte mit, dann findest du dich besser zurecht.
+MIL_2102_Volmar_canGetWeapon_Info_15_01(Held):  Bekomme ich irgendwoher eine Waffe?
+MIL_2102_Volmar_canGetWeapon_Info_07_02:  Ich kann dir keine geben. Wenn du etwas Gold hast, kannst du bestimmt am Marktplatz etwas finden.
+MIL_2102_Volmar_canGetWeapon_Info_07_03:  Ansonsten... Schau mal in der Nähe der Waffenkammer, vielleicht liegt da noch ein altes Schwert.
+MIL_2102_Volmar_canGetWeapon_Info_07_04:  Für den Anfang sollte das ja reichen.
+MIL_2102_Volmar_howMiliz_Info_15_01(Held):  Kann ich Mitglied der Stadtwache werden?
+MIL_2102_Volmar_howMiliz_Info_07_02:  Natürlich, gute Soldaten können wir immer brauchen! Aber es ist nicht ganz so einfach.
+MIL_2102_Volmar_howMiliz_Info_15_03(Held):  Wieso nicht? Ich war...
+MIL_2102_Volmar_howMiliz_Info_07_04:  ... Soldat in der königlichen Flotte, ich weiß. Aber hier gelten andere Regeln, an die auch ich mich zu halten habe.
+MIL_2102_Volmar_howMiliz_Info_07_05:  Ich kann nur Bürger der Stadt Mahlendur in der Stadtwache aufnehmen.
+MIL_2102_Volmar_howCitizen_Info_15_01(Held):  Und wie werde ich Bürger der Stadt?
+MIL_2102_Volmar_howCitizen_Info_07_02:  Mach dich nützlich!
+MIL_2102_Volmar_howCitizen_Info_07_03:  Lerne ein Handwerk.
+MIL_2102_Volmar_howCitizen_Info_07_04:  Am Besten schaust du dich im Händler und Handwerksviertel einmal um und sprichst mit den Meistern.
+MIL_2102_Volmar_howCitizen_Info_07_05:  Sie werden dir mehr dazu erzählen können.
+MIL_2102_Volmar_whatAboutMage_Info_15_01(Held):  Was ist, wenn ich den Weg der Magie beschreiten möchte?
+MIL_2102_Volmar_whatAboutMage_Info_07_02:  Dann bist du wohl am Besten im Kloster aufgehoben.
+MIL_2102_Volmar_whatAboutMage_Info_07_03:  Die Magier werden dich beraten.
+MIL_2102_Volmar_whatAboutMage_Info_07_04:  Sieh dich auf dem Marktplatz um, meistens ist dort ein Magier aus dem Kloster auf der Suche nach neuen Novizen.
+MIL_2102_Volmar_whatAboutMage_Info_07_05:  Allerdings habe ich zuletzt gehört, dass sie einen Tribut verlangen.
+MIL_2102_Volmar_whatAboutOthers_Info_15_01(Held):  Kann ich mich den Piraten oder Söldnern anschließen?
+MIL_2102_Volmar_whatAboutOthers_Info_07_02:  Ich als Kommandant kann dir davon nur abraten.
+MIL_2102_Volmar_whatAboutOthers_Info_07_03:  Die Piraten locken mit großem Geld und die Söldner mit einem starken Kampftraining und Eigenverantwortung.
+MIL_2102_Volmar_whatAboutOthers_Info_07_04:  Das alles kannst du auch in der Stadt bekommen.
+MIL_2102_Volmar_whatAboutOthers_Info_07_05:  Wie dem auch sei, ich kann dich nicht davon abhalten. Du stehst nicht unter meinem Kommando und bist ein freier Mann.
+MIL_2102_Volmar_whatAboutOthers_Info_07_06:  Es ist deine Entscheidung!
+MIL_2102_Volmar_enterMiliz_Info_15_01(Held):  Ich will der Miliz beitreten!
+MIL_2102_Volmar_enterMiliz_Info_07_02:  Ich kann dich nicht aufnehmen!
+MIL_2102_Volmar_enterMiliz_Info_07_03:  Lerne ein Handwerk und werde Bürger, dann sehen wir weiter!
+MIL_2102_Volmar_enterMiliz_Info_07_04:  Bist du dir sicher? Das ist keine einfache Entscheidung!
+MIL_2102_Volmar_enterMiliz_notSecure_15_01(Held):  Nein, lass mich noch überlegen!
+MIL_2102_Volmar_enterMiliz_notSecure_07_02:  In Orndung, ich bin hier, wenn du es dir überlegt hast.
+MIL_2102_Volmar_enterMiliz_yesSecure_15_01(Held):  Ja, ich will für die Stadt kämpfen!
+MIL_2102_Volmar_enterMiliz_yesSecure_07_02:  Gut. Wenn dies dein Wunsch ist.
+MIL_2102_Volmar_enterMiliz_yesSecure_07_03:  Dann sei herzlich willkommen in der Stadtwache!
+MIL_2102_Volmar_enterMiliz_yesSecure_07_04:  Geh zu Marco und hol dir deine Waffe und deine Rüstung ab!
+MIL_2102_Volmar_wannaTellThief_Info_15_01(Held):  Ich will einen Dieb melden!
+MIL_2102_Volmar_wannaTellThief_Info_07_02:  In Ordnung. Um wen handelt es sich und was hat er gestohlen?
+MIL_2102_Volmar_wannaTellThief_Info_15_03(Held):  Der Waffenhändler Albrar vom Marktplatz ist es, der seit Wochen die Stadtwache bestiehlt.
+MIL_2102_Volmar_wannaTellThief_Info_07_04:  Und hast du dafür Beweise?
+MIL_2102_Volmar_wannaTellThief_Info_15_05(Held):  Ich habe den Dieb selbst gestellt.
+MIL_2102_Volmar_wannaTellThief_Info_07_06:  In Ordnung, das reicht mir.
+MIL_2102_Volmar_wannaTellThief_Info_07_07:  Hier hast du das Gold, dass auf die Ergreifung des Diebes ausgesetzt war.
+MIL_2102_Volmar_wannaTellThief_Info_07_08:  Gute Arbeit! Weiter so!
+MIL_2102_Volmar_wannaTellThief_Info_07_09:  Nur leider hat er sich vor Kurzem aus dem Staub gemacht.
+MIL_2102_Volmar_wannaTellThief_Info_07_10:  Leider können wir ihn nun nicht mehr seiner gerechten Strafe zuführen.
+MIL_2102_Volmar_wannaTellThief_Info_07_11:  Trotzdem sollst du etwas von dem ausgesetzten Gold erhalten.
+MIL_2102_Volmar_wannaTellThief_Info_07_12:  Immerhin hast du ihn überführt.
+MIL_2102_Volmar_wannaTellThief_Info_07_13:  Ich bin froh, dass du bei uns an Land gespült wurdest. Männer wie dich können wir hier gut brauchen!
+MIL_2102_Volmar_tellRose_Info_15_01(Held):  Eine Rose für Epona!
+MIL_2102_Volmar_tellRose_Info_07_02:  Alles in Ordnung mit dir?
+MIL_2102_Volmar_tellRose_Info_15_03(Held):  Alles Bestens!
+MIL_2102_Volmar_newGuards_Info_15_01(Held):  Du sollst eine Wachablösung an den Pass schicken!
+MIL_2102_Volmar_newGuards_Info_07_02:  Ach, wer sagt das denn?
+MIL_2102_Volmar_newGuards_Info_15_03(Held):  Rhaegar sagt das. Er meint, der müde Haufen sei zu kaum etwas mehr zu gebrauchen.
+MIL_2102_Volmar_newGuards_Info_07_04:  Ist das so? Wovon sind die denn müde? Die bewachen einen zugeschütteten Pass.
+MIL_2102_Volmar_newGuards_Info_15_05(Held):  Frag mich nicht. Ich wurde nur von Rhaegar geschickt. Mehr hat er mir nicht gesagt.
+MIL_2102_Volmar_newGuards_Info_07_06:  Hm, na gut. Sag ihm, ich werde ihm in den nächsten Tagen neue Männer schicken.
+MIL_2102_Volmar_whatNow_Info_15_01(Held):  Was ist jetzt zu tun?
+MIL_2102_Volmar_whatNow_Info_07_02:  Du wirst wie, jeder Andere auch, deinen Dienst tun. Wenn du eine Aufgabe erledigt hast, kommst du zu mir und ich zahle dir deinen Sold aus.
+MIL_2102_Volmar_whatNow_Info_07_03:  Ansonsten wird Thalar dich ab sofort trainieren. Bei Marco kannst du dir bessere Waffen und Rüstungen kaufen.
+MIL_2102_Volmar_whatNow_Info_07_04:  Ich hätte auch schon einen ersten Auftrag für dich.
+MIL_2102_Volmar_whatToDo_Info_15_01(Held):  Was soll ich tun?
+MIL_2102_Volmar_whatToDo_Info_07_02:  Die Bauern auf Stans Hof vor der Stadt haben Probleme mit Bauern.
+MIL_2102_Volmar_whatToDo_Info_07_03:  Nimm dir einen der Soldaten mit und sieh nach, was da los ist.
+MIL_2102_Volmar_whatToDo_Info_07_04:  Nimm dir Marril mit. Er hatte schon lange nichts mehr zu tun.
+MIL_2102_Volmar_banditsDead_Info_15_01(Held):  Die Banditen sind tot!
+MIL_2102_Volmar_banditsDead_Info_07_02:  Hervorragend. Das hast du gut gemacht.
+MIL_2102_Volmar_banditsDead_Info_07_03:  Gab es Schwierigkeiten?
+MIL_2102_Volmar_banditsDead_Info_15_04(Held):  Keine nennenswerten.
+MIL_2102_Volmar_banditsDead_Info_07_05:  Gut. Dann wird Stan hoffentlich bald seine Abgaben wieder liefern.
+MIL_2102_Volmar_banditsDead_Info_07_06:  Hier hast du deinen Sold!
+MIL_2102_Volmar_whatNext_Info_15_01(Held):  Was gibt es noch zu tun?
+MIL_2102_Volmar_whatNext_Info_07_02:  Im Moment nichts. Sieh dich am Besten auf der Insel um, dass alles glattläuft!
+MIL_2102_Volmar_whatNext_Info_07_03:  Aber keine Alleingänge gegen Piraten oder Söldner!
+MIL_2102_Volmar_nextStep_Info_15_01(Held):  Du hast einen neuen Auftrag für mich?
+MIL_2102_Volmar_nextStep_Info_07_02:  Richtig. Allerdings ist das etwas heikel.
+MIL_2102_Volmar_nextStep_Info_07_03:  Wir müssen wissen, was die Söldner und die Piraten planen. Du wirst das für uns herausfinden.
+MIL_2102_Volmar_nextStep_Info_15_04(Held):  Und wie soll ich das machen?
+MIL_2102_Volmar_nextStep_Info_07_05:  Schleich dich an und beobachte. Aber pass auf, dass dich niemand sieht. Von denen ist keiner gut auf uns zu sprechen.
+MIL_2102_Volmar_nextStep_Info_07_06:  Komm in einem Stück wieder!
+MIL_2102_Volmar_regardingJob_Info_15_01(Held):  Wegen des Auftrags...
+MIL_2102_Volmar_regardingJob_sldInfo_15_01(Held):  Ich war bei den Söldnern!
+MIL_2102_Volmar_regardingJob_sldInfo_07_02:  Und? Wie siehts aus?
+MIL_2102_Volmar_regardingJob_sldInfo_15_03(Held):  Die Söldner bereiten sich auf irgendetwas vor. Sie trainieren alle gemeinsam und das konzentriert.
+MIL_2102_Volmar_regardingJob_sldInfo_15_04(Held):  Sie wirken nicht mehr wie ein zusammengewürfelter Haufen, irgendwie... organisiert!
+MIL_2102_Volmar_regardingJob_sldInfo_07_05:  Organisierte Söldner? Entweder erlaubt sich da jemand einen Spaß, oder es wird wirklich ernst für uns.
+MIL_2102_Volmar_regardingJob_sldInfo_07_06:  Hier, dein Sold! Den hast du dir verdient.
+MIL_2102_Volmar_regardingJob_pirInfo_15_01(Held):  Die Piraten sind stärker geworden!
+MIL_2102_Volmar_regardingJob_pirInfo_07_02:  Inwiefern stärker?
+MIL_2102_Volmar_regardingJob_pirInfo_15_03(Held):  Scheinbar ist ein großer Teil der Mannschaft zurückgekehrt.
+MIL_2102_Volmar_regardingJob_pirInfo_15_04(Held):  Die Bucht quillt über vor Männern, die sich vorbereiten.
+MIL_2102_Volmar_regardingJob_pirInfo_07_05:  Das ist gar nicht gut. Sie sind zu nahe an der Stadt, als dass wir sie ignorieren könnten.
+MIL_2102_Volmar_regardingJob_pirInfo_07_06:  Gut. Hier, dein Sold. Den hast du dir verdient!
+MIL_2102_Volmar_regardingJob_thatWasAll_15_01(Held):  Das war erstmal alles.
+MIL_2102_Volmar_regardingJob_thatWasAll_07_02:  Gut. Sieh zu, dass du den Rest herausfindest!
+MIL_2102_Volmar_regardingJob_thatWasAll_07_03:  Dieser Auftrag ist von äußerster Wichtigkeit!
+MIL_2102_Volmar_nextThing_Info_15_01(Held):  Das sind keine guten Neuigkeiten. Ich hoffe, du bist dir dessen bewusst.
+MIL_2102_Volmar_nextThing_Info_07_02:  Tut mir leid, ich wünschte ich könnte angenehmeres melden.
+MIL_2102_Volmar_nextThing_Info_15_03(Held):  Kein Problem. Ich hätte dich nicht losgeschickt, würde ich nicht die Wahrheit wissen wollen.
+MIL_2102_Volmar_nextThing_Info_15_04(Held):  Beide Gruppen bereiten sich vor. Ich hoffe nur, die Stadt ist nicht teil ihrer Pläne.
+MIL_2102_Volmar_nextThing_Info_15_05(Held):  Und vor allem hoffe ich, dass sich die beiden Gruppen nicht zusammengeschlossen haben.
+MIL_2102_Volmar_nextThing_Info_15_06(Held):  Das wäre ein Angriff... Ich bin mir nicht sicher, ob die Stadt das überstehen würde.
+MIL_2102_Volmar_shallWeGo_Info_15_01(Held):  Sollten wir den Piraten oder Söldnern nicht zuvorkommen?
+MIL_2102_Volmar_shallWeGo_Info_07_02:  Du meinst, wir sollten sie angreifen? Und damit die Stadt ungeschützt?
+MIL_2102_Volmar_shallWeGo_Info_07_03:  Nein, wir bleiben hier. Wenn wir angegriffen werden, dann werden wir uns mit allen Mitteln verteidigen!
+MIL_2102_Volmar_shallWeGo_Info_15_04(Held):  Was soll ich tun?
+MIL_2105_Yonar_youSmith_Info_15_01(Held):  Du bist Schmied?
+MIL_2105_Yonar_youSmith_Info_03_02:  Sehr gut erkannt, Fuchs.
+MIL_2105_Yonar_youSmith_Info_15_03(Held):  Warum hat die Miliz einen eigenen Schmied, wenn es schon welche in der Stadt gibt?
+MIL_2105_Yonar_youSmith_Info_03_04:  Weil wir Waffen brauchen. Viele Waffen. Wenn wir die bei den städtischen Schmieden kaufen, müssen wir bezahlen.
+MIL_2105_Yonar_youSmith_Info_03_05:  Und das wird teuer. Also produzieren wir selber, das ist für alle einfacher.
+MIL_2105_Yonar_youTrade_Info_15_01(Held):  Verkaufst du auch Waffen?
+MIL_2105_Yonar_youTrade_Info_03_02:  Kommt darauf an... Was bietest du mir im Gegenzug an?
+MIL_2105_Yonar_youTrade_shouldIKill_15_01(Held):  Wen soll ich töten?
+MIL_2105_Yonar_youTrade_shouldIKill_03_02:  Um Himmels Willen! Bist du wahnsinnig?
+MIL_2105_Yonar_youTrade_shouldIKill_03_03:  Tut mir leid, aber ich habe kein gutes Gewissen dabei, dir Waffen zu verkaufen.
+MIL_2105_Yonar_youTrade_shouldIKill_03_04:  Natürlich werden sie zum Töten benutzt, aber ich gehe immer von Verteidigung aus. Nie von mutwilligem Angriff.
+MIL_2105_Yonar_youTrade_whatYouWant_15_01(Held):  Was wäre denn in deinem Interesse?
+MIL_2105_Yonar_youTrade_whatYouWant_03_02:  Oh, das ist die richtige Frage...
+MIL_2105_Yonar_youTrade_whatYouWant_03_03:  Du könntest tatsächlich etwas für mich tun.
+MIL_2105_Yonar_youTrade_howManyGold_15_01(Held):  Wäre Gold für dich von Interesse?
+MIL_2105_Yonar_youTrade_howManyGold_03_02:  Gold klingt immer gut, mein Freund.
+MIL_2105_Yonar_youTrade_howManyGold_03_03:  Sagen wir, für... (überlegt) ... 500 Gold kommen wir ins Geschäft!
+MIL_2105_Yonar_tradeGold_Info_15_01(Held):  Hier sind deine 500 Gold!
+MIL_2105_Yonar_tradeGold_Info_03_02:  Sehr gut. Sieh dich in Ruhe um, du findest bestimmt etwas von Interesse.
+MIL_2105_Yonar_tradeWork_Info_15_01(Held):  Was kann ich für dich tun?
+MIL_2105_Yonar_tradeWork_Info_03_02:  Die Aufgabe ist etwas heikel.
+MIL_2105_Yonar_tradeWork_Info_15_03(Held):  Heikel ist mein Spezialgebiet.
+MIL_2105_Yonar_tradeWork_Info_03_04:  Sehr gut. Hür zu: Wir haben hier ein Problem mit Dieben.
+MIL_2105_Yonar_tradeWork_Info_15_05(Held):  Diebe? In der Kaserne?
+MIL_2105_Yonar_tradeWork_Info_03_06:  Verspotte uns nicht. Der Dieb ist sehr geschickt, wahrscheinlich hat er Kontakte zur Stadtwache.
+MIL_2105_Yonar_tradeWork_Info_03_07:  Egal, wie wir unsere Wachschichten anpassen, in einem unbemerkten Moment verschafft sich der Dieb Zutritt zur Schmiede und klaut unsere Waffen.
+MIL_2105_Yonar_tradeWork_Info_03_08:  Es ist nicht viel, aber zu viel, um auch noch Waffenhandel unter der Hand zu verschleiern.
+MIL_2105_Yonar_tradeWork_Info_03_09:  Der Dieb muss gefasst werden! Du bist neu, unbekannt. Du bist genau der richtige Mann!
+MIL_2105_Yonar_tradeWork_Info_03_10:  Finde den Dieb und ich werde dir mit Vergnügen meine Waffen verkaufen.
+MIL_2105_Yonar_eponaRose_Info_15_01(Held):  Eine Rose für Epona!
+MIL_2105_Yonar_eponaRose_Info_03_02:  Was?
+MIL_2105_Yonar_eponaRose_Info_03_03:  Willst du Rosen kaufen? Dann bist du in der Schmiede an der falschen Adresse mein Freund.
+MIL_2105_Yonar_foundThief1_Info_15_01(Held):  Ich habe den Dieb gestellt!
+MIL_2105_Yonar_foundThief1_Info_03_02:  Ach? Und? Welcher Schweinehund bestiehlt mich ständig?
+MIL_2105_Yonar_foundThief1_Info_15_03(Held):  Es ist der Waffenhändler Albrar. Er schlich hier durch die Kaserne und machte sich an den Waffenkisten zu schaffen.
+MIL_2105_Yonar_foundThief1_Info_03_04:  Hat er den Diebstahl gestanden?
+MIL_2105_Yonar_foundThief1_Info_15_05(Held):  Hat er.
+MIL_2105_Yonar_foundThief1_Info_03_06:  Gut, ich werde ihn mir vorknöpfen.
+MIL_2105_Yonar_foundThief1_Info_03_07:  Vielen Dank für deine Hilfe!
+MIL_2105_Yonar_foundThief1_Info_03_08:  Hier hast du etwas für deine Mühen.
+MIL_2105_Yonar_foundThief1_Info_03_09:  Und natürlich steht dir jetzt mein Warenangebot zur Verfügung!
+MIL_2105_Yonar_foundThief2_Info_15_01(Held):  Ich habe den Dieb gestellt!
+MIL_2105_Yonar_foundThief2_Info_03_02:  Ach? Und? Welcher Schweinehund bestiehlt mich ständig?
+MIL_2105_Yonar_foundThief2_Info_15_03(Held):  Es ist der Waffenhändler Albrar. Er schlich hier durch die Kaserne und machte sich an den Waffenkisten zu schaffen.
+MIL_2105_Yonar_foundThief2_Info_03_04:  Hat er den Diebstahl gestanden?
+MIL_2105_Yonar_foundThief2_Info_15_05(Held):  Hat er.
+MIL_2105_Yonar_foundThief2_Info_03_06:  Gut, ich werde ihn mir vorknöpfen.
+MIL_2105_Yonar_foundThief2_Info_15_07(Held):  Das wird wahrscheinlich nicht möglich sein.
+MIL_2105_Yonar_foundThief2_Info_03_08:  Was? Wieso das denn?
+MIL_2105_Yonar_foundThief2_Info_15_09(Held):  Ich habe ihn laufen gelassen und ihm empfohlen aus der Stadt zu verschwinden.
+MIL_2105_Yonar_foundThief2_Info_15_10(Held):  Er wird dir keinen Ärger mehr machen.
+MIL_2105_Yonar_foundThief2_Info_03_11:  Das hoffe ich für dich.
+MIL_2105_Yonar_foundThief2_Info_03_12:  Gut, wie auch immer. Du hast den Dieb überführt, du sollst belohnt werden.
+MIL_2105_Yonar_foundThief2_Info_03_13:  Auch wenn es nicht so ausgegangen ist, wie ich es mir erhofft habe, werde ich trotzdem mit dir handeln.
+MIL_2105_Yonar_foundThief3_Info_15_01(Held):  Ich habe den Dieb gestellt!
+MIL_2105_Yonar_foundThief3_Info_03_02:  Ach? Und? Welcher Schweinehund bestiehlt mich ständig?
+MIL_2105_Yonar_foundThief3_Info_15_03(Held):  Es ist der Waffenhändler Albrar. Er schlich hier durch die Kaserne und machte sich an den Waffenkisten zu schaffen.
+MIL_2105_Yonar_foundThief3_Info_03_04:  Hat er den Diebstahl gestanden?
+MIL_2105_Yonar_foundThief3_Info_15_05(Held):  Hat er.
+MIL_2105_Yonar_foundThief3_Info_03_06:  Gut, ich werde ihn mir vorknöpfen.
+MIL_2105_Yonar_foundThief3_Info_15_07(Held):  Brauchst du nicht. Ich habe den Vorfall bereits an Kommandant Volmar gemeldet.
+MIL_2105_Yonar_foundThief3_Info_03_08:  Wirklich? Sehr gut. Dann brauche ich mir keine Sorgen zu machen.
+MIL_2105_Yonar_foundThief3_Info_03_09:  Hier, eine kleine Entschädigung für deine Mühen.
+MIL_2105_Yonar_foundThief3_Info_03_10:  Und natürlich steht dir jetzt mein Warenangebot zur Verfügung!
+MIL_2105_Yonar_letsTrade_Info_15_01(Held):  Zeig mir deine Waffen!

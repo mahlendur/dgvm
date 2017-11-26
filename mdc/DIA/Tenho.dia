@@ -1,0 +1,287 @@
+person: KDW_14002_Tenho, 3
+
+!var int buchTag;
+
+info: Exit
+
+info: youNew
+flags: important
+<Soso, du bist also der Neuankömmling.
+<Man berichtete mir schon, dass jemand mit starken magischen Fähigkeiten unser Reich betreten hat.
+<Sprich, warum bist du hier?
+
+info: wannaJoin
+conddia: youNew
+>Ich will mich euch anschließen!
+<Anschließen? Das habe ich schon lange nicht mehr gehört.
+<Aber gut, wenn es dir ernst ist, werde ich dich prüfen.
+
+info: whyHere
+conddia: youNew
+>Warum seid ihr hier?
+<Der Krieg, Junge. Was sonst sollte einen magischen Zirkel wie unseren aus seiner Heimat vertreiben?
+<Die Orks waren auf dem Vormarsch. Zwar war unser Heim auch auf dem Festland von einer ähnlichen Barriere geschützt gewesen, doch wirkt sie bei Orks anders als bei Menschen.
+<Die magisch begabten Schamanen der Orks wurden aufgehalten, ihre Krieger jedoch nur noch rasender. Du siehst, unsere Schutzzauber waren im Endeffekt wirkungslos.
+<Als wir die Barriere aufgehoben hatten, wurde der Ansturm der Orks immer stärker. Sie waren uns zahlenmäßig einfach überlegen.
+<In einem großen Zauber bündelten wir unsere Energie und vertrieben sie vorläufig. Doch sie erholten sich schnell und rückten wieder vor.
+<Schließlich zogen wir den letzten Ausweg in Betracht, packten unsere Sachen und flohen.
+<Ohne geeignete Karten irtten wir mehrere Tage auf See umher, bis wir diese Insel fanden. Wir hatten schon häufiger von ihr gehört.
+<Angeblich sollte ein großer Teil des magischen Erzes, das zum Schmieden der Waffen verwendet wird, hier abgebaut werden.
+<Als wir das große Schiff der Paladine sahen, wussten wir, dass wir nicht einfach in die Stadt gehen können.
+<Denn dummerweise stehen wir auf unterschiedlichen Seiten der Götter. Innos und Beliar vertragen sich nicht unbedingt gut.
+<Wir nutzten einen unbeobachteten Moment, brachten unsere Ladung an Land, zerstörten das Schiff und liefen an der Stadt vorbei.
+<Vor einigen Wochen kamen wir dann hier an und bauten diesen Turm. Leider brauchen auch wir eine grundlegende Versorgung, denn der Boden hier eignet sich nicht gut zum Anbauen von Getreide.
+<Anfangs versuchten wir noch mit den Bauern zu handeln. Bis wir eines Tages einer Patrouille der Stadtwache in die Arme liefen, funktionierte das auch.
+<Die Milizen gingen sofort davon aus, wir würden Nahrungsmittel stehlen. Wir flohen zurück zum Turm und sie verfolgten uns.
+<Nur dank unserer Barriere haben sie es bisher nicht geschafft uns anzugreifen. Sie rücken immer wieder vor, doch selbst die stärksten Paladine haben Probleme.
+<Du bist seit langer Zeit der erste, der es geschafft hat, unsere Barriere unbeschadet zu durchbrechen!
+
+info: whyIce
+conddia: youNew
+>Warum bekämpft ihr die Eismagier?
+<Wie bitte? Ich glaube, dabei handelt es sich um eine Verwechslung.
+<Wobei... Nein, du hast Recht! Wir bekämpfen die Eismagier.
+<Wie du vielleicht weißt, arbeiten Stadt und Kloster eng zusammen. Nach dem Vorfall mit den Stadtwachen suchten die Paladine Hilfe bei den Eismagiern.
+<Seitdem greifen sie uns immer wieder an, denn auch sie sind in der Lage, die Barriere zu umgehen. Meistens beschränken sie sich allerdings auf kleinere Sticheleien.
+<Und wir tun im Gegenzug dasselbe. Wir haben nicht die Absicht, die Eismagier auszulöschen. Wir wollen eigentlich nur unsere Ruhe haben.
+<Aber ich befürchte, die letzte große Auseinandersetzung ist unvermeidbar.
+
+info: whatToDo
+conddia: wannaJoin
+>Prüfe mich, Meister!
+<Meister, pah! Den hochgestochenen Quatsch kannst du im Kloster loswerden. Ich bin Tenho, nichts weiter. Ich bin genauso ein Magier wie alle anderen hier.
+<Zwar bin ich etwas älter und habe etwas mehr Erfahrung, aber das macht mich noch lange nicht zu etwas Besserem.
+<Aber gut, ich will dich prüfen. Aber bitte, hör auf mit dem Meister!
+<Also gut, deine Prüfung sieht wie folgt aus: Berge ein Artefakt!
+>Ein Artefakt? 
+<Sehr richtig.
+>Wo finde ich das Artefakt?
+<Na, wo wäre denn der Witz an der Sache, wenn ich dir alles verrate? (lacht)
+<Ich gebe dir eine Richtung vor: Lauf den Weg zur Stadt zurück und achte auf den Wasserfall. In seiner Nähe befindet sich eine Höhle.
+<Durchquere sie und du wirst hoffentlich suchen, was wir haben wollen!
+$STARTMIS blackTest
+$LOGMISS blackTest, Tolle Prüfung. Tenho, der Anführer des schwarzen Zirkels hat mich beauftragt, ein Artefakt zu holen. Dafür soll ich eine Höhle durchqueren und danach würde ich es schon finden. Sehr spannend. Mal sehen, wie er mich auf die Probe stellen will.
+
+info: shallIGo
+conddia: whatToDo
+>Soll ich so gehen?
+<Wie denn sonst?
+>Naja, ich dachte, ich bekomme vielleicht etwas Ausrüstung oder so...
+<Deine Robe musst du dir erst verdienen! Aber ich gebe dir ein paar Spruchrollen mit.
+<<ItSc_BreathOfDeath, 2
+<<ItSc_HarmUndead, 2
+<<ItSc_ChargeFireball, 4
+<Wenn du mehr brauchst, musst du sie dir kaufen.
+<Sprich mit den anderen Magiern. Einer wird schon mit dir handeln.
+<Und hier: Damit du sie auch benutzen kannst.
+!Buff_Apply(hero, maxManaBuff);
+<Und jetzt geh! Finde das Artefakt und beweise, dass du es wert bist das Schwarz anzulegen!
+
+info: gotThem
+conddia: whatToDo
+condcode: Npc_IsDead(GOBBO_SKELETON_BM1) == TRUE
+condcode: Npc_IsDead(GOBBO_SKELETON_BM2) == TRUE
+condcode: Npc_IsDead(GOBBO_SKELETON_BM3) == TRUE
+conditem: ItWr_Kreis1_BM
+>Ich habe dein 'Artefakt'!
+<Sehr gut. Bist du auf Schwierigkeiten gestoßen?
+%
+
+opt: youBastard
+>Du Arsch hast mich in eine Höhle mit Goblin-Skeletten geschickt!
+<(aufbrausend) Was? Wie wagst du es mit mir zu sprechen?
+>Moment, du sagtest, ich solle dieses hochtrabende Geschwafel sein lassen.
+>Also, jetzt rede ich mit dir, wie mit jedem anderen auch.
+<(grummelt) Na gut...
+<Hast du das Artefekt?
+>Du meinst dieses Buch hier?
+<Genau das. Gib es mir! Es hat eine starke magische Aura, die ich bis hier oben gespürt habe.
+>>ItWr_Kreis1_BM
+<In Ordnung. Du sollst Teil unseres Zirkels werden, wenn du immer noch entschlossen bist.
+<Sprich mit mir, wenn du das Schwarz tragen willst!
+%%
+
+opt: aLittle
+>Ein wenig Probleme, ja.
+<Wirklich? Das hatte ich nicht erwartet.
+>Naja, einige Goblin-Skelette wollten mir das Leben schwer machen.
+<Aber du bist ja in einem Stück zurückgekehrt.
+<Das ist ein gutes Zeichen.
+<Wie steht es mit dem Artefakt?
+>Meinst du dieses Buch?
+<Genau das. Gib es mir! Es hat eine starke magische Aura, die ich bis hier oben gespürt habe.
+>>ItWr_Kreis1_BM
+<In Ordnung. Du sollst Teil unseres Zirkels werden, wenn du immer noch entschlossen bist.
+<Sprich mit mir, wenn du das Schwarz tragen willst!
+%%
+
+opt: noProblems
+>Keine nennenswerten!
+<(lacht) Haha, damit habe ich gerechnet, du Draufgänger!
+<In Ordnung. Wie sieht es aus? Hast du das Artefakt gefunden?
+>Naja, ich habe hier ein Buch.
+>Meinst du das?
+<Genau das. Gib es mir! Es hat eine starke magische Aura, die ich bis hier oben gespürt habe.
+>>ItWr_Kreis1_BM
+<In Ordnung. Du sollst Teil unseres Zirkels werden, wenn du immer noch entschlossen bist.
+<Sprich mit mir, wenn du das Schwarz tragen willst!
+%%
+
+info: nowJoin
+conddia: gotThem
+condcode: kapitel == 1
+flags: permanent
+>Ich will dem Zirkel beitreten!
+<Ist das deine endgültige Entscheidung? Bedenke, du kannst sie nicht mehr ändern!
+%
+
+opt: no
+>Ich brauche noch Bedenkzeit.
+<In Ordnung. Ich bin hier, falls du eine Entscheidung getroffen hast.
+%%
+
+opt: yes
+>Ich bin bereit!
+<Gut, dann darfst du dich ab heute als Mitglied des schwarzen Zirkels bezeichnen.
+<<ItAr_Nov_Dark, 1
+<Trage die schwarze Novizenrobe mit Stolz und Würde.
+<Und mach' dem Kreis ja keinen Ärger!
+!kapitel = 2;
+!IntroduceChapter (KapWechsel_2,KapWechsel_2_Text,"chapter2.tga","chapterchange.wav", 6000);
+!Npc_SetTrueGuild(hero, GIL_NOV);
+$LOGMISS newLife, Tenho hat mich in den schwarzen Zirkel aufgenommen. Mich erwartet ein Leben voller Magie. Mal sehen, was die Zukunft bringt.
+$MISSUCC newLife
+$EXP XP_becomeMiliz
+!Spine_UnlockAchievement(0);
+
+%%
+
+info: whatMyQuests
+condcode: kapitel == 2
+>Was sind meine Aufgaben als Novize?
+<Du wirst vor allem deine magischen Fähigkeiten trainieren.
+<Außerdem wirst du Aufgaben für den Zirkel übernehmen.
+<Meistens werden es Botengänge oder Besorgungen werden. Du bist dafür perfekt geeignet, da du neu bist.
+<Außerdem trägst du nur unsere Novizenrobe. Mit der Magierrobe könntest du nicht einen Fuß in die Stadt setzen.
+<Lass dich nicht beirren. Gerade in der Stadt wird man versuchen, dich zu überzeugen, den Zirkel zu verlassen.
+<Angeblich sei es nicht gut für junge Menschen auf einen derart falschen Weg geführt zu werden.
+<Aber vergiss nicht: Unser Weg ist der Richtige! Er ist genauso richtig, wie die Wege der anderen Magier.
+<Nur beziehen wir unsere Macht von einem anderen Gott.
+
+info: whatAboutTraining
+conddia: whatMyQuests
+>Wie kann ich meine magischen Kräfte steigern?
+<Magie an sich kann jeder wirken. Du hast es ja an den Spruchrollen gesehen. Selbst ein Bauer könnte mit Spruchrollen erheblichen Schaden anrichten.
+<Die wahre Magie aber liegt in den Runensteinen. Sie verbrauchen sich nicht und funktionieren anders als Spruchrollen.
+<In einer Spruchrolle steckt die Magie des Zaubers. Eine Rune jedoch wirkt nur als Fokus für deine magischen Kräfte. Daher vrabraucht sie sich auch nicht.
+<Um einen Runenzauber zu wirken musst du deine magischen Kräfte durch den Runenstein kanalisieren. Und vor allem musst du fest überzeugt sein, dass du diesen Zauber wirken möchtest.
+<Du darfst keine Sekunde zögern und musst dir bewusst sein, was der Zauber auslöst. Nur dann wird er gelingen. Bist du unkonzentriert, wird er fehlschlagen und dich im schlimmsten Fall verletzen oder sogar töten.
+<Deshalb sind die Runen in verschiedene Magiekreise aufgeteilt. Im ersten Kreis findest du einfache Zauber, die eigentlich nicht schiefgehen können.
+<Je höher du in den Kreisen gelangst, desto anspruchsvoller und zerstörerischer werden die Zauber. Für den letzten Kreis benötigst du aber die Zustimmung unseres Gottes!
+<Den ersten Kreis der Magie kannst du schnell und einfach erlernen. Lies das Buch, dass du mir gebracht hast. Diesmal aber spüre die Kraft der Magie.
+<<ItWr_Kreis1_BM, 1
+<Lass dich von ihr durchströmen. Sie wird dir den Weg weisen und dir ermöglichen, einfache Runen zu fokussieren.
+
+info: moreCircles
+condcode: Npc_GetTalentSkill(hero, NPC_TALENT_MAGE) >> 0
+>Wann kann ich den nächsten Kreis lernen?
+<Wenn du erfahrener bist, kann ich dich in den nächsten Kreis einführen.
+<Aber mache dich erst einmal mit dem ersten Kreis vertraut. Ich stelle eine Aufgabe an dich:
+<Sengor ist unser Runenmeister. Er wird dir beibringen, wie du Runen herstellst.
+<Lerne wenigstens drei Runen des ersten Kreises, dann sehen wir weiter!
+$STARTMIS runesBM, Tenho wird mir den nächsten Kreis der Magie zeigen. Aber ich soll zuerst wenigstens drei Runen des ersten Kreises bauen um ein Gefühl für die Runen zu bekommen. Sengor kann mir beibringen, wie ich Runen baue.
+$LOGNOTE teacherTower, Sengor kann mir das Bauen von Runen zeigen.
+$LOGNOTE teacherTower, Tenho kann mir, wenn ich entsprechend geübt bin die nächsten magischen Zirkel beibringen.
+
+info: whatAboutAtts
+conddia: whatMyQuests
+>Kann ich meine magische Kraft steigern?
+<Du kannst deine Kraftreserven steigern. Wir nennen diese Reserven Mana. Es ist alles nur eine Frage der Konzentration und der Belastbarkeit deines Körpers.
+<Sprich mit den anderen Magiern. Einer von ihnen wird dir beibringen können, dein Mana zu erweitern.
+
+
+
+info: toDoForMe
+conddia: whatMyQuests
+>Hast du etwas zu tun für mich?
+<Gut, dass du fragst. Ich hätte tatsächliche eine Aufgabe für dich.
+<Bramor, der Kartenzeichner in der Stadt handelt auch mit anderen Schriftstücken.
+<Ich habe vor einiger Zeit ein Buch bei ihm bestellt. Geh zu ihm und sieh nach, ob er es mittlerweile auftreiben konnte.
+<<ItMi_Gold, 100
+<Hier sind 100 Goldstücke. Schließlich will er das Buch bezahlt haben.
+$STARTMIS getBook
+$LOGMISS getBook, Tenho gab mir den Auftrag, ihm ein Buch zu besorgen. Er hat es vor einiger Zeit beim Kartenzeichner Bramor in der Stadt in Auftrag gegeben. Ich soll zu ihm gehen und das Buch abholen.
+
+info: gotBook
+conditem: ItMi_BookPaket, 1
+>Ich hab das Buch!
+<Sehr gut. Hast du das Paket geöffnet?
+>Nein. Das Paket lässt sich nicht öffnen.
+>>ItMi_BookPaket, 1
+<(lacht) Gut. Dann scheint der Zauber zu wirken.
+<Wird das Buch eingepackt, kann es nur noch von einem mächtigen Zauberer ausgepackt werden.
+<Hier, für deinen Botengang!
+<<ItMi_Gold, 50
+!buchTag = Wld_GetDay();
+$LOGMISS getBook, Tenho hat sein Buch bekommen. Er sagte, es könne nur von einem mächtigen Magier ausgepackt werden. Was das wohl für ein Zauber ist?
+$MISSUCC getBook
+
+info: whatNext
+conddia: gotBook
+condcode: Wld_GetDay() == buchTag + 2
+flags: important
+<Du, komm mal her!
+<Wir haben ein Problem!
+>Was gibt es?
+<Die anderen Magier in ihrem Kloster, werden langsam lästig.
+<Erst gestern waren sie wieder hier in der Nähe und haben uns Probleme bereitet.
+<Es war nichts Wildes, aber trotzdem. Langsam reicht es mir.
+>Und was willst du dagegen tun?
+<Wir haben nicht viele Möglichkeiten. Entweder wir harren hier aus, oder wir werden endlich aktiv.
+<Und für dich habe ich eine Spezialaufgabe!
+
+info: whatNext2
+conddia: whatNext
+>Was habe ich zu tun?
+<Du wirst für uns ins Kloster gehen und Informationen beschaffen.
+>Wie bitte? Bist du wahnsinnig? Die machen mich doch sofort kalt!
+>Und wie soll ich überhaupt ins Kloster kommen? Dir ist schon bewusst, dass wir...
+<...uns nicht sonderlich gut verstehen, ja. Glaub mir, das vergesse ich nicht.
+<Sonst würde ich dich ja gar nicht losschicken!
+<Deswegen sollst du für uns einen neuen Zauber testen.
+>Neuer Zauber? Was habt ihr denn jetzt gemacht?
+<Wir haben einen vollkommen neuen Zauber entwickelt.
+<Wirnennen ihn 'Blinzeln'! Das mag vielleicht unspektakulär klingen, aber er ist mächtig.
+>Inwiefern?
+<Innerhalb eines Wimpernschlags bringt er dich an einen anderen Ort.
+>Also wie eine Teleportrune?
+<Fast. Du wirst zwar teleportiert, aber nur an einen Ort, den du selbst sehen kannst.
+<Das heißt, eine Teleportation über die halbe Insel ist nicht möglich. Dafür kannst du, wenn alles gut geht, zum Beispiel auf ein Dach gelangen, das vorher außer Reichweite war.
+<Ich gebe dir einige Spruchrollen mit. Wir haben die Essenz des Zaubers darin verarbeitet.
+<<ItSc_Blink, 5
+<Haushalte mit ihnen, mehr gibt es noch nicht.
+<Und jetzt geh! Bring uns diese Informationen. Wir brauchen sie!
+
+info: writeMore
+conddia: whatNext2
+>Könnt ihr nicht mehr Spruchrollen schreiben?
+<Das tun wir gerade. Aber bei einem neu entwickelten Zauber ist das nicht so einfach.
+<Der Kern eines jeden Zaubers, egal ob Spruchrolle oder Rune, ist seine Essenz.
+<Erinnerst du dich noch, was du für deine erste Rune verwendet hast, außer einem Runenstein?
+>Schwefel!
+<Genau. Der Schwefel beinhaltet die Essenz des Zaubers. Zumindest kann unser Runentisch diese Essenz extrahieren.
+<Beim Schreiben von Rollen ist es ähnlich. Durch eine Essenz wird das Material aufgelöst und damit die Essenz des Zaubers in eine Tinte gebannt.
+<Das ist auch der Grund, warum Spruchrollen genauso wirken wie eine Rune. Nur ist die Essenz nach der Benutzung verbraucht und zersetzt das Papier der Rolle.
+<Beim Blinzelzauber ist es allerdings etwas komplizierter. 
+<Die Essenz besteht nicht aus einem einfachen Gegenstand, sondern muss in einem komplizierten Verfahren von einem Alchemisten hergestellt werden.
+<Im Moment ist Sengor der Einzige, der diese Essenz herstellen kann. Du siehst, es ist schwierig, diese Sprüche zu produzieren.
+
+info: canLearnScrolls
+conddia: writeMore
+>Kann ich auch Lernen Spruchrollen zu schreiben?
+<Wenn du das unbedingt möchtest.
+<Geh zu Goran. Er wird dich unterweisen.
+
+
+
+

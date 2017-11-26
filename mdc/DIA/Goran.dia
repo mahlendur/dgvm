@@ -1,0 +1,40 @@
+person: KDW_14003_Goran, 3
+
+info: Exit
+
+info: whoAreYou
+>Wer bist du?
+<Ich bin Goran. Schwarzer Magier und Meister der Beschwörung.
+<Was kann ich für dich tun?
+
+info: canTeachMe
+conddia: whoAreYou
+>Kannst du mir etwas beibringen?
+<Ich könnte dir zeigen, wie du dein Mana erweitern kannst.
+<Allerdings erst, wenn du im Zirkel aufgenommen wurdest!
+
+info: teachMeScrolls
+conddia: KDW_14002_Tenho, canLearnScrolls
+condcode: !PLAYER_TALENT_KNOWS_SCROLLS
+flags: permanent
+>Ich will Lernen, Spruchrollen zu schreiben!
+<Dir ist hoffentlich bewusst, dass das Schreiben von Spruchrollen sehr anspruchsvolle Arbeit ist.
+$IF learnedAlch == FALSE
+<Ich würde es dir ja zutrauen.
+<Aber leider beherrschst du ja nicht einmal die Grundlagen der Alchemie.
+<Das ist aber zwingend notwendig!
+<Lerne erst einmal Tränke brauen, dann sehen wir weiter!
+$ELSE
+<Aber... Dir traue ich das zu!
+<Gut, hör zu. Zuerst musst du die Essenz herstellen.
+<Gib dazu die Zutat, wie du sie auch für eine Rune verwenden würdest, zusammen mit etwas Wasser und gehacktem Feldknöterich in eine Laborflasche.
+<Lass sie aufkochen und so lange ziehen, bis sich ein leichtes Gas bildet. Zu diesem Zeitpunkt sollte sich die magische Zutat bereits verflüchtigt haben.
+<Die Essenz hat sich nun in der Flüssigkeit ausgebreitet. Gib nun noch etwas Silberpulver hinzu und du erhälst eine Tinte.
+<Lass sie abkühlen und du kannst die Spruchrolle schreiben.
+<Genau genommen ist es völlig egal, was du auf das Pergament schreibst. Meistens wird das Symbol der Rune verwendet, um die Rollen auseinanderhalten zu können.
+<So, wenn du das verinnerlicht hast: Versuch es! Keine Sorge, wenn du etwas nicht richtig gemacht hast, passiert entweder gar nichts, oder die Rolle zersetzt sich einfach.
+<Dir kann also nichts geschehen. Aber: Solltest du auf die Idee kommen, die Rollen zu verkaufen. Achte darauf, dass alles korrekt ist.
+<Oder hab selber genug Rollen dabei, falls dir jemand an den Kragen will.
+$ENDIF
+
+

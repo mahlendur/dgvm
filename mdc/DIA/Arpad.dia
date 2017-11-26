@@ -1,0 +1,41 @@
+person: KDW_14001_Arpad, 5
+
+info: Exit
+
+info: whoAreYou
+flags: important
+<Wo kommst du denn her?
+<Wie hast du es geschafft, durch die Barriere zu gelangen?
+>Barriere? Welche Barriere?
+<Hast du es nicht bemerkt?
+>Was denn?
+<Das gesamte nähere Umland ist von einer magischen Barriere umgeben.
+<Sie wirkt sich auf die Psyche desjenigen aus, der versucht sie zu durchbrechen.
+<(neugierig) Also erzähl: Wie hast du es durchgeschafft?
+%
+
+opt: justWalked
+>Ich bin einfach durchgelaufen!
+<Echt? Dann musst du eine stark ausgeprägte Affinität zur Magie haben.
+<Denn nur Magier und solche, die eine magische Veranlagung in sich tragen können die Barriere unbeschadet passieren.
+<Du solltest schnellstens in den Turm gehen und mit unserem Meister sprechen.
+<Er wird sich bestimmt brennend für dich interessieren.
+$LOGMISS newLife, Ein Novize der schwarzen Magie hat sich darüber gewundert, dass ich es bis zum schwarzen Turm geschafft habe. Scheinbar habe ich eine starke magische Veranlagung. Der Novize sagte, ich solle schnellstmöglich mit seinem Meister im Turm sprechen. Vielleicht nehmen sie mich ja in ihrem Kreis auf?
+%%
+
+opt: noClue
+>Ich habe keine Ahnung, was ich getan habe!
+<Wahnsinn. Normalerweise brauchen selbst wir eine ganze Menge Konzentration um hierher zu gelangen.
+<Du solltest schnellstens in den Turm gehen und mit unserem Meister sprechen.
+<Er wird sich bestimmt brennend für dich interessieren.
+$LOGMISS newLife, Ein Novize der schwarzen Magie hat sich darüber gewundert, dass ich es bis zum schwarzen Turm geschafft habe. Scheinbar habe ich eine starke magische Veranlagung. Der Novize sagte, ich solle schnellstmöglich mit seinem Meister im Turm sprechen. Vielleicht nehmen sie mich ja in ihrem Kreis auf?
+%%
+
+info: whatBarrier
+conddia: whoAreYou
+>Was macht die Barriere genau?
+>Ich hörte einmal Gerüchte über eine magische Barriere, die Menschen hinein, aber nicht mehr herauslässt.
+<Das wäre ja ziemlich dämlich in unserer Situation.
+<Nein, unsere Barriere wirkt wie gesagt psychisch. Wenn du dich ihr näherst, merkst du zuerst leichte Kopfschmerzen.
+<Wer magisch begabt ist, merkt wenig bis gar nichts davon. Und nach einer Zeit hast du dich sowieso daran gewöhnt.
+<Und hier im inneren Bereich sind keine Auswirkungen mehr spürbar. Sonst wäre die Hälfte von uns wahrscheinlich verrückt.

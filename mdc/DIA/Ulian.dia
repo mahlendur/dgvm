@@ -1,0 +1,34 @@
+person: KDF_1405_Ulian, 9
+
+info: Exit
+
+info: greetingsMage
+>Ich grüße Euch, Magier!
+<Und ich grüße dich, neuer Anwärter.
+<Was kann der hohe Rat für dich tun?
+
+info: wannaJoin
+conddia: greetingsMage
+>Ich will dem Orden beitreten!
+<Wirklich? Es ist selten geworden, dass jemand unserem Orden beitreten möchte.
+<Geh und sprich mit Uysal, er wird dich prüfen.
+
+info: yourYes
+conddia: KDF_1404_Uysal, gotThem
+>Ich war bei Uysal!
+<Und? Hat er dir eine Prüfungsaufgabe gegeben?
+>Hat er. Ich soll die Dämonen, welche sich im Keller eingenistet haben töten.
+<Dann tu' dies. Danach sehen wir weiter.
+>Die Dämonen sind bereits Geschichte.
+<Wirklich? Das erklärt, warum sich mein Geist klarer anfühlt.
+<Ich danke dir für deine Mühen. Und nun? Möchtest du dem Orden beitreten?
+<Dann sprich mit Rayan. Meinen Segen sollst du haben.
+
+info: canTeach
+conddia: KDF_1403_Rayan, whatToDo
+>Rayan sagte, du könntest mir etwas beibringen?
+<Das ist richtig. Ich kann dir beibringen, deine magische Kraft zu stärken.
+
+
+
+

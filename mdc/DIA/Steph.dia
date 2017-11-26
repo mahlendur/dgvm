@@ -1,0 +1,109 @@
+person: SLD_704_Steph, 7
+
+!var int tradedPot;
+
+info: Exit
+
+info: whoAreYou
+flags: important
+<Hey, pass doch auf, wo du hintrittst!
+<Du zertrampelst noch meine ganzen Pflanzen!
+
+info: whatAreYouDoing
+conddia: whoAreYou
+>Was machst du hier?
+<Ich baue Sumpfkraut an, riechst du das nicht?
+>Das Zeug wächst hier?
+<Wie Teufel! Hätte ich nicht gedacht. Aber nur hier. Scheint die Nähe zur Kapelle zu machen
+<Scheinbar stehen die Götter auf den Stoff (lacht)
+
+info: canBuySth
+conddia: whatAreYouDoing
+condcode: tradedPot == FALSE
+flags: permanent
+>Kann ich dir etwas Sumpfkraut abkaufen?
+<Klar, Mann! Ich hab' den besten Stoff der ganzen Insel. Wieviel brauchst du?
+%
+
+opt: tenPcs
+>Gib mir zehn Stängel!
+<Zehn Stängel? Mensch, du haust ja richtig rein.
+<Ich mach dir einen Freundschaftspreis. Nur 100 Goldstücke!
+$IF Npc_HasItems (hero, ItMi_Gold) >= 100
+>Hier!
+>>ItMi_Gold, 100
+<Danke, Mann! Hier ist dein Zeug!
+<<ItMi_Joint, 10
+!tradedPot = TRUE;
+$ELSE
+>Soviel hab ich nicht dabei.
+<Kein Problem, Mann! Ich lauf hier nicht weg!
+$ENDIF
+%%
+
+opt: fivePcs
+>Fünf reichen erstmal.
+<Gut. Ich mach dir einen Freundschaftspreis. Nur 50 Goldstücke!
+$IF Npc_HasItems (hero, ItMi_Gold) >= 50
+>Hier!
+>>ItMi_Gold, 50
+<Danke, Mann! Hier ist dein Zeug!
+<<ItMi_Joint, 5
+!tradedPot = TRUE;
+$ELSE
+>Soviel hab ich nicht dabei.
+<Kein Problem, Mann! Ich lauf hier nicht weg!
+$ENDIF
+%%
+
+opt: onePcs
+>Gib mir einen!
+<Ah, ein Genießer!
+<Ich mach dir einen Freundschaftspreis. Nur 10 Goldstücke!
+$IF Npc_HasItems (hero, ItMi_Gold) >= 10
+>Hier!
+>>ItMi_Gold, 10
+<Danke, Mann! Hier ist dein Zeug!
+<<ItMi_Joint, 1
+!tradedPot = TRUE;
+$ELSE
+>Soviel hab ich nicht dabei.
+<Kein Problem, Mann! Ich lauf hier nicht weg!
+$ENDIF
+%%
+
+info: canBuyMore
+condcode: tradedPot == TRUE
+>Kannst du mir noch mehr verkaufen?
+<Weißt du, meine Vorräte sind langsam aufgebraucht.
+<Aber ich biete dir etwas besseres: Ich bringe dir bei, wie du selber herrliche Stängel herstellst!
+<Du müsstest mir nur einen kleinen Gefallen tun.
+
+info: whatToDo
+conddia: canBuyMore
+>Was soll ich für dich tun?
+<Hör zu: Ich komme hier in der letzten Zeit kaum noch weg. Außerdem lassen uns die Wachen nicht mehr in die Stadt.
+<Ich habe hier ein großes Paket, 15 Stängel. Die müssen an den Mann gebracht werden.
+<Ich mache dir einen Vorschlag: Du bringst das Zeug in die Stadt und an den Mann.
+<Dann bringst du mir das Gold und ich bringe dir die hohe Kunst des Stängeldrehens bei.
+<Was sagst du?
+%
+
+opt: noThanks
+>Danke, verzichte.
+<Wie du willst. Man kanns halt nicht jedem Recht machen.
+$END
+%%
+
+opt: yeahSure
+>Klar, gib her!
+<Gut, hier sind die Stängel.
+<<ItMi_Joint, 15
+<Du kannst jeden für 30 Gold verkaufen. Wenn du mir also...
+<...also...
+>450?
+<Genau, 450 Goldstücke bringst, dann sind wir im Geschäft!
+<Ich verlass mich auf dich!
+$STARTMIS potTrade
+$LOGMISS potTrade, Ich habe mich bereit erklärt, die Sumpfkrautstängel von Steph in die Stadt zu bringen und zu verkaufen. Wenn ich ihm die 450 Goldstücke bringe, bringt er mir bei, wie ich meine eigenen Stängel drehe.
+%%

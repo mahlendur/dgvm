@@ -1,0 +1,67 @@
+person: VLK_420_Bramor, 4
+
+!var int givenBook;
+
+info: Exit
+
+info: whoAreYou
+>Wer bist du?
+<Ich bin Bramor, Kartenzeichner auf dieser Insel.
+<Wenn du eine brauchst, lass es mich wissen!
+
+info: letsTrade
+flags: permanent, trade
+!B_GiveTradeInv(self);
+>Zeig mir deine Karten!
+
+info: needBook
+conddia: KDW_14002_Tenho, toDoForMe
+desc: Tenho schickt mich.
+>Tenho schickt mich. Ich soll ein Buch für ihn abholen.
+<Wirklich? (misstrauisch) Und woher soll ich wissen, ob du nicht für irgendwen spionierst?
+>Die Frage ist doch: Kannst du dir es leisten?
+>Komme ich ohne das Buch zurück, wird Tenho sehr wütend sein!
+<Schon gut, schon gut. Das macht dann 120 Goldstücke!
+%
+
+opt: whySoMuch
+>Soviel? Tenho hat mir aber nur 100 gegeben!
+<Ist das mein Problem?
+<Das Buch ist teurer geworden als geplant.
+<Jetzt sinds hatl 120!
+
+opt: hereGold
+>Hier hast du dein Gold.
+$IF Npc_HasItems(hero, ItMi_Gold) >= 120
+>>ItMi_Gold, 120
+<Gut. Dann ist hier das Buch.
+<<ItMi_BookPaket, 1
+<Bring es schnell zu Tenho, er wartet bestimmt schon darauf.
+!givenBook = TRUE;
+$ELSE
+<Das ist aber nicht genug.
+<Ich sagte 120 Gold! Komm wieder, wenn du alles hast!
+$ENDIF
+%%
+
+opt: notEnough
+>Ich habe nicht genug dabei!
+<Dann komm wieder, wenn du alles hast!
+<Denk dran, 120 Gold!
+%%
+
+info: giveBook
+flags: permanent
+conddia: needBook
+condcode: givenBook == TRUE
+>Gib mir das Buch.
+$IF Npc_HasItems(hero, ItMi_Gold) >= 120
+>Hier ist das Gold.
+<Gut. Dann ist hier das Buch.
+<<ItMi_BookPaket, 1
+<Bring es schnell zu Tenho, er wartet bestimmt schon darauf.
+!givenBook = TRUE;
+$ELSE
+<Du hast ja immer noch nicht genug Gold dabei!
+<120 Gold. Komm wieder, wenn du alles hast!
+$ENDIF

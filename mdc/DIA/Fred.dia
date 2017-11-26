@@ -1,0 +1,33 @@
+person: MIL_339_Fred, 11
+
+info: Exit
+
+info: whoAreYou
+>Wer bist du?
+<Ich bin Fred, Arenaleiter der Stadt Mahlendur.
+>Arena? Also auch noch hier.
+<Was soll das denn heißen?
+>Auf dem Festland sprießen die Arenen aus dem Boden wie Unkraut.
+>Jedes noch so kleine Dorf hat jetzt eine 'Arena'.
+<Naja... Unsere Arena ist auch nicht sehr groß, aber es hilft dabei, fit zu bleiben.
+<Manchmal ist es besser mit einem anderen Menschen zu trainieren, als immer nur Tiere zu jagen.
+<Wie siehts aus? Lust auf ein Kämpfchen?
+
+info: whatToBet
+conddia: whoAreYou
+>Was ist der Einsatz?
+<Du zahlst pro Kampf 50 Gold. Außer für den letzten. Der kostet 100!
+<Gewinnst du alle Kämpfe, gewinnst du eine Waffe.
+<Du darfst dir sogar aussuchen, welche!
+
+info: fightOne
+conddia: whatToBet
+>Gib mir den ersten Kampf!
+<In Ordnung. Du wirst gegen Randolph kämpfen.
+<Er ist ein Bauer von einem der Höfe vor der Stadt.
+<Aber pass auf. Unterschätz ihn nicht!
+<Wenn du bereit bist, sprich mit ihm. Wenn ihr beide in der Arena seid, beginnt der Kampf.
+<Aber pass auf, verlässt du die Arena, ist es vorbei!
+<Viel Glück!
+
+

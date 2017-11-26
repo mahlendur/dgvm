@@ -1,0 +1,53 @@
+person: PIR_1303_Gilbert, 14
+
+info: Exit
+
+info: heyYou
+flags: important
+<Hey, du!
+<Wo kommst du denn her?
+>Aus der Stadt!
+<Und was willst du hier?
+%
+
+opt: justLooking
+>Ich seh' mich nur mal um.
+<Umsehen ist nicht. Entweder du machst dich nützlich, oder du verschwindest gleich wieder!
+<Am Besten meldest du dich direkt bei Henry.
+<Marsch, sonst mache ich dir Beine!
+%%
+
+opt: wannaJoin
+>Ich will mich euch anschließen!
+<Du? Dich uns anschließen? (lacht)
+<Na, das kann ja was werden.
+<Ich wette, du wirst die erste Woche nicht überleben.
+<Aber, wie du willst... Wir brauchen immer neue Männer.
+<Geh und sprich mit Henry. Er wird sich um dich kümmern.
+!wannaJoinPirates = TRUE;
+%%
+
+opt: wannaKill
+>Ich wollte hier mal aufräumen.
+<Volmar, dieser Stadtwachen-Spinner hat dich geschickt, nicht?
+<Dumme Idee, dich mit mir anzulegen!
+$END
+!B_Attack(self, hero, AR_NONE, 1);
+%%
+
+info: whereHenry
+conddia: heyYou
+>Wo finde ich Henry?
+<Kletter einfach an der Klippe die Leiter hinab.
+<Aber stürz nicht ab. Ich habe keine Lust dich von den Felsen abzukratzen!
+>Danke für die warmen Worte..
+<Hey, das hier ist nicht das Stadtwachen-Kuschel-Lager. Hier wird angepackt und wers verbockt, der hat Pech gehabt.
+<Also sieh zu, dass du es nicht verbockst!
+
+info: whatsNew
+flags: permanent
+>Was gibt's neues?
+<Nichts, was dich interessiert. Hier ist alles ruhig!
+
+
+

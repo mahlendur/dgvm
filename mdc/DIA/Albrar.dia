@@ -1,0 +1,79 @@
+person: VLK_3007_Albrar, 13
+
+info: Exit
+
+info: youTrader
+>Du bist Händler?
+<Sehr gut erkannt. Ich bin Albrar. Bei mir bekommst du die besten Waffen in der ganzen Stadt. (gähnt)
+
+info: canTrade
+conddia: youTrader
+>Verkaufst du auch Waffen?
+<Aber sicher doch!
+<Ich habe... (gähnt) ...gerade erst eine neue Lieferung bekommen!
+<Sieh dich in Ruhe um!
+
+info: letsTrade
+conddia: canTrade
+flags: permanent, trade
+num: 998
+!B_GiveTradeInv(self);
+>Zeig mir deine Waffen!
+
+info: youTired
+conddia: youTrader
+>Müde?
+<Ach, weißt du...
+<Mein Lieferant arbeitet außerhalb der Stadt und kann deshalb nur nachts liefern.
+<Das ist anstrengend, jedes Mal bis weit nach Mitternacht warten zu müssen, nur um dann am Vormittag schon wieder hier zu stehen.
+<Aber was solls... Was tut man nicht alles fürs Geschäft (lacht)
+
+info: youThief
+condcode: Wld_IsTime(00,00,04,00)
+condcode: MIS_weaponThief == LOG_RUNNING
+condcode: Npc_GetDistToWP(self, "NW_CITY_KASERN_ARMORY_FIRE") <= 500
+>Du bist also der Dieb!
+<Was? Wie? Nein, das ist eine Verwechslung!
+>Schon klar. Es ist mitten in der Nacht, seit mehreren Tagen verschwinden hier Waffen und dich erwische ich, wie du an den Kisten rumfummelst.
+<Aber...
+>Kein aber! Ich...
+%
+
+opt: letGo
+>...lasse dich nochmal laufen.
+>Aber ich schwöre dir: Wenn du dich noch einmal an den Waffen zu schaffen machst, dann war es das letzte, das du tust.
+<Wirklich? Danke! Vielen Dank! Das werde ich dir nie vergessen!
+<Natürlich werde ich keine Waffen mehr stehlen!
+>Das will ich auch hoffen.
+>Am besten verschwindest du aus der Stadt!
+!Npc_ExchangeRoutine(self, "TOT");
+!albrarChoice = 1;
+$LOGMISS weaponThief, Ich habe den Dieb gestellt. Es ist Albrar, der Waffenhändler vom Marktplatz. Ich habe mich entschlossen, ihn laufen zu lassen. Hoffentlich war das kein Fehler...
+$END
+%%
+
+opt: tellYonar
+>...werde Yonar davon berichten!
+<Nein, bitte nicht das! Er wird mich umbringen.
+>Das ist nicht meine Entscheidung. Am Besten verschwindest du von hier.
+<Das... das... Ach verdammt!
+!Npc_ExchangeRoutine(self, "Start");
+!albrarChoice = 2;
+$LOGMISS weaponThief, Ich habe den Dieb gestellt. Es ist Albrar, der Waffenhändler vom Marktplatz. Ich sollte Yonar von ihm erzählen.
+$END
+%%
+
+opt: tellVolmar
+>...werde dem Kommandanten davon berichten!
+<Ach du scheiße! Der wird mich ins Gefängnis stecken!
+>Du stiehlst Waffen der Stadtwache. Ich glaube, das Gefängnis ist dein kleinstes Übel...
+<Ich... Ich glaube, ich sollte gehen.
+>Das ist besser, ja!
+!albrarChoice = 3;
+!albrarDay = Wld_GetDay();
+!Npc_ExchangeRoutine(self, "Start");
+$LOGMISS weaponThief, Ich habe den Dieb gestellt. Es ist Albrar, der Waffenhändler vom Marktplatz. Ich habe mich entschlossen, Volmar von den Vorfällen zu berichten. Vielleicht erhält er dann seine gerechte Strafe.
+$END
+%%
+
+

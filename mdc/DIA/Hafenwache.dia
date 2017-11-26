@@ -1,0 +1,20 @@
+person: MIL_2101_Hafenwache, 4
+
+info: youPirate
+flags: important
+<Hey, du!
+<Wo kommst du denn her?
+>Ich...
+<Du bist doch bestimmt einer dieser dreckigen Piraten!
+>Aber...
+<Keine Widerrede! Ich bringe dich erstmal zum Kommandanten!
+!AI_SetWalkMode(self, NPC_RUN);
+!AI_GoToWP(self, "NW_CITY_HABOUR_KASERN_CENTRE_01");
+!AI_GoToWP(other, "NW_CITY_HABOUR_KASERN_CENTRE_01");
+!AI_TurnToNpc(self, MIL_2102_Volmar);
+!AI_TurnToNpc(other, MIL_2102_Volmar);
+<Kommandant!
+<Einer aus dieser Piratenbande wurde an Land gespült!
+$END
+
+

@@ -1,0 +1,42 @@
+person: BAU_201_Laria, 17
+
+info: Exit
+
+info: heyYou
+flags: important
+<Hey, du! Warte bitte!
+<Du siehst stark aus. Zumindest stärker als alles, was hier an "Männern" auf meinem Hof rumrennt.
+<Könntest du mir einen Gefallen tun?
+<Wir haben ein Problem mit Riesenratten in der Scheune. Vielleicht könntest du dich darum kümmern?
+$IF MIS_pestControl == LOG_RUNNING
+>Das trifft sich gut.
+>Rodar hat mich geschickt, um dein Rattenproblem in den Griff zu bekommen.
+<Wirklich? Und ich dachte schon, er hätte mich vergessen.
+<Aber dann wird ja alles gut.
+<Vielen Dank schonmal!
+$END
+$ELSE
+>Ich werde sehen, was sich machen lässt.
+<Du als starker Mann wirst doch bestimmt Interesse an einem Platz bei den Söldnern haben.
+<Wenn du mir hilfst, wird das Rodar, den Großbauern bestimmt beeindrucken.
+>Das klingt nach einem Plan...
+$STARTMIS pestControl
+$LOGMISS pestControl, Laria, eine Bäuerin, bat mich ein paar Riesenratten in ihrer Scheune zu töten. Vielleicht schindet das Eindruck beim Großbauern.
+$ENDIF
+
+info: ratsDead
+conddia: heyYou
+condcode: Npc_IsDead(HofRat1) == TRUE
+condcode: Npc_IsDead(HofRat2) == TRUE
+>Die Ratten sind erledigt!
+<Wirklich? Vielen lieben Dank!
+<Das wird das Leben hier wieder etwas einfacher machen.
+<Warte, ich habe etwas für dich. Das wird dir helfen.
+<<ItFo_XPStew, 1
+<Lass es dir schmecken. Und wenn du einmal einen Platz zum Schlafen brauchst, komm wieder.
+<Hier brennt immer ein Feuer!
+$LOGMISS pestControl, Laria war erleichtert, als sie erfahren hat, dass die Ratten auf ihrem Hof tot sind.
+$EXP 100
+
+
+

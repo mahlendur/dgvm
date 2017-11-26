@@ -1,0 +1,237 @@
+person: SLD_700_Jareck, 4
+
+!var int canBecomeSld;
+!var int jareckStressedOut;
+
+info: Exit
+
+info: youMerc
+>Bist du Jareck?
+<Kommt darauf an... Wer will das wissen?
+>Ich bin...
+<Ach weißt du, ist mir eigentlich auch egal.
+<Ja, ich bin Jareck, Anführer der Söldner auf diesem götterverdammten Hof.
+<Was willst du?
+
+info: wannaJoin
+conddia: youMerc
+>Ich will bei euch mitmachen!
+<Mitmachen, soso (lacht)
+<Bei uns wird nicht einfach "mitgemacht", Kleiner.
+<Das Leben als Söldner ist harte Arbeit, gefährlich und nicht selten kürzer als du denkst.
+<Weißt du überhaupt, worauf du dich einlässt?
+%
+opt: thoughtCampfire
+>Ich dachte, Söldner sitzen den ganzen Tag am Lagerfeuer und singen Liedchen.
+<Sag mal, willst du mich verarschen?
+<So einen Kuschelkurs kannst du vielleicht bei der Stadtwache erwarten.
+<Aber nicht hier bei uns! Vergiss es.
+<So einer wie du wird niemals Söldner!
+$LOGMISS newLife, Die Aufnahme bei den Söldnern habe ich wohl verbockt. Na gut, dann werde ich wohl wo anders anheuern müssen.
+!jareckStressedOut = TRUE;
+%%
+
+opt: thougtDanglingEggs
+>Ich dachte, ihr schaukelt den ganzen Tag eure Eier.
+<(lacht) Haha, das ist köstlich.
+<Normalerweise würde man so etwas beim Bürgermeister und seinen 'Mitarbeitern' erwarten.
+<Aber...
+<Naja, ein wenig sieht es schon so aus, da hast du recht.
+<Gut, wenn es dir ernst ist, führe einen Auftrag für mich aus und du bist dabei.
+$LOGMISS newLife, Jareck, der Anführer der Söldner scheint mir nicht abgeneigt zu sein. Ich soll für ihn arbeiten, dann nimmt er mich vielleicht bei den Söldnern auf.
+%%
+
+opt: thoughtShinyClothes
+>Erst dachte ich an strahlende Rüstungen, aber jetzt sehe ich, dass ihr doch ziemlich cool seid.
+<Hey, meine Rüstung ist doch...
+<Ach, schon gut. (grinst)
+<Du hast Recht. Die Rüstung bleibt nicht lange sauber. Das heißt aber nichts, denn nur eine schmutzige Rüstung ist eine gebraucht Rüstung.
+<Dein Humor gefällt mir. Arbeite ein wenig für mich, dann sehen wir weiter.
+$LOGMISS newLife, Jareck, der Anführer der Söldner scheint mir nicht abgeneigt zu sein. Ich soll für ihn arbeiten, dann nimmt er mich vielleicht bei den Söldnern auf.
+%%
+
+info: whatToDo
+conddia: wannaJoin
+condcode: jareckStressedOut == FALSE
+>Was soll ich für dich tun?
+<Die Sache ist etwas heikel.
+>Heikel klingt spannender als einfach.
+<Das ist die richtige Einstellung!
+<Gut, hör mir zu! Auch wenn das jetzt vielleicht merkwürdig klingt, als Söldner brauchst du nicht nur Muskeln, sondern auch Köpfchen.
+<Schau dich aber besser nicht zu sehr bei den Jungs um. Es gab eine Zeit, da war ich nicht sehr wählerisch.
+<Wie auch immer. Wir haben in der Stadt einen Informanten. Er gibt uns Hinweise, wenn die Stadtwache Überfälle, oder wie sie es nennen, "Befreiungsaktionen" plant.
+<Er ist etwas überfällig mit seinem Bericht. Das hat aber nichts zu bedeuten, schließlich kann er nicht einfach zu uns marschieren.
+<Und da kommst du ins Spiel. Geh in die Stadt und finde ihn. Bring mir den Bericht und dann werde ich mir überlegen, was ich mit dir anfange.
+$STARTMIS newInfos
+$LOGMISS newInfos, Jareck hat mir eine Aufgabe gegeben, mit der ich Köpfchen beweisen soll. Die Söldner haben einen Informanten bei der Stadtwache. Scheinbar konnte er noch nicht unbemerkt aus der Stadt verschwinden, da sein Bericht überfällig ist. Ich soll nun jenen Bericht für Jareck abholen.
+
+info: whyKopf
+conddia: whatToDo
+>Wer ist euer Informant?
+<Und genau da kommt die Sache mit dem Köpfchen.
+<Ich kenne dich nicht. Zwar bist du mir sympathischer als der größte Teil der Menschen auf dieser Insel, aber trotzdem...
+<Ich werde dir nicht sagen, wer der Informant ist. Aber ich und die anderen Söldner werden dir Hinweise geben.
+<Wenn es dir wichtig ist, bei uns aufgenommen zu werden, dann denk nach und kombiniere klug.
+<Wenn du gut bist, wirst du herausfinden, wer der Spitzel ist.
+!FF_Apply(countRoses);
+$LOGMISS newInfos, Jareck wird mir allerdings nicht sagen, wer der Informant ist. Verständlich, schließlich bin ich neu und er weiß nicht, ob er mir vertrauen kann. Er und die anderen Söldner werden mir Hinweise geben, herausfinden, wer der Spitzel ist, muss ich selber.
+
+info: yourHint
+conddia: whyKopf
+>Welchen Hinweis kannst du mir geben?
+<Unser Informant ist bei der Stadtwache tätig, aber das war dir vermutlich klar.
+<Er bekleidet keine sehr hohe Position, bekommt aber doch vieles mit, was geplant ist.
+!var int s; s = SB_New();
+!hintcounter += 1;
+!SB("Hinweise: ");
+!SBi(hintCounter);
+!SB("/4");
+!AI_PrintS(self, SB_ToString());
+!SB_Destroy();
+$LOGMISS newInfos, Jareck hab mir den Hinweis, dass der Informant keine hohe Position bekleidet, aber trotzdem vieles mitbekommt.
+>Das ist ja irgendwie... nichtssagend.
+<Erst in der Fülle erschleißen sich die Informationen.
+<Geh und sprich mit den anderen Söldnern. Sie werden dir weitere Hinweise geben.
+
+info: canIJoin
+conddia: wannaJoin
+condcode: jareckStressedOut == TRUE
+>Kann ich jetzt bei euch mitmachen?
+<Hab ich mich unklar ausgedrückt?
+<Vergiss es!
+<Geh und setz dich zu den anderen Bauern ans Lagerfeuer, da kannst du deine Liedchen singen!
+
+info: youFailed
+condcode: MIS_newLife == LOG_FAILED
+flags: important
+<Du Idiot! Musstest du in der ganzen Stadt jeden Mann mit einer Waffe fragen?
+>Ich...
+<Genau, Du! DU hast es vermasselt! Unser Informant musste aus der Stadt fliehen.
+>Aber...
+<Kein Aber! Du wirst garantiert kein Mitglied der Söldner!
+<Nur über meine Leiche!
+%
+
+opt: gotIt
+>Das lässt sich einrichten...
+<Ach, auch noch frech werden?
+<Na, warte Freundchen...
+!FF_Remove(countRoses);
+!B_Attack (self, other, AR_KILL, 0);
+%%
+
+opt: sayNothing
+desc: (Nichts sagen)
+$END
+%%
+
+info: gotInfos
+conddia: MIL_2104_Marco, getInfos
+>Ich bringe Infos von Marco!
+<Sehr gut. Du hast unseren Informanten also gefunden.
+<Du scheinst was zu taugen... Was sagt er?
+>Ihr sollt euch vorbereiten! Die Stadtwache rüstet auf und zwar gewaltig. Deswegen konnte er auch nicht aus der Stadt weg.
+<Und wofür rüsten sie auf?
+>Das konnte er mir nicht sagen. Scheinbar ist er nicht in alles eingeweiht.
+<Natürlich nicht... Wäre ja auch zu schön, einen der hochrangigen Speichellecker als Spitzel zu haben.
+<Aber gut. Was immer die Stadtwache plant. Wir werden vorbereitet sein.
+<Ich danke dir! Jetzt kann ich wenigstens etwas ruhiger schlafen.
+$MISSUCC newInfos
+$LOGMISS newInfos, Ich habe Jareck Marcos Informationen überbracht. Er sagt, was immer die Stadtwache plant, die Söldner sind vorbereitet. Na, da bin ich ja mal gespannt...
+
+
+
+info: wannaBecomeSld
+conddia: gotInfos
+condcode: Npc_GetTrueGuild(hero) == GIL_NONE
+condcode: canBecomeSld == FALSE
+flags: permanent
+>Kann ich euch jetzt beitreten?
+<Lass mich überlegen.
+<Du hast für uns die Infos besorgt. Das bringt uns schonmal ein Stück weiter.
+$IF MIS_pestControl == LOG_SUCCESS
+<Und bei Rodar warst du auch schon.
+<Seine Aufgabe war vielleicht einfach, aber du hast dafür gesorgt, dass du in seinen Augen wichtig bist.
+<Zumindest wichtiger als ein paar der Jungs.
+<Und immerhin hast du alle Viecher getötet. Das ist sehr gut.
+<Ja, wenn du willst, nehme ich dich bei uns auf!
+!canBecomeSld = TRUE;
+$ELSEIF MIS_pestControl == LOG_RUNNING
+<Und bei Rodar warst du auch schon.
+<Aber ich habe noch nichts von ihm gehört.
+<Hast du seine Aufgabe schon erledigt?
+>Naja...
+<Dachte ich mir. Tu, was immer er von dir verlangt, dann werde ich dich aufnehmen!
+$ELSE
+<Aber Rodar kennt dich noch gar nicht.
+<Geh am Besten gleich zu ihm und tu, was immer er von dir verlangt!
+<Dann sehen wir weiter.
+$ENDIF
+
+info: becomeSld
+condcode: kapitel == 1
+condcode: canBecomeSld == TRUE
+flags: permanent
+>Ich will bei euch mitmachen!
+<Bist du dir sicher?
+<Hast du einmal die Rüstung eines Söldners angelegt, wirst du sie nicht mehr so einfach los.
+<Diese Entscheidung will gut überlegt sein!
+%
+
+opt: notReady
+>Nein, ich brauche noch Bedenkzeit!
+<Gut. Wenn du es dir überlegt hast: Du weißt, wo du mich findest!
+%%
+
+opt: yesSure
+>Ja, ich bin mir sicher!
+<Dann trage diese Rüstung mit Stolz!
+<<ItAr_Sld_L
+<Lege sie an und vor allem: Mach uns keine Schande!
+<Aber sei vorsichtig: Auch wenn dich niemand offen angreifen würde, wenn du die Rüstung trägst, wird die Stadtwache dir immer misstrauen.
+<Genauso die Magier aus dem Kloster. Sag hinterher nicht, ich hätte dich nicht gewarnt! (lacht)
+<Wie auch immer. Willkommen, Söldner!
+!kapitel = 2;
+!IntroduceChapter (KapWechsel_2,KapWechsel_2_Text,"chapter2.tga","chapterchange.wav", 6000);
+!Spine_UnlockAchievement(0);
+!Npc_SetTrueGuild(hero, GIL_SLD);
+
+info: findFriends
+condcode: MIS_findFriends == LOG_RUNNING
+>Du als Anführer der Söldner...
+<(grummelt) Was willst du? Willst du doch lieber für mich arbeiten als für die Fischer bei euch? (lacht)
+>Nein, eher ganz im Gegenteil.
+<(erstaunt) Im Gegenteil?
+<Jetzt bin ich mal gespannt...
+
+info: findFriends2
+conddia: findFriends
+>Wir brauchen Männer!
+<Pah, die brauche ich auch! Die verdammten Stadtwachen rücken immer näher.
+<Und wofür brauchst du Männer?
+>Wir haben das gleiche Problem. Auch uns kommt die Stadtwache langsam zu nahe.
+>Wir sind allerdings zu wenige, um uns wirksam zu verteidigen.
+<Scheint als stünden wir vor demselben Berg.
+<Ich kann wirklich niemanden einfach so erübrigen.
+<Mach mir einen guten Vorschlag, wie das funktionieren soll und wir sehen weiter!
+
+info: newFriends
+conddia: findFriends2
+>Wir könnten gemeinsame Sache machen.
+<Was meinst du?
+>Es reicht langsam. Wir müssen in die Offensive gehen!
+<(erschrocken) In die Offensive? Was meinst du?
+>Wir werden immer offener bedroht. Von uns Piraten kann keiner mehr einen Fuß in die Stadt setzen, ohne ein Schwert am Hals zu haben.
+>Ich schätze mal, bei euch sieht das nicht anders aus.
+<Das stimmt wohl. Unsere Rüstung erkennen die auf hunderte Meter. 
+<Wäre nicht das erste Mal, dass ein Bolzen uns nur knapp verfehlt, obwohl wir noch weit von der Stadt weg sind.
+<Was schlägst du also vor?
+>Du verstärkst unsere Mannschaft mit einigen von deinen Jungs. Und dann machen wir Nägel mit Köpfen!
+>Wir greifen die Stadtwache an.
+<Ha, du bist ein Saukerl!
+<Okay, ich werde meine besten Männer vorbereiten.
+<Trotzdem möchte ich mir sicher sein.
+<Schick mir deinen Kommandanten vorbei. Irgendwie muss ich mir sicher sein, dass ihr mir nicht in den Rücken fallt.
+<Außerdem wollte ich mit ihm schon immer mal ein Bier trinken.
+$LOGMISS newFriends, Ich habe zumindest einen kleinen Erfolg erzielt. Jareck, der Anführer der Söldner ist bereit uns zu unterstützen, dafür musste ich versprechen, dass wir die Stadtwache angreifen werden. Jareck möchte sich mit Henry treffen für ein persönliches Gespräch. Ich sollte ihn darauf vorbereiten...
+

@@ -1,0 +1,66 @@
+person: BAU_200_Rodar, 2
+
+info: Exit
+
+info: whyHere
+flags: important
+<Was machst du hier auf meinem Hof? Sprich!
+
+info: lookingForWork
+conddia: whyHere
+>Ich suche Arbeit!
+<Ich kann keine Tagelöhner mehr gebrauchen!
+<Also verschwinde! Oder ich lasse dich von meinem Hof entfernen!
+
+info: imNotBauer
+conddia: lookingForWork
+>Ich bin kein Tagelöhner.
+<Und was willst du dann hier?
+<Du siehst nicht aus, als könntest du kämpfen.
+>Ich kann kämpfen?
+<Achja? (lacht) Dann beweis' es mir!
+<Und sprich vor allem mit Jareck.
+$LOGMISS newLife, Um bei den Söldnern aufgenommen zu werden, brauche ich die Zustimmung vom Bauern Rodar und vom Söldner-Anführer Jareck. Beide werden mir eine Aufgabe stellen.
+
+info: whosJareck
+conddia: imNotBauer
+>Wer ist Jareck?
+<Jareck ist der Anführer meiner Söldner. Wenn du wirklich kämpfen willst, kannst du das, wenn du ihnen beitrittst.
+<Dafür brauchst du aber seine und meine Zustimmung.
+<Erst, wenn du uns beide überzeugt hast, glaube ich dir, dass du meinen Hof beschützen kannst.
+
+info: whatToDo
+conddia: imNotBauer
+>Was soll ich für dich tun?
+<Wir haben ein Problem mit Viechern. Um genau zu sein, zwei Probleme.
+>Und welche sind das?
+<Wie du bestimmt weißt, sind an meinen Hof zwei weitere Höfe angeschlossen.
+<Auf einem von ihnen hat Laria, die Pächterin, Probleme mit Riesenratten in ihrer Vorratskammer.
+<Für die Bauern ist es eine zu große Herausforderung, aber meine Söldner lachen sich kaputt, wenn ich sie wegen Ratten schicke.
+<Aber für dich ist es genau die richtige Kragenweite.
+<Damit du dich aber auch nicht langweilst: Zu allem Überfluss ist ein Rudel Wölfe aufgetaucht und reißt meine Schafe.
+<Darum könntest du dich auch noch kümmern!
+$STARTMIS pestControl
+$LOGMISS pestControl, Rodar der Großbauer hat mich losgeschickt, auf einem seiner verpachteten Höfe Kammerjäger zu spielen. Dort treiben sich wohl einige Riesenratten in der Kornkammer herum. Außerdem möchte er ein Wolfsrudel tot sehen, das seine Schafe reißt.
+
+info: wheresLaria
+conddia: whatToDo
+>Wo finde ich Larias Hof?
+<Geh den Weg zurück in Richtung Stadt. Wenn du an der Kreuzung inmitten der Felder rechts abbiegst, kannst du den Hof gar nicht verfehlen.
+$LOGMISS pestControl, Larias Hof befindet sich, von Rodars Hof gesehen auf der rechten Seite der Felder.
+
+info: wheresWolf
+conddia: whatToDo
+>Wo finde ich das Wolfsrudel?
+<Woher soll ich das wissen?
+<Sprich mit den Hirten. Sie waren in der Nähe, als die Wölfe kamen.
+$LOGMISS pestControl, Um mehr über die Wölfe herauszufinden, sollte ich mit den Hirten sprechen.
+
+
+
+
+
+
+
+
+

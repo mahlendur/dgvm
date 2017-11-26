@@ -1,0 +1,51 @@
+person: VLK_3008_Brandon, 6
+
+info: Exit
+
+info: whoAreYou
+>Wer bist du?
+<Ich bin Brandon. Meines Zeichens Jäger.
+<Kann ich irgendwas für dich tun?
+
+info: canTeachMe
+conddia: whoAreYou
+>Kannst du mir etwas beibringen?
+<Sicher kann ich das. Aber... Bist du es denn auch wert?
+
+info: whatToDo
+conddia: canTeachMe
+desc: Was verlangst du?
+>(seufzt) Was muss ich tun, dass du mich trainierst?
+<Okay, hör zu. Die ganze Sache ist etwas heikel.
+>Spucks schon aus!
+<Gut. Wie du vielleicht weißt, sind wir schon lange hier draußen.
+>Und jetzt? Soll ich dir eine Frau besorgen?
+<(lacht) Nein, das wäre mein kleinstes Problem.
+<Ich brauch Sumpfkraut! Ich hab' schon seit Tagen nichts mehr geraucht und bekomme langsam Kopfschmerzen davon.
+<Besorg mir was! Am besten mindestens fünf Stängel!
+<Dann kann ich dir bestimmt was beibringen!
+$STARTMIS brandonSmoke
+$LOGMISS brandonSmoke, Brandon, einer der Jäger vor der Stadt ist auf Entzug. Um mir etwas beizubringen verlangt er mindestens fünf Stängel Sumpfkraut. Mal sehen, wo ich die herbekomme.
+
+info: whereToFind
+conddia: whatToDo
+>Woher bekomme ich Sumpfkraut?
+<Keine Ahnung. Die Stadtwache hat in den letzten Wochen den Handel extrem stark eingeschränkt. Das einzige, wo du in der Stadt noch rauchen kannst, ist vor der Kaserne.
+<Du könntest dich da mal umschauen, ansonsten vielleicht bei den Piraten oder den Söldnern?
+<Versuchs nur besser nicht im Kloster (lacht)
+$LOGMISS brandonSmoke, Er sagte, am ehesten könnte ich das Kraut in der Stadt vor der Kaserne bekommen. Ansonsten soll ich mal bei den Söldnern oder den Piraten vorbeischauen.
+
+info: gotYourPot
+conddia: whatToDo
+conditem: ItMi_Joint, 5
+>Hier ist das Zeug!
+<Wirklich? Mensch, das ist 'ne Überraschung!
+<Danke, Mann. Hier, das ist es mir wert.
+<<ItMi_Gold, 80
+$MISSUCC brandonSmoke
+$LOGMISS brandonSmoke, Brandon war begeistert, als ich ihm die Stängel gebracht habe. Er gab mir sogar Gold dafür.
+$EXP 250
+!AI_UseItem(self, ItMi_Joint);
+<So. Jetzt kann ich dir auch was beibringen.
+$LOGMISS teacherOut, Brandon kann mir beibringen, wie ich besser mit dem Bogen werde. Außerdem kann er mir beibringen, wie ich Tieren Zähne, Krallen und andere Trophäen abnehme.
+!Npc_ExchangeRoutine(self, "SMOKE");

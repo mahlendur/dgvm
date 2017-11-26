@@ -1,0 +1,66 @@
+person: SLD_701_Silvan, 2
+
+info: Exit
+
+info: heyYou
+flags: important
+<Hey, wo willst du denn hin?
+>Da rein! Oder was dachtest du?
+<Werd' jetzt nicht frech!
+<Was willst du?
+
+info: whoAreYou
+conddia: heyYou
+>Wer bist du?
+<Ich bin Silvan, rechte Hand von Jareck und Sˆldner auf Rodars Hof.
+<Also, machst du hier ƒrger, bekommst du es mit mir zu tun.
+
+info: wannaJoin
+conddia: heyYou
+>Ich will mich euch anschlieﬂen!
+<Du halbe Portion? (lacht) Haha, da bin bin ich ja mal gespannt.
+<Wie du willst.
+<Geh ruhig rein und sprich mit Rodar und Jareck. Die beiden entscheiden, ob du dabei bist.
+
+info: whereRodar
+conddia: wannaJoin
+>Wo finde ich Rodar?
+<Wenn du hier durch die T¸re gehst, wende dich nach links.
+<Der Bauer thront in seinem Wohnzimmer auf dem Sessel.
+<Du kannst ihn eigentlich nicht verfehlen.
+
+info: whereJareck
+conddia: wannaJoin
+>Wo ist Jareck?
+<Geh hoch und dann rechts. Dort findest du unser Hauptquartier.
+<Jareck h‰lt sich die meiste Zeit des Tages dort auf.
+<Wenn nicht, sieh dich auf dem Hof um. Er wird dann irgendwo bei den Jungs sein.
+
+info: yourHint
+condcode: MIS_newInfos == LOG_RUNNING
+>Kannst du mir sagen, wer euer Informant in der Stadt ist?
+<Wie bitte? Wieso sollte ich das tun?
+>Jareck hat mir den Auftrag gegeben, neue Informationen zu holen. Dazu muss ich aber wissen, wer euer Informant ist.
+<Und du glaubst, ich sage dir, wer es ist? Dann kann ich ihm auch selber das Schwert in die Brust stecken.
+<Der neue Kommandant der Stadtwache fackelt nicht lange, wenn es um Verr‰ter geht.
+<Jareck hat sicher NICHT gesagt, dass ich dir den Namen einfach sagen soll!
+>Naja, er...
+<Aha. Hˆr zu, ich gebe dir einen Tipp, dann findest du ihn bestimmt selber.
+>Genau das wollte Jareck.
+<Und warum sagst du das nicht gleich?
+<Gut, hˆr zu: Unser Informant hat sehr viel mit Waffen zu tun.
+!var int s; s = SB_New();
+!hintcounter += 1;
+!SB("Hinweise: ");
+!SBi(hintCounter);
+!SB("/4");
+!AI_PrintS(self, SB_ToString());
+!SB_Destroy();
+$LOGMISS newInfos, Silvan, Jarecks rechte Hand gab mir den Hinweis, dass der Sˆldnerspitzel viel mit Waffen zu tun hat.
+>Also wie so ziemlich jedes Mitglied der Stadtwache?
+<Mehr als andere, glaub es mir.
+<Und nun: Such!
+
+
+
+

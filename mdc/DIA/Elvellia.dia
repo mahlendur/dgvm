@@ -1,0 +1,44 @@
+person: NONE_9990_Elvellia, 16
+
+info: Exit
+
+info: whoAreYou
+>Wer bist du denn?
+<Ich? Ich bin Elvellia!
+<Und du?
+>Ich bin...
+<Ach, ist eigentlich auch egal. Namen sind doch nur Schall und Rauch.
+
+info: whatHappened
+conddia: whoAreYou
+>Was ist dir passiert?
+<Was meinst du?
+>Du bist...
+>Naja...
+>Ein Geist.
+<Wie bitte?
+<Wie kommst du denn auf die Idee?
+<Blödsinn, mir ging es noch nie besser.
+
+info: whatDoing
+conddia: whatHappened
+>Was tust du hier?
+<Ich warte auf meinen Liebsten.
+<Er wird bald zu mir kommen. Dann verreisen wir zusammen.
+>Und wo soll's hingehen?
+<Nach Aeon. Dort ist immer schönes Wetter und es herrscht unendlicher Frieden.
+>Ach.. Klingt ja wie das Paradies.
+<Ja, nicht wahr?
+<Hoffentlich kommt mein Liebster bald.
+$STARTMIS shoreToAeon
+$LOGMISS shoreToAeon, An der Küste, unweit des Piratenlagers sitzt Tag und Nacht der Geist einer Frau, Elvellia. Sie wartet auf ihren Liebsten, damit sie beide nach Aeon, ins Paradies, reisen können.
+
+info: whereIsHe
+conddia: whatDoing
+>Wo ist er denn gerade?
+<Irgendwo auf See. Er ist mit einem der letzten Schiffe in See gestochen, welche die Insel verlassen haben.
+<Er ist Soldat, weißt du? Ein tapferer Mann in der königlichen Marine.
+>Ja, das sind tapfere Männer.
+>(zu sich) Die Marine wurde fast vollständig aufgerieben. Die letzten Schiffe von Mahlendur sollen alle zerstört worden sein.
+<Das ist wahr. Hoffentlich kommt er bald...
+$LOGMISS shoreToAeon, Scheinbar ist ihr Liebster ein Marinesoldat, wie ich. Wenn ich richtig informiert bin, ist sein Schiff aber zerstört worden. Wenn er nicht genauso viel Glück gehabt hat wie ich, dann wird er wahrscheinlich umgekommen sein. Irgendwie muss ich dieser armen Seele doch helfen können. Sie sprach von Aeon. Seltsam, ich dachte, ich hätte schon alle Beschreibungen vom Paradies gehört. Vielleicht kennt jemand die Legende von Aeon.

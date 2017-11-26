@@ -1,0 +1,285 @@
+#Das hier ist ein Testkommentar für SVN
+
+# Kommentare können jederzeit mittels Raute eingefügt werden
+
+#Durch "person:" wird die Person festgelegt, mit der die folgenden
+#Dialoge geführt werden können.
+#Die beiden Parameter sind der interne Name der Person sowie 
+#ihre Stimmenummer (voice in C_NPC) 
+person: Pers_205_Lea, 16
+
+#Es dürfen nun beliebig viele Dialoge definiert werden, die der
+#Spieler mit Lea führen kann.
+
+#Ein Dialog beginnt immer mit dem Befehl "info:" auf den der 
+#Name des Dialogs folgt. Dieser Name wird nur intern verwendet,
+#der Spiele bekommt ihn niemals zu Gesicht. Der Name muss mit
+#einem Buchstaben beginnen und darf nur aus lateinischen Klein- und
+#Großbuchstaben, dem Unterstrich und Ziffern bestehen. Leerzeichen,
+#Umlaute und Sonderzeichen sind nicht erlaubt!
+#Pro Person darf jeder Dialogname nur einmal verwendet werden.
+
+info: SimpleDialog
+
+#Für einen einfachen Dialog kann es nun direkt losgehen.
+#Eine spitze Klammer nach rechts steht für eine Dialogzeile des Helden
+>Hallo Welt, hier spricht der Held!
+#Eine spitze Klammer nach links ist analog eine Dialogzeile des NSCs
+<Hallo Held, hier spricht Lea, die keine Ahnung hat, was du ihr 
+<sagen willst.
+
+#Das war's bereits. Um die weiteren Details kümmert sich der Creator.
+#Würde man später im Spiel Lea ansprechen, so würde 
+#"Hallo Welt, hier spricht der Held!" als Option auftauchen und nach
+#der Auswahl durch den Spieler verschwinden.
+
+#Mit Hilfe von Flags kann das Verhalten des Dialoges angepasst werden.
+info: ImportantDialog
+#Diese Zeile führt dazu, dass Lea den Helden von sich aus anspricht, sobald
+#sie ihn erblickt.
+flags: important
+<Warte mal, ich muss mit dir reden!
+>Was ist los?!
+
+Info: PermanentDialog
+#Dieser Flag hat zur Folge, dass der Dialog nicht nur einmal, sondern beliebig oft
+#geführt werden kann.
+flags: permanent
+>Seid gegrüßt!
+#In diesem Dialog gibt neben reinen Texten auch Animationen. Dazu wird einfach
+#hinter die spitze Klammer ein Ausrufezeichen und der Name der Animation gesetzt.
+#Groß- und Kleinschreibung ist dabei egal
+#In diesem Beispiel verbeugt sich der Held, nachdem er den Gruß ausgestoßen hat.
+>!t_GreetNov
+<Warum so freundlich? Was willst du?!
+#Und mit dieser Zeile reagiert Lea mit einer besonders freundlichen Geste.. ;)
+<!t_GetLost
+
+#Es ist theoretisch auch möglich, "flags: permanent, important" zu verwenden, um
+#einen wichtigen und permanenten Dialog zu erstellen.
+
+#Bis jetzt waren die Dialoge von Anfang an verfügbar. Häufig will man allerdings
+#Bedingungen festlegen, die erst erfüllt sein müssen, bevor ein Dialog aktiv wird.
+#Für diese Aufgabe kennt der Creator vier Befehle: conddia, conditem, condcode 
+#sowie condfunc. 
+info: SimpleCond
+#Mittels conddia kann verlangt werden, dass der Spieler zuerst einen anderen Dialog
+#geführt hat. Dieses Beispiel taucht also nicht in der Dialog-Auswahlliste auf,
+#wenn SimpleDialog noch nicht geführt wurde.
+conddia: SimpleDialog
+#Es ist möglich, mehrere cond-Befehle untereinander zu verwenden. Diese müssen
+#dann ALLE erfüllt sein. Trägt man vor den Namen eines Dialoges eine Person ein,
+#so bezieht sich die Bedingung auf den Dialog dieser anderen Person. 
+conddia: Pers_203_Hark, IAwaitedYou
+#Dieser kleiner Dialog kann also nur geführt werden, wenn der Held vorher mit
+#Lea  den Dialog SimpleDialog und mit Hark den (weiter unten noch zu erstellenden)
+#Dialog IAwaitedYou geführt hat.
+>Ich habe gerade mit Hark gesprochen. Wegen SimpleDialog..
+<Ja, was willst du wissen?
+
+info: SimpleCond2
+#conditem verlangt, dass der Spieler den genannten Gegenstand in seinem Inventar hat
+conditem: ItFo_Potion_GruenerTrank
+#Durch eine Zahl kann zusätzlich eine Mindestanzahl verlangt werden. In diesem
+#Beispiel braucht der Spieler also einen Grünen Trank und mindestens vier rohe
+#Fleischkeulen in seinem Inventar.
+conditem: ItFoMuttonRaw, 4
+>Ich bringe den Trank und das Fleisch.
+#Mittels >> kann der Spieler dem NSC etwas geben
+>>ItFo_Potion_GruenerTrank
+>>ItFoMuttonRaw, 4
+<Sehr gut! Hier deine Belohnung.
+#Mit << bekommt er etwas vom NSC
+<<ItFoBooze
+<<ItFoLoaf, 2
+
+info: SimpleCond3
+#Bei conddia können auch mehrere durch ein Semikolon getrennte Dialoge angegeben
+#werden. In diesem Fall muss einer (aber nicht alle) der aufgeführten Dialoge vorher
+#geführt worden sein.
+#Also hier entweder der SimpleDialog mit Lea oder IAwaitedYou mit Hark (es ist auch
+#okay, wenn beide geführt wurden)
+conddia: SimpleDialog; Pers_203_Hark, IAwaitedYou
+#conddia und conditem können  zusätzlich mit einem Ausrufereife zu Beginn negiert werden
+#Also darf SimpleCond2 NICHT bereits geführt worden sein
+conddia: !SimpleCond2
+#Der Spieler darf KEINEN grünen Trank in seinem Inventar haben
+conditem: !ItFo_Potion_GruenerTrank
+#und muss WENIGER als vier Fleischkeulen besitzen.
+conditem: ItFoMuttonRaw, 4
+#condcode erlaubt die Angabe eines beliebigen boolschen Deadalusausdrucks
+condcode: Npc_GetDistToWP(self, "abbc") < 500
+>Ich habe leider nicht alles finden können.
+<Dann such weiter!
+
+Info: SimpleCond4
+#Ein Sonderfall ist condfunc. Als Parameter erhält sie den Namen einer 
+#Daedulus-Funktion mit int als Rückgabewert. Diese wird bei Bedarf aufgerufen
+#und muss 1 zurückgeben, wenn der Dialog aktiv und 0, wenn er inaktiv sein soll.
+#Wird condfunc verwendet, ignoriert der Creator eventuelle conditem, condcode und
+#conddia-Anweisungen
+condfunc: SimpleCond4_Cond
+>Es ist etwas am Tor passiert! Komm schnell!
+#Mittels einem Ausrufezeichen können beliebige Daedalus-Befehle in den Dialog
+#eingefügt werden.
+!Npc_ExchangeRoutine(self, "StandEntry");
+#$END beendet den Dialogmodus
+$END
+
+Info: DescDialog
+#Ein selten verwendeter Befehl ist desc. Mit diesem kann die Beschreibung des
+#Dialoges festgelegt werden. Die Beschreibung ist letztendlich einfach der Text,
+#der im Spiel in der Dialog- Auswahlbox erscheint. In fast allen Fälle stimmt die 
+#Beschreibung mit der ersten Dialogzeile des Helden überein, daher übernimmt der 
+#Creator diese einfach. Die desc-Anweisung wird  also nur benötigt, wenn entweder 
+#der Held im Dialog nicht spricht oder man bewusst eine andere Beschreibung 
+#haben möchte.
+desc: (Begrüßen)
+#Mittels $IF/$ELSE/$ENDIF können Bedingungen innerhalb der Aktionen einfügt werden
+$IF Npc_GetTrueGuild(hero) == GIL_NONE
+>!t_GreetNov
+$ELSE
+>!t_GreetGrd
+$ENDIF
+>Hallo!
+
+#Ein Sonderfall ist ein Dialog mit dem Namen "Exit". Dieser Dialog hat als
+#Beschreibung das Wort "Ende" und beendet einfach den Dialogmodus.
+#Jede Person sollte diesen Dialog besitzen.
+#Es sind keine weiteren Angaben nötig. Allerdings kann man prinzipiell
+#Bedingungen stellen oder Befehle angeben, die vor dem Ende des Dialogmodus
+#noch durchgeführt werden müssen.
+info: Exit
+
+#Nun wollen wir ein paar Dialoge für Hark erstellen
+person: Pers_203_Hark, 14
+
+#Unmittelbar unter die person-Anweisung können mit Ausrufezeichen
+#beliebige Daedalus-Befehle angegeben werden. Diese werden an den
+#Anfang der Skriptdatei eingefügt, die der Creator für die Dialoge der 
+#Person erstellt.
+
+!var int Dia_Hark_Var1;
+!var string Dia_Hark_Var2;
+
+info: Exit
+
+info: IAwaitedYou
+flags: important
+<Ah, endlich kommst Du !
+<Sag mir, welcher Buchstabe ist mächtiger als die Sonne?
+#Mittels dem Prozentzeichen % können Dialogoptionen aktiviert werden.
+#Die Optionen müssen direkt im Anschluss an den Dialog eingefügt werden.
+%
+
+#Eine Option beginnt mit dem opt-Befehl und einem Namen, der die selben
+#Regeln wie Namen für info-Anweisungen befolgen muss.
+opt: CharacterX
+>Das X?
+<Nein, das ist nicht korrekt! Versuche es erneut.
+
+opt: CharacterM
+#Für Optionen kann desc verwendet werden, aber nicht die anderen Befehle,
+#die für Dialoge verfügbar sind (flags, conddia etc)..
+desc: (M nennen)
+>Das M?
+<In der Tat! 
+#Zwei Prozentzeichen entfernen alle eingefügten Optionen wieder
+%%
+
+#Analog zum Exit-Dialog gibt es die Back-Option. Diese hat als Beschreibung
+#"Zurück" und entfernt alle Optionen
+opt: Back
+
+#Mittels %CharacterX, %CharacterM können übrigens auch ausgewählte Optionen
+#eingefügt werden, während % alleine immer alle Optionen nimmt.
+
+#Es ist auch möglich, Optionen eines anderen Dialoges einzubauen
+Info: EinAndererDialog
+>Wie geht's?
+<Gut. Sag mal, welcher Buchstabe ist mächtiger als die Sonne?
+%IAwaitedYou, CharacterX
+%IAwaitedYou, CharacterM
+
+#Es ist auch möglich in den Dialogen Quests zu starten, zu beenden oder Einträge ins Tagebuch vorzunehmen
+#Das muss man allerdings zunächst für jede Quest eine TOPIC-Konstante und eine LOG-Variable eintragen, z.B.
+#const string TOPIC_TestQuest = "Eine Testquest";
+#var int MIS_TestQuest;
+#Der Wert der Konstante bestimmt die Überschrift im Tagebuch. Der Name der Mission kann beliebig sein,
+#wichtig ist nur, dass die Topic-Konstanten mit TOPIC_ beginnt und die Missions-Variable mit MIS_ und das
+#der Name bei beiden gleich ist. Danach gehen folgende Dinge:
+
+Info: StartMis
+>Gib mir einen Auftrag!
+<In Ordnung, wie du willst.
+#Starten der Quest, Eintrag unter "Aktuelle Missionen". MIS_TestQuest wird auf LOG_RUNNING gesetzt.
+#Bei allen Befehlen NUR den eigentlichen Namen ohne MIS_ oder TOPIC_ davor eingeben.
+$STARTMIS TestQuest
+#Und direkt ein Eintrag mit Infos zur Quest
+$LOGMISS TestQuest, Ich habe eine neue Quest erhalten. Dann mal los!
+
+Info: MoreInfo
+#Überprüfen, ob die Quest gerade läuft
+Condcode: MIS_TestQuest == LOG_RUNNING
+>Gib mir mehr Informationen!
+<Gut, dein Auftrag ist es, den Auftrag zu erfüllen.
+#Es können jederzeit weitere Einträge zu einer laufenden Quest eingetragen werden
+$LOSMISS TestQuest, Endlich sehe ich klar! Ich soll den Auftrag erfüllen!
+
+Info: MisFailed
+Condcode: MIS_TestQuest == LOG_RUNNING
+>Ich habe versagt!
+<Das hatte ich mir doch gleich gedacht.
+#Quest wandert nach "Gescheiterte Missionen", MIS_TestQuest wird auf LOG_FAILED gesetzt.
+$MISFAIL TestQuest
+
+Info: MisObso
+Condcode: MIS_TestQuest == LOG_RUNNING
+>Ich habe keine Lust mehr!
+<Schade..
+#Quest wird aus dem Tagebuch entfernt, MIS_TestQuest wird auf LOG_OBSOLETE gesetzt (braucht man SEHR selten)
+$MISOBSO TestQuest
+
+Info: MisSucc
+Condcode: MIS_TestQuest == LOG_RUNNING
+>Mission erfüllt!
+<Wunderbar, du bist ein wahrer Teufelskerl!
+#Quest wandert nach "Erfüllte Missionen", MIS_TestQuest wird auf LOG_SUCCESS gesetzt.
+$MISSUCC TestQuest
+#Und direkt ein paar XP vergeben. Dazu muss man vorher in XP_Constants.d die Konstante XP_TestQuest definieren
+$EXP XP_TestQuest
+#Man kann aber auch direkt die Anzahl Erfahrungspunkte eintragen
+$EXP 100
+
+#Für Notizen über Händler, Lehrer etc. braucht man keine Mission, sondern nur eine TOPIC-Konstante, z.B.
+#const string TOPIC_LehrerUmgebung = "Lehrer in der Umgebung";
+Info: NoteDia
+>Wer bist du?
+<Ein Lehrer!
+#Lognote erzeugt entweder einen neuen Eintrag unter "Sonstiges" oder erweitert einen bestehenden. 
+#MISSTART wird nicht benötigt!
+$LOGNOTE LehrerUmgebung, Ich habe einen Lehrer gefunden!
+
+#Mit Hilfe der Flag "trade" können Handel-Dialoge erstellt werden.
+Info: LetsTrade
+flags: permanent, trade
+#Mit Num kann man die Reihenfolge festlegen. Umso höher die Nummer, umso weiter unten ist der Dialog
+#Ende-Dialoge haben automatisch die Nummer 999
+#Damit der Handelsdialog immer unten vor dem Ende kommt
+Num: 998
+>Lass uns handeln!
+
+#Wenn der Spieler Taschendiebstahl lernen kann, sollten auch alle NSC zu beklauen sein. Mit diesem Dialog geht das mit
+#einer einzigen Zeile.
+Info: Pickpocket 20 45
+#Die erste Zahl beschreibt die benötigte Geschicklichkeit, die zweite, wieviel Gold es bei einem erfolgreichen
+#Diebstahl zu erbeuten gibt.
+Info: Pickpocket w 20 45
+#Bei Frauen kommt ein kleines "w" davor, damit von "ihrem" und nicht "seinem" Geldbeutel gesprochen wird.
+
+#Ein Hinweis zum Schluss: Der Creator geht standardmäßig davon aus, dass der Held
+#die Stimmenummer 15 besitzt. Ist dies nicht korrekt, muss man als ersten Befehl
+#person: PC_Hero, 4
+#mit der korrekten Nummer anstelle der 4 einfügen. Man braucht keine Dialoge 
+#für den Helden definieren, sondern kann direkt darunter eine weitere person-Anweisung
+#folgen lassen!
